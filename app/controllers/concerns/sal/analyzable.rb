@@ -6,25 +6,18 @@ module SAL::Analyzable
 
   included do
 
-    helper_method :eager_or_fetching?, :eager?, :fetching?
-    helper_method :user_can_run_search?, :under_free_page_limit?, :under_free_search_limit?
+    helper_method :eager_or_fetching?, :eager?, :fetching?, :user_can_run_search?
 
-    def show
+    def index
       prevent_spam
 
       set_up
 
-      if eager_or_fetching?
-        if user_can_run_search?
-          execute_if_fetching
-        else
-          setup_contact_request
-        end
-      end
+      execute_if_fetching if eager_or_fetching? && user_can_run_search?
 
       @presenter = @builder.present
 
-      render_show_view
+      render_index_view
     end
 
     def change_mode
@@ -35,12 +28,8 @@ module SAL::Analyzable
 
     private
 
-      def setup_contact_request
-        @contact_request = ContactRequest.new(message: "I'd like to learn more about the #{@title} dataset")
-      end
-
-      def render_show_view
-        render "sal/show"
+      def render_index_view
+        render "sal/index"
       end
 
       def set_up
@@ -104,8 +93,6 @@ module SAL::Analyzable
 
       def execute
         @builder.execute!
-
-        increment_cookie_search_count
       end
 
       def execute_if_fetching
@@ -173,37 +160,11 @@ module SAL::Analyzable
       end
 
       def set_downloadable
-        @downloadable = true
-      end
-
-      MAX_FREE_SEARCHES = 5.freeze
-      MAX_FREE_PAGES = 2.freeze
-
-      def cookie_search_count
-        # memoize this as we care about what the search count was at the beginning
-        # of this action, not the end (it will get incremented as the query is executed)
-
-        @_cookie_search_count ||= cookies.signed[:search_count] || 0
-      end
-
-      def increment_cookie_search_count
-        cookies.signed[:search_count] = cookie_search_count + 1
-      end
-
-      def under_free_search_limit?
-        cookie_search_count <= MAX_FREE_SEARCHES
-      end
-
-      def under_free_page_limit?
-        @page_number <= MAX_FREE_PAGES
-      end
-
-      def within_non_user_limits?
-        under_free_page_limit? && under_free_search_limit?
+        @downloadable = false
       end
 
       def user_can_run_search?
-        authenticated? || within_non_user_limits?
+        authenticated?
       end
 
       def prevent_spam

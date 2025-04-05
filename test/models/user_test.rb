@@ -44,7 +44,7 @@ class UserTest < ActiveSupport::TestCase
 
     user.valid?
 
-    assert_not user.errors.where(email_address).any? { |error| error.type == :invalid }
+    assert_not user.errors.where(:email_address).any? { |error| error.type == :invalid }
   end
 
   test "is invalid without a password" do
@@ -64,5 +64,18 @@ class UserTest < ActiveSupport::TestCase
 
   test "outputs the correct full name" do
     assert_equal "Test User", users(:regular).full_name
+  end
+
+  test "it has an email search method" do
+    assert_respond_to User, :search_email_address
+  end
+
+  test "email search returns matching results" do
+    assert_equal User.search_email_address("test").count, 1
+    assert_equal User.search_email_address("example.com").count, 2
+  end
+
+  test "email search returns no results when none matching" do
+    assert_equal User.search_email_address("foobarbaz.com").count, 0
   end
 end

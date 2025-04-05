@@ -86,7 +86,7 @@ class SAL::Builder
       search_method = config.searchable_settings.dig(param_name, :search_method)
 
       # should return an ActiveRecord::Relation
-      klass.send(search_method, value)
+      config.klass.send(search_method, value)
     end
 
     def alter_value_for_query(param_name, value)
@@ -145,7 +145,7 @@ class SAL::Builder
         if config.searchable_field?(k)
           # when searching, we construct an ActiveRecord::Relation based on the search
           # and create a condition where :primary_key => relation
-          hsh[klass.primary_key] = search_condition_value(k, v)
+          hsh[config.klass.primary_key] = search_condition_value(k, v)
         elsif config.searchable_or_filterable_field?(k) && !ignore_param?(k, v)
           hsh[k] = alter_value_for_query(k, v)
         end

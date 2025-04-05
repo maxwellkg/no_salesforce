@@ -19,7 +19,7 @@ class SAL::Config
   end
 
   def downloadable?
-    true
+    false
   end
 
   CONDITION_ALTERATIONS = {}.freeze
@@ -44,7 +44,7 @@ class SAL::Config
     settings[:displayable] || {}
   end
 
-  def displayed_by_default
+  def default_display_attributes
     displayable_settings.select { |k, v| v[:show_by_default] }.keys
   end
 
@@ -134,6 +134,6 @@ class SAL::Config
 
   def groupable_field?(field_name)
     groupable_settings.keys.include?(field_name)
-  end  
+  end
 
 end

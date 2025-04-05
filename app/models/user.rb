@@ -1,4 +1,8 @@
 class User < ApplicationRecord
+  include BasicSearch
+
+  include SAL::FieldSetter
+
   has_secure_password
   has_many :sessions, dependent: :destroy
 
@@ -11,6 +15,8 @@ class User < ApplicationRecord
   validates :last_name, presence: true
   validates :email_address, presence: true
   validates :email_address, format: { with: URI::MailTo::EMAIL_REGEXP }, if: -> (user) { user.email_address.present? }
+
+  basic_search :email_address
 
   def full_name
     "#{first_name} #{last_name}"

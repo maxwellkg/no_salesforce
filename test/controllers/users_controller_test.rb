@@ -2,11 +2,16 @@ require "test_helper"
 
 class UsersControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @user = users(:one)
+    @user = users(:regular)
   end
 
   test "should get index" do
     get users_url
+    assert_response :success
+  end
+
+  test "should get advanced search index" do
+    get users_url(email_address: "example.com", fr: 1, mode: "advanced_search")
     assert_response :success
   end
 

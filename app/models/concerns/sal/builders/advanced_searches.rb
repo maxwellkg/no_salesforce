@@ -4,7 +4,7 @@ module SAL::Builders::AdvancedSearches
   included do
 
     def display_attributes
-      params[:display_attributes]
+      params[:display_attributes] || config.default_display_attributes
     end    
 
     def build_advanced_search

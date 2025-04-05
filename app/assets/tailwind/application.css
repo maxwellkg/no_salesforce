@@ -1,1 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", "sans-serif";
+  --font-space-grotesk: "Space Grotesk", "sans-serif";
+
+  --color-cornflower-blue-50: #d3e7fc;
+  --color-cornflower-blue-100: #a5d0f9;
+  --color-cornflower-blue-200: #6cb9f7;
+  --color-cornflower-blue-300: #00a2ef;
+  --color-cornflower-blue-400: #008acb;
+  --color-cornflower-blue-500: #0072a8;
+  --color-cornflower-blue-600: #005b87;
+  --color-cornflower-blue-700: #004566;
+  --color-cornflower-blue-800: #003047;
+  --color-cornflower-blue-900: #001b28;
+
+  --color-persian-blue-50: #e3e2fd;
+  --color-persian-blue-100: #c7c7fb;
+  --color-persian-blue-200: #ababf9;
+  --color-persian-blue-300: #908ff8;
+  --color-persian-blue-400: #7372f7;
+  --color-persian-blue-500: #5553f6;
+  --color-persian-blue-600: #312df5;
+  --color-persian-blue-700: #1000da;
+  --color-persian-blue-800: #0c009e;
+  --color-persian-blue-900: #070066;
+
+  --color-heliotrope-50: #f3ddfc;
+  --color-heliotrope-100: #e8bbfa;
+  --color-heliotrope-200: #dd98f8;
+  --color-heliotrope-300: #d46ff7;
+  --color-heliotrope-400: #cc39f5;
+  --color-heliotrope-500: #b400db;
+  --color-heliotrope-600: #9100b0;
+  --color-heliotrope-700: #6f0087;
+  --color-heliotrope-800: #500062;
+  --color-heliotrope-900: #33003e;
+
+  --color-raspberry-50: #fcdde3;
+  --color-raspberry-100: #fabac8;
+  --color-raspberry-200: #f895ac;
+  --color-raspberry-300: #f76b8f;
+  --color-raspberry-400: #f52b70;
+  --color-raspberry-500: #d5005b;
+  --color-raspberry-600: #ab0049;
+  --color-raspberry-700: #830038;
+  --color-raspberry-800: #5e0028;
+  --color-raspberry-900: #3b0019;
+
+  --color-tangelo-50: #fcdeda;
+  --color-tangelo-100: #fabcb4;
+  --color-tangelo-200: #f8998a;
+  --color-tangelo-300: #f67256;
+  --color-tangelo-400: #e94b00;
+  --color-tangelo-500: #c13e00;
+  --color-tangelo-600: #9a3200;
+  --color-tangelo-700: #752600;
+  --color-tangelo-800: #521a00;
+  --color-tangelo-900: #2f0f00;
+
+  --color-apple-green-50: #dff000;
+  --color-apple-green-100: #c5d500;
+  --color-apple-green-200: #adbb00;
+  --color-apple-green-300: #96a200;
+  --color-apple-green-400: #7f8900;
+  --color-apple-green-500: #697100;
+  --color-apple-green-600: #545a00;
+  --color-apple-green-700: #3f4400;
+  --color-apple-green-800: #2e3100;
+  --color-apple-green-900: #181a00;
+
+  --color-sap-green-50: #a3f9a0;
+  --color-sap-green-100: #2aeb00;
+  --color-sap-green-200: #25ce00;
+  --color-sap-green-300: #20b200;
+  --color-sap-green-400: #1b9700;
+  --color-sap-green-500: #167d00;
+  --color-sap-green-600: #126400;
+  --color-sap-green-700: #0d4b00;
+  --color-sap-green-800: #0a3500;
+  --color-sap-green-900: #062100;
+
+  --color-aquamarine-50: #99f8be;
+  --color-aquamarine-100: #00e985;
+  --color-aquamarine-200: #00cc75;
+  --color-aquamarine-300: #00b165;
+  --color-aquamarine-400: #009656;
+  --color-aquamarine-500: #007c47;
+  --color-aquamarine-600: #006339;
+  --color-aquamarine-700: #004a2a;
+  --color-aquamarine-800: #00341e;
+  --color-aquamarine-900: #001f12;
+
+}
+
+@layer base {
+  html {
+    @apply font-space-grotesk text-gray-800 dark:text-white;
+  }
+
+  a {
+    @apply text-cornflower-blue-300 hover:text-cornflower-blue-200;
+  }
+}
+
+.flash-green {
+  @apply bg-green-100 border-green-400 text-green-700;
+}
+
+.flash-red {
+  @apply bg-red-100 border-red-400 text-red-700;
+}
+
+.flash-amber {
+  @apply bg-amber-100 border-amber-400 text-amber-700;
+}
+
+.flash-blue {
+  @apply bg-blue-100 border-blue-400 text-blue-700;
+}
+
+.flash-gray {
+  @apply bg-gray-100 border-gray-400 text-gray-700;
+}
+

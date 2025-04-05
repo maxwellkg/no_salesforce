@@ -32,7 +32,7 @@ module SAL::AdvancedSearchesHelper
   def selected_display_attributes
     existing = @builder.existing_value(:display_attributes)
 
-    existing.present? ? existing : @builder.config.displayed_by_default
+    existing.present? ? existing : @builder.config.default_display_attributes
   end
 
   def change_order_link_params(col, order)

@@ -1,0 +1,7 @@
+<%= turbo_stream.update @target do %>
+  <% if existing_selected? %>
+    <%= options_from_collection_for_select(@existing, @value_method, @text_method, @existing.map(&@value_method.to_sym)) %>
+  <% end %>
+
+  <%= options_from_collection_for_select(@options, @value_method, @text_method) %>
+<% end %>

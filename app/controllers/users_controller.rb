@@ -1,10 +1,12 @@
 class UsersController < ApplicationController
+  include SAL::Analyzable
+
   before_action :set_user, only: %i[ show edit update destroy ]
 
   # GET /users or /users.json
-  def index
-    @users = User.all
-  end
+  # def index
+  #   @users = User.all
+  # end
 
   # GET /users/1 or /users/1.json
   def show
@@ -57,14 +59,24 @@ class UsersController < ApplicationController
     end
   end
 
+  def home
+  end
+
   private
+
     # Use callbacks to share common setup or constraints between actions.
     def set_user
       @user = User.find(params.expect(:id))
     end
 
+
     # Only allow a list of trusted parameters through.
     def user_params
       params.fetch(:user, {})
+    end
+
+
+    def sal_config_klass
+      SAL::Configs::Users
     end
 end
