@@ -1,0 +1,33 @@
+<div id='sal-results' class='bg-white dark:bg-gray-800 text-gray-800 dark:text-white border border-gray-300 dark:border-gray-900 shadow rounded-md p-10'>
+  <% if @presenter.no_matching_results? %>
+    <%= render partial: "sal/results/no_matching_results" %>
+  <% else %>
+
+    <% if @presenter.show_charts? %>
+      <div id='charts-outer' class='pb-6 border-b'>
+        <%= render partial: "sal/charts" %>
+      </div>
+    <% end %>
+
+    <div class="<%= 'mt-8' if @presenter.show_charts? %>">
+      <h2 class='text-2xl'><%= @presenter.results_header %></h2>
+      
+      <% if downloadable? %>
+        <div class="flex flex-row">
+          <%= modal_button target_id: new_contact_request_tf_id, id: analysis_download_button_id, class: "text-center mt-4" do %>
+            <%= link_to new_contact_request_path(message: analysis_download_cr_message, hm: 1), class: "btn bg-sap-green-700 hover:bg-sap-green-500 text-lg md:text-xl rounded rounded-md text-gray-800 px-5 py-2 text-white text-center", data: { turbo_frame: new_contact_request_tf_id } do %>
+                <i class="fa-solid fa-file-export"></i>
+                <span>download</span>
+              <% end %>
+          <% end %>
+        </div>
+      <% end %>
+
+      <%= render partial: "sal/results/table" %>
+
+      <div class='mt-12'>
+        <%= render partial: 'sal/pagination' %>
+      </div>
+    </div>
+  <% end %>
+</div>

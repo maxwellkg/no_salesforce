@@ -1,0 +1,28 @@
+<div id='charts' class='relative overflow-x-auto' data-controller='analytics-charts'>
+  <div id='chart-display'>
+    <% @presenter.valid_chart_types.keys.each do |chart_type| %>
+      <%= content_tag :div, id: "analytics-#{chart_type.to_s.dasherize}-outer", class: chart_visibility_class(chart_type), data: { analytics_charts_target: "#{chart_type.to_s.camelize(:lower)}" } do %>
+        <%= chart chart_type %>
+      <% end %>
+    <% end %>
+  </div>
+  <div id='chart-options'>
+    <% @presenter.valid_chart_types.each do |type, config| %>
+      <%= image_tag(
+          "charts/#{config[:icon]}",
+          data: {
+            toggle: "tooltip",
+            placement: "top",
+            title: "#{type.to_s&.titleize}",
+            chart_target: "#{type.to_s.camelize(:lower)}Target",
+            analytics_chart_target: "#{type.to_s.camelize(:lower)}Selector",
+            action: 'click->analytics-charts#show'
+          },
+          class: 'inline-block h-20 mx-6',
+          id: "analytics-chart-selector-#{type}"
+        )
+      %>
+    <% end %>
+  </div>
+</div>
+

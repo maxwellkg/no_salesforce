@@ -1,0 +1,10 @@
+<div id="dashboard-outer" class='bg-white dark:bg-gray-800 text-gray-800 dark:text-white border border-gray-300 dark:border-gray-900 shadow rounded-md p-10'>
+  <h2 class="text-3xl pb-4 border-b"><%= @presenter.title %></h2>
+  <div class="py-8 2xl:grid 2xl:grid-cols-2 gap-4 2xl:gap-12">
+    <% @presenter.widget_names.each do |w_name| %>
+      <div class="py-8 2xl:py-0">
+        <%= lazy_dashboard_widget(@presenter.builder.config.name, @presenter.dashboard_name, w_name, @presenter.conditions) %>
+      </div>
+    <% end %>
+  </div>
+</div>

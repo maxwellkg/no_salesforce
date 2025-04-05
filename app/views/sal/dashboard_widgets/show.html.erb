@@ -1,0 +1,14 @@
+<div class="min-h-screen">
+  <div class="w-5/6 mx-auto mt-10 md:mt-20">
+    <div id="<%= @widget_id %>-outer">
+      <%= turbo_frame_tag @widget_id do %>
+        <div id="<%= @widget_id %>-title">
+          <span class="text-2xl"><%= @presenter.title %></span>
+        </div>
+        <div class="mt-4">
+          <%= dashboard_widget_visualization %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

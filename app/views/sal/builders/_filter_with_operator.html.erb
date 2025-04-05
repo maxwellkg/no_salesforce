@@ -1,0 +1,12 @@
+<div data-controller='filter-with-operator'>
+  <%= select_tag_for_filter_with_operator(dim_name) %>
+  <div id="#{dim_name.dasherize}-values-outer" data-filter-with-operator-target="outerWrapper" class="<%= hidden_class_for_filter_with_operator(dim_name) %> my-4">
+    <div id="#{dim_name.dasherize}-values-1" data-filter-with-operator-target="firstValueWrapper" class="<%= hidden_class_for_filter_with_operator(dim_name) %>">
+      <%= input_value_tag_for_filter_with_operator(dim_name, 1) %>
+    </div>
+    <div id="#{dim_name.dasherize}-values-2" data-filter-with-operator-target="secondValueWrapper" class="my-2 <%= hidden_class_for_filter_with_operator(dim_name) %>">
+      <span> and </span>
+      <%= input_value_tag_for_filter_with_operator(dim_name, 2) %>
+    </div>
+  </div>
+</div>

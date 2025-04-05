@@ -1,0 +1,21 @@
+<% @presenter.results.each do |org| %>
+  <tr class="bg-white hover:bg-gray-50 dark:bg-gray-500 dark:hover:bg-gray-400 text-gray-800 dark:text-white border-b border-gray-300 dark:border-gray-600">
+    <% @builder.display_attributes.each_with_index do |attribute, index| %>
+      
+      <% if index == 0 %>
+        <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap">
+      <% else %>
+        <td class="px-6 py-4">
+      <% end %>
+
+      <%= attribute_transformed_for_display(attribute, org) %>
+
+      <% if index == 0 %>
+        </th>
+      <% else %>
+        </td>
+      <% end %>
+
+    <% end %>
+  </tr>
+<% end %>

@@ -1,0 +1,55 @@
+<%= turbo_frame_tag 'sal-form' do %>
+  <%= form_tag request.path, method: :get, data: { turbo_frame: sal_form_target_frame, turbo_action: "advance", controller: sal_form_controller, analytics_form_force_month_value: force_month_value } do %>
+
+    <%= sal_form_section do %>
+      <span class="text-2xl font-poppins">Analysis Settings</span>
+      <div class="mt-4 text-center">
+        <%= sal_form_submit_tag %>
+      </div>
+    <% end %>
+
+    <% if @builder.config.allowable_modes.size > 1 %>
+      <%= sal_form_section id: "mode-selection" do %>
+        <span class="text-2xl">Mode</span>
+        <%= content_tag :div, class: "flex flex-row mt-4", data: { controller: "sal-modes", sal_modes_url_value: change_mode_url_value } do %>
+          <%= sal_form_mode_select_tag %>
+        <% end %>
+      <% end %>
+    <% end %>
+
+    <%= sal_form_section do %>
+      <%= turbo_frame_tag sal_mode_settings_tf do %>
+        <%= render partial: settings_section_partial %>
+      <% end %>
+    <% end %>
+
+    <%= sal_form_section id: "sal-filters" do %>         
+      <span class='text-2xl font-poppins'>Filters</span>
+      <div id="sal-filter-options">
+        <% @builder.config.searchable_and_filterable_settings.keys.each_with_index do |param_name, i| %>
+
+          <div class="py-4">
+            <%= label_tag_for_search_or_filter(param_name) %>
+
+            <% if @builder.config.filterable_field?(param_name) && user_inputs_operator_for_filter?(param_name) %>
+              <%= render partial: 'sal/filter_with_operator', locals: { dim_name: param_name } %>
+            <% else %>
+              <%= input_tag_for_filter(param_name) %>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+
+    <%= hidden_field_tag :eager, '1' %>
+
+    <%= text_field_tag :honeypot, nil, class: 'hidden' %>
+
+    <%= sal_form_section do %>
+      <div class="text-center">
+        <%= sal_form_submit_tag %>
+      </div>
+    <% end %>
+
+  <% end %>
+<% end %>

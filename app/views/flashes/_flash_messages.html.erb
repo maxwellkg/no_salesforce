@@ -1,0 +1,5 @@
+<div id="flashes" class="w-full md:w-1/2 lg:w-1/3 top-3 right-3 fixed z-[99999]">
+  <%= turbo_frame_tag "tf-flashes" do %>
+    <%= render partial: "flashes/flash_message", collection: flash_collection %>
+  <% end %>
+</div>

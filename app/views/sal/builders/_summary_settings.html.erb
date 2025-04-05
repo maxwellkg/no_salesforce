@@ -1,0 +1,22 @@
+<span class='text-2xl font-poppins'>Summary Settings</span>
+<div id="sal-settings-options">
+  <div class="py-4">
+    <%= label_tag 'group-by-select', "Rows", class: 'block mb-2 text-md font-medium text-gray-800 dark:text-white' %>
+    <%= summarize_by_select_tag('rows') %>
+  </div>
+
+  <div class="py-4">
+    <%= label_tag 'group-by-select', "Columns", class: 'block mb-2 text-md font-medium text-gray-800 dark:text-white' %>
+    <%= summarize_by_select_tag('cols') %>
+  </div>          
+
+  <div class="py-4">
+    <%= label_tag 'metric', "Metric", class: 'block mb-2 text-md font-medium text-gray-800 dark:text-white' %>
+    <%= metric_select_tag %>
+  </div>
+
+  <div class="py-4">
+    <%= label_tag 'show-values-as-select', "Show Values As", class: 'block mb-2 text-md font-medium text-gray-800 dark:text-white' %>
+    <%= show_values_as_select_tag %>
+  </div>
+</div>

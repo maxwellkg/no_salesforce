@@ -1,0 +1,16 @@
+<% @presenter.table_data.each_with_index do |row, index| %>
+  <tr class="bg-white hover:bg-gray-50 dark:bg-gray-500 dark:hover:bg-gray-400 text-gray-800 dark:text-white border-b border-gray-300 dark:border-gray-600 <%= 'font-bold' if index == (@presenter.table_data.length - 1) %>">
+
+    <% if @presenter.has_neither_rows_nor_cols? %>
+      <td class="px-6 py-4"><%= value_display(row[0]) %></td>
+    <% else %>
+      <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap">
+        <%= row[0] %>
+      </th>
+
+      <% row[1..].each do |col| %>
+        <td class="px-6 py-4"><%= value_display(col) %></td>
+      <% end %>     
+    <% end %>
+  </tr>
+<% end %>

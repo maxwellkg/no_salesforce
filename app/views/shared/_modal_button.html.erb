@@ -1,0 +1,7 @@
+<div data-controller="modal" data-modal-prevent-default-action-opening="false" class="<%= html_class %>" id="<%= id %>" %>
+  <%= content_tag :div, id: "modal-button-outer", data: { action: "click->modal#open"} do %>
+    <%= link %>
+  <% end %>
+
+  <%= render partial: 'shared/modal', locals: { target_id: target_id } %>
+</div>
