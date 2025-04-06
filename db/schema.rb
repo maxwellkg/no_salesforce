@@ -10,9 +10,42 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_04_05_235510) do
+ActiveRecord::Schema[8.0].define(version: 2025_04_06_042637) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
+
+  create_table "addresses", force: :cascade do |t|
+    t.text "street"
+    t.text "city"
+    t.bigint "state_region_id"
+    t.bigint "country_id", null: false
+    t.text "postal_code"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["country_id"], name: "index_addresses_on_country_id"
+    t.index ["state_region_id"], name: "index_addresses_on_state_region_id"
+  end
+
+  create_table "countries", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "alpha_2", null: false
+    t.string "alpha_3", null: false
+    t.string "country_code", null: false
+    t.string "iso_3166__2", null: false
+    t.string "region"
+    t.string "sub_region"
+    t.string "intermediate_region"
+    t.string "region_code"
+    t.string "sub_region_code"
+    t.string "intermediate_region_code"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["alpha_2"], name: "index_countries_on_alpha_2", unique: true
+    t.index ["alpha_3"], name: "index_countries_on_alpha_3", unique: true
+    t.index ["country_code"], name: "index_countries_on_country_code", unique: true
+    t.index ["iso_3166__2"], name: "index_countries_on_iso_3166__2", unique: true
+    t.index ["name"], name: "index_countries_on_name", unique: true
+  end
 
   create_table "sessions", force: :cascade do |t|
     t.bigint "user_id", null: false
@@ -21,6 +54,25 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_05_235510) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_sessions_on_user_id"
+  end
+
+  create_table "state_region_types", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "state_regions", force: :cascade do |t|
+    t.string "country_short_code", null: false
+    t.bigint "country_id", null: false
+    t.string "name"
+    t.bigint "state_region_type_id"
+    t.string "alpha_code", null: false
+    t.string "numeric_code", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["country_id"], name: "index_state_regions_on_country_id"
+    t.index ["state_region_type_id"], name: "index_state_regions_on_state_region_type_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -39,7 +91,11 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_05_235510) do
     t.index ["last_updated_by_id"], name: "index_users_on_last_updated_by_id"
   end
 
+  add_foreign_key "addresses", "countries"
+  add_foreign_key "addresses", "state_regions"
   add_foreign_key "sessions", "users"
+  add_foreign_key "state_regions", "countries"
+  add_foreign_key "state_regions", "state_region_types"
   add_foreign_key "users", "users", column: "created_by_id"
   add_foreign_key "users", "users", column: "last_updated_by_id"
 end

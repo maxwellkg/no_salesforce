@@ -1,0 +1,28 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the "{}" from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+
+united_states:
+ name: United States of America
+ alpha_2: US
+ alpha_3: USA
+ country_code: "840"
+ iso_3166__2: ISO 3166-2:US
+ region: Americas
+ sub_region: Northern America
+ region_code: "019"
+ sub_region_code: "021"
+
+united_kingdom:
+ name: "United Kingdom of Great Britain and Northern Ireland"
+ alpha_2: "GB"
+ alpha_3: "GBR"
+ country_code: "826"
+ iso_3166__2: "ISO 3166-2:GB"
+ region: "Europe"
+ sub_region: "Northern Europe"
+ region_code: "150"
+ sub_region_code: "154"
