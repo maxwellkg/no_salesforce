@@ -8,7 +8,7 @@ class UserTest < ActiveSupport::TestCase
 
     user.valid?
 
-    assert user.errors.where(:first_name).any? { |error| error.type == :blank }
+    assert user.errors.of_kind? :first_name, :blank
   end
 
   test "is invalid without a last name" do
@@ -17,7 +17,7 @@ class UserTest < ActiveSupport::TestCase
 
     user.valid?
 
-    assert user.errors.where(:last_name).any? { |error| error.type == :blank }
+    assert user.errors.of_kind? :last_name, :blank
   end
 
   test "is invalid without an email" do
@@ -26,7 +26,7 @@ class UserTest < ActiveSupport::TestCase
 
     user.valid?
 
-    assert user.errors.where(:email_address).any? { |error| error.type == :blank }
+    assert user.errors.of_kind? :email_address, :blank
   end
 
   test "is invalid with an incorrectly formatted email" do
@@ -35,7 +35,7 @@ class UserTest < ActiveSupport::TestCase
 
     user.valid?
 
-    assert user.errors.where(:email_address).any? { |error| error.type == :invalid }
+    assert user.errors.of_kind? :email_address, :invalid
   end
 
   test "correctly formatted email marked as valid" do
@@ -44,8 +44,16 @@ class UserTest < ActiveSupport::TestCase
 
     user.valid?
 
-    assert_not user.errors.where(:email_address).any? { |error| error.type == :invalid }
+    assert_not user.errors.of_kind? :email_address, :invalid
   end
+
+  test "is invalid with a non-unique email address" do
+    user = users(:regular).dup
+
+    user.valid?
+
+    assert user.errors.of_kind? :email_address, :taken
+  end  
 
   test "is invalid without a password" do
     user = users(:regular)
@@ -53,7 +61,7 @@ class UserTest < ActiveSupport::TestCase
 
     user.valid?
 
-    assert user.errors.where(:password).any? { |error| error.type == :blank }
+    assert user.errors.of_kind? :password, :blank
   end
 
   test "is valid with all required attributes" do

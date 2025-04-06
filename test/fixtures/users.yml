@@ -6,6 +6,7 @@ admin:
   email_address: admin@example.com
   password_digest: <%= password_digest %>
   job_title: Test Manager
+  admin: true
 
 regular:
   first_name: Test

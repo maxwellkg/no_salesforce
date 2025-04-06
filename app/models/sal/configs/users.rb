@@ -19,12 +19,11 @@ class SAL::Configs::Users < SAL::Config
   SETTINGS = {
     displayable: {
       "first_name" => {
-        display_name: "First Name",
-        show_by_default: true
-      },
-      "last_name" => {
-        display_name: "Last Name",
-        show_by_default: true
+        display_name: "Name",
+        show_by_default: true,
+        result_options: {
+          display_transformation: -> (user) { link_to user.full_name, user, data: { turbo: false } }
+        }
       },
       "email_address" => {
         display_name: "Email",
