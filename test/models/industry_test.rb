@@ -12,15 +12,15 @@ class IndustryTest < ActiveSupport::TestCase
 
     ag.valid?
 
-    assert ag.errors.kind_of? :code, :blank
+    assert ag.errors.of_kind? :code, :blank
   end
 
   test "is invalid wit a non-unique code" do
     duplicate = Industry.new(code: industries(:agriculture).code, name: "Some other name")
 
-    dupilcate.valid?
+    duplicate.valid?
 
-    assert duplicate.errors.kind_of?(:code, :taken)
+    assert duplicate.errors.of_kind?(:code, :taken)
   end
 
   test "is invalid without a name" do
@@ -29,7 +29,7 @@ class IndustryTest < ActiveSupport::TestCase
 
     ag.valid?
 
-    assert ag.errors.kind_of? :name, :blank
+    assert ag.errors.of_kind? :name, :blank
   end
 
 end

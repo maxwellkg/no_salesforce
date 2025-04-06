@@ -10,9 +10,45 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_04_06_053215) do
+ActiveRecord::Schema[8.0].define(version: 2025_04_06_170558) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
+
+  create_table "account_lead_sources", force: :cascade do |t|
+    t.text "name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_account_lead_sources_on_name", unique: true
+  end
+
+  create_table "accounts", force: :cascade do |t|
+    t.bigint "parent_id"
+    t.bigint "owner_id", null: false
+    t.bigint "billing_address_id"
+    t.bigint "shipping_address_id"
+    t.bigint "phone_number_id"
+    t.text "description"
+    t.integer "annual_revenue"
+    t.integer "number_of_employees"
+    t.bigint "industry_id"
+    t.string "website"
+    t.date "incorporation_date"
+    t.bigint "account_source_id"
+    t.datetime "last_activity_time"
+    t.bigint "created_by_id"
+    t.bigint "last_updated_by_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["account_source_id"], name: "index_accounts_on_account_source_id"
+    t.index ["billing_address_id"], name: "index_accounts_on_billing_address_id"
+    t.index ["created_by_id"], name: "index_accounts_on_created_by_id"
+    t.index ["industry_id"], name: "index_accounts_on_industry_id"
+    t.index ["last_updated_by_id"], name: "index_accounts_on_last_updated_by_id"
+    t.index ["owner_id"], name: "index_accounts_on_owner_id"
+    t.index ["parent_id"], name: "index_accounts_on_parent_id"
+    t.index ["phone_number_id"], name: "index_accounts_on_phone_number_id"
+    t.index ["shipping_address_id"], name: "index_accounts_on_shipping_address_id"
+  end
 
   create_table "addresses", force: :cascade do |t|
     t.text "street"
@@ -45,6 +81,14 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_06_053215) do
     t.index ["country_code"], name: "index_countries_on_country_code", unique: true
     t.index ["iso_3166__2"], name: "index_countries_on_iso_3166__2", unique: true
     t.index ["name"], name: "index_countries_on_name", unique: true
+  end
+
+  create_table "industries", force: :cascade do |t|
+    t.string "code", null: false
+    t.string "name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["code"], name: "index_industries_on_code", unique: true
   end
 
   create_table "phone_numbers", force: :cascade do |t|
@@ -99,6 +143,15 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_06_053215) do
     t.index ["last_updated_by_id"], name: "index_users_on_last_updated_by_id"
   end
 
+  add_foreign_key "accounts", "account_lead_sources", column: "account_source_id"
+  add_foreign_key "accounts", "accounts", column: "parent_id"
+  add_foreign_key "accounts", "addresses", column: "billing_address_id"
+  add_foreign_key "accounts", "addresses", column: "shipping_address_id"
+  add_foreign_key "accounts", "industries"
+  add_foreign_key "accounts", "phone_numbers"
+  add_foreign_key "accounts", "users", column: "created_by_id"
+  add_foreign_key "accounts", "users", column: "last_updated_by_id"
+  add_foreign_key "accounts", "users", column: "owner_id"
   add_foreign_key "addresses", "countries"
   add_foreign_key "addresses", "state_regions"
   add_foreign_key "phone_numbers", "countries"
