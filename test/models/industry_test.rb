@@ -15,7 +15,7 @@ class IndustryTest < ActiveSupport::TestCase
     assert ag.errors.of_kind? :code, :blank
   end
 
-  test "is invalid wit a non-unique code" do
+  test "is invalid with a non-unique code" do
     duplicate = Industry.new(code: industries(:agriculture).code, name: "Some other name")
 
     duplicate.valid?
