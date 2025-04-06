@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_04_06_042637) do
+ActiveRecord::Schema[8.0].define(version: 2025_04_06_053215) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -45,6 +45,14 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_06_042637) do
     t.index ["country_code"], name: "index_countries_on_country_code", unique: true
     t.index ["iso_3166__2"], name: "index_countries_on_iso_3166__2", unique: true
     t.index ["name"], name: "index_countries_on_name", unique: true
+  end
+
+  create_table "phone_numbers", force: :cascade do |t|
+    t.bigint "country_id"
+    t.string "number", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["country_id"], name: "index_phone_numbers_on_country_id"
   end
 
   create_table "sessions", force: :cascade do |t|
@@ -93,6 +101,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_06_042637) do
 
   add_foreign_key "addresses", "countries"
   add_foreign_key "addresses", "state_regions"
+  add_foreign_key "phone_numbers", "countries"
   add_foreign_key "sessions", "users"
   add_foreign_key "state_regions", "countries"
   add_foreign_key "state_regions", "state_region_types"
