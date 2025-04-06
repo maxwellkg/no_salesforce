@@ -4,3 +4,41 @@
 # model remove the "{}" from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
+
+--- !omap
+
+parent_ltd:
+  name: Parent Company
+  owner: regular
+  billing_address: strand
+  shipping_address: strand
+  phone_number: british
+  description: "Parent Ltd. is a large British retailer"
+  annual_revenue: 1_000_000_000
+  number_of_employees: 100_000
+  industry: retail
+  website: parent.co.uk
+  incorporation_date: 1952-02-01
+  account_source: other
+  last_activity_time: 2025-04-01 11:52:17
+  created_by: admin
+  last_updated_by: admin
+
+
+child_inc:
+  name: Child Company
+  parent: parent_ltd
+  owner: regular
+  billing_address: fifth_ave
+  shipping_address: fifth_ave
+  phone_number: american
+  description: "Child Inc. is the American subsidiary of British retailer Parent Company"
+  annual_revenue: 200_000_000
+  number_of_employees: 15_000
+  industry: retail
+  website: child.com
+  incorporation_date: 1978-03-01
+  account_source: web
+  last_activity_time: 2025-04-03 14:23:07
+  created_by: admin
+  last_updated_by: regular

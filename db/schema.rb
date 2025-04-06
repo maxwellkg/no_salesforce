@@ -22,8 +22,9 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_06_170558) do
   end
 
   create_table "accounts", force: :cascade do |t|
-    t.bigint "parent_id"
     t.bigint "owner_id", null: false
+    t.string "name", null: false
+    t.bigint "parent_id"
     t.bigint "billing_address_id"
     t.bigint "shipping_address_id"
     t.bigint "phone_number_id"

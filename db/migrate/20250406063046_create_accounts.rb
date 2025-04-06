@@ -1,8 +1,9 @@
 class CreateAccounts < ActiveRecord::Migration[8.0]
   def change
     create_table :accounts do |t|
-      t.references :parent, foreign_key: { to_table: :accounts }
       t.references :owner, null: false, foreign_key: { to_table: :users }
+      t.string :name, null: false
+      t.references :parent, foreign_key: { to_table: :accounts }
       t.references :billing_address, foreign_key: { to_table: :addresses }
       t.references :shipping_address, foreign_key: { to_table: :addresses }
       t.references :phone_number, foreign_key: true

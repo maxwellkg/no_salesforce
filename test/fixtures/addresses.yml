@@ -5,3 +5,15 @@
 # below each fixture, per the syntax in the comments below
 #
 
+strand:
+  street: 111 Strand
+  city: London
+  country: united_kingdom
+  postal_code: WC2R 0AP
+
+fifth_ave:
+  street: 555 5th Avenue
+  city: New York
+  state_region: new_york
+  country: united_states
+  postal_code: 10017

@@ -8,6 +8,8 @@ class Address < ApplicationRecord
 
   validates :city, presence: { message: "must be present when street is given" }, if: -> (address) { address.street.present? }
 
+  has_one :account, touch: true
+
   private
 
     def state_region_must_belong_to_address_country

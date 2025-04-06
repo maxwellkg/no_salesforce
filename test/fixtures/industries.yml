@@ -8,3 +8,7 @@
 agriculture:
   code: "11"
   name: "Agriculture, Forestry, Fishing and Hunting"
+
+retail:
+  code: "44-45"
+  name: "Retail Trade"
