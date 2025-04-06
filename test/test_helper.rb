@@ -20,5 +20,9 @@ module ActiveSupport
       cookies.signed[:session_id] = {value: session.id, httponly: true, same_site: :lax}
     end
 
+    def skip_nyi
+      skip("Not yet implemented!")
+    end
+
   end
 end

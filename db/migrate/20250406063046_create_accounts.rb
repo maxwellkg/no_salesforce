@@ -12,7 +12,7 @@ class CreateAccounts < ActiveRecord::Migration[8.0]
       t.references :industry, foreign_key: true
       t.string :website
       t.date :incorporation_date
-      t.references :account_source, foreign_key: true
+      t.references :account_source, foreign_key: { to_table: :account_lead_source }
       t.datetime :last_activity_time
       t.references :created_by, foreign_key: { to_table: :users }
       t.references :last_updated_by, foreign_key: { to_table: :users }

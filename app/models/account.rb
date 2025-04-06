@@ -8,7 +8,7 @@ class Account < ApplicationRecord
   include UserTracked
 
   belongs_to :industry, optional: true
-  belongs_to :account_source, optional: true
+  belongs_to :account_source, class_name: "AccountLeadSource", optional: true
 
   validates_associated :phone_number, :billing_address, :shipping_address
 end
