@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_04_07_014957) do
+ActiveRecord::Schema[8.0].define(version: 2025_04_07_030732) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -49,6 +49,80 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_07_014957) do
     t.index ["parent_id"], name: "index_accounts_on_parent_id"
     t.index ["phone_number_id"], name: "index_accounts_on_phone_number_id"
     t.index ["shipping_address_id"], name: "index_accounts_on_shipping_address_id"
+  end
+
+  create_table "action_text_rich_texts", force: :cascade do |t|
+    t.string "name", null: false
+    t.text "body"
+    t.string "record_type", null: false
+    t.bigint "record_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["record_type", "record_id", "name"], name: "index_action_text_rich_texts_uniqueness", unique: true
+  end
+
+  create_table "active_storage_attachments", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "record_type", null: false
+    t.bigint "record_id", null: false
+    t.bigint "blob_id", null: false
+    t.datetime "created_at", null: false
+    t.index ["blob_id"], name: "index_active_storage_attachments_on_blob_id"
+    t.index ["record_type", "record_id", "name", "blob_id"], name: "index_active_storage_attachments_uniqueness", unique: true
+  end
+
+  create_table "active_storage_blobs", force: :cascade do |t|
+    t.string "key", null: false
+    t.string "filename", null: false
+    t.string "content_type"
+    t.text "metadata"
+    t.string "service_name", null: false
+    t.bigint "byte_size", null: false
+    t.string "checksum"
+    t.datetime "created_at", null: false
+    t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
+  end
+
+  create_table "active_storage_variant_records", force: :cascade do |t|
+    t.bigint "blob_id", null: false
+    t.string "variation_digest", null: false
+    t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
+  end
+
+  create_table "activities", force: :cascade do |t|
+    t.bigint "account_id", null: false
+    t.datetime "occurring_at", null: false
+    t.bigint "type_id", null: false
+    t.text "title", null: false
+    t.string "logged_to_type", null: false
+    t.bigint "logged_to_id", null: false
+    t.bigint "created_by_id"
+    t.bigint "last_updated_by_id"
+    t.bigint "assigned_to_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["account_id"], name: "index_activities_on_account_id"
+    t.index ["assigned_to_id"], name: "index_activities_on_assigned_to_id"
+    t.index ["created_by_id"], name: "index_activities_on_created_by_id"
+    t.index ["last_updated_by_id"], name: "index_activities_on_last_updated_by_id"
+    t.index ["logged_to_type", "logged_to_id"], name: "index_activities_on_logged_to"
+    t.index ["type_id"], name: "index_activities_on_type_id"
+  end
+
+  create_table "activities_contacts", force: :cascade do |t|
+    t.bigint "activity_id", null: false
+    t.bigint "contact_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["activity_id"], name: "index_activities_contacts_on_activity_id"
+    t.index ["contact_id"], name: "index_activities_contacts_on_contact_id"
+  end
+
+  create_table "activity_types", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_activity_types_on_name", unique: true
   end
 
   create_table "addresses", force: :cascade do |t|
@@ -177,6 +251,15 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_07_014957) do
   add_foreign_key "accounts", "users", column: "created_by_id"
   add_foreign_key "accounts", "users", column: "last_updated_by_id"
   add_foreign_key "accounts", "users", column: "owner_id"
+  add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "activities", "accounts"
+  add_foreign_key "activities", "activity_types", column: "type_id"
+  add_foreign_key "activities", "users", column: "assigned_to_id"
+  add_foreign_key "activities", "users", column: "created_by_id"
+  add_foreign_key "activities", "users", column: "last_updated_by_id"
+  add_foreign_key "activities_contacts", "activities"
+  add_foreign_key "activities_contacts", "contacts"
   add_foreign_key "addresses", "countries"
   add_foreign_key "addresses", "state_regions"
   add_foreign_key "contacts", "account_lead_sources", column: "lead_source_id"

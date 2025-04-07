@@ -4,6 +4,7 @@ class Contact < ApplicationRecord
   belongs_to :lead_source, class_name: "AccountLeadSource", optional: true
   belongs_to :address, optional: true
   belongs_to :owner, class_name: "User"
+  has_and_belongs_to_many :activities, inverse_of: :contacts
   
   # include created_by and last_updated_by associations and related callbacks
   include UserTracked

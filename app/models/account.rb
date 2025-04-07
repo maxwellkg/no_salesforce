@@ -8,8 +8,8 @@ class Account < ApplicationRecord
   # include created_by and last_updated_by associations and related callbacks
   include UserTracked
 
-  belongs_to :industry, optional: true
-  belongs_to :account_source, class_name: "AccountLeadSource", optional: true
+  belongs_to :industry, optional: true, inverse_of: :accounts
+  belongs_to :account_source, class_name: "AccountLeadSource", optional: true, inverse_of: :accounts
 
   validates :name, presence: true
 
