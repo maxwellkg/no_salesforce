@@ -7,3 +7,6 @@
 
 web:
   name: Web
+
+other:
+  name: Other

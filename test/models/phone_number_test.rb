@@ -2,12 +2,25 @@ require "test_helper"
 
 class PhoneNumberTest < ActiveSupport::TestCase
 
+  test "is valid when phonelib says the number is valid" do
+    assert phone_numbers(:british).valid?
+  end
+
+
   test "is invalid without a number" do
     pn = PhoneNumber.new
 
     pn.valid?
 
     assert pn.errors.of_kind? :number, :blank
+  end
+
+  test "is invalid when phonelib says the number is invalid" do
+    pn = PhoneNumber.new(number: "123456789", country: locations_countries(:united_states))
+
+    pn.valid?
+
+    assert pn.errors.of_kind? :number, :invalid
   end
 
   test "it sets the phone" do

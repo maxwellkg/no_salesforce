@@ -5,3 +5,10 @@
 # below each fixture, per the syntax in the comments below
 #
 
+british:
+  number: 02087599036
+  country: united_kingdom
+
+american:
+  number: 408-647-4636
+  country: united_states
