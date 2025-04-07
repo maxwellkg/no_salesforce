@@ -17,3 +17,11 @@ regular:
   created_by: admin
   last_updated_by: admin
 
+third:
+  first_name: Third
+  last_name: User
+  email_address: third@example.com
+  password_digest: <%= password_digest %>
+  job_title: Head of Sales
+  created_by: admin
+  last_updated_by: admin

@@ -5,7 +5,7 @@ class Account < ApplicationRecord
   belongs_to :billing_address, class_name: "Address", optional: true
   belongs_to :shipping_address, class_name: "Address", optional: true
 
-  # adds created_by and last_updated_by associations
+  # include created_by and last_updated_by associations and related callbacks
   include UserTracked
 
   belongs_to :industry, optional: true

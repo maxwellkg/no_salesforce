@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_04_06_170558) do
+ActiveRecord::Schema[8.0].define(version: 2025_04_07_014957) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -61,6 +61,30 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_06_170558) do
     t.datetime "updated_at", null: false
     t.index ["country_id"], name: "index_addresses_on_country_id"
     t.index ["state_region_id"], name: "index_addresses_on_state_region_id"
+  end
+
+  create_table "contacts", force: :cascade do |t|
+    t.bigint "account_id", null: false
+    t.string "email_address", null: false
+    t.string "first_name", null: false
+    t.string "last_name", null: false
+    t.bigint "phone_number_id"
+    t.datetime "last_activity_time"
+    t.bigint "lead_source_id"
+    t.bigint "address_id"
+    t.bigint "owner_id"
+    t.string "job_title"
+    t.bigint "created_by_id"
+    t.bigint "last_updated_by_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["account_id"], name: "index_contacts_on_account_id"
+    t.index ["address_id"], name: "index_contacts_on_address_id"
+    t.index ["created_by_id"], name: "index_contacts_on_created_by_id"
+    t.index ["last_updated_by_id"], name: "index_contacts_on_last_updated_by_id"
+    t.index ["lead_source_id"], name: "index_contacts_on_lead_source_id"
+    t.index ["owner_id"], name: "index_contacts_on_owner_id"
+    t.index ["phone_number_id"], name: "index_contacts_on_phone_number_id"
   end
 
   create_table "countries", force: :cascade do |t|
@@ -155,6 +179,12 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_06_170558) do
   add_foreign_key "accounts", "users", column: "owner_id"
   add_foreign_key "addresses", "countries"
   add_foreign_key "addresses", "state_regions"
+  add_foreign_key "contacts", "account_lead_sources", column: "lead_source_id"
+  add_foreign_key "contacts", "accounts"
+  add_foreign_key "contacts", "addresses"
+  add_foreign_key "contacts", "users", column: "created_by_id"
+  add_foreign_key "contacts", "users", column: "last_updated_by_id"
+  add_foreign_key "contacts", "users", column: "owner_id"
   add_foreign_key "phone_numbers", "countries"
   add_foreign_key "sessions", "users"
   add_foreign_key "state_regions", "countries"

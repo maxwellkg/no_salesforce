@@ -126,7 +126,7 @@ class AccountTest < ActiveSupport::TestCase
   end
 
   test "it does not override last_updated_by if already provided on update" do
-    Current.stub :user, users(:admin) do
+    Current.stub :user, users(:third) do
       acct = accounts(:parent_ltd)
       
       assert_changes -> { acct.last_updated_by } do
