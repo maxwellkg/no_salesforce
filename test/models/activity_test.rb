@@ -150,6 +150,19 @@ class ActivityTest < ActiveSupport::TestCase
     skip_nyi
   end
 
+  test "it is invalid without a title" do
+    skip_nyi
+  end
+
+  test "it is invalid if logged to a class other than Account/Contact/Opportunity" do
+    activity = activities(:completed_call)
+    activity.logged_to = users(:regular)
+
+    activity.valid?
+
+    assert activity.errors.of_kind? :logged_to, :invalid
+  end
+
   test "past due scope includes incomplete with occurring_at in past" do
     skip_nyi
   end

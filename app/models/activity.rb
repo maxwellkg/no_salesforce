@@ -18,6 +18,7 @@ class Activity < ApplicationRecord
   validates :occurring_at, presence: true
   validates :title, presence: true
 
+  validate :logged_to_must_be_of_correct_type
   validate :logged_to_belongs_to_the_same_account
   validate :cannot_be_complete_if_occuring_in_future
 
@@ -53,6 +54,16 @@ class Activity < ApplicationRecord
   end
 
   private
+
+    # can be logged to an Account, Contact, or Opportunity
+
+    VALID_LOGGED_TO_TYPES = %w[ Account Contact Opportunity ].freeze
+
+    def logged_to_must_be_of_correct_type
+      unless VALID_LOGGED_TO_TYPES.include?(logged_to_type)
+        errors.add(:logged_to, :invalid, message: "is not of a valid type")
+      end
+    end
 
     def logged_directly_to_account?
       logged_to == account
