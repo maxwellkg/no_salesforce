@@ -53,7 +53,14 @@ class UserTest < ActiveSupport::TestCase
     user.valid?
 
     assert user.errors.of_kind? :email_address, :taken
-  end  
+  end
+
+  test "it normalizes the email" do
+    u = users(:regular)
+    u.update(email_address: "NEW@email.com")
+
+    assert_equal u.email_address, "new@email.com"
+  end
 
   test "is invalid without a password" do
     user = users(:regular)
@@ -86,4 +93,5 @@ class UserTest < ActiveSupport::TestCase
   test "email search returns no results when none matching" do
     assert_equal User.search_email_address("foobarbaz.com").count, 0
   end
+
 end
