@@ -154,6 +154,10 @@ class ActivityTest < ActiveSupport::TestCase
     skip_nyi
   end
 
+  test "it is invalid without a least one contact" do
+    skip_nyi
+  end
+
   test "it is invalid if logged to a class other than Account/Contact/Opportunity" do
     activity = activities(:completed_call)
     activity.logged_to = users(:regular)
