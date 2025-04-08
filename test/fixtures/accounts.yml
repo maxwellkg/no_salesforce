@@ -20,7 +20,7 @@ parent_ltd:
   website: parent.co.uk
   incorporation_date: 1952-02-01
   account_source: other
-  last_activity_time: 2025-04-01 11:52:17
+  last_activity_at: 2025-04-01 11:52:17
   created_by: admin
   last_updated_by: admin
 
@@ -39,6 +39,6 @@ child_inc:
   website: child.com
   incorporation_date: 1978-03-01
   account_source: web
-  last_activity_time: 2025-04-03 14:23:07
+  last_activity_at: 2025-04-03 14:23:07
   created_by: admin
   last_updated_by: regular

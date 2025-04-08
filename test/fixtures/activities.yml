@@ -4,3 +4,25 @@
 # model remove the "{}" from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
+
+completed_call:
+  account: child_inc
+  occurring_at: <%= DateTime.now - 5.days %>
+  type: call
+  title: Call to Discuss Pricing
+  complete: true
+  logged_to: child_inc_ceo (Contact)
+  created_by: regular
+  last_updated_by: regular
+  assigned_to: regular
+
+completed_call_account:
+  account: child_inc
+  occurring_at: <%= DateTime.now - 4.days %>
+  type: call
+  title: Follow-up call
+  complete: true
+  logged_to: child_inc (Account)
+  created_by: regular
+  last_updated_by: regular
+  assigned_to: regular  

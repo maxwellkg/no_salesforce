@@ -5,6 +5,7 @@ class CreateActivities < ActiveRecord::Migration[8.0]
       t.datetime :occurring_at, null: false
       t.references :type, null: false, foreign_key: { to_table: :activity_types }
       t.text :title, null: false
+      t.boolean :complete, null: false, default: false
 
       t.references :logged_to, null: false, polymorphic: true
 

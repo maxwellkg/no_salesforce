@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_04_07_030732) do
+ActiveRecord::Schema[8.0].define(version: 2025_04_07_221035) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -35,7 +35,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_07_030732) do
     t.string "website"
     t.date "incorporation_date"
     t.bigint "account_source_id"
-    t.datetime "last_activity_time"
+    t.datetime "last_activity_at"
     t.bigint "created_by_id"
     t.bigint "last_updated_by_id"
     t.datetime "created_at", null: false
@@ -94,6 +94,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_07_030732) do
     t.datetime "occurring_at", null: false
     t.bigint "type_id", null: false
     t.text "title", null: false
+    t.boolean "complete", default: false, null: false
     t.string "logged_to_type", null: false
     t.bigint "logged_to_id", null: false
     t.bigint "created_by_id"
@@ -114,6 +115,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_07_030732) do
     t.bigint "contact_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["activity_id", "contact_id"], name: "index_activities_contacts_on_activity_id_and_contact_id", unique: true
     t.index ["activity_id"], name: "index_activities_contacts_on_activity_id"
     t.index ["contact_id"], name: "index_activities_contacts_on_contact_id"
   end
@@ -143,7 +145,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_07_030732) do
     t.string "first_name", null: false
     t.string "last_name", null: false
     t.bigint "phone_number_id"
-    t.datetime "last_activity_time"
+    t.datetime "last_activity_at"
     t.bigint "lead_source_id"
     t.bigint "address_id"
     t.bigint "owner_id"

@@ -6,19 +6,51 @@ class Activity < ApplicationRecord
   # can be logged to an Account, Contact, or Opportunity
   belongs_to :logged_to, polymorphic: true
 
-  has_and_belongs_to_many :contacts, inverse_of: :activities
+  has_many :activities_contacts
+  accepts_nested_attributes_for :activities_contacts
+  has_many :contacts, through: :activities_contacts
 
   # include created_by and last_updated_by associations and related callbacks
   include UserTracked
 
-  has_rich_text :notes
+  has_rich_text :notes, store_if_blank: false
 
   validates :occurring_at, presence: true
   validates :title, presence: true
 
   validate :logged_to_belongs_to_the_same_account
+  validate :cannot_be_complete_if_occuring_in_future
 
+  before_validation :attach_account_from_logged_to, if: -> (activity) { activity.account.nil? && activity.changed? }
+  before_save :ensure_logged_to_contact_tagged, if: :logged_to_a_contact?
   after_save :update_last_activity_ats
+
+  scope :complete, -> { where(complete: true ) }
+  scope :open, -> { where(complete: false) }
+
+  # activities are considered past due when they are still open after their scheduled
+  # occurring_at time
+  scope :past_due, -> { where(complete: false, occuring_at: ..DateTime.now)}
+
+  def incomplete?
+    !complete?
+  end
+
+  alias_method :open?, :incomplete?
+
+  def occuring_in_future?
+    occurring_at > DateTime.now
+  end
+
+  def occurring_in_past?
+    occurring_at <= DateTime.now
+  end
+
+  # activities are considered past due when they are still open after their scheduled
+  # occurring_at time
+  def past_due?
+    occuring_in_past? && incomplete?
+  end
 
   private
 
@@ -26,8 +58,32 @@ class Activity < ApplicationRecord
       logged_to == account
     end
 
+    def logged_to_an_account?
+      logged_to_type == "Account"
+    end
+
+    def logged_to_a_contact?
+      logged_to_type == "Contact"
+    end
+
+    # if the account has not been directly assigned, assign it to the
+    # account attached to the logged_to
+    
+    def attach_account_from_logged_to
+      self.account = logged_to_an_account? ? logged_to : logged_to.account
+    end
+
+    # if an activity is logged to a contact, that contact should always be in the list of contacts
+    # attached to the activity
+
+    def ensure_logged_to_contact_tagged
+      return if !logged_to.instance_of?(Contact)
+
+      contacts.push(logged_to) if !contacts.include?(logged_to)
+    end
+
     # mark the record as invalid if the account related to the logged_to resource
-    # is not the same as the 
+    # is not the same as the account directly on the activity
 
     def logged_to_belongs_to_the_same_account
       lt_account = logged_to.instance_of?(Account) ? logged_to : logged_to.account
@@ -46,7 +102,7 @@ class Activity < ApplicationRecord
 
     def update_resource_last_activity_at(resource)
       if occurring_at > resource.last_activity_at
-        resource.update!(last_activity_at: last_activity_at)
+        resource.update!(last_activity_at: occurring_at)
       end
     end
 
@@ -70,6 +126,16 @@ class Activity < ApplicationRecord
     def update_last_activity_ats
       update_account_last_activity_at
       update_logged_to_last_activity_at unless logged_directly_to_account?
+    end
+
+    # don't allow the activity to be marked complete if occurring_at is in the future
+    # (if the activity is indeed complete, occurring_at should be updated to reflect the
+    # actual completion time before marking as complete)
+
+    def cannot_be_complete_if_occuring_in_future
+      if complete? && occuring_in_future?
+        errors.add(:base, :invalid, message: "cannot be marked complete if occuring_at is in the future")
+      end
     end
 
 end
