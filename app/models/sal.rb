@@ -1,3 +1,5 @@
+# Search & Analytics Library (SAL)
+
 module SAL
 
 	def self.all_configs

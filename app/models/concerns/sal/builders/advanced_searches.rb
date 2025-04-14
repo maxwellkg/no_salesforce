@@ -36,10 +36,6 @@ module SAL::Builders::AdvancedSearches
                 end
 
           tbl[dim.column_name].send(params[:order].second).nulls_last
-
-          #{ params[:order].first.to_sym => params[:order].second.to_sym }
-        else
-          nil
         end
       end      
 

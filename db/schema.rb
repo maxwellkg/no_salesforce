@@ -22,9 +22,8 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_07_221035) do
   end
 
   create_table "accounts", force: :cascade do |t|
-    t.bigint "owner_id", null: false
-    t.string "name", null: false
     t.bigint "parent_id"
+    t.bigint "owner_id", null: false
     t.bigint "billing_address_id"
     t.bigint "shipping_address_id"
     t.bigint "phone_number_id"
@@ -115,7 +114,6 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_07_221035) do
     t.bigint "contact_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["activity_id", "contact_id"], name: "index_activities_contacts_on_activity_id_and_contact_id", unique: true
     t.index ["activity_id"], name: "index_activities_contacts_on_activity_id"
     t.index ["contact_id"], name: "index_activities_contacts_on_contact_id"
   end

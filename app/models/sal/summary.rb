@@ -30,12 +30,10 @@ class SAL::Summary
     @order_by = order_by
     @row_limit = row_limit
     @offset = offset
-
-    # TODO: MKG 20/02/24 need to validate the options here
     @show_values_as = show_values_as
   end
 
-  def execute!(get_totals: true)
+  def execute!
     @_results = SAL::SummaryResult.new(self, exec_query(final_query))
     @executed = true
   end

@@ -2,6 +2,7 @@ ENV["RAILS_ENV"] ||= "test"
 require_relative "../config/environment"
 require "rails/test_help"
 
+# use this sparingly!
 require 'minitest/mock'
 
 module ActiveSupport
@@ -14,9 +15,14 @@ module ActiveSupport
 
     # Add more helper methods to be used by all tests here...
 
-    def login_as(user)
+    def set_current_user(user)
       session = user.sessions.create!
       Current.session = session
+    end
+
+    def login_as(user)
+      session = set_current_user(user)
+
       request = ActionDispatch::Request.new(Rails.application.env_config)
       cookies = request.cookie_jar
       cookies.signed[:session_id] = {value: session.id, httponly: true, same_site: :lax}

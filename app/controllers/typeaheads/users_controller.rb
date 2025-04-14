@@ -1,4 +1,5 @@
-class Typeaheads::UsersController < TypeaheadsController
+class Typeaheads::UsersController < ApplicationController
+  include Typeaheadable
 
   private
 

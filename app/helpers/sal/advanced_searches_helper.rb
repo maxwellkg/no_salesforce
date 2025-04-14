@@ -82,39 +82,6 @@ module SAL::AdvancedSearchesHelper
     image_tag "arrow-#{arrow_dir}-solid.svg", size: 16, class: css_class
   end
 
-  def target_list_advanced_search_params_hidden_field_hash
-    @advanced_search_params.dup.transform_keys do |k|
-      "advanced_search_params[#{k}]"
-    end
-  end
-
-  def target_list_klass_hidden_field
-    hidden_field_tag :advanced_search_type, @builder_klass.to_s.underscore
-  end
-
-  def create_target_list_button
-    modal_button(
-      target_id: 'new-target-list',
-      text: 'Create Target List',
-      path: :new_target_list_path,
-      path_params: {
-        advanced_search_type: @builder.class.to_s.underscore,
-        advanced_search_params: @builder.params
-      },
-      class: button_class('rose')
-    )
-  end
-
-  def target_list_type_description(type)
-    if type == 'static'
-      "Static (save the companies in this list)"
-    elsif type == 'dynamic'
-      "Dynamic (save the criteria from this search and update matching companies over time)"
-    else
-      raise "Unrecognized type: #{type}. Valid options are static and dynamic"
-    end
-  end
-
   def attribute_transformed_for_display(attribute, org)
     transf = @builder.config.displayable_settings.dig(attribute, :result_options, :display_transformation)
 

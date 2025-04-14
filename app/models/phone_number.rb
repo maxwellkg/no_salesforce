@@ -2,6 +2,8 @@ class PhoneNumber < ApplicationRecord
   belongs_to :country, class_name: "Locations::Country", optional: true
 
   validates :number, presence: true
+
+  # special validation provided by Phonelib
   validates :number, phone: { allow_blank: true, country_specifier: -> (pn) { pn.country&.alpha_2 } }
 
   def phone

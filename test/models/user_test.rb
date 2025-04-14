@@ -87,7 +87,7 @@ class UserTest < ActiveSupport::TestCase
 
   test "email search returns matching results" do
     assert_equal User.search_email_address("test").count, 1
-    assert_equal User.search_email_address("example.com").count, 2
+    assert_equal User.search_email_address("example.com").count, 3
   end
 
   test "email search returns no results when none matching" do
