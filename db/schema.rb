@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_04_07_221035) do
+ActiveRecord::Schema[8.0].define(version: 2025_04_07_030732) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -22,8 +22,9 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_07_221035) do
   end
 
   create_table "accounts", force: :cascade do |t|
-    t.bigint "parent_id"
     t.bigint "owner_id", null: false
+    t.string "name", null: false
+    t.bigint "parent_id"
     t.bigint "billing_address_id"
     t.bigint "shipping_address_id"
     t.bigint "phone_number_id"
@@ -88,43 +89,6 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_07_221035) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
-  create_table "activities", force: :cascade do |t|
-    t.bigint "account_id", null: false
-    t.datetime "occurring_at", null: false
-    t.bigint "type_id", null: false
-    t.text "title", null: false
-    t.boolean "complete", default: false, null: false
-    t.string "logged_to_type", null: false
-    t.bigint "logged_to_id", null: false
-    t.bigint "created_by_id"
-    t.bigint "last_updated_by_id"
-    t.bigint "assigned_to_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["account_id"], name: "index_activities_on_account_id"
-    t.index ["assigned_to_id"], name: "index_activities_on_assigned_to_id"
-    t.index ["created_by_id"], name: "index_activities_on_created_by_id"
-    t.index ["last_updated_by_id"], name: "index_activities_on_last_updated_by_id"
-    t.index ["logged_to_type", "logged_to_id"], name: "index_activities_on_logged_to"
-    t.index ["type_id"], name: "index_activities_on_type_id"
-  end
-
-  create_table "activities_contacts", force: :cascade do |t|
-    t.bigint "activity_id", null: false
-    t.bigint "contact_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["activity_id"], name: "index_activities_contacts_on_activity_id"
-    t.index ["contact_id"], name: "index_activities_contacts_on_contact_id"
-  end
-
-  create_table "activity_types", force: :cascade do |t|
-    t.string "name", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["name"], name: "index_activity_types_on_name", unique: true
-  end
-
   create_table "addresses", force: :cascade do |t|
     t.text "street"
     t.text "city"
@@ -135,30 +99,6 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_07_221035) do
     t.datetime "updated_at", null: false
     t.index ["country_id"], name: "index_addresses_on_country_id"
     t.index ["state_region_id"], name: "index_addresses_on_state_region_id"
-  end
-
-  create_table "contacts", force: :cascade do |t|
-    t.bigint "account_id", null: false
-    t.string "email_address", null: false
-    t.string "first_name", null: false
-    t.string "last_name", null: false
-    t.bigint "phone_number_id"
-    t.datetime "last_activity_at"
-    t.bigint "lead_source_id"
-    t.bigint "address_id"
-    t.bigint "owner_id"
-    t.string "job_title"
-    t.bigint "created_by_id"
-    t.bigint "last_updated_by_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["account_id"], name: "index_contacts_on_account_id"
-    t.index ["address_id"], name: "index_contacts_on_address_id"
-    t.index ["created_by_id"], name: "index_contacts_on_created_by_id"
-    t.index ["last_updated_by_id"], name: "index_contacts_on_last_updated_by_id"
-    t.index ["lead_source_id"], name: "index_contacts_on_lead_source_id"
-    t.index ["owner_id"], name: "index_contacts_on_owner_id"
-    t.index ["phone_number_id"], name: "index_contacts_on_phone_number_id"
   end
 
   create_table "countries", force: :cascade do |t|
@@ -190,12 +130,73 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_07_221035) do
     t.index ["code"], name: "index_industries_on_code", unique: true
   end
 
+  create_table "people", force: :cascade do |t|
+    t.bigint "account_id", null: false
+    t.string "email_address", null: false
+    t.string "first_name", null: false
+    t.string "last_name", null: false
+    t.bigint "phone_number_id"
+    t.datetime "last_activity_at"
+    t.bigint "lead_source_id"
+    t.bigint "address_id"
+    t.bigint "owner_id"
+    t.string "job_title"
+    t.bigint "created_by_id"
+    t.bigint "last_updated_by_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["account_id"], name: "index_people_on_account_id"
+    t.index ["address_id"], name: "index_people_on_address_id"
+    t.index ["created_by_id"], name: "index_people_on_created_by_id"
+    t.index ["last_updated_by_id"], name: "index_people_on_last_updated_by_id"
+    t.index ["lead_source_id"], name: "index_people_on_lead_source_id"
+    t.index ["owner_id"], name: "index_people_on_owner_id"
+    t.index ["phone_number_id"], name: "index_people_on_phone_number_id"
+  end
+
+  create_table "people_reminders", force: :cascade do |t|
+    t.bigint "reminder_id", null: false
+    t.bigint "person_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["person_id"], name: "index_people_reminders_on_person_id"
+    t.index ["reminder_id"], name: "index_people_reminders_on_reminder_id"
+  end
+
   create_table "phone_numbers", force: :cascade do |t|
     t.bigint "country_id"
     t.string "number", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["country_id"], name: "index_phone_numbers_on_country_id"
+  end
+
+  create_table "reminder_types", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_reminder_types_on_name", unique: true
+  end
+
+  create_table "reminders", force: :cascade do |t|
+    t.bigint "account_id", null: false
+    t.datetime "occurring_at", null: false
+    t.bigint "type_id", null: false
+    t.text "title", null: false
+    t.boolean "complete", default: false, null: false
+    t.string "logged_to_type", null: false
+    t.bigint "logged_to_id", null: false
+    t.bigint "created_by_id"
+    t.bigint "last_updated_by_id"
+    t.bigint "assigned_to_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["account_id"], name: "index_reminders_on_account_id"
+    t.index ["assigned_to_id"], name: "index_reminders_on_assigned_to_id"
+    t.index ["created_by_id"], name: "index_reminders_on_created_by_id"
+    t.index ["last_updated_by_id"], name: "index_reminders_on_last_updated_by_id"
+    t.index ["logged_to_type", "logged_to_id"], name: "index_reminders_on_logged_to"
+    t.index ["type_id"], name: "index_reminders_on_type_id"
   end
 
   create_table "sessions", force: :cascade do |t|
@@ -232,11 +233,11 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_07_221035) do
     t.string "email_address", null: false
     t.string "password_digest", null: false
     t.string "job_title"
+    t.boolean "admin", default: false, null: false
     t.bigint "created_by_id"
     t.bigint "last_updated_by_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "admin", default: false, null: false
     t.index ["created_by_id"], name: "index_users_on_created_by_id"
     t.index ["email_address"], name: "index_users_on_email_address", unique: true
     t.index ["last_updated_by_id"], name: "index_users_on_last_updated_by_id"
@@ -253,22 +254,22 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_07_221035) do
   add_foreign_key "accounts", "users", column: "owner_id"
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "activities", "accounts"
-  add_foreign_key "activities", "activity_types", column: "type_id"
-  add_foreign_key "activities", "users", column: "assigned_to_id"
-  add_foreign_key "activities", "users", column: "created_by_id"
-  add_foreign_key "activities", "users", column: "last_updated_by_id"
-  add_foreign_key "activities_contacts", "activities"
-  add_foreign_key "activities_contacts", "contacts"
   add_foreign_key "addresses", "countries"
   add_foreign_key "addresses", "state_regions"
-  add_foreign_key "contacts", "account_lead_sources", column: "lead_source_id"
-  add_foreign_key "contacts", "accounts"
-  add_foreign_key "contacts", "addresses"
-  add_foreign_key "contacts", "users", column: "created_by_id"
-  add_foreign_key "contacts", "users", column: "last_updated_by_id"
-  add_foreign_key "contacts", "users", column: "owner_id"
+  add_foreign_key "people", "account_lead_sources", column: "lead_source_id"
+  add_foreign_key "people", "accounts"
+  add_foreign_key "people", "addresses"
+  add_foreign_key "people", "users", column: "created_by_id"
+  add_foreign_key "people", "users", column: "last_updated_by_id"
+  add_foreign_key "people", "users", column: "owner_id"
+  add_foreign_key "people_reminders", "people"
+  add_foreign_key "people_reminders", "reminders"
   add_foreign_key "phone_numbers", "countries"
+  add_foreign_key "reminders", "accounts"
+  add_foreign_key "reminders", "reminder_types", column: "type_id"
+  add_foreign_key "reminders", "users", column: "assigned_to_id"
+  add_foreign_key "reminders", "users", column: "created_by_id"
+  add_foreign_key "reminders", "users", column: "last_updated_by_id"
   add_foreign_key "sessions", "users"
   add_foreign_key "state_regions", "countries"
   add_foreign_key "state_regions", "state_region_types"

@@ -12,3 +12,11 @@ new_york:
   state_region_type: state
   alpha_code: NY
   numeric_code: "18651"
+
+massachusetts:
+  country_short_code: US
+  country: united_states
+  name: Massachusetts
+  state_region_type: state
+  alpha_code: MA
+  numeric_code: "18666"

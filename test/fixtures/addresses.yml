@@ -17,3 +17,11 @@ fifth_ave:
   state_region: new_york
   country: united_states
   postal_code: 10017
+
+
+boston:
+  street: 100 State Street
+  city: Boston
+  state_region: massachusetts
+  country: united_states
+  postal_code: "02109"

@@ -12,3 +12,7 @@ british:
 american:
   number: 408-647-4636
   country: united_states
+
+boston:
+  number: 617-555-1234
+  country: united_states

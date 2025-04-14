@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :activities
+  resources :contacts
+  resources :accounts
   resource :session
   resources :passwords, param: :token
   resources :users

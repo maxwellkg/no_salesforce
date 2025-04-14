@@ -42,3 +42,19 @@ child_inc:
   last_activity_at: 2025-04-03 14:23:07
   created_by: admin
   last_updated_by: regular
+
+other_co:
+  name: Other Company
+  owner: thid
+  billing_address: boston
+  shipping_address: boston
+  phone_number: boston
+  description: "Other Company is a chain of independent coffee shops"
+  annual_revenue: 10_000_000
+  number_of_employees: 50
+  industry: food
+  website: othercocoffee.com
+  incorporation_date: 2016-04-03
+  last_activity_at: 2025-04-11 08:34:23
+  created_by: admin
+  last_updated_by: third

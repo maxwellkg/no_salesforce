@@ -1,4 +1,5 @@
 class SAL::DashboardWidgetsController < ApplicationController
+  allow_unauthenticated_access
 
   def show
     widget = build_widget

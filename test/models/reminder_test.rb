@@ -1,11 +1,11 @@
 require "test_helper"
 
-class ActivityTest < ActiveSupport::TestCase
+class ReminderTest < ActiveSupport::TestCase
 
   test "it is valid with all attributes provided" do
-    activity = activities(:completed_call)
+    reminder = reminders(:completed_call)
 
-    assert activity.valid?
+    assert reminder.valid?
   end
 
   test "it is invalid without an account" do
@@ -19,20 +19,20 @@ class ActivityTest < ActiveSupport::TestCase
     # stub just to force a situation where account is nil and changed? is false
     # and check that it works as expected
 
-    activity = activities(:completed_call)
-    activity.account = nil
+    reminder = reminders(:completed_call)
+    reminder.account = nil
 
-    activity.stub :changed?, false do
-      activity.valid?
+    reminder.stub :changed?, false do
+      reminder.valid?
 
-      assert activity.errors.of_kind? :account, :blank
+      assert reminder.errors.of_kind? :account, :blank
     end
   end
 
   test "it sets the account id when logged to an account" do
-    activity = Activity.new(
+    reminder = Reminder.new(
       occurring_at: DateTime.now - 5.days,
-      type: activity_types(:call),
+      type: reminder_types(:call),
       title: "Another Call to Discuss Pricing",
       complete: true,
       logged_to: accounts(:child_inc),
@@ -41,34 +41,34 @@ class ActivityTest < ActiveSupport::TestCase
       assigned_to: users(:regular)
     )
 
-    assert_changes -> { activity.account }, from: nil, to: accounts(:child_inc) do
-      activity.valid?
+    assert_changes -> { reminder.account }, from: nil, to: accounts(:child_inc) do
+      reminder.valid?
     end
   end
 
   test "it sets the account id when logged to a contact" do
-    activity = Activity.new(
+    reminder = Reminder.new(
       occurring_at: DateTime.now - 5.days,
-      type: activity_types(:call),
+      type: reminder_types(:call),
       title: "Another Call to Discuss Pricing",
       complete: true,
-      logged_to: contacts(:child_inc_ceo),
+      logged_to: people(:child_inc_ceo),
       created_by: users(:regular),
       last_updated_by: users(:regular),
       assigned_to: users(:regular)
     )
 
-    assert_changes -> { activity.account }, from: nil, to: accounts(:child_inc) do
-      activity.valid?
+    assert_changes -> { reminder.account }, from: nil, to: accounts(:child_inc) do
+      reminder.valid?
     end
   end
 
   test "it updates account.last_activity_at when logged to an account" do
     occurring_at = Time.now - 1.minute
 
-    activity = Activity.new(
+    reminder = Reminder.new(
       occurring_at: occurring_at,
-      type: activity_types(:call),
+      type: reminder_types(:call),
       title: "Another Call to Discuss Pricing",
       complete: true,
       logged_to: accounts(:child_inc),
@@ -78,64 +78,75 @@ class ActivityTest < ActiveSupport::TestCase
     )
 
     assert_changes -> { accounts(:child_inc).last_activity_at }, to: occurring_at do
-      activity.save!
+      reminder.save!
     end
   end
 
   test "it updates last_activity_at on contact when logged to a contact" do
     occurring_at = Time.now - 1.minute
 
-    activity = Activity.new(
+    reminder = Reminder.new(
       occurring_at: occurring_at,
-      type: activity_types(:call),
+      type: reminder_types(:call),
       title: "Another Call to Discuss Pricing",
       complete: true,
-      logged_to: contacts(:child_inc_ceo),
+      logged_to: people(:child_inc_ceo),
       created_by: users(:regular),
       last_updated_by: users(:regular),
       assigned_to: users(:regular)
     )
 
-    assert_changes -> { contacts(:child_inc_ceo).last_activity_at }, to: occurring_at do
-      activity.save!
+    assert_changes -> { people(:child_inc_ceo).last_activity_at }, to: occurring_at do
+      reminder.save!
     end
   end
 
   test "it updates last_activity_at on account when logged to a contact" do
     occurring_at = Time.now - 1.minute
 
-    activity = Activity.new(
+    reminder = Reminder.new(
       occurring_at: occurring_at,
-      type: activity_types(:call),
+      type: reminder_types(:call),
       title: "Another Call to Discuss Pricing",
       complete: true,
-      logged_to: contacts(:child_inc_ceo),
+      logged_to: people(:child_inc_ceo),
       created_by: users(:regular),
       last_updated_by: users(:regular),
       assigned_to: users(:regular)
     )
 
-    acct = contacts(:child_inc_ceo).account
+    acct = people(:child_inc_ceo).account
 
     assert_changes -> { acct.last_activity_at }, to: occurring_at do
-      activity.save!
+      reminder.save!
     end
   end
 
   test "it correctly determines if logged directly to an account" do
-    assert activities(:completed_call_account).send(:logged_directly_to_account?)
+    assert reminders(:completed_call_account).send(:logged_directly_to_account?)
   end
 
   test "it correctly determines if not logged directly to account" do
-    assert_not activities(:completed_call).send(:logged_directly_to_account?)
+    assert_not reminders(:completed_call).send(:logged_directly_to_account?)
   end
 
   test "it is invalid if logged_to account doesn't match account" do
-    skip_nyi
+    reminder = reminders(:completed_call)
+
+    reminder.account = accounts(:other_co)
+
+    reminder.valid?
+
+    assert reminder.errors.of_kind? :base, :invalid
   end
 
-  test "it is valid if logged_to account matches account" do
-    skip_nyi
+  test "it is invalid if logged_to is not of an allowed type" do
+    reminder = reminders(:completed_call)
+    reminder.logged_to = addresses(:boston)
+
+    reminder.valid?
+
+    assert reminder.errors.of_kind? :logged_to, :invalid
   end
 
   test "it is invalid without a type" do
@@ -159,12 +170,12 @@ class ActivityTest < ActiveSupport::TestCase
   end
 
   test "it is invalid if logged to a class other than Account/Contact/Opportunity" do
-    activity = activities(:completed_call)
-    activity.logged_to = users(:regular)
+    reminder = reminders(:completed_call)
+    reminder.logged_to = users(:regular)
 
-    activity.valid?
+    reminder.valid?
 
-    assert activity.errors.of_kind? :logged_to, :invalid
+    assert reminder.errors.of_kind? :logged_to, :invalid
   end
 
   test "past due scope includes incomplete with occurring_at in past" do
@@ -227,7 +238,7 @@ class ActivityTest < ActiveSupport::TestCase
     skip_nyi
   end
 
-  test "it adds the logged_to contact to the contacts list if not already included" do
+  test "it adds the logged_to contact to the people list if not already included" do
     skip_nyi
   end
 

@@ -1,6 +1,6 @@
 require "test_helper"
 
-class ActivitiesContactTest < ActiveSupport::TestCase
+class PeopleReminderTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

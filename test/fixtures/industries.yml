@@ -12,3 +12,7 @@ agriculture:
 retail:
   code: "44-45"
   name: "Retail Trade"
+
+food:
+  code: 81
+  name: Accommodation and Food Services

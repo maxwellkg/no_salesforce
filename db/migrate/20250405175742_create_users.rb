@@ -6,6 +6,7 @@ class CreateUsers < ActiveRecord::Migration[8.0]
       t.string :email_address, null: false
       t.string :password_digest, null: false
       t.string :job_title
+      t.boolean :admin, null: false, default: false
 
       t.references :created_by, foreign_key: { to_table: :users }
       t.references :last_updated_by, foreign_key: { to_table: :users }

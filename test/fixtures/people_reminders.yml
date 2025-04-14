@@ -6,5 +6,5 @@
 #
 
 completed_call:
-  activity: completed_call
-  contact: child_inc_ceo
+  reminder: completed_call
+  person: child_inc_ceo

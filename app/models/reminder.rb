@@ -1,14 +1,14 @@
-class Activity < ApplicationRecord
+class Reminder < ApplicationRecord
   belongs_to :account
-  belongs_to :type, class_name: "ActivityType", inverse_of: :activities
+  belongs_to :type, class_name: "ReminderType", inverse_of: :reminders
   belongs_to :assigned_to, class_name: "User"
 
   # can be logged to an Account, Contact, or Opportunity
   belongs_to :logged_to, polymorphic: true
 
-  has_many :activities_contacts
-  accepts_nested_attributes_for :activities_contacts
-  has_many :contacts, through: :activities_contacts
+  has_many :people_reminders
+  accepts_nested_attributes_for :people_reminders
+  has_many :people, through: :people_reminders
 
   # include created_by and last_updated_by associations and related callbacks
   include UserTracked
