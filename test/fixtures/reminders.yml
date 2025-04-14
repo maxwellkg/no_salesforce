@@ -11,7 +11,7 @@ completed_call:
   type: call
   title: Call to Discuss Pricing
   complete: true
-  logged_to: child_inc_ceo (Contact)
+  logged_to: child_inc_ceo (Person)
   created_by: regular
   last_updated_by: regular
   assigned_to: regular

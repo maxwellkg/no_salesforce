@@ -22,7 +22,7 @@ class Reminder < ApplicationRecord
   validate :logged_to_belongs_to_the_same_account
   validate :cannot_be_complete_if_occuring_in_future
 
-  before_validation :attach_account_from_logged_to, if: -> (activity) { activity.account.nil? && activity.changed? }
+  before_validation :attach_account_from_logged_to, if: -> (reminder) { reminder.account.nil? && reminder.changed? }
   before_save :ensure_logged_to_contact_tagged, if: :logged_to_a_contact?
   after_save :update_last_activity_ats
 
@@ -55,12 +55,16 @@ class Reminder < ApplicationRecord
 
   private
 
-    # can be logged to an Account, Contact, or Opportunity
+    # can be logged to an Account, Person, or Deal
 
-    VALID_LOGGED_TO_TYPES = %w[ Account Contact Opportunity ].freeze
+    VALID_LOGGED_TO_TYPES = %w[ Account Person Deal ].freeze
+
+    def logged_to_of_valid_type?
+      VALID_LOGGED_TO_TYPES.include?(logged_to_type)
+    end
 
     def logged_to_must_be_of_valid_type
-      unless VALID_LOGGED_TO_TYPES.include?(logged_to_type)
+      unless logged_to_of_valid_type?
         errors.add(:logged_to, :invalid, message: "is not of a valid type")
       end
     end
@@ -74,7 +78,7 @@ class Reminder < ApplicationRecord
     end
 
     def logged_to_a_contact?
-      logged_to_type == "Contact"
+      logged_to_type == "Person"
     end
 
     # if the account has not been directly assigned, assign it to the
@@ -84,20 +88,24 @@ class Reminder < ApplicationRecord
       self.account = logged_to_an_account? ? logged_to : logged_to.account
     end
 
-    # if an activity is logged to a contact, that contact should always be in the list of contacts
+    # if an activity is logged to a contact, that contact should always be in the list of people
     # attached to the activity
 
     def ensure_logged_to_contact_tagged
-      return if !logged_to.instance_of?(Contact)
+      return if !logged_to_a_contact?
 
-      contacts.push(logged_to) if !contacts.include?(logged_to)
+      people.push(logged_to) if !people.include?(logged_to)
     end
 
     # mark the record as invalid if the account related to the logged_to resource
     # is not the same as the account directly on the activity
+    #
+    # don't bother with this if the logged_to is not of a valid type
 
     def logged_to_belongs_to_the_same_account
-      lt_account = logged_to.instance_of?(Account) ? logged_to : logged_to.account
+      return unless logged_to_of_valid_type?
+
+      lt_account = logged_to_an_account? ? logged_to : logged_to.account
 
       unless lt_account == account
         errors.add(:base, :invalid, message: "accounts don't match")

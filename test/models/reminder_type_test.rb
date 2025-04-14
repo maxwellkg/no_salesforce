@@ -17,7 +17,7 @@ class ReminderTypeTest < ActiveSupport::TestCase
   end
 
   test "is invalid with a non-unique name" do
-    rt = ReminderType.new(name: activity_types(:call).name)
+    rt = ReminderType.new(name: reminder_types(:call).name)
 
     rt.valid?
 

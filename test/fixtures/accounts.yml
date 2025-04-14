@@ -45,7 +45,7 @@ child_inc:
 
 other_co:
   name: Other Company
-  owner: thid
+  owner: third
   billing_address: boston
   shipping_address: boston
   phone_number: boston

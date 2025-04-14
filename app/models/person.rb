@@ -1,5 +1,5 @@
 class Person < ApplicationRecord
-  belongs_to :account
+  belongs_to :account, inverse_of: :people
   belongs_to :phone_number, optional: true
   belongs_to :lead_source, class_name: "AccountLeadSource", optional: true
   belongs_to :address, optional: true

@@ -11,6 +11,8 @@ class Account < ApplicationRecord
   belongs_to :industry, optional: true, inverse_of: :accounts
   belongs_to :account_source, class_name: "AccountLeadSource", optional: true, inverse_of: :accounts
 
+  has_many :people, inverse_of: :account
+
   validates :name, presence: true
 
   validates_associated :phone_number, :billing_address, :shipping_address

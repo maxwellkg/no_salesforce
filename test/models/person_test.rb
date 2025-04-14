@@ -126,7 +126,7 @@ class PersonTest < ActiveSupport::TestCase
 
   test "it sets created_by if not already provided on create" do
     Current.stub :user, users(:admin) do
-      person = Contact.create!(
+      person = Person.create!(
         first_name: "Another",
         last_name: "Test",
         email_address: "another.test@email.com",
@@ -140,7 +140,7 @@ class PersonTest < ActiveSupport::TestCase
 
   test "it does not override created_by if provided on create" do
     Current.stub :user, users(:admin) do
-      person = Contact.create!(
+      person = Person.create!(
         first_name: "Another",
         last_name: "Test",
         email_address: "another.test@email.com",
