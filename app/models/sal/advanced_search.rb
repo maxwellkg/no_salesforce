@@ -78,8 +78,8 @@ class SAL::AdvancedSearch
 
     def joined_and_filtered_query
       klass
+        .left_outer_joins(reflections_to_join)
         .distinct # make sure to only return one row per entity
-        .joins(reflections_to_join)
         .where(conditions)
     end
 

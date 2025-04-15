@@ -10,6 +10,16 @@ class Address < ApplicationRecord
 
   #has_one :account, -> (acct) { where(billing_address: acct.id).or(where(shipping_address_id: acct.id)) }, touch: true
 
+  def display_address
+    [
+      street,
+      city,
+      state_region&.abbreviation,
+      country&.name,
+      postal_code
+    ].compact.join(", ")
+  end
+
   private
 
     def state_region_must_belong_to_address_country

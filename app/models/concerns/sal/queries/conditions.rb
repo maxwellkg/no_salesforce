@@ -16,7 +16,7 @@ module SAL::Queries::Conditions
         else
           # conditions on the base object should be given as:
           # { attribute_name => value }
-          hsh[k] = value_for_query
+          hsh[k] = v
         end
       end
     end

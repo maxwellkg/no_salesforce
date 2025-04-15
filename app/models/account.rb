@@ -1,4 +1,7 @@
 class Account < ApplicationRecord
+  include BasicSearch
+  include SAL::FieldSetter
+
   belongs_to :owner, class_name: "User"
   belongs_to :parent, class_name: self.to_s, optional: true
   belongs_to :phone_number, optional: true
@@ -18,4 +21,6 @@ class Account < ApplicationRecord
   validates :name, presence: true
 
   validates_associated :phone_number, :billing_address, :shipping_address
+
+  basic_search :name
 end

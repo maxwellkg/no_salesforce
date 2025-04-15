@@ -1,10 +1,7 @@
 class AccountsController < ApplicationController
-  before_action :set_account, only: %i[ show edit update destroy ]
+  include SAL::Analyzable
 
-  # GET /accounts or /accounts.json
-  def index
-    @accounts = Account.all
-  end
+  before_action :set_account, only: %i[ show edit update destroy ]
 
   # GET /accounts/1 or /accounts/1.json
   def show
@@ -66,5 +63,9 @@ class AccountsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def account_params
       params.fetch(:account, {})
+    end
+
+    def sal_config_klass
+      SAL::Configs::Accounts
     end
 end

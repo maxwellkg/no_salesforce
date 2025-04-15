@@ -1,10 +1,7 @@
 class PeopleController < ApplicationController
-  before_action :set_person, only: %i[ show edit update destroy ]
+  include SAL::Analyzable
 
-  # GET /contacts or /contacts.json
-  def index
-    @people = Person.all
-  end
+  before_action :set_person, only: %i[ show edit update destroy ]
 
   # GET /contacts/1 or /contacts/1.json
   def show
@@ -66,5 +63,9 @@ class PeopleController < ApplicationController
     # Only allow a list of trusted parameters through.
     def person_params
       params.fetch(:person, {})
+    end
+
+    def sal_config_klass
+      SAL::Configs::People
     end
 end

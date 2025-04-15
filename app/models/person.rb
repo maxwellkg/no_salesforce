@@ -1,4 +1,6 @@
 class Person < ApplicationRecord
+  include SAL::FieldSetter
+
   belongs_to :account, inverse_of: :people
   belongs_to :phone_number, optional: true
   belongs_to :lead_source, class_name: "AccountLeadSource", optional: true
@@ -23,5 +25,10 @@ class Person < ApplicationRecord
   end
 
   alias_method :name, :full_name
+
+  def self.search_name(search_term)
+    where(arel_table[:first_name].matches("%#{search_term}%"))
+      .or(where(arel_table[:last_name].matches("%#{search_term}%")))
+  end
 
 end

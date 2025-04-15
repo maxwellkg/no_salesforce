@@ -11,7 +11,7 @@ class SAL::Config
   delegate :name, to: :class
 
   def title
-    klass.to_s.demodulize
+    klass.to_s.demodulize.pluralize
   end
 
   def settings

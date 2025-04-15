@@ -7,6 +7,10 @@ module SAL::FieldSetter
       SAL::FieldSet.new(self)
     end
 
+    def has_metrics?
+      false
+    end
+
   end
 
 end
