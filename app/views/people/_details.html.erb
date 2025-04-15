@@ -7,31 +7,31 @@
     </div>
     <div class="md:grid md:grid-cols-2 md:gap-4 mt-4">
       <div>
-        <span class="font-bold">First Name:</span>
+        <span class="font-bold">First Name: </span>
         <span><%= @person.first_name %></span>
       </div>
       <div>
-        <span class="font-bold">Last Name:</span>
+        <span class="font-bold">Last Name: </span>
         <span><%= @person.last_name %></span>
       </div>
       <div>
-        <span class="font-bold">Email Address:</span>
+        <span class="font-bold">Email Address: </span>
         <span><%= mail_to @person.email_address %></span>
       </div>
       <div>
-        <span class="font-bold">Job Title:</span>
+        <span class="font-bold">Job Title: </span>
         <span><%= @person.job_title %></span>
       </div>    
       <div>
-        <span class="font-bold">Phone Number:</span>
+        <span class="font-bold">Phone Number: </span>
         <span><%= phone_display(@person.phone_number) %></span>
       </div>
       <div>
-        <span class="font-bold">Lead Source:</span>
+        <span class="font-bold">Lead Source: </span>
         <span><%= @person.lead_source&.name %></span>
       </div>
       <div>
-        <span class="font-bold">Last Activity At:</span>
+        <span class="font-bold">Last Activity At: </span>
         <span><%= @person.last_activity_at %></span>
       </div>
     </div>
@@ -40,19 +40,19 @@
     <h6 class="text-xl">System Information</h6>
     <div class="md:grid md:grid-cols-2 md:gap-4 mt-4">
       <div>
-        <span class="font-bold">Created By:</span>
+        <span class="font-bold">Created By: </span>
         <span><%= link_to_user(@person.created_by) %></span>
       </div>
       <div>
-        <span class="font-bold">Created At:</span>
+        <span class="font-bold">Created At: </span>
         <span><%= @person.created_at %></span>
       </div>    
       <div>
-        <span class="font-bold">Last Updated By:</span>
+        <span class="font-bold">Last Updated By: </span>
         <span><%= link_to_user(@person.last_updated_by) %></span>
       </div>
       <div>
-        <span class="font-bold">Last Updated At:</span>
+        <span class="font-bold">Last Updated At: </span>
         <span><%= @person.updated_at %></span>
       </div>
     </div>

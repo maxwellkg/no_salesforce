@@ -2,7 +2,7 @@
   <%= form_tag request.path, method: :get, data: { turbo_frame: sal_form_target_frame, turbo_action: "advance", controller: sal_form_controller, analytics_form_force_month_value: force_month_value } do %>
 
     <%= sal_form_section do %>
-      <span class="text-2xl font-poppins">Analysis Settings</span>
+      <span class="text-2xl font-bebas-neue">Analysis Settings</span>
       <div class="mt-4 text-center">
         <%= sal_form_submit_tag %>
       </div>
@@ -24,7 +24,7 @@
     <% end %>
 
     <%= sal_form_section id: "sal-filters" do %>         
-      <span class='text-2xl font-poppins'>Filters</span>
+      <span class='text-2xl font-bebas-neue'>Filters</span>
       <div id="sal-filter-options">
         <% @builder.config.searchable_and_filterable_settings.keys.each_with_index do |param_name, i| %>
 
