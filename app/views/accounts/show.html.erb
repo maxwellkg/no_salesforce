@@ -2,14 +2,15 @@
 
 <div class="w-11/12 md:w-5/6 mx-auto w-full py-8 px-3 md:px-0">
   <div>
-    <%= link_to "Edit this account", edit_account_path(@account), class: "w-full sm:w-auto text-center rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium" %>
-    <%= link_to "Back to accounts", accounts_path, class: "w-full sm:w-auto text-center mt-2 sm:mt-0 sm:ml-2 rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium" %>
+    <%= link_to "Edit this account ✏️", edit_account_path(@account), class: "w-full sm:w-auto text-center rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium" %>
+    <%= link_to "See all accounts 👀", accounts_path, class: "w-full sm:w-auto text-center mt-2 sm:mt-0 sm:ml-2 rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium" %>
 
     <% if current_user_is_admin? %>
       <div class="sm:inline-block mt-2 sm:mt-0 sm:ml-2">
-        <%= button_to "Destroy this account", @account, method: :delete, class: "w-full rounded-md px-3.5 py-2.5 text-white bg-red-600 hover:bg-red-500 font-medium cursor-pointer", data: { turbo_confirm: "Are you sure?" } %>
+        <%= button_to "Destroy this account 💣", @account, method: :delete, class: "w-full rounded-md px-3.5 py-2.5 text-white bg-red-600 hover:bg-red-500 font-medium cursor-pointer", data: { turbo_confirm: "Are you sure?" } %>
       </div>
     <% end %>
+    <%= link_to "Create New Reminder 🔔", new_reminder_path(logged_to_sgid: @account.to_sgid_for_polymorphic_select), class: "w-full sm:w-auto text-center mt-2 sm:mt-0 sm:ml-2 rounded-md px-3.5 py-2.5 bg-sky-500 hover:bg-sky-700 text-white inline-block font-medium" %>
   </div>
 
   <div class="mt-4">

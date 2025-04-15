@@ -2,8 +2,10 @@ class Account < ApplicationRecord
   include BasicSearch
   include SAL::FieldSetter
 
+  include PolymorphicSelectable
+
   belongs_to :owner, class_name: "User"
-  belongs_to :parent, class_name: self.to_s, optional: true
+  belongs_to :parent, class_name: "Account", optional: true
   belongs_to :phone_number, optional: true
   belongs_to :billing_address, class_name: "Address", optional: true
   belongs_to :shipping_address, class_name: "Address", optional: true

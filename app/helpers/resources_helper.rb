@@ -28,7 +28,7 @@ module ResourcesHelper
     resource.reminders.complete.ordered
   end
 
-  def render_activity_feed_partial(collection)
+  def render_reminders_partial(collection)
     render partial: "reminders/preview", collection: collection, as: :reminder
   end
 
@@ -37,6 +37,15 @@ module ResourcesHelper
 
     # use the international display provided by Phonelib
     phone_to phone_number.phone.full_international
-  end  
+  end
+
+  def resource_type_emoji(resource)
+    case resource
+    when Account
+      "🏢"
+    when Person
+      "🧑"
+    end
+  end
 
 end
