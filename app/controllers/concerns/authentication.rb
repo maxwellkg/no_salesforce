@@ -5,6 +5,7 @@ module Authentication
     before_action :require_authentication
     helper_method :authenticated?
     helper_method :current_session, :current_user
+    helper_method :current_user_is_admin?
   end
 
   class_methods do
@@ -58,5 +59,9 @@ module Authentication
 
     def current_user
       Current.user
+    end
+
+    def current_user_is_admin?
+      current_user&.admin? || false
     end
 end

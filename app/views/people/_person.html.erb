@@ -1,2 +1,13 @@
-<div id="<%= dom_id contact %>" class="w-full sm:w-auto my-5 space-y-5">
+<div id="<%= dom_id person %>" class="w-full sm:w-auto my-5 space-y-5">
+  <div id="header-outer">
+    <%= render partial: "resources/header", locals: { resource: @person } %>
+  </div>
+  <div class="md:flex md:flex-row">
+    <div class="md:flex md:flex-col md:w-2/3 md:pr-3">
+      <%= render partial: "details" %>
+    </div>
+    <div class="md:flex md:flex-col md:w-1/3 md:pl-3 mt-4 md:mt-0">
+      <%= render partial: "resources/activity_feed", locals: { resource: @person } %>
+    </div>
+  </div>
 </div>

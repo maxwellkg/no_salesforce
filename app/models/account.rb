@@ -13,6 +13,8 @@ class Account < ApplicationRecord
 
   has_many :people, inverse_of: :account
 
+  has_many :reminders
+
   validates :name, presence: true
 
   validates_associated :phone_number, :billing_address, :shipping_address

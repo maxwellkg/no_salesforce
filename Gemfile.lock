@@ -109,12 +109,15 @@ GEM
     erubi (1.13.1)
     et-orbi (1.2.11)
       tzinfo
+    ffi (1.17.0-aarch64-linux-gnu)
     ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0-x86_64-linux-gnu)
     fugit (1.11.1)
       et-orbi (~> 1, >= 1.2.11)
       raabro (~> 1.4)
     globalid (1.2.1)
       activesupport (>= 6.1)
+    htmlentities (4.3.4)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
     image_processing (1.13.0)
@@ -328,6 +331,9 @@ GEM
     thruster (0.1.12-arm64-darwin)
     thruster (0.1.12-x86_64-linux)
     timeout (0.4.3)
+    truncato (0.7.13)
+      htmlentities (~> 4.3.1)
+      nokogiri (>= 1.7.0, <= 2.0)
     turbo-rails (2.0.13)
       actionpack (>= 7.1.0)
       railties (>= 7.1.0)
@@ -380,6 +386,7 @@ DEPENDENCIES
   stimulus-rails
   tailwindcss-rails
   thruster
+  truncato
   turbo-rails
   tzinfo-data
   web-console

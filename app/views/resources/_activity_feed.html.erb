@@ -1,0 +1,35 @@
+<div class='bg-white dark:bg-gray-800 text-gray-800 dark:text-white border border-gray-300 dark:border-gray-900 shadow rounded-md p-4'>
+  <div>
+    <h3 class="text-2xl">Activity Feed</h3>
+    <div class="mt-2">
+      <%= link_to "Create New Reminder", new_reminder_path %>
+    </div>
+  </div>
+
+  <% if resource_has_past_due_reminders?(resource) %>
+    <div class="py-4 border-b border-b-4 border-gray-300">
+      <h5 class="text-xl text-red">Past Due:</h5>
+      <div>
+        <%= render_activity_feed_partial(past_due_reminders_collection(resource)) %>
+      </div>
+    </div>
+  <% end %>
+
+  <% if resource_has_upcoming_reminders?(resource) %>
+    <div class="py-4 border-b border-b-4 border-gray-300">
+      <h5 class="text-xl">Upcoming:</h5>
+      <div>
+        <%= render_activity_feed_partial(upcoming_reminders_collection(resource)) %>
+      </div>
+    </div>
+  <% end %>
+
+  <% if resource_has_completed_reminders?(resource) %>
+    <div class="py-4">
+      <h5 class="text-xl">Completed:</h5>
+      <div>
+        <%= render_activity_feed_partial(completed_reminders_collection(resource)) %>
+      </div>
+    </div>
+  <% end %>
+</div>

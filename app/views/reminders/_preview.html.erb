@@ -1,0 +1,11 @@
+<div class="my-4">
+  <div>
+    <span class="font-bold">Title: </span><span><%= link_to reminder.title, reminder_path(reminder) %></span>
+  </div>
+  <div class="mt-2">
+    <span class="font-bold">Notes: </span><span><%= reminder_notes_preview(reminder) %></span>
+  </div>
+  <div class="mt-2">
+    <span class="font-bold">Due At: </span><span><%= reminder.occurring_at.to_formatted_s %></span>
+  </div>
+</div>

@@ -8,7 +8,7 @@ class Address < ApplicationRecord
 
   validates :city, presence: { message: "must be present when street is given" }, if: -> (address) { address.street.present? }
 
-  has_one :account, touch: true
+  #has_one :account, -> (acct) { where(billing_address: acct.id).or(where(shipping_address_id: acct.id)) }, touch: true
 
   private
 

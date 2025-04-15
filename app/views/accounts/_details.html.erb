@@ -1,0 +1,78 @@
+<div class='bg-white dark:bg-gray-800 text-gray-800 dark:text-white border border-gray-300 dark:border-gray-900 shadow rounded-md p-4'>
+  <h2 class="text-2xl">Details</h2>
+  <div class="py-4 border-b border-gray-300">
+    <div>
+      <span class="font-bold">Description:</span>
+      <span><%= @account.description %></span>
+    </div>
+    <div class="md:grid md:grid-cols-2 md:gap-4 mt-4">
+      <% if @account.parent_id.present? %>
+        <div>
+          <span class="font-bold">Parent</span>
+          <span><%= link_to @account.parent.name, account_path(@account.parent) %></span>
+        </div>
+      <% end %>
+      <div>
+        <span class="font-bold">Annual Revenue</span>
+        <span><%= number_to_currency(@account.annual_revenue) %></span>
+      </div>
+      <div>
+        <span class="font-bold">Number of Employees</span>
+        <span><%= number_with_delimiter(@account.number_of_employees) %></span>
+      </div>
+      <div>
+        <span class="font-bold">Shipping Address:</span>
+        <span><%= address_display(@account.shipping_address) %></span>
+      </div>
+      <div>
+        <span class="font-bold">Billing Address:</span>
+        <span><%= address_display(@account.billing_address) %></span>
+      </div>
+      <div>
+        <span class="font-bold">Phone Number:</span>
+        <span><%= phone_display(@account.phone_number) %></span>
+      </div> 
+      <div>
+        <span class="font-bold">Industry:</span>
+        <span><%= @account.industry.name %></span>
+      </div>
+      <div>
+        <span class="font-bold">Website:</span>
+        <span><%= website_display(@account.website) %></span>
+      </div>
+      <div>
+        <span class="font-bold">Incorporation Date:</span>
+        <span><%= incorporation_date_display(@account.incorporation_date) %></span>
+      </div>
+      <div>
+        <span class="font-bold">Account Source:</span>
+        <span><%= @account.account_source&.name %></span>
+      </div>
+      <div>
+        <span class="font-bold">Last Activity At:</span>
+        <span><%= @account.last_activity_at %></span>
+      </div>
+    </div>
+  </div>
+    <div class="pt-4">
+    <h6 class="text-xl">System Information</h6>
+    <div class="md:grid md:grid-cols-2 md:gap-4 mt-4">
+      <div>
+        <span class="font-bold">Created By:</span>
+        <span><%= link_to_user(@account.created_by) %></span>
+      </div>
+      <div>
+        <span class="font-bold">Created At:</span>
+        <span><%= @account.created_at %></span>
+      </div>    
+      <div>
+        <span class="font-bold">Last Updated By:</span>
+        <span><%= link_to_user(@account.last_updated_by) %></span>
+      </div>
+      <div>
+        <span class="font-bold">Last Updated At:</span>
+        <span><%= @account.updated_at %></span>
+      </div>
+    </div>
+  </div>
+</div>

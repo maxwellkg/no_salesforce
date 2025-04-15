@@ -31,7 +31,12 @@ class Reminder < ApplicationRecord
 
   # activities are considered past due when they are still open after their scheduled
   # occurring_at time
-  scope :past_due, -> { where(complete: false, occuring_at: ..DateTime.now)}
+  scope :past_due, -> { where(complete: false, occurring_at: ..DateTime.now)}
+
+  # upcoming = not yet complete, but not past due (occurring_at still in the future)
+  scope :upcoming, -> { where(complete: false, occurring_at: DateTime.now..) }
+
+  scope :ordered, -> { order(occurring_at: :desc) }
 
   def incomplete?
     !complete?
@@ -39,7 +44,7 @@ class Reminder < ApplicationRecord
 
   alias_method :open?, :incomplete?
 
-  def occuring_in_future?
+  def occurring_in_future?
     occurring_at > DateTime.now
   end
 
@@ -50,7 +55,7 @@ class Reminder < ApplicationRecord
   # activities are considered past due when they are still open after their scheduled
   # occurring_at time
   def past_due?
-    occuring_in_past? && incomplete?
+    occurring_in_past? && incomplete?
   end
 
   private
@@ -120,7 +125,7 @@ class Reminder < ApplicationRecord
     # at yesterday's date
 
     def update_resource_last_activity_at(resource)
-      if occurring_at > resource.last_activity_at
+      if resource.last_activity_at.nil? || (occurring_at > resource.last_activity_at)
         resource.update!(last_activity_at: occurring_at)
       end
     end
@@ -152,7 +157,7 @@ class Reminder < ApplicationRecord
     # actual completion time before marking as complete)
 
     def cannot_be_complete_if_occuring_in_future
-      if complete? && occuring_in_future?
+      if complete? && occurring_in_future?
         errors.add(:base, :invalid, message: "cannot be marked complete if occuring_at is in the future")
       end
     end
