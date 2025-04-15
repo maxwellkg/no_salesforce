@@ -55,23 +55,13 @@ class SAL::AdvancedSearch
     end
 
     def reflections_to_include
-      # TODO 05/04/24 MKG
-      # figure out how to handle this as we won't necessarily want to always
-      # include :metric_set
       refs = [reflections_for_dims(display_attributes)]
-
-      refs << :metric_set if klass.has_metrics?
 
       refs.flatten
     end
 
     def reflections_to_join
-      # TODO 05/04/24 MKG
-      # figure out how to handle this as we won't necessarily want to always
-      # join :metric_set
       refs = [reflections_for_dims([@conditions.keys, display_attributes].flatten)]
-
-      refs << :metric_set if klass.has_metrics?
 
       refs.flatten
     end
