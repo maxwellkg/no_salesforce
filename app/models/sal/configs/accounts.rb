@@ -16,8 +16,45 @@ class SAL::Configs::Accounts < SAL::Config
     :advanced_search
   end
 
+  SEARCHABLE_FIELDS = [
+    { label: "Name", search_method: :search_name }
+  ]
+
+  FILTERABLE_FIELDS = [
+    {
+      label: "Industry",
+      field: :industry_id,
+      options: {
+        collection: Proc.new { Industry.order(:code) },
+        value_method: :id,
+        text_method: :name,
+        allow_multiple: true
+      }
+    },
+    {
+      label: "Account Source",
+      field: :account_source_id,
+      options: {
+        collection: Proc.new { AccountLeadSource.order(:name) },
+        value_method: :id,
+        text_method: :name,
+        allow_multiple: true
+      }
+    },
+    {
+      label: "Assigned To",
+      field: :owner_id,
+      typeahead: true,
+      path: :typeaheads_users_path,
+      options: {
+        value_method: :id,
+        text_method: :name,
+        allow_multiple: true
+      }
+    }
+  ]
+
   SETTINGS = {
-    display_force_includes: [ { shipping_address: [:state_region, :country] }, :phone_number],
     displayable: {
       "name" => {
         display_name: "Name",

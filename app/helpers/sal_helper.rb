@@ -1,5 +1,130 @@
 module SALHelper
 
+  def sal_form_section(id: nil)
+    content_tag :div, id: id, class: "border-b border-gray-300 dark:border-gray-900" do
+      content_tag :div, class: "p-6" do
+        yield
+      end
+    end
+  end
+
+  def sal_form_submit_tag
+    submit_tag(
+      "Submit",
+      class: "text-white text-lg bg-cornflower-blue-300 hover:bg-cornflower-blue-500 focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-lg text-md w-2/3 px-5 py-2.5 text-center"
+    )
+  end
+
+  def sal_results_outer_id
+    'sal-results-outer'
+  end
+
+  def sal_results_tf_tag_id
+    'sal-results'
+  end  
+
+  def sal_form_target_frame
+    sal_results_outer_id
+  end 
+
+  def sal_form_controller
+    "sal-form"
+  end
+
+  def id_for_filter(field, suffix: nil)
+    "#{field.to_s.dasherize}#{'-' + suffix.to_s if suffix.present?}"
+  end
+
+  def label_tag_for_search_or_filter(field_hsh)
+    label_tag(
+      id_for_filter(field_hsh[:field]),
+      field_hsh[:label],
+      class: "block mb-2 text-md font-medium text-gray-800 dark:text-white"
+    )
+  end
+
+  def existing_value_for_field(field_name)
+    @builder.existing_value(field_name)
+  end  
+
+  def input_tag_for_search(field_hsh)
+    field_name = field_hsh[:field]
+
+    search_field_tag(
+      field_name,
+      existing_value_for_field(field_name),
+      allow_blank: true,
+      class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5",
+      id: id_for_filter(field_name)
+    )
+  end
+
+  def input_tag_for_filter(dim_name, disabled: false)
+    if searchable?(dim_name)
+      text_tag_for_filter(dim_name, disabled: disabled)
+    elsif date_filter?(dim_name)
+      date_tags_for_filter(dim_name, disabled: disabled)
+    elsif typeahead_select?(dim_name)
+      typeahead_tag_for_filter(dim_name, disabled: disabled)
+    elsif options_for_filter?(dim_name)
+      # if options are given
+      select_tag_for_filter(dim_name, disabled: disabled)
+    else
+      # if there are no other options, leave it up to the user to manually input their value
+      text_tag_for_filter(dim_name, disabled: disabled)
+    end
+  end
+
+  def date_filter?(field_name)
+    
+  end
+
+  def typeahead_select?(field_hsh)
+    field_hsh[:typeahead] || false
+  end
+
+  def multiple_options_for_filter?(filter_hsh)
+    filter_hsh.dig(:options, :allow_multiple) || false
+  end
+
+  def typeahead_tag_for_filter(dim_name, disabled: false)
+    settings = settings_for_filterable(dim_name)
+
+    
+    value_method = settings.dig(:options, :value_method)
+    text_method = settings.dig(:options, :text_method)
+    typeahead_path = Rails.application.routes.url_helpers.send(settings[:path], { value_method: value_method, text_method: text_method })
+
+    dim_value = dim_name.dasherize.gsub('.', '-')
+
+    content_tag :div, id: "#{dim_name}-typeahead-wrapper", data: { controller: 'typeahead-select', typeahead_select_url_value: typeahead_path, typeahead_select_dimension_value: dim_value } do
+      select_tag(
+        dim_name,
+        select_options_for_filter(dim_name),
+        include_blank: true,
+        multiple: multiple_options_for_filter?(dim_name),
+        disabled: disabled,
+        id: id_for_filter(dim_name),
+        placeholder: "Search",
+        data: {
+          typeahead_select_target: 'select'
+        }
+      )
+    end
+  end  
+
+  def input_tag_for_filter(field_hsh)
+    field_name = field_hsh[:field]
+
+    if date_filter?(field_name)
+
+    elsif typeahead_select?(field_hsh)
+      typeahead_tag_for_filter
+    end
+  end
+
+
+##########################################
   def selected_dashboard
     @builder.existing_value(:dashboard_name) || @builder.config.default_dashboard
   end
@@ -55,41 +180,6 @@ module SALHelper
       required: true,
       data: { action: "change->sal-modes#changeMode" }
     )
-  end  
-
-  def sal_form_section(id: nil)
-    content_tag :div, id: id, class: "border-b border-gray-300 dark:border-gray-900" do
-      content_tag :div, class: "p-6" do
-        yield
-      end
-    end
-  end
-
-  def sal_form_submit_tag
-    submit_tag(
-      submit_tag_text,
-      class: "text-white text-lg bg-cornflower-blue-300 hover:bg-cornflower-blue-500 focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-lg text-md w-2/3 px-5 py-2.5 text-center"
-      )
-  end
-
-  # TODO 03/03/2025 MKG
-  # fix this up
-
-  def should_render_sal_form?
-    true
-  end
-
-  # TODO: 24/01/23 MKG something better here
-  def submit_tag_text
-    "Submit"
-  end
-
-  def sal_results_outer_id
-    'sal-results-outer'
-  end
-
-  def sal_results_tf_tag_id
-    'sal-results'
   end
 
   def sal_results_thead_partial
@@ -345,16 +435,10 @@ module SALHelper
   end
 
   def org_search_results_id
-    'org-search-results'
+    "org-search-results"
   end
 
-  def sal_form_target_frame
-    sal_results_outer_id
-  end
 
-  def sal_form_controller
-    'sal-form' unless advanced_search?
-  end
 
   FILTER_OPERATOR_OPTIONS = {
     '=' => 'eq',
@@ -431,23 +515,8 @@ module SALHelper
     builder.config.searchable_settings[dimension_name]
   end
 
-  def existing_value_for_dimension(dim_name)
-    builder.existing_value(dim_name)
-  end
-
-  def id_for_filter(dim_name, suffix: nil)
-    dimension = dimension_for_search_or_filter(dim_name)
-    "#{dimension.name.dasherize.gsub('.', '-')}#{'-' + suffix.to_s if suffix.present?}"
-  end
-
   def searchable?(dim_name)
     builder.config.searchable_settings.keys.include?(dim_name)
-  end
-
-  def label_tag_for_search_or_filter(dim_name)
-    settings = searchable?(dim_name) ? settings_for_searchable(dim_name) : settings_for_filterable(dim_name)
-    display_name = settings[:display_name] || dimension_for_search_or_filter(dim_name).display_name
-    label_tag id_for_filter(dim_name), display_name, class: "block mb-2 text-md font-medium text-gray-800 dark:text-white"
   end
 
   def date_label(date_position)
@@ -588,32 +657,6 @@ module SALHelper
     )
   end
 
-  def typeahead_tag_for_filter(dim_name, disabled: false)
-    settings = settings_for_filterable(dim_name)
-
-    
-    value_method = settings.dig(:options, :value_method)
-    text_method = settings.dig(:options, :text_method)
-    typeahead_path = Rails.application.routes.url_helpers.send(settings[:path], { value_method: value_method, text_method: text_method })
-
-    dim_value = dim_name.dasherize.gsub('.', '-')
-
-    content_tag :div, id: "#{dim_name}-typeahead-wrapper", data: { controller: 'typeahead-select', typeahead_select_url_value: typeahead_path, typeahead_select_dimension_value: dim_value } do
-      select_tag(
-        dim_name,
-        select_options_for_filter(dim_name),
-        include_blank: true,
-        multiple: multiple_options_for_filter?(dim_name),
-        disabled: disabled,
-        id: id_for_filter(dim_name),
-        placeholder: "Search",
-        data: {
-          typeahead_select_target: 'select'
-        }
-      )
-    end
-  end
-
   def text_tag_for_search_or_filter(dim_name, disabled: false)
     text_field_tag(
       dim_name,
@@ -643,22 +686,6 @@ module SALHelper
 
   def date_filter?(dim_name)
     dimension_for_search_or_filter(dim_name).date_col?
-  end
-
-  def input_tag_for_filter(dim_name, disabled: false)
-    if searchable?(dim_name)
-      text_tag_for_filter(dim_name, disabled: disabled)
-    elsif date_filter?(dim_name)
-      date_tags_for_filter(dim_name, disabled: disabled)
-    elsif typeahead_select?(dim_name)
-      typeahead_tag_for_filter(dim_name, disabled: disabled)
-    elsif options_for_filter?(dim_name)
-      # if options are given
-      select_tag_for_filter(dim_name, disabled: disabled)
-    else
-      # if there are no other options, leave it up to the user to manually input their value
-      text_tag_for_filter(dim_name, disabled: disabled)
-    end
   end
 
   def existing_selected?

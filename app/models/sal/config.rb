@@ -1,6 +1,16 @@
 class SAL::Config
   include Singleton
 
+  def searchable_fields
+    self.class::SEARCHABLE_FIELDS
+  end
+
+  def filterable_fields
+    self.class::FILTERABLE_FIELDS
+  end
+
+##############################################
+
   # Note, the following methods should be defined at the subclass
   # level: #klass, #default_metric, #allowable_modes, #countable
 

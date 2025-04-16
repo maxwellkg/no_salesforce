@@ -6,36 +6,6 @@ export default class extends Controller {
     forceMonth: Boolean
   }
 
-  connect() {
-    this.forceMonthDimension();
-  } 
-
-  forceMonthDimension() {
-    let selectedDateRange = document.getElementById('month-date-window').value;
-
-    if (this.forceMonthValue) {
-      let columnOption = document.getElementById('sb-select-cols');
-
-      let opts = columnOption.options;
-
-      if (selectedDateRange != 'lm') {
-        // select month in the columns dimension and disable the selection
-
-        columnOption.value = 'month'
-
-        for (let i = 0; i < opts.length; i++) {
-          if (opts[i].value != 'month') {
-            opts[i].disabled = true;
-          }
-        }
-      } else {
-        for (let i = 0; i < opts.length; i++) {
-          opts[i].disabled = false;
-        }
-      }
-    }
-  }
-
   rowSelection() {
     return document.getElementById('sb-select-rows').value;
   }

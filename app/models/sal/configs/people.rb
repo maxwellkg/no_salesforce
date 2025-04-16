@@ -16,6 +16,10 @@ class SAL::Configs::People < SAL::Config
     :advanced_search
   end
 
+  SEARCHABLE_FIELDS = [
+    { search_method: :search_full_name }
+  ]
+
   SETTINGS = {
     display_force_includes: [:phone_number],
     displayable: {

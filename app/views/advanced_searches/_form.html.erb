@@ -1,0 +1,37 @@
+<%= turbo_frame_tag advanced_search_form_tf_id do %>
+  <%= form_tag advanced_search_form_path, method: :get, data: { turbo_frame: sal_form_target_frame, turbo_action: "advance", controller: sal_form_controller } do %>
+
+    <%= sal_form_section id: "advanced-search-submit-top-outer" do %>
+      <span class="text-2xl font-bebas-neue">Analysis Settings</span>
+      <div class="mt-4 text-center">
+        <%= sal_form_submit_tag %>
+      </div>
+    <% end %>
+
+    <%= sal_form_section id: "advanced-search-inputs" do %>
+      <span class='text-2xl font-bebas-neue'>Filters</span>
+      <div id="advanced-search-input-options">
+        <% advanced_search_config.searchable_fields.each do |field| %>
+          <div class="py-4">
+            <%= label_tag_for_search_or_filter(field) %>
+            <%= input_tag_for_search(field) %>
+          </div>
+        <% end %>
+
+        <%# advanced_search_config.filterable_fields.each do |field| %>
+          <%# TODO %>
+        <%# end %>
+      </div>
+    <% end %>
+
+    <%# hidden 'eager' tag will tell the controller that results should be fetched in eager mode, meaning a lazy turbo frame will be rendered that will do the actual fetching of results (otherwise the page would take forever to load) %>
+    <%= hidden_field_tag :eager, "1" %>
+
+    <%= sal_form_section id: "advanced-search-submit-bottom-outer" do %>
+      <div class="text-center">
+        <%= sal_form_submit_tag %>
+      </div>
+    <% end %>
+
+  <% end %>
+<% end %>

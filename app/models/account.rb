@@ -1,5 +1,7 @@
 class Account < ApplicationRecord
   include BasicSearch
+  basic_search :name
+
   include SAL::FieldSetter
 
   include PolymorphicSelectable
@@ -23,6 +25,4 @@ class Account < ApplicationRecord
   validates :name, presence: true
 
   validates_associated :phone_number, :billing_address, :shipping_address
-
-  basic_search :name
 end

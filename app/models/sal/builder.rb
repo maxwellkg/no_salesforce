@@ -10,7 +10,7 @@ class SAL::Builder
   def initialize(config, params)
     @config = config
 
-    set_mode(params.delete(:mode))
+    #set_mode(params.delete(:mode))
 
     @params = params.to_h.reject do |_, v|
       if v.is_a?(Array)
@@ -21,8 +21,8 @@ class SAL::Builder
     end.with_indifferent_access    
   end
 
-  def existing_value(dim_name)
-    params[dim_name]
+  def existing_value(field_name)
+    params[field_name]
   end
 
   FORCE_MONTH = false.freeze
