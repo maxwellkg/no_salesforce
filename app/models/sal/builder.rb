@@ -2,7 +2,7 @@ class SAL::Builder
 
   attr_reader :config, :params
 
-  delegate :klass, :title, :searchables, :filterables, to: :config
+  delegate :klass, :title, :searchables, :searchable_method?, :filterables, :filterable_field?, :klass_for_filter, to: :config
 
   def initialize(config, params)
     @config = config
@@ -22,15 +22,34 @@ class SAL::Builder
   end
 
   def query
-    @query = klass.all
+    query_without_limit
+      .order(order_by)
+      .limit(limit_to_apply)
+      .offset(offset_to_apply)
+  end
 
-    apply_search_chain
-    apply_filters
+  alias_method :results, :query
 
-    @query
+  def num_total_results
+    @_total ||= query.count
+  end
+
+  def no_matching_results?
+    num_total_results.zero?
   end
 
   private
+
+    def query_without_limit
+      return @_query if @query.present?
+
+      @_query = klass.all
+
+      apply_search_chain
+      apply_filters
+
+      @_query
+    end
 
     def searchable_params
       params.select { |k, _| searchable_method?(k) }
@@ -38,7 +57,7 @@ class SAL::Builder
 
     def apply_search_chain
       searchable_params.each do |search_method, search_term|
-        @query = @query.public_send(search_method, search_term)
+        @_query = @_query.public_send(search_method, search_term)
       end
     end
 
@@ -62,8 +81,8 @@ class SAL::Builder
     end
 
     def alter_value_for_query(param_name, value)
-      if date_filter?(param_name)
-        alter_value_for_date_filter
+      if config.date_filter?(param_name)
+        alter_value_for_date_filter(value)
       else
         value
       end
@@ -71,12 +90,30 @@ class SAL::Builder
 
     def filter_conditions
       filterable_params.each_with_object({}) do |(k, v), hsh|
-        hsh[k] = alter_value_for_query(v)
+        hsh[k] = alter_value_for_query(k, v)
       end
     end    
 
     def apply_filters
-      @query = @query.where(filter_conditions)
+      @_query = @_query.where(filter_conditions)
+    end
+
+    def limit_to_apply
+      params[:limit]
+    end
+
+    def offset_to_apply
+      params[:offset]
+    end
+
+    # order comes as a hash e.g. { col_name => asc_or_desc }
+    def order_by
+      return unless params[:order].present?
+
+      col_name = params[:order].first
+      asc_or_desc = params[:order].second
+
+      klass.arel_table[col_name].send(asc_or_desc).nulls_last
     end
 
 end

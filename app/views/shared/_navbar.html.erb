@@ -1,0 +1,31 @@
+<nav id="nav" class="bg-cornflower-blue-900">
+  <div class="w-5/6 mx-auto flex flex-wrap items-center justify-between mx-auto py-4">
+    <%= link_to root_path, class: "flex items-center space-x-3 rtl:space-x-reverse text-lg md:text-2xl text-white font-bebas-neue" do %>
+      <%= image_tag "no_salesforce.jpg", class: "h-12" %>&nbsp;No Salesforce!
+    <% end %>    
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white hover:text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-cornflower-blue-800 md:bg-cornflower-blue-900 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+        <% if authenticated? %>
+          <li>
+            <%= link_to "Accounts", accounts_path, class: "block py-2 px-3 text-md md:text-xl text-white hover:text-gray-400 rounded-sm md:bg-transparent md:p-0" %>
+          </li>
+          <li>
+            <%= link_to "People", people_path, class: "block py-2 px-3 text-md md:text-xl text-white hover:text-gray-400 rounded-sm md:bg-transparent md:p-0" %>
+          </li>
+          <li>
+            <%= link_to "Reminders", reminders_path, class: "block py-2 px-3 text-md md:text-xl text-white hover:text-gray-400 rounded-sm md:bg-transparent md:p-0" %>
+          </li>
+        <% end %>
+        <li>
+          <%= navbar_signin_signout %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

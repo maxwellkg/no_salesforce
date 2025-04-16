@@ -1,7 +1,7 @@
 module SAL::PaginationHelper
 
   def pagination_link_params(page_number)
-    builder_link_params.merge(page: page_number, eager: 1, mode: @builder.mode)
+    builder_link_params.merge(page: page_number, eager: 1)
   end
 
   def link_to_page(page_number)
@@ -14,13 +14,7 @@ module SAL::PaginationHelper
   end
 
   def num_results
-    if advanced_search?
-      @presenter.total_results
-    elsif summary?
-      @presenter.results.row_count
-    elsif change_over_time?
-      @presenter.results.total_results
-    end
+    @builder.num_total_results
   end
 
   def show_countable?

@@ -24,11 +24,11 @@ class SAL::Config
   end
 
   def searchable_method?(method_name)
-    searchable_methods.include?(method_name)
+    searchable_methods.include?(method_name.to_sym)
   end
 
   def settings_for_searchable(search_method)
-    searchables.detect { |s| s[:search_method] == search_method }
+    searchables.detect { |s| s[:search_method] == search_method.to_sym }
   end
 
   def filterable_fields
@@ -36,11 +36,11 @@ class SAL::Config
   end
 
   def filterable_field?(field_name)
-    filterable_fields.include?(field_name)
+    filterable_fields.include?(field_name.to_sym)
   end
 
   def settings_for_filterable(field_name)
-    filterables.detect { |f| f[:field] == field_name }
+    filterables.detect { |f| f[:field] == field_name.to_sym }
   end
 
   def date_filter?(field_name)
@@ -53,6 +53,10 @@ class SAL::Config
     return false unless filterable_field?(field_name)
 
     settings_for_filterable(field_name).dig(:options, :allow_multiple)
+  end
+
+  def klass_for_filter(field_name)
+    settings_for_filterable(field_name)[:klass] || klass
   end
 
 end

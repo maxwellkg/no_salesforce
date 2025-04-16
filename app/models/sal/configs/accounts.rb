@@ -8,6 +8,7 @@ class SAL::Configs::Accounts < SAL::Config
     {
       label: "Industry",
       field: :industry_id,
+      klass: Industry,
       options: {
         collection: Proc.new { Industry.order(:code) },
         value_method: :id,
@@ -18,6 +19,7 @@ class SAL::Configs::Accounts < SAL::Config
     {
       label: "Account Source",
       field: :account_source_id,
+      klass: AccountLeadSource,
       options: {
         collection: Proc.new { AccountLeadSource.order(:name) },
         value_method: :id,
@@ -28,6 +30,7 @@ class SAL::Configs::Accounts < SAL::Config
     {
       label: "Assigned To",
       field: :owner_id,
+      klass: User,
       typeahead: true,
       path: :typeaheads_users_path,
       options: {

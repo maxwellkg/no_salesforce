@@ -143,7 +143,7 @@ module SAL::FormsHelper
     opts = options_for_filter(filter_hsh)
 
     if typeahead_select?(filter_hsh)
-      existing_objects = @builder.klass.where(id: existing_value_for_field(field_name))
+      existing_objects = @builder.klass_for_filter(field_name).where(id: existing_value_for_field(field_name))
 
       options_from_collection_for_select(
         existing_objects,

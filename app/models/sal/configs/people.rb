@@ -8,14 +8,6 @@ class SAL::Configs::People < SAL::Config
     "people"
   end
 
-  def allowable_modes
-    [:advanced_search]
-  end
-
-  def default_mode
-    :advanced_search
-  end
-
   SEARCHABLE_FIELDS = [
     { search_method: :search_full_name }
   ]

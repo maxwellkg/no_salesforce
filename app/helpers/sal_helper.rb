@@ -8,6 +8,35 @@ module SALHelper
     'sal-results'
   end
 
+  def sal_results_tf_tag
+    if eager?
+      # the results may take a few seconds to fetch, so load them separately
+      turbo_frame_tag sal_results_tf_tag_id, src: incoming_path.merge(builder_link_params.merge(fr: 1, page: @page_number)) do
+        render partial: 'shared/spinner'
+      end
+    elsif fetching?
+      turbo_frame_tag sal_results_tf_tag_id do
+        render partial: "sal/results"
+      end
+    else
+      turbo_frame_tag sal_results_tf_tag_id do
+        render partial: "sal/results/not_yet_submitted"
+      end
+    end
+  end 
+
+  def builder_link_params
+    @builder.params
+  end
+
+  def sal_results_table_partial
+    "#{@builder.klass.model_name.collection}/advanced_search_results"
+  end
+
+  def sal_results_header
+    "Matching #{@builder.config.countable.capitalize}"
+  end
+
 
 ##########################################
   def selected_dashboard
@@ -75,48 +104,12 @@ module SALHelper
     "sal/results/tbody/#{@presenter.builder.mode}"
   end
 
-  # TODO: MKG 25/02/25
-  # cleanup the params that we send  
-
-  def builder_link_params
-    @builder.params.except(:row_limit, :offset).merge(mode: @builder.mode)
-  end
-
   def empty_results_tf_tag
     turbo_frame_tag sal_results_tf_tag_id
   end
 
   def dashboard_mode?
     @builder.mode == :dashboard
-  end
-
-  def sal_results_tf_tag
-    if dashboard_mode?
-      turbo_frame_tag sal_results_tf_tag_id do
-        render partial: "sal/dashboard"
-      end
-    elsif eager_or_fetching?
-      if user_can_run_search?
-        if eager?
-          # the results may take a few seconds to fetch, so load them separately
-          turbo_frame_tag sal_results_tf_tag_id, src: incoming_path.merge(builder_link_params.merge(fr: 1, page: @page_number, mode: @builder.mode, display_attributes: @builder.display_attributes)) do
-            render partial: 'shared/spinner'
-          end
-        elsif fetching?
-          turbo_frame_tag sal_results_tf_tag_id do
-            render partial: "sal/results"
-          end
-        end
-      else
-        turbo_frame_tag sal_results_tf_tag_id do
-          render partial: "sal/results/over_limit"
-        end
-      end
-    else
-      turbo_frame_tag sal_results_tf_tag_id do
-        render partial: "sal/results/not_yet_submitted"
-      end
-    end
   end
 
   def change_over_time_row_options

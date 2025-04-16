@@ -3,6 +3,8 @@ module SAL::AdvancedSearchable
 
   included do
 
+    helper_method :eager?, :fetching?, :eager_or_fetching?
+
     def index
       set_builder
       set_title
@@ -45,6 +47,32 @@ module SAL::AdvancedSearchable
       def set_builder
         @builder = SAL::Builder.new(sal_config, builder_params)
       end
+
+      def fetch_results?
+        if builder_params.present?
+          if params[:fr] == '1'
+            :true
+          elsif request.referrer.nil? || params[:eager] == '1'
+            :eager
+          else
+            :false
+          end
+        else
+          :false
+        end
+      end
+
+      def eager?
+        fetch_results? == :eager
+      end
+
+      def fetching?
+        fetch_results? == :true
+      end
+
+      def eager_or_fetching?
+        eager? || fetching?
+      end      
 
   end
 

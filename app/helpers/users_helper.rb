@@ -12,4 +12,10 @@ module UsersHelper
     end
   end
 
+  def link_to_user(user, **opts)
+    return if user.nil?
+
+    link_to user.full_name, user_path(user), opts
+  end  
+
 end
