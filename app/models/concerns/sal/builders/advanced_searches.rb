@@ -25,20 +25,6 @@ module SAL::Builders::AdvancedSearches
         config.settings[:display_force_includes]
       end
 
-      def process_order
-        if params[:order]
-          dim = SAL::Field.find_by_name(config.klass, params[:order].first)
-
-          tbl = if dim.reflection?
-                  dim.klass.arel_table
-                else
-                  dim.model.arel_table
-                end
-
-          tbl[dim.column_name].send(params[:order].second).nulls_last
-        end
-      end      
-
   end
 
 end

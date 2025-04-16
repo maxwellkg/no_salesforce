@@ -1,25 +1,5 @@
-class SAL::Builder
-
-  attr_reader :config, :params
-
-  delegate :klass, :title, :searchables, :filterables, to: :config
-
-  def initialize(config, params)
-    @config = config
-
-    @params = params.to_h.reject do |k, v|
-      case v
-      when Array
-        v.all?(&:blank?)
-      else
-        v.blank?
-      end
-    end.with_indifferent_access
-  end
-
-  def existing_value(param_name)
-    params[param_name]
-  end
+module SAL::Builders::QueryBuilding
+  extend ActiveSupport::Concern
 
   def query
     @query = klass.all
@@ -78,5 +58,5 @@ class SAL::Builder
     def apply_filters
       @query = @query.where(filter_conditions)
     end
-
+  
 end

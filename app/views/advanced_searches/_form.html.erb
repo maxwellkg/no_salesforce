@@ -11,14 +11,11 @@
     <%= sal_form_section id: "advanced-search-inputs" do %>
       <span class='text-2xl font-bebas-neue'>Filters</span>
       <div id="advanced-search-input-options">
-        <% advanced_search_config.searchable_fields.each do |field| %>
-          <div class="py-4">
-            <%= label_tag_for_search_or_filter(field) %>
-            <%= input_tag_for_search(field) %>
-          </div>
+        <% @builder.searchables.each do |field| %>
+          <%= label_and_input_tags_for_search(field) %>
         <% end %>
 
-        <% advanced_search_config.filterable_fields.each do |field| %>
+        <% @builder.filterables.each do |field| %>
           <%= label_and_input_tags_for_filter(field) %>
         <% end %>
       </div>

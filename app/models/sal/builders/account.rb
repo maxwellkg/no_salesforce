@@ -1,4 +1,5 @@
-class SAL::Configs::Accounts < SAL::Config
+class SAL::Builders::Account
+  include SAL::Builders::Base
 
   SEARCHABLES = [
     { label: "Name", search_method: :search_name }
@@ -42,12 +43,8 @@ class SAL::Configs::Accounts < SAL::Config
     }
   ]  
 
-  def klass
+  def self.klass
     Account
   end
 
-  def countable
-    "accounts"
-  end
-  
 end

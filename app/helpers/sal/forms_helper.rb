@@ -23,14 +23,14 @@ module SAL::FormsHelper
     "sal-form"
   end
 
-  def id_for_filter(field, suffix: nil)
-    "#{field.to_s.dasherize}#{'-' + suffix.to_s if suffix.present?}"
+  def id_for_filter(name)
+    name.to_s.dasherize
   end
 
-  def label_tag_for_search_or_filter(field_hsh)
+  def label_tag_for_search_or_filter(name, label)
     label_tag(
-      id_for_filter(field_hsh[:field]),
-      field_hsh[:label],
+      id_for_filter(name),
+      label,
       class: "block mb-2 text-md font-medium text-gray-800 dark:text-white"
     )
   end
@@ -39,8 +39,8 @@ module SAL::FormsHelper
     @builder.existing_value(field_name)
   end  
 
-  def input_tag_for_search(field_hsh)
-    field_name = field_hsh[:field]
+  def input_tag_for_search(searchable_hsh)
+    field_name = searchable_hsh[:search_method]
 
     search_field_tag(
       field_name,
@@ -49,6 +49,15 @@ module SAL::FormsHelper
       class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5",
       id: id_for_filter(field_name)
     )
+  end
+
+  def label_and_input_tags_for_search(searchable_hsh)
+    content_tag :div, class: "py-4" do
+      [
+        label_tag_for_search_or_filter(searchable_hsh[:search_method], searchable_hsh[:label]),
+        input_tag_for_search(searchable_hsh)
+      ].join.html_safe
+    end.html_safe
   end
 
   def column_for_field_name(field_name)
@@ -229,7 +238,7 @@ module SAL::FormsHelper
     else
       content_tag :div, class: "py-4" do
         [
-          label_tag_for_search_or_filter(filter_hsh),
+          label_tag_for_search_or_filter(field_name, filter_hsh[:label]),
           input_tag_for_filter(filter_hsh)
         ].join.html_safe
       end.html_safe

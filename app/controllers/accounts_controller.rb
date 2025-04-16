@@ -4,6 +4,8 @@ class AccountsController < ApplicationController
 
   before_action :set_account, only: %i[ show edit update destroy ]
 
+  # index defined by SAL::AdvancedSearchable
+
   # GET /accounts/1 or /accounts/1.json
   def show
   end
