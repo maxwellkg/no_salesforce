@@ -52,5 +52,17 @@ class SAL::Configs::Accounts < SAL::Config
   def countable
     "accounts"
   end
+
+  def include_for_advanced_search
+    [
+      :owner,
+      { billing_address: [:state_region, :country] },
+      { shipping_address: [:state_region, :country] },
+      :phone_number,
+      :account_source,
+      :created_by,
+      :last_updated_by
+    ]
+  end
   
 end

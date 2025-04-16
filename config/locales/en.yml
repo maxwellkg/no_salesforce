@@ -29,3 +29,17 @@
 
 en:
   hello: "Hello world"
+
+
+en-US:
+  faker:
+    cell_phone:
+      formats:
+        - "#{PhoneNumber.area_code}-#{PhoneNumber.exchange_code}-#{PhoneNumber.subscriber_number}"
+        - "(#{PhoneNumber.area_code}) #{PhoneNumber.exchange_code}-#{PhoneNumber.subscriber_number}"
+        - "#{PhoneNumber.area_code}-#{PhoneNumber.exchange_code}-#{PhoneNumber.subscriber_number}"
+        - "#{PhoneNumber.area_code}.#{PhoneNumber.exchange_code}.#{PhoneNumber.subscriber_number}"
+        - "#{PhoneNumber.area_code}-#{PhoneNumber.exchange_code}-#{PhoneNumber.subscriber_number}"
+        - "(#{PhoneNumber.area_code}) #{PhoneNumber.exchange_code}-#{PhoneNumber.subscriber_number}"
+        - "#{PhoneNumber.area_code}-#{PhoneNumber.exchange_code}-#{PhoneNumber.subscriber_number}"
+        - "#{PhoneNumber.area_code}.#{PhoneNumber.exchange_code}.#{PhoneNumber.subscriber_number}"

@@ -26,12 +26,15 @@ class SAL::Builder
       .order(order_by)
       .limit(limit_to_apply)
       .offset(offset_to_apply)
+      .includes(config.include_for_advanced_search)
   end
 
-  alias_method :results, :query
+  def results
+    @results ||= query.to_a
+  end
 
   def num_total_results
-    @_total ||= query.count
+    @_total ||= query_without_limit.count
   end
 
   def no_matching_results?

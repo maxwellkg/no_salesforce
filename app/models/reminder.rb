@@ -24,7 +24,7 @@ class Reminder < ApplicationRecord
 
   before_validation :attach_account_from_logged_to, if: -> (reminder) { reminder.account.nil? && reminder.changed? }
   before_save :ensure_logged_to_contact_tagged, if: :logged_to_a_contact?
-  after_save :update_last_activity_ats
+  after_save :update_last_activity_ats, if: :complete?
 
   scope :complete, -> { where(complete: true ) }
   scope :open, -> { where(complete: false) }

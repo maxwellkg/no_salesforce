@@ -48,11 +48,11 @@ module SAL::AdvancedSearchable
         @builder = SAL::Builder.new(sal_config, builder_params)
       end
 
-      def fetch_results?
-        if builder_params.present?
-          if params[:fr] == '1'
-            :true
-          elsif request.referrer.nil? || params[:eager] == '1'
+      def fetch_results
+        if params[:fr] == "1"
+          :true
+        elsif builder_params.present?
+          if request.referrer.nil? || params[:eager] == '1'
             :eager
           else
             :false
@@ -63,11 +63,11 @@ module SAL::AdvancedSearchable
       end
 
       def eager?
-        fetch_results? == :eager
+        fetch_results == :eager
       end
 
       def fetching?
-        fetch_results? == :true
+        fetch_results == :true
       end
 
       def eager_or_fetching?

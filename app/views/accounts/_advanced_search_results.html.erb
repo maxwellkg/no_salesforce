@@ -3,15 +3,65 @@
     <thead class="text-xs text-gray-800 dark:text-white uppercase bg-gray-50 dark:bg-gray-700 whitespace-nowrap">
       <th scope="col" class="px-6 py-3">Name</th>
       <th scope="col" class="px-6 py-3">Assigned To</th>
+      <th scope="col" class="px-6 py-3">Billing Address</th>
+      <th scope="col" class="px-6 py-3">Shipping Address</th>
+      <th scope="col" class="px-6 py-3">Phone Number</th>
+      <th scope="col" class="px-6 py-3">Annual Revenue</th>
+      <th scope="col" class="px-6 py-3">Number of Employees</th>
+      <th scope="col" class="px-6 py-3">Industry</th>
+      <th scope="col" class="px-6 py-3">Website</th>
+      <th scope="col" class="px-6 py-3">Incorporation Date</th>
+      <th scope="col" class="px-6 py-3">Source</th>
+      <th scope="col" class="px-6 py-3">Last Activity At</th>
+      <th scope="col" class="px-6 py-3">Created By</th>
+      <th scope="col" class="px-6 py-3">Last Updated By</th>
     </thead>
     <tbody>
       <% @builder.results.each do |account| %>
-        <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap">
-          <%= account.name %>
-        </th>
-        <td class="px-6 py-4">
-          <%= link_to_user(account.owner, data: { turbo: false }) %>
-        </td>
+        <tr class="bg-white hover:bg-gray-50 dark:bg-gray-500 dark:hover:bg-gray-400 text-gray-800 dark:text-white border-b border-gray-300 dark:border-gray-600">
+          <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap">
+            <%= link_to account.name, account_path(account), data: { turbo: false } %>
+          </th>
+          <td class="px-6 py-4">
+            <%= link_to_user(account.owner, data: { turbo: false }) %>
+          </td>
+          <td class="px-6 py-4">
+            <%= address_display(account.billing_address) %>
+          </td>
+          <td class="px-6 py-4">
+            <%= address_display(account.shipping_address) %>
+          </td>
+          <td class="px-6 py-4">
+            <%= phone_display(account.phone_number) %>
+          </td>
+          <td class="px-6 py-4">
+            <%= number_to_currency(account.annual_revenue) %>
+          </td>
+          <td class="px-6 py-4">
+            <%= number_with_delimiter(account.number_of_employees) %>
+          </td>
+          <td class="px-6 py-4">
+            <%= account.industry&.name %>
+          </td>
+          <td class="px-6 py-4">
+            <%= website_display(account.website) %>
+          </td>
+          <td class="px-6 py-4">
+            <%= incorporation_date_display(account.incorporation_date) %>
+          </td>
+          <td class="px-6 py-4">
+            <%= account.account_source&.name %>
+          </td>
+          <td class="px-6 py-4">
+            <%= account.last_activity_at %>
+          </td>
+          <td class="px-6 py-4">
+            <%= link_to_user(account.created_by, data: { turbo: false }) %>
+          </td>
+          <td class="px-6 py-4">
+            <%= link_to_user(account.last_updated_by, data: { turbo: false }) %>
+          </td>
+        </tr>
       <% end %>
     </tbody>
   </table>

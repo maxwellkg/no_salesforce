@@ -43,7 +43,7 @@ gem "thruster", require: false
 gem "image_processing", "~> 1.2"
 
 
-
+gem "faker"
 gem "phonelib"
 gem "truncato"
 gem "requestjs-rails"
