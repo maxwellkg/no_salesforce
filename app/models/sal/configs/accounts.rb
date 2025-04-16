@@ -48,9 +48,13 @@ class SAL::Configs::Accounts < SAL::Config
       path: :typeaheads_users_path,
       options: {
         value_method: :id,
-        text_method: :name,
+        text_method: :full_name,
         allow_multiple: true
       }
+    },
+    {
+      label: "Created At",
+      field: :created_at
     }
   ]
 

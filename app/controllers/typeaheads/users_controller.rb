@@ -7,4 +7,8 @@ class Typeaheads::UsersController < ApplicationController
       User
     end
 
+    def search_method
+      :search_full_name
+    end
+
 end

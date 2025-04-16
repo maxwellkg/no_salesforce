@@ -54,7 +54,7 @@ export default class extends Controller {
       const response = await this.getUpdatedOptions(search_term);
 
       // what we really need to do is wait for the turbo_stream to finish updating
-      // but that isn't straightforward, so use this hack for the time being
+      // but that isn't straightforward, so use this workaround for the time being
       if (response.ok) {
         // reinitialize a new Tom Select
         this.tomSelect.sync();

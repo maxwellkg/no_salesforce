@@ -6,6 +6,7 @@ module SAL::AdvancedSearchable
   end
 
   def index
+    set_title
     set_builder
 
     render "advanced_searches/index"
@@ -13,8 +14,16 @@ module SAL::AdvancedSearchable
 
   private
 
+    def sal_title
+      "Accounts"
+    end
+
+    def set_title
+      @title = sal_title
+    end
+
     def set_builder
-      @builder = SAL::Builder.new(sal_config_klass, {})
+      @builder = SAL::Builder.new(advanced_search_config, {})
     end
 
     def advanced_search_config

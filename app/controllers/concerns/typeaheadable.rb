@@ -46,8 +46,15 @@ module Typeaheadable
       nil
     end
 
+    def limit_to_apply
+      limit || DEFAULT_LIMIT
+    end
+
     def options
-      klass.send(search_method, search_term).order(order_by).limit(limit || DEFAULT_LIMIT)
+      klass
+        .public_send(search_method, search_term)
+        .order(order_by)
+        .limit(limit_to_apply)
     end
 
     def existing_options

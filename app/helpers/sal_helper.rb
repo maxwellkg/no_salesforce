@@ -1,126 +1,11 @@
 module SALHelper
 
-  def sal_form_section(id: nil)
-    content_tag :div, id: id, class: "border-b border-gray-300 dark:border-gray-900" do
-      content_tag :div, class: "p-6" do
-        yield
-      end
-    end
-  end
-
-  def sal_form_submit_tag
-    submit_tag(
-      "Submit",
-      class: "text-white text-lg bg-cornflower-blue-300 hover:bg-cornflower-blue-500 focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-lg text-md w-2/3 px-5 py-2.5 text-center"
-    )
-  end
-
   def sal_results_outer_id
     'sal-results-outer'
   end
 
   def sal_results_tf_tag_id
     'sal-results'
-  end  
-
-  def sal_form_target_frame
-    sal_results_outer_id
-  end 
-
-  def sal_form_controller
-    "sal-form"
-  end
-
-  def id_for_filter(field, suffix: nil)
-    "#{field.to_s.dasherize}#{'-' + suffix.to_s if suffix.present?}"
-  end
-
-  def label_tag_for_search_or_filter(field_hsh)
-    label_tag(
-      id_for_filter(field_hsh[:field]),
-      field_hsh[:label],
-      class: "block mb-2 text-md font-medium text-gray-800 dark:text-white"
-    )
-  end
-
-  def existing_value_for_field(field_name)
-    @builder.existing_value(field_name)
-  end  
-
-  def input_tag_for_search(field_hsh)
-    field_name = field_hsh[:field]
-
-    search_field_tag(
-      field_name,
-      existing_value_for_field(field_name),
-      allow_blank: true,
-      class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5",
-      id: id_for_filter(field_name)
-    )
-  end
-
-  def input_tag_for_filter(dim_name, disabled: false)
-    if searchable?(dim_name)
-      text_tag_for_filter(dim_name, disabled: disabled)
-    elsif date_filter?(dim_name)
-      date_tags_for_filter(dim_name, disabled: disabled)
-    elsif typeahead_select?(dim_name)
-      typeahead_tag_for_filter(dim_name, disabled: disabled)
-    elsif options_for_filter?(dim_name)
-      # if options are given
-      select_tag_for_filter(dim_name, disabled: disabled)
-    else
-      # if there are no other options, leave it up to the user to manually input their value
-      text_tag_for_filter(dim_name, disabled: disabled)
-    end
-  end
-
-  def date_filter?(field_name)
-    
-  end
-
-  def typeahead_select?(field_hsh)
-    field_hsh[:typeahead] || false
-  end
-
-  def multiple_options_for_filter?(filter_hsh)
-    filter_hsh.dig(:options, :allow_multiple) || false
-  end
-
-  def typeahead_tag_for_filter(dim_name, disabled: false)
-    settings = settings_for_filterable(dim_name)
-
-    
-    value_method = settings.dig(:options, :value_method)
-    text_method = settings.dig(:options, :text_method)
-    typeahead_path = Rails.application.routes.url_helpers.send(settings[:path], { value_method: value_method, text_method: text_method })
-
-    dim_value = dim_name.dasherize.gsub('.', '-')
-
-    content_tag :div, id: "#{dim_name}-typeahead-wrapper", data: { controller: 'typeahead-select', typeahead_select_url_value: typeahead_path, typeahead_select_dimension_value: dim_value } do
-      select_tag(
-        dim_name,
-        select_options_for_filter(dim_name),
-        include_blank: true,
-        multiple: multiple_options_for_filter?(dim_name),
-        disabled: disabled,
-        id: id_for_filter(dim_name),
-        placeholder: "Search",
-        data: {
-          typeahead_select_target: 'select'
-        }
-      )
-    end
-  end  
-
-  def input_tag_for_filter(field_hsh)
-    field_name = field_hsh[:field]
-
-    if date_filter?(field_name)
-
-    elsif typeahead_select?(field_hsh)
-      typeahead_tag_for_filter
-    end
   end
 
 
@@ -519,49 +404,6 @@ module SALHelper
     builder.config.searchable_settings.keys.include?(dim_name)
   end
 
-  def date_label(date_position)
-    if date_position == 'start'
-      "On or after"
-    elsif date_position == 'end'
-      "on or before"
-    end
-  end
-
-  def process_date(date_obj)
-    if date_obj.is_a? Date
-      date_obj
-    elsif date_obj.is_a? Proc
-      date_obj.call
-    else
-      raise "Unexpected object type: #{date_obj.class}"
-    end
-  end
-
-  def date_tag_for_filter(dim_name, date_position, disabled: false)
-    if date_position == 'start'
-      tag_id = "#{id_for_filter(dim_name)}-start"
-      current_val = existing_value_for_dimension(dim_name)&.second
-    elsif date_position == 'end'
-      tag_id = "#{id_for_filter(dim_name)}-end"
-      current_val = existing_value_for_dimension(dim_name)&.third
-    else
-      raise "Unrecognized date position: #{date_position}"
-    end
-
-    [
-      label_tag(tag_id, date_label(date_position)),
-      date_field_tag(
-        "#{dim_name}[]",
-        existing_value_for_dimension(dim_name),
-        min: process_date(options_for_filter(dim_name)[:min]),
-        max: process_date(options_for_filter(dim_name)[:max]),
-        disabled: disabled,
-        class: 'mx-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5',
-        id: tag_id
-      )
-    ]
-  end
-
   def date_window_selects(dim_name)
     DatePeriod::DATE_WINDOWS.each_with_object({}) do |(text, abbr), hsh|
       end_date = process_date(options_for_filter(dim_name)[:max])
@@ -598,94 +440,16 @@ module SALHelper
     render partial: 'shared/date_window_select', locals: { dim_name: dim_name, disabled: disabled }
   end
 
-  def options_for_filter(dim_name)
-    settings_for_filterable(dim_name)[:options] || {}
-  end
-
-  def options_for_filter?(dim_name)
-    [:collection, :for_select].any? do |key|
-      options_for_filter(dim_name).keys.include?(key)
-    end
-  end
-
   def user_inputs_operator_for_filter?(dim_name)
     options_for_filter(dim_name)&.fetch(:user_inputs_operator, false)
   end
-
-  def select_options_for_filter(dim_name)
-    opts = options_for_filter(dim_name)
-
-    if typeahead_select?(dim_name)
-      settings = settings_for_filterable(dim_name)
-      
-      dim = dimension_for_search_or_filter(dim_name)
-
-      existing_objects = dim.klass.where(id: existing_value_for_dimension(dim_name))
-
-      options_from_collection_for_select(
-        existing_objects,
-        settings.dig(:options, :value_method),
-        settings.dig(:options, :text_method),
-        existing_value_for_dimension(dim_name)
-      )
-    elsif opts[:collection]
-      options_from_collection_for_select(
-        opts[:collection].call,
-        opts[:value_method],
-        opts[:text_method],
-        existing_value_for_dimension(dim_name)
-      )
-    else
-      options_for_select(opts[:for_select] || [], existing_value_for_dimension(dim_name))
-    end
-  end
-
-  def multiple_options_for_filter?(dim_name)
-    options_for_filter(dim_name)[:allow_multiple] || false
-  end
-
-  def select_tag_for_filter(dim_name, disabled: false)
-    select_tag(
-      dim_name,
-      select_options_for_filter(dim_name),
-      include_blank: true,
-      multiple: multiple_options_for_filter?(dim_name),
-      disabled: disabled,
-      class: 'bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5',
-      id: id_for_filter(dim_name)
-      #data: { controller: 'ts' }
-    )
-  end
-
-  def text_tag_for_search_or_filter(dim_name, disabled: false)
-    text_field_tag(
-      dim_name,
-      existing_value_for_dimension(dim_name),
-      allow_blank: true,
-      disabled: disabled,
-      class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5",
-      id: id_for_filter(dim_name)
-    )
-  end
-
-  alias_method :text_tag_for_filter, :text_tag_for_search_or_filter
-  alias_method :text_tag_for_search, :text_tag_for_search_or_filter
-
 
   def options_given_for_filter?(dim_name)
     settings_for_filterable(dim_name)[:options].present?
   end
 
-  def typeahead_select?(dim_name)
-    settings_for_filterable(dim_name)[:typeahead] || false
-  end
-
   def checkbox_select?(dim_name)
     settings_for_filterable(dim_name)[:checkbox] || false
-  end
-
-  def date_filter?(dim_name)
-    dimension_for_search_or_filter(dim_name).date_col?
   end
 
   def existing_selected?

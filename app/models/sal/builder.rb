@@ -7,6 +7,8 @@ class SAL::Builder
           SAL::Builders::AdvancedSearches,
           SAL::Builders::Dashboards
 
+  delegate :klass, to: :config
+
   def initialize(config, params)
     @config = config
 

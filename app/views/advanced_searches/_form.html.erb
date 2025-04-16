@@ -2,7 +2,7 @@
   <%= form_tag advanced_search_form_path, method: :get, data: { turbo_frame: sal_form_target_frame, turbo_action: "advance", controller: sal_form_controller } do %>
 
     <%= sal_form_section id: "advanced-search-submit-top-outer" do %>
-      <span class="text-2xl font-bebas-neue">Analysis Settings</span>
+      <span class="text-2xl font-bebas-neue">Search Settings</span>
       <div class="mt-4 text-center">
         <%= sal_form_submit_tag %>
       </div>
@@ -18,9 +18,9 @@
           </div>
         <% end %>
 
-        <%# advanced_search_config.filterable_fields.each do |field| %>
-          <%# TODO %>
-        <%# end %>
+        <% advanced_search_config.filterable_fields.each do |field| %>
+          <%= label_and_input_tags_for_filter(field) %>
+        <% end %>
       </div>
     <% end %>
 
