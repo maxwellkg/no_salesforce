@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  include SAL::Analyzable
+  include SAL::AdvancedSearchable
 
   before_action :set_user, only: %i[ show edit update destroy ]
 

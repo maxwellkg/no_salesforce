@@ -1,6 +1,9 @@
 class SAL::Config
   include Singleton
 
+  SEARCHABLES = []
+  FILTERABLES = []
+
   # the default title is the pluralized name of the class,
   # but this can/should be overwritten
 
