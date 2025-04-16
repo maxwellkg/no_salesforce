@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   root "users#home"
 
   namespace :typeaheads do
+    resources :accounts, only: :index
     resources :users, only: :index
   end
 end

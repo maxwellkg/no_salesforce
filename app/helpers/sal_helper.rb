@@ -34,7 +34,7 @@ module SALHelper
   end
 
   def sal_results_header
-    "Matching #{@builder.config.countable.capitalize}"
+    "#{@builder.num_total_results} Matching #{@builder.config.countable.capitalize}"
   end
 
 

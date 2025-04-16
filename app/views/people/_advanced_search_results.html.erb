@@ -1,0 +1,52 @@
+<div class="overflow-x-auto sm:rounded-lg mt-10">
+  <table class="text-sm text-left text-gray-500">
+    <thead class="text-xs text-gray-800 dark:text-white uppercase bg-gray-50 dark:bg-gray-700 whitespace-nowrap">
+      <th scope="col" class="px-6 py-3">Name</th>
+      <th scope="col" class="px-6 py-3">Assigned To</th>
+      <th scope="col" class="px-6 py-3">Email Address</th>
+      <th scope="col" class="px-6 py-3">Job Title</th>
+      <th scope="col" class="px-6 py-3">Address</th>
+      <th scope="col" class="px-6 py-3">Phone Number</th>
+      <th scope="col" class="px-6 py-3">Lead Source</th>
+      <th scope="col" class="px-6 py-3">Last Activity At</th>
+      <th scope="col" class="px-6 py-3">Created By</th>
+      <th scope="col" class="px-6 py-3">Last Updated By</th>      
+    </thead>
+    <tbody>
+      <% @builder.results.each do |person| %>
+        <tr class="bg-white hover:bg-gray-50 dark:bg-gray-500 dark:hover:bg-gray-400 text-gray-800 dark:text-white border-b border-gray-300 dark:border-gray-600">
+          <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap">
+            <%= link_to person.full_name, person_path(person), data: { turbo: false } %>
+          </th>
+          <td class="px-6 py-4">
+            <%= link_to_user(person.owner, data: { turbo: false }) %>
+          </td>          
+          <td class="px-6 py-4">
+            <%= mail_to person.email_address %>
+          </td>
+          <td class="px-6 py-4">
+            <%= person.job_title %>
+          </td>
+          <td class="px-6 py-4">
+            <%= address_display(person.address) %>
+          </td>
+          <td class="px-6 py-4">
+            <%= phone_display(person.phone_number) %>
+          </td>
+          <td class="px-6 py-4">
+            <%= person.lead_source&.name %>
+          </td>          
+          <td class="px-6 py-4">
+            <%= person.last_activity_at %>
+          </td>
+          <td class="px-6 py-4">
+            <%= link_to_user(person.created_by, data: { turbo: false }) %>
+          </td>          
+          <td class="px-6 py-4">
+            <%= link_to_user(person.last_updated_by, data: { turbo: false }) %>
+          </td>                    
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

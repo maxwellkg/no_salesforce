@@ -1,0 +1,2 @@
+module Typeaheads::AccountsHelper
+end

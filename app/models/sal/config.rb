@@ -59,4 +59,8 @@ class SAL::Config
     settings_for_filterable(field_name)[:klass] || klass
   end
 
+  def include_for_advanced_search
+    nil
+  end
+
 end

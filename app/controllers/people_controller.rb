@@ -1,5 +1,7 @@
 class PeopleController < ApplicationController
-  include SAL::Analyzable
+  #include SAL::Analyzable
+
+  include SAL::AdvancedSearchable
 
   before_action :set_person, only: %i[ show edit update destroy ]
 

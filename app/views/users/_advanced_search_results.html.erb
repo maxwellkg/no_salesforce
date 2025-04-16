@@ -1,0 +1,28 @@
+<div class="overflow-x-auto sm:rounded-lg mt-10">
+  <table class="text-sm text-left text-gray-500">
+    <thead class="text-xs text-gray-800 dark:text-white uppercase bg-gray-50 dark:bg-gray-700 whitespace-nowrap">
+      <th scope="col" class="px-6 py-3">Name</th>
+      <th scope="col" class="px-6 py-3">Email Address</th>
+      <th scope="col" class="px-6 py-3">Job Title</th>
+      <th scope="col" class="px-6 py-3">Is Admin?</th>
+    </thead>
+    <tbody>
+      <% @builder.results.each do |user| %>
+        <tr class="bg-white hover:bg-gray-50 dark:bg-gray-500 dark:hover:bg-gray-400 text-gray-800 dark:text-white border-b border-gray-300 dark:border-gray-600">
+          <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap">
+            <%= link_to user.full_name, user_path(user), data: { turbo: false } %>
+          </th>
+          <td class="px-6 py-4">
+            <%= mail_to user.email_address %>
+          </td>
+          <td class="px-6 py-4">
+            <%= user.job_title %>
+          </td>
+          <td class="px-6 py-4">
+            <%= user.admin? %>
+          </td>          
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
