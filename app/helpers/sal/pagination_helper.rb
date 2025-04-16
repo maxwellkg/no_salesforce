@@ -26,13 +26,7 @@ module SAL::PaginationHelper
   end
 
   def should_paginate?
-    more_than_one_page = num_results.present? && num_results > @num_results_per_page
-
-    if advanced_search?
-      more_than_one_page
-    else
-      more_than_one_page && @presenter.has_rows?
-    end
+    num_results.present? && num_results > @num_results_per_page
   end
 
   def pagination_start
@@ -76,23 +70,7 @@ module SAL::PaginationHelper
   end
 
   def pagination_resource
-    if advanced_search?
-      @builder.config.countable.pluralize.titleize
-    else
-      @presenter.rows_display_name.downcase.pluralize
-    end
-  end
-
-  def advanced_search?
-    @builder.mode == :advanced_search
-  end
-
-  def summary?
-    @builder.mode == :summary
-  end
-
-  def change_over_time?
-    @builder.mode == :change_over_time
+    @builder.config.countable.pluralize.titleize
   end
 
 end

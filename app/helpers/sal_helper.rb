@@ -10,7 +10,7 @@ module SALHelper
 
   def sal_results_tf_tag
     if eager?
-      # the results may take a few seconds to fetch, so load them separately
+      # the results may take a while to fetch, so load them separately
       turbo_frame_tag sal_results_tf_tag_id, src: incoming_path.merge(builder_link_params.merge(fr: 1, page: @page_number)) do
         render partial: 'shared/spinner'
       end

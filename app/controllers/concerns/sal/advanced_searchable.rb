@@ -6,6 +6,9 @@ module SAL::AdvancedSearchable
     helper_method :eager?, :fetching?, :eager_or_fetching?
 
     def index
+      set_page_number
+      set_num_results_per_page
+
       set_builder
       set_title
 
@@ -36,10 +39,6 @@ module SAL::AdvancedSearchable
         [searchable_params, filterable_params].flatten
       end
 
-      def builder_params
-        params.permit(allowable_params)
-      end
-
       def sal_config
         sal_config_klass.instance
       end
@@ -51,12 +50,10 @@ module SAL::AdvancedSearchable
       def fetch_results
         if params[:fr] == "1"
           :true
-        elsif builder_params.present?
-          if request.referrer.nil? || params[:eager] == '1'
-            :eager
-          else
-            :false
-          end
+        elsif params[:eager] == "1"
+          :eager
+        elsif user_input_params.present? && request.referrer.nil?
+          :eager
         else
           :false
         end
@@ -72,7 +69,32 @@ module SAL::AdvancedSearchable
 
       def eager_or_fetching?
         eager? || fetching?
-      end    
+      end
+
+      NUM_RESULTS_PER_PAGE = 50.freeze   
+
+      def set_num_results_per_page
+        @num_results_per_page = NUM_RESULTS_PER_PAGE
+      end
+
+      def user_input_params
+        params.permit(allowable_params)
+      end
+
+      def builder_params(should_paginate: true)
+        bps = user_input_params
+
+        if should_paginate && fetching?
+          bps.merge!(limit: @num_results_per_page)
+          bps.merge!(offset: @num_results_per_page * (@page_number - 1)) if @page_number > 1
+        end
+
+        bps
+      end
+
+      def set_page_number
+        @page_number = params[:page]&.to_i || 1
+      end      
 
   end
 
