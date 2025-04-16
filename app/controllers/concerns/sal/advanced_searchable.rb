@@ -72,7 +72,7 @@ module SAL::AdvancedSearchable
 
       def eager_or_fetching?
         eager? || fetching?
-      end      
+      end    
 
   end
 
