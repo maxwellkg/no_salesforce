@@ -2,9 +2,145 @@
 # it creates 4 users
 # then 100 accounts, each with between 3 and 10 people
 
+usa_country = Locations::Country.find_by(alpha_2: "US")
+won_stage = DealStage.find_by_name("Closed Won")
+lost_stage = DealStage.find_by_name("Closed Lost")
+
+def generate_valid_phone_number(country)
+  valid = false
+
+  pn = nil
+
+  until valid
+    pn = PhoneNumber.new(number: Faker::PhoneNumber.phone_number, country: country)
+
+    valid = pn.valid?
+  end
+
+  pn
+end
+
+def create_reminder(logged_to, earliest_occurring_at: nil, latest_occurring_at: nil, people: [], mark_complete: false)
+  earliest_at = earliest_occurring_at || logged_to.created_at
+  latest_at = latest_occurring_at || (Date.today + 6.months)
+
+  occurring_at = Faker::Date.between(from: earliest_at, to: latest_at)
+
+  complete =  if mark_complete
+                true
+              elsif occurring_at > Date.today
+                false
+              elsif occurring_at < Date.today.prev_month
+                true
+              else
+                # in the last month
+                # mark complete ~75% of the time
+                rand(1..100) <= 75 
+              end
+
+  title = "Discuss #{Faker::Commerce.product_name}"
+
+  notes = Faker::Lorem.sentences(number: rand(1..10)).join(" ")
+
+  created_at = Faker::Time.between(from: occurring_at - 30.days, to: occurring_at.prev_day)
+
+  r = Reminder.new(
+    logged_to: logged_to,
+    occurring_at: occurring_at,
+    type: ReminderType.random,
+    title: title,
+    notes: notes,
+    complete: complete,
+    assigned_to: logged_to.owner,
+    created_at: created_at,
+    created_by: logged_to.owner
+  )
+
+  Array.wrap(people).each do |person|
+    r.people << person
+  end
+
+  r.save!
+end
+
+def generate_deal_amount
+  # 75% chance that the deal is >= $10k < $30k
+  # 25% chance that it is > $30k and <= $100k
+
+  r = rand(1..100)
+
+  if r <= 75
+    (10_000..30_000).step(1_000).to_a.sample
+  else
+    (30_000..100_000).step(5_000).to_a.sample
+  end
+end
+
+def generate_deal_name(account)
+  "#{account.name} #{Faker::Commerce.product_name}"
+end
+
+def generate_deal_with_reminders(stage)
+  account = Account.random
+
+  deal_created_at = Faker::Time.between(from: Date.new(2023, 1, 1), to: Date.yesterday)
+
+  deal = Deal.new(
+    account: account,
+    owner: account.owner,
+    description: Faker::Lorem.sentences(number: rand(5..12)).join(" "),
+    stage: stage,
+    source: AccountLeadSource.random,
+    name: generate_deal_name(account),
+    amount: generate_deal_amount,
+    created_at: deal_created_at,
+    created_by: account.owner
+  )
+
+  latest_close_date = deal.closed? ? Date.yesterday : Date.today + 6.months
+
+  deal.close_date = Faker::Date.between(from: deal_created_at, to: latest_close_date)
+
+  # create a few reminders on the deal
+  # make sure the reminder is set to occur while the deal was open
+  # and if the deal is closed, always mark it as complete
+  #
+  # include a random 1-4 people on the reminder
+  rand(3..6).times do
+    people = account.people.random(rand(1..4))
+
+    create_reminder(
+      deal,
+      earliest_occurring_at: deal_created_at,
+      latest_occurring_at: deal.close_date,
+      people: people,
+      mark_complete: deal.closed?
+    )
+  end
+
+  deal.save!
+end
+
+
+
 ActiveRecord::Base.transaction do
 
+  puts "Removing existing data..."
+
+  PeopleReminder.delete_all
+  Reminder.delete_all
+  Deal.delete_all
+  Person.delete_all
+  Account.delete_all
+  User.where(admin: false).delete_all
+
+  puts "Completed!"
+
+  puts "Creating new sample data..."  
+
   users_domain = "example.com"
+
+  puts "Creating users..."
 
   4.times do
 
@@ -25,22 +161,7 @@ ActiveRecord::Base.transaction do
     )
   end
 
-
-  usa_country = Locations::Country.find_by(alpha_2: "US")
-
-  def generate_valid_phone_number(country)
-    valid = false
-
-    pn = nil
-
-    until valid
-      pn = PhoneNumber.new(number: Faker::PhoneNumber.phone_number, country: country)
-
-      valid = pn.valid?
-    end
-
-    pn
-  end
+  puts "Creating accounts..."
 
   100.times do
 
@@ -93,7 +214,7 @@ ActiveRecord::Base.transaction do
       postal_code: Faker::Address.postcode
     )
 
-    min_created_date = [incorporation_date, Date.new(2024, 1, 1)].max
+    min_created_date = [incorporation_date, Date.new(2023, 1, 1)].max
 
     assigned_to_user = User.random
 
@@ -157,6 +278,38 @@ ActiveRecord::Base.transaction do
     acct.save!
   end
 
+  # create a bunch of fake deals
+  #
+  # deals need the following attributes:
+  #   account
+  #   owner: owner of the account
+  #   close_date
+  #   stage
+  #   source
+  #   name
+  #   description
+  #   amount: between 
+
+  puts "Creating deals..."
+
+  # create 50 past won deals
+  50.times do
+    generate_deal_with_reminders(won_stage)
+  end
+
+  # create 100 past lost deals
+  100.times do
+    generate_deal_with_reminders(lost_stage)
+  end
+  
+  # create 25 open deals
+  25.times do
+    stage = DealStage.where.not(name: ["closed won", "closed lost"]).random
+    generate_deal_with_reminders(stage)
+  end
+
+
+
   # create a bunch of fake reminders
   #
   # reminders need the following attributes:
@@ -168,44 +321,16 @@ ActiveRecord::Base.transaction do
   #   created_by: logged_to record owner
   #   last_updated_by: logged_to record owner
 
+  puts "Creating reminders..."
 
-  def create_reminder(logged_to)
-    occurring_at = Faker::Date.between(from: logged_to.created_at, to: Date.today + 6.months)
-
-    complete =  if occurring_at > Date.today
-                  false
-                elsif occurring_at < Date.today.prev_month
-                  true
-                else
-                  # in the last month
-                  r = rand(1..100)
-                  r > 75 ? false : true
-                end
-
-    title = "Discuss #{Faker::Commerce.product_name}"
-
-    notes = Faker::Lorem.sentences(number: rand(1..10)).join(" ")
-
-    Reminder.create!(
-      logged_to: logged_to,
-      occurring_at: occurring_at,
-      type: ReminderType.random,
-      title: title,
-      notes: notes,
-      complete: complete,
-      assigned_to: logged_to.owner,
-      created_by: logged_to.owner
-    )
-  end
-
-  # create fake activities on accounts
+  # create fake reminders on accounts
   Account.all.each do |acct|
     rand(2..5).times do
       create_reminder(acct)
     end
   end
 
-  # create fake activities on people
+  # create fake reminders on people
   Person.all.each do |person|
     rand(2..5).times do
       create_reminder(person)
@@ -213,3 +338,5 @@ ActiveRecord::Base.transaction do
   end
 
 end
+
+puts "Finished!! Your sample data is now ready"

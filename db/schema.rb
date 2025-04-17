@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_04_07_030732) do
+ActiveRecord::Schema[8.0].define(version: 2025_04_16_234458) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -120,6 +120,35 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_07_030732) do
     t.index ["country_code"], name: "index_countries_on_country_code", unique: true
     t.index ["iso_3166__2"], name: "index_countries_on_iso_3166__2", unique: true
     t.index ["name"], name: "index_countries_on_name", unique: true
+  end
+
+  create_table "deal_stages", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_deal_stages_on_name", unique: true
+  end
+
+  create_table "deals", force: :cascade do |t|
+    t.bigint "account_id", null: false
+    t.bigint "owner_id", null: false
+    t.date "close_date", null: false
+    t.bigint "stage_id", null: false
+    t.bigint "source_id"
+    t.string "name", null: false
+    t.text "description"
+    t.float "amount"
+    t.datetime "last_activity_at"
+    t.bigint "created_by_id"
+    t.bigint "last_updated_by_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["account_id"], name: "index_deals_on_account_id"
+    t.index ["created_by_id"], name: "index_deals_on_created_by_id"
+    t.index ["last_updated_by_id"], name: "index_deals_on_last_updated_by_id"
+    t.index ["owner_id"], name: "index_deals_on_owner_id"
+    t.index ["source_id"], name: "index_deals_on_source_id"
+    t.index ["stage_id"], name: "index_deals_on_stage_id"
   end
 
   create_table "industries", force: :cascade do |t|
@@ -256,6 +285,12 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_07_030732) do
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "addresses", "countries"
   add_foreign_key "addresses", "state_regions"
+  add_foreign_key "deals", "account_lead_sources", column: "source_id"
+  add_foreign_key "deals", "accounts"
+  add_foreign_key "deals", "deal_stages", column: "stage_id"
+  add_foreign_key "deals", "users", column: "created_by_id"
+  add_foreign_key "deals", "users", column: "last_updated_by_id"
+  add_foreign_key "deals", "users", column: "owner_id"
   add_foreign_key "people", "account_lead_sources", column: "lead_source_id"
   add_foreign_key "people", "accounts"
   add_foreign_key "people", "addresses"

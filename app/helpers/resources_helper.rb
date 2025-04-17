@@ -45,6 +45,8 @@ module ResourcesHelper
       "🏢"
     when Person
       "🧑"
+    when Deal
+      "🤝"
     end
   end
 

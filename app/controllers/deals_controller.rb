@@ -1,10 +1,9 @@
 class DealsController < ApplicationController
+  include SAL::AdvancedSearchable
+
   before_action :set_deal, only: %i[ show edit update destroy ]
 
-  # GET /deals or /deals.json
-  def index
-    @deals = Deal.all
-  end
+  # index defined by SAL::AdvancedSearchable
 
   # GET /deals/1 or /deals/1.json
   def show
@@ -66,5 +65,9 @@ class DealsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def deal_params
       params.fetch(:deal, {})
+    end
+
+    def sal_config_klass
+      SAL::Configs::Deals
     end
 end

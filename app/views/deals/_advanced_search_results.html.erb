@@ -8,24 +8,25 @@
       <th scope="col" class="px-6 py-3">Amount</th>
       <th scope="col" class="px-6 py-3">Stage</th>
       <th scope="col" class="px-6 py-3">Source</th>
+      <th scope="col" class="px-6 py-3">Last Activity At</th>
     </thead>
     <tbody>
       <% @builder.results.each do |deal| %>
         <tr class="bg-white hover:bg-gray-50 dark:bg-gray-500 dark:hover:bg-gray-400 text-gray-800 dark:text-white border-b border-gray-300 dark:border-gray-600">
           <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap">
-            <%= link_to deal.name, deal_path(deal), data: { turbo: false } %>
+            <%= link_to deal.name, deal, data: { turbo: false } %>
           </th>
           <td class="px-6 py-4">
             <%= link_to_user(deal.owner, data: { turbo: false }) %>
           </td>
           <td class="px-6 py-4">
-            <%= link_to deal.account.name, account_path(deal.account) %>
+            <%= link_to deal.account.name, deal.account, data: { turbo: false } %>
           </td>
           <td class="px-6 py-4">
             <%= deal.close_date.to_formatted_s(:rfc822) %>
           </td>
           <td class="px-6 py-4">
-            <%= number_to_currency(deal.amount) %>
+            <%= number_to_currency(deal.amount, precision: 0) %>
           </td>
           <td class="px-6 py-4">
             <%= deal.stage.name %>
@@ -33,6 +34,9 @@
           <td class="px-6 py-4">
             <%= deal.source&.name %>
           </td>
+          <td class="px-6 py-4">
+            <%= deal.last_activity_at %>
+          </td>          
         </tr>
       <% end %>
     </tbody>

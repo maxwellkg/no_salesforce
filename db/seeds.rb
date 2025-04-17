@@ -7,3 +7,10 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+
+DEFAULT_DEAL_STAGES = []
+
+DEFAULT_DEAL_STAGES.each do |ds|
+	DealStage.find_or_create_by!(name: ds)
+end

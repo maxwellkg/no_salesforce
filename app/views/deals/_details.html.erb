@@ -1,0 +1,60 @@
+<div class='bg-white dark:bg-gray-800 text-gray-800 dark:text-white border border-gray-300 dark:border-gray-900 shadow rounded-md p-4'>
+  <h2 class="font-bebas-neue text-4xl">Details</h2>
+  <div class="py-4 border-b border-gray-300">
+    <div>
+      <span class="font-bold">Description: </span>
+      <span><%= @deal.description %></span>
+    </div>
+    <div class="mt-4">
+      <span class="font-bold">Amount: </span>
+      <span><%= number_to_currency(@deal.amount, precision: 0) %></span>
+    </div>    
+    <div class="md:grid md:grid-cols-2 md:gap-4 mt-4">
+      <div>
+        <span class="font-bold">Account: </span>
+        <span><%= link_to @deal.account.name, @deal.account %></span>
+      </div>
+      <div>
+        <span class="font-bold">Assigned To: </span>
+        <span><%= link_to_user @deal.owner %></span>
+      </div>
+      <div>
+        <span class="font-bold">Close Date: </span>
+        <span><%= @deal.close_date.to_formatted_s(:rfc822) %></span>
+      </div>
+      <div>
+        <span class="font-bold">Stage: </span>
+        <span><%= @deal.stage.name %></span>
+      </div>
+      <div>
+        <span class="font-bold">Source: </span>
+        <span><%= @deal.source&.name %></span>
+      </div>
+      <div>
+        <span class="font-bold">Last Activity At: </span>
+        <span><%= @deal.last_activity_at %></span>
+      </div>                                    
+    </div>
+  </div>
+  <div class="pt-4">
+    <h6 class="text-xl">System Information</h6>
+    <div class="md:grid md:grid-cols-2 md:gap-4 mt-4">
+      <div>
+        <span class="font-bold">Created By: </span>
+        <span><%= link_to_user(@deal.created_by) %></span>
+      </div>
+      <div>
+        <span class="font-bold">Created At: </span>
+        <span><%= @deal.created_at %></span>
+      </div>    
+      <div>
+        <span class="font-bold">Last Updated By: </span>
+        <span><%= link_to_user(@deal.last_updated_by) %></span>
+      </div>
+      <div>
+        <span class="font-bold">Last Updated At: </span>
+        <span><%= @deal.updated_at %></span>
+      </div>
+    </div>
+  </div>    
+</div>
