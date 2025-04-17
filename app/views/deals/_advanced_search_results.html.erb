@@ -1,0 +1,40 @@
+<div class="overflow-x-auto sm:rounded-lg mt-10">
+  <table class="text-sm text-left text-gray-500">
+    <thead class="text-xs text-gray-800 dark:text-white uppercase bg-gray-50 dark:bg-gray-700 whitespace-nowrap">
+      <th scope="col" class="px-6 py-3">Name</th>
+      <th scope="col" class="px-6 py-3">Assigned To</th>
+      <th scope="col" class="px-6 py-3">Account</th>
+      <th scope="col" class="px-6 py-3">Close Date</th>      
+      <th scope="col" class="px-6 py-3">Amount</th>
+      <th scope="col" class="px-6 py-3">Stage</th>
+      <th scope="col" class="px-6 py-3">Source</th>
+    </thead>
+    <tbody>
+      <% @builder.results.each do |deal| %>
+        <tr class="bg-white hover:bg-gray-50 dark:bg-gray-500 dark:hover:bg-gray-400 text-gray-800 dark:text-white border-b border-gray-300 dark:border-gray-600">
+          <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap">
+            <%= link_to deal.name, deal_path(deal), data: { turbo: false } %>
+          </th>
+          <td class="px-6 py-4">
+            <%= link_to_user(deal.owner, data: { turbo: false }) %>
+          </td>
+          <td class="px-6 py-4">
+            <%= link_to deal.account.name, account_path(deal.account) %>
+          </td>
+          <td class="px-6 py-4">
+            <%= deal.close_date.to_formatted_s(:rfc822) %>
+          </td>
+          <td class="px-6 py-4">
+            <%= number_to_currency(deal.amount) %>
+          </td>
+          <td class="px-6 py-4">
+            <%= deal.stage.name %>
+          </td>
+          <td class="px-6 py-4">
+            <%= deal.source&.name %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

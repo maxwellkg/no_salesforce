@@ -22,6 +22,8 @@ class Account < ApplicationRecord
 
   has_many :reminders
 
+  has_many :deals, inverse_of: :account
+
   validates :name, presence: true
 
   validates_associated :phone_number, :billing_address, :shipping_address

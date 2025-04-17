@@ -1,0 +1,2 @@
+class OpportunityStage < ApplicationRecord
+end
