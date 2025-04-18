@@ -62,4 +62,9 @@ module ResourcesHelper
     "No reminders for this #{resource.class.to_s.demodulize.downcase}"
   end  
 
+  def selected_resource_owner(resource)
+    owner = resource.owner || Current.user
+    owner.id
+  end  
+
 end

@@ -20,6 +20,7 @@ class DealsController < ApplicationController
 
   # POST /deals or /deals.json
   def create
+    binding.break
     @deal = Deal.new(deal_params)
 
     respond_to do |format|
@@ -37,7 +38,7 @@ class DealsController < ApplicationController
   def update
     respond_to do |format|
       if @deal.update(deal_params)
-        format.html { redirect_to @deal, notice: "Deal was successfully updated." }
+        format.html { redirect_to @deal, success: "Deal was successfully updated." }
         format.json { render :show, status: :ok, location: @deal }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -64,7 +65,7 @@ class DealsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def deal_params
-      params.fetch(:deal, {})
+      params.require(:deal).permit(:name, :account_id, :owner_id, :close_date, :stage_id, :amount, :description, :source_id)
     end
 
     def sal_config_klass

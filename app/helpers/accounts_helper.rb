@@ -35,9 +35,4 @@ module AccountsHelper
     @account.deals.order(close_date: :desc)
   end
 
-  def selected_account_owner
-    owner = @account.owner || Current.user
-    owner.id
-  end
-
 end
