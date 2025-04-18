@@ -121,7 +121,7 @@ module SAL::FormsHelper
   def label_and_input_tags_for_date_field(filter_hsh)
     ['start', 'end'].map do |pos|
       content_tag :div, class: "py-4" do
-        tags_for_date_filter(filter_hsh, 'start')
+        tags_for_date_filter(filter_hsh, pos)
       end
     end.join.html_safe
   end

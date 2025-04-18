@@ -5,20 +5,20 @@ class PeopleController < ApplicationController
 
   before_action :set_person, only: %i[ show edit update destroy ]
 
-  # GET /contacts/1 or /contacts/1.json
+  # GET /people/1 or /people/1.json
   def show
   end
 
-  # GET /contacts/new
+  # GET /people/new
   def new
     @person = Person.new
   end
 
-  # GET /contacts/1/edit
+  # GET /people/1/edit
   def edit
   end
 
-  # POST /contacts or /contacts.json
+  # POST /people or /people.json
   def create
     @person = Person.new(person_params)
 
@@ -28,12 +28,12 @@ class PeopleController < ApplicationController
         format.json { render :show, status: :created, location: @person}
       else
         format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @personerrors, status: :unprocessable_entity }
+        format.json { render json: @person.errors, status: :unprocessable_entity }
       end
     end
   end
 
-  # PATCH/PUT /contacts/1 or /contacts/1.json
+  # PATCH/PUT /people/1 or /people/1.json
   def update
     respond_to do |format|
       if @person.update(person_params)
@@ -41,17 +41,17 @@ class PeopleController < ApplicationController
         format.json { render :show, status: :ok, location: @person}
       else
         format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @personerrors, status: :unprocessable_entity }
+        format.json { render json: @person.errors, status: :unprocessable_entity }
       end
     end
   end
 
-  # DELETE /contacts/1 or /contacts/1.json
+  # DELETE /people/1 or /people/1.json
   def destroy
     @person.destroy!
 
     respond_to do |format|
-      format.html { redirect_to contacts_path, status: :see_other, notice: "Contact was successfully destroyed." }
+      format.html { redirect_to people_path, status: :see_other, notice: "Contact was successfully destroyed." }
       format.json { head :no_content }
     end
   end

@@ -71,7 +71,7 @@ module SAL::AdvancedSearchable
         eager? || fetching?
       end
 
-      NUM_RESULTS_PER_PAGE = 50.freeze   
+      NUM_RESULTS_PER_PAGE = 25.freeze   
 
       def set_num_results_per_page
         @num_results_per_page = NUM_RESULTS_PER_PAGE

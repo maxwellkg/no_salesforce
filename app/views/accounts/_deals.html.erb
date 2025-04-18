@@ -1,0 +1,21 @@
+<div class='bg-white dark:bg-gray-800 text-gray-800 dark:text-white border border-gray-300 dark:border-gray-900 shadow rounded-md p-4'>
+  <h5 class="font-bebas-neue text-4xl">Deals</h5>
+  <table class="text-sm text-left text-gray-500 mt-4">
+    <thead class="text-xs text-gray-800 dark:text-white uppercase bg-gray-50 dark:bg-gray-700 whitespace-nowrap">
+      <th scope="col" class="px-6 py-3">Name</th>
+      <th scope="col" class="px-6 py-3">Stage</th>
+      <th scope="col" class="px-6 py-3">Close Date</th>
+      <th scope="col" class="px-6 py-3">Amount</th>
+    </thead>
+    <tbody>
+      <% deals_for_account.each do |deal| %>
+        <tr class="bg-white hover:bg-gray-50 dark:bg-gray-500 dark:hover:bg-gray-400 text-gray-800 dark:text-white border-b border-gray-300 dark:border-gray-600">
+          <td class="px-6 py-4"><%= link_to deal.name, deal, data: { turbo: false } %></td>
+          <td class="px-6 py-4"><%= deal.stage&.name %></td>
+          <td class="px-6 py-4"><%= deal_close_date_display(deal) %></td>
+          <td class="px-6 py-4"><%= deal_amount_display(deal) %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

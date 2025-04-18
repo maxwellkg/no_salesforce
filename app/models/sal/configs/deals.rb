@@ -50,7 +50,7 @@ class SAL::Configs::Deals < SAL::Config
       }
     },
     {
-      lable: "Close Date",
+      label: "Close Date",
       field: :close_date
     },
     {

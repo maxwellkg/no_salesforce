@@ -1,6 +1,13 @@
 <div class="bg-cornflower-blue-500 py-6">
-  <div class="w-5/6 mx-auto">
-    <h1 class="font-bebas-neue text-4xl text-white font-bebas-neue">Search and Analytics: <%= @title %></h1>
+  <div class="w-5/6 mx-auto flex">
+    <div class="flex flex-col w-1/2">
+      <h1 class="font-bebas-neue text-4xl text-white font-bebas-neue">Search <%= @title %></h1>
+    </div>
+    <div class="flex flex-col w-1/2">
+      <div class="flex justify-end">
+        <%= new_resource_button %>
+      </div>
+    </div>
   </div>
 </div>
 <div>

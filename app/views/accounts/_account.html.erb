@@ -6,6 +6,12 @@
 		<div class="md:flex md:flex-col md:w-2/3 md:pr-3">
 			<%= render partial: "details" %>
 
+      <% if account_has_deals?(account) %>
+      	<div class="mt-4">
+      		<%= render partial: "deals" %>
+      	</div>
+      <% end %>
+
       <% if account_has_people?(account) %>
         <div class="mt-4">
           <%= render partial: "resources/people", locals: { resource: @account } %>

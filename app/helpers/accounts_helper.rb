@@ -27,4 +27,12 @@ module AccountsHelper
     account.people.any?
   end
 
+  def account_has_deals?(account)
+    account.deals.any?
+  end
+
+  def deals_for_account
+    @account.deals.order(close_date: :desc)
+  end
+
 end

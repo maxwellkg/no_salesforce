@@ -37,6 +37,16 @@ module SALHelper
     "#{@builder.num_total_results} Matching #{@builder.config.countable.capitalize}"
   end
 
+  def new_resource_button
+    resource_name = @builder.klass.to_s.demodulize.titleize
+
+    link_to(
+      "Create New #{resource_name}",
+      url_for(action: :new),
+      class: "text-white text-lg bg-tangelo-300 hover:bg-tangelo-500 focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-lg text-md w-2/3 px-5 py-2.5 text-center"
+    )
+  end
+
 
 ##########################################
   def selected_dashboard

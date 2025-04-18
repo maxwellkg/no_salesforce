@@ -97,9 +97,10 @@ def generate_deal_with_reminders(stage)
     created_by: account.owner
   )
 
+  earliest_close_date = deal.closed? ? deal_created_at : Date.tomorrow
   latest_close_date = deal.closed? ? Date.yesterday : Date.today + 6.months
 
-  deal.close_date = Faker::Date.between(from: deal_created_at, to: latest_close_date)
+  deal.close_date = Faker::Date.between(from: earliest_close_date, to: latest_close_date)
 
   # create a few reminders on the deal
   # make sure the reminder is set to occur while the deal was open
@@ -304,7 +305,7 @@ ActiveRecord::Base.transaction do
   
   # create 25 open deals
   25.times do
-    stage = DealStage.where.not(name: ["closed won", "closed lost"]).random
+    stage = DealStage.where.not(name: ["Closed Won", "Closed Lost"]).random
     generate_deal_with_reminders(stage)
   end
 

@@ -7,7 +7,7 @@
     </div>
     <div class="mt-4">
       <span class="font-bold">Amount: </span>
-      <span><%= number_to_currency(@deal.amount, precision: 0) %></span>
+      <span><%= deal_amount_display(@deal) %></span>
     </div>    
     <div class="md:grid md:grid-cols-2 md:gap-4 mt-4">
       <div>
@@ -20,7 +20,7 @@
       </div>
       <div>
         <span class="font-bold">Close Date: </span>
-        <span><%= @deal.close_date.to_formatted_s(:rfc822) %></span>
+        <span><%= deal_close_date_display(@deal) %></span>
       </div>
       <div>
         <span class="font-bold">Stage: </span>
