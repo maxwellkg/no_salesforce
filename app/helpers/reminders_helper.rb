@@ -4,4 +4,5 @@ module RemindersHelper
     truncated = Truncato.truncate reminder.notes.to_s, max_length: 100, count_tags: false
     truncated.html_safe
   end
+
 end

@@ -13,7 +13,7 @@
     <%= link_to "Create New Reminder 🔔", new_reminder_path(logged_to_sgid: @account.to_sgid_for_polymorphic_select), class: "w-full sm:w-auto text-center mt-2 sm:mt-0 sm:ml-2 rounded-md px-3.5 py-2.5 bg-sky-500 hover:bg-sky-700 text-white inline-block font-medium" %>
   </div>
 
-  <div class="mt-4">
+  <div class="py-8">
     <%= render @account %>  
   </div>
 </div>

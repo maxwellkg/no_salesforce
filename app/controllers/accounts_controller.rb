@@ -65,7 +65,7 @@ class AccountsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def account_params
-      params.fetch(:account, {})
+      params.require(:account).permit(:name, :owner_id, :description, :annual_revenue, :number_of_employees, :industry_id, :website, :incorporation_date, :account_source_id)
     end
 
     def sal_config_klass

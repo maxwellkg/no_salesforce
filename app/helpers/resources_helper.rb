@@ -50,4 +50,16 @@ module ResourcesHelper
     end
   end
 
+  def options_for_all_users(selected: nil)
+    options_from_collection_for_select(User.all, :id, :full_name, selected)
+  end
+
+  def resource_has_reminders?(resource)
+    resource.reminders.any?
+  end
+
+  def no_reminders_message(resource)
+    "No reminders for this #{resource.class.to_s.demodulize.downcase}"
+  end  
+
 end

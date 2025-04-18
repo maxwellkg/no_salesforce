@@ -3,30 +3,40 @@
     <h3 class="font-bebas-neue text-4xl">Reminders</h3>
   </div>
 
-  <% if resource_has_past_due_reminders?(resource) %>
-    <div class="py-4 border-b border-b-4 border-gray-300">
-      <h5 class="text-xl text-red">Past Due ⚠️:</h5>
-      <div>
-        <%= render_reminders_partial(past_due_reminders_collection(resource)) %>
-      </div>
-    </div>
-  <% end %>
+  <% if !resource_has_reminders?(resource) %>
 
-  <% if resource_has_upcoming_reminders?(resource) %>
-    <div class="py-4 border-b border-b-4 border-gray-300">
-      <h5 class="text-xl">Upcoming ⏰:</h5>
-      <div>
-        <%= render_reminders_partial(upcoming_reminders_collection(resource)) %>
-      </div>
-    </div>
-  <% end %>
-
-  <% if resource_has_completed_reminders?(resource) %>
     <div class="py-4">
-      <h5 class="text-xl">Completed ✅:</h5>
-      <div>
-        <%= render_reminders_partial(completed_reminders_collection(resource)) %>
-      </div>
+      <span class="text-xl"><%= no_reminders_message(resource) %></span>
     </div>
+
+  <% else %>
+
+    <% if resource_has_past_due_reminders?(resource) %>
+      <div class="py-4 border-b border-b-4 border-gray-300">
+        <h5 class="text-xl text-red">Past Due ⚠️:</h5>
+        <div>
+          <%= render_reminders_partial(past_due_reminders_collection(resource)) %>
+        </div>
+      </div>
+    <% end %>
+
+    <% if resource_has_upcoming_reminders?(resource) %>
+      <div class="py-4 border-b border-b-4 border-gray-300">
+        <h5 class="text-xl">Upcoming ⏰:</h5>
+        <div>
+          <%= render_reminders_partial(upcoming_reminders_collection(resource)) %>
+        </div>
+      </div>
+    <% end %>
+
+    <% if resource_has_completed_reminders?(resource) %>
+      <div class="py-4">
+        <h5 class="text-xl">Completed ✅:</h5>
+        <div>
+          <%= render_reminders_partial(completed_reminders_collection(resource)) %>
+        </div>
+      </div>
+    <% end %>
+
   <% end %>
 </div>
