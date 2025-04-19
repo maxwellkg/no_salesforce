@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courirer+Prime&display=swap");
+
 @import "tailwindcss";
 
 @theme {
   --font-bebas-neue: "Bebas Neue", "sans-serif";
   --font-questrial: "Questrial", "sans-serif";
+  --font-josefin: "Josefin Sans", "sans-serif";
+  --font-handwriting: "Just Another Hand", "serif";
+  --font-typewriter: "Courier Prime", "serif";
 
   --color-cornflower-blue-50: #d3e7fc;
   --color-cornflower-blue-100: #a5d0f9;
@@ -126,3 +133,18 @@
   @apply bg-gray-100 border-gray-400 text-gray-700;
 }
 
+.bg-dark-leather {
+  @apply bg-[url('dark-leather.png')] bg-[#17446b];
+}
+
+.bg-textured-paper {
+  @apply bg-[url('textured-paper.png')];
+}
+
+.bg-textured-paper-white {
+   @apply bg-textured-paper bg-white;
+}
+
+.bg-textured-paper-beige
+  @appy bg-textured-paper bg-[#8f7e39];
+}
