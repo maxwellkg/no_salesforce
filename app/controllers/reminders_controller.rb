@@ -65,7 +65,7 @@ class RemindersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def reminder_params
-      params.require(:reminder).permit(:reminder, :account_id, :occurring_at, :type_id, :title, :notes, :complete, :logged_to_sgid, :assigned_to_id)
+      params.require(:reminder).permit(:reminder, :account_id, { person_ids: [] }, :occurring_at, :type_id, :title, :notes, :complete, :logged_to_sgid, :assigned_to_id)
     end
 
     def new_reminder

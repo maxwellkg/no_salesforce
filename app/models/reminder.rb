@@ -7,8 +7,8 @@ class Reminder < ApplicationRecord
   belongs_to :logged_to, polymorphic: true
 
   has_many :people_reminders
-  accepts_nested_attributes_for :people_reminders
-  has_many :people, through: :people_reminders
+  
+  has_and_belongs_to_many :people
 
   # include created_by and last_updated_by associations and related callbacks
   include UserTracked
@@ -61,6 +61,14 @@ class Reminder < ApplicationRecord
     occurring_in_past? && incomplete?
   end
 
+  def logged_to_an_account?
+    logged_to_type == "Account"
+  end
+
+  def logged_to_a_contact?
+    logged_to_type == "Person"
+  end  
+
   private
 
     # can be logged to an Account, Person, or Deal
@@ -79,14 +87,6 @@ class Reminder < ApplicationRecord
 
     def logged_directly_to_account?
       logged_to == account
-    end
-
-    def logged_to_an_account?
-      logged_to_type == "Account"
-    end
-
-    def logged_to_a_contact?
-      logged_to_type == "Person"
     end
 
     # if the account has not been directly assigned, assign it to the

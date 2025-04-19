@@ -4,8 +4,8 @@
   <div>
     <%= link_to "See all reminders", reminders_path, class: "w-full sm:w-auto text-center mt-2 sm:mt-0 sm:ml-2 rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium" %>
   </div>
-  <div class="mt-12 bg-white dark:bg-gray-800 text-gray-800 dark:text-white border border-gray-300 dark:border-gray-900 shadow rounded-md p-6">
-    <h1 class="font-bold text-4xl">New reminder</h1>
+  <div class="mt-12 dark:bg-gray-800 text-gray-800 dark:text-white dark:border-gray-900 shadow rounded-md p-6 bg-[url('textured-paper.png')] bg-[#8f7e39] rotate-1">
+    <h1 class="font-bold uppercase text-4xl">New reminder</h1>
     <div class="mt-12">
       <%= render "form", reminder: @reminder %>
     </div>

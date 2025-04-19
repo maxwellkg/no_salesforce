@@ -23,7 +23,9 @@
     	<div class="mt-4">
     		<span class="font-bold">People:</span>
 		    <% @reminder.people.each do |person| %>
-		    	<span><%= link_to person.full_name, person %></span>
+          <div>
+		    	 <span><%= link_to person.full_name, person %></span>
+          </div>
 		    <% end %>
 	   </div>
 		<% end %>  
