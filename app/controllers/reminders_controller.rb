@@ -1,27 +1,27 @@
 class RemindersController < ApplicationController
+  include SAL::AdvancedSearchable
+
   before_action :set_activity, only: %i[ show edit update destroy ]
 
-  # GET /activities or /activities.json
-  def index
-    @activities = Reminder.all
-  end
+  # index defined by SAL::AdvancedSearchable
 
-  # GET /activities/1 or /activities/1.json
+
+  # GET /reminders/1 or /reminders/1.json
   def show
   end
 
-  # GET /activities/new
+  # GET /reminders/new
   def new
-    @reminder = Reminder.new
+    @reminder = new_reminder
   end
 
-  # GET /activities/1/edit
+  # GET /reminders/1/edit
   def edit
   end
 
-  # POST /activities or /activities.json
+  # POST /reminders or /reminders.json
   def create
-    @reminder = Reminder.new(reminder_params)
+    @reminder = new_reminder
 
     respond_to do |format|
       if @reminder.save
@@ -34,7 +34,7 @@ class RemindersController < ApplicationController
     end
   end
 
-  # PATCH/PUT /activities/1 or /activities/1.json
+  # PATCH/PUT /reminders/1 or /reminders/1.json
   def update
     respond_to do |format|
       if @reminder.update(reminder_params)
@@ -47,12 +47,12 @@ class RemindersController < ApplicationController
     end
   end
 
-  # DELETE /activities/1 or /activities/1.json
+  # DELETE /reminders/1 or /reminders/1.json
   def destroy
     @reminder.destroy!
 
     respond_to do |format|
-      format.html { redirect_to activities_path, status: :see_other, notice: "Activity was successfully destroyed." }
+      format.html { redirect_to reminders_path, status: :see_other, notice: "Activity was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,26 @@ class RemindersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def reminder_params
-      params.fetch(:reminder, {})
+      params.require(:reminder).permit(:reminder, :account_id, :occurring_at, :type_id, :title, :notes, :complete, :logged_to_sgid, :assigned_to_id)
+    end
+
+    def new_reminder
+      return Reminder.new unless params[:reminder]
+
+      new_reminder_params = reminder_params.dup
+
+      sgid = new_reminder_params.delete(:logged_to_sgid)
+
+      reminder = Reminder.new(new_reminder_params)
+
+      if sgid.present?
+        reminder.logged_to = GlobalID::Locator.locate_signed sgid, for: :polymorphic_select
+      end
+
+      reminder
+    end
+
+    def sal_config_klass
+      SAL::Configs::Reminders
     end
 end

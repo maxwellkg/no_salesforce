@@ -1,6 +1,4 @@
 class Deal < ApplicationRecord
-  include PolymorphicSelectable
-
   include BasicSearch
   basic_search :name
 

@@ -3,11 +3,13 @@
     <div class="flex flex-col w-1/2">
       <h1 class="font-bebas-neue text-4xl text-white font-bebas-neue">Search <%= @title %></h1>
     </div>
-    <div class="flex flex-col w-1/2">
-      <div class="flex justify-end">
-        <%= new_resource_button %>
+    <% if show_new_resource_button? %>
+      <div class="flex flex-col w-1/2">
+        <div class="flex justify-end">
+          <%= new_resource_button %>
+        </div>
       </div>
-    </div>
+    <% end %>
   </div>
 </div>
 <div>

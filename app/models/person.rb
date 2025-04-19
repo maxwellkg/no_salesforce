@@ -1,8 +1,6 @@
 class Person < ApplicationRecord
   include SAL::FieldSetter
 
-  include PolymorphicSelectable
-
   include BasicSearch
   basic_search :full_name, :first_name, :last_name
 

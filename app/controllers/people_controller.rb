@@ -24,7 +24,11 @@ class PeopleController < ApplicationController
 
     respond_to do |format|
       if @person.save
-        format.html { redirect_to @person, notice: "Contact was successfully created." }
+        format.html do
+          flash[:success] = "Person was successfully created."
+          redirect_to @person
+        end
+
         format.json { render :show, status: :created, location: @person}
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -37,7 +41,12 @@ class PeopleController < ApplicationController
   def update
     respond_to do |format|
       if @person.update(person_params)
-        format.html { redirect_to @person, notice: "Contact was successfully updated." }
+        
+        format.html do 
+          flash[:success] = "Person was successfully updated."
+          redirect_to @person
+        end
+
         format.json { render :show, status: :ok, location: @person}
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -64,7 +73,7 @@ class PeopleController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def person_params
-      params.fetch(:person, {})
+      params.require(:person).permit(:first_name, :last_name, :email_address, :account_id, :job_title, :owner_id, :lead_source_id)
     end
 
     def sal_config_klass

@@ -38,6 +38,9 @@ class Reminder < ApplicationRecord
 
   scope :ordered, -> { order(occurring_at: :desc) }
 
+  include BasicSearch
+  basic_search :title
+
   def incomplete?
     !complete?
   end

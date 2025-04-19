@@ -5,4 +5,8 @@ module RemindersHelper
     truncated.html_safe
   end
 
+  def reminder_assigned_to_id
+    @reminder.assigned_to&.id || Current.user.id
+  end
+
 end

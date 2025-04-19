@@ -67,6 +67,8 @@ module SAL::FormsHelper
   def date_filter?(field_name)
     col = column_for_field_name(field_name)
 
+    return false unless col.present?
+
     [:date, :datetime].include?(col.type)
   end
 

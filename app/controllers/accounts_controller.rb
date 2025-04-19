@@ -71,4 +71,5 @@ class AccountsController < ApplicationController
     def sal_config_klass
       SAL::Configs::Accounts
     end
+
 end

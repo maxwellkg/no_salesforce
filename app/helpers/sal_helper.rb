@@ -47,6 +47,10 @@ module SALHelper
     )
   end
 
+  def show_new_resource_button?
+    @builder.config.show_new_resource_button?
+  end
+
 
 ##########################################
   def selected_dashboard

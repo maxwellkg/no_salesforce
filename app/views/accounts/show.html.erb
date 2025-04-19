@@ -10,7 +10,7 @@
         <%= button_to "Destroy this account 💣", @account, method: :delete, class: "w-full rounded-md px-3.5 py-2.5 text-white bg-red-600 hover:bg-red-500 font-medium cursor-pointer", data: { turbo_confirm: "Are you sure?" } %>
       </div>
     <% end %>
-    <%= link_to "Create New Reminder 🔔", new_reminder_path(logged_to_sgid: @account.to_sgid_for_polymorphic_select), class: "w-full sm:w-auto text-center mt-2 sm:mt-0 sm:ml-2 rounded-md px-3.5 py-2.5 bg-sky-500 hover:bg-sky-700 text-white inline-block font-medium" %>
+    <%= link_to "Create New Reminder 🔔", new_reminder_path(reminder: { logged_to_sgid: @account.to_sgid_for_polymorphic_select }), class: "w-full sm:w-auto text-center mt-2 sm:mt-0 sm:ml-2 rounded-md px-3.5 py-2.5 bg-sky-500 hover:bg-sky-700 text-white inline-block font-medium" %>
   </div>
 
   <div class="py-8">

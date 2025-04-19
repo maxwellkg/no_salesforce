@@ -63,4 +63,8 @@ class SAL::Config
     nil
   end
 
+  def show_new_resource_button?
+    true
+  end
+
 end

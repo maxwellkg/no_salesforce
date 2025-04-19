@@ -2,8 +2,6 @@ class Account < ApplicationRecord
   include BasicSearch
   basic_search :name
 
-  include SAL::FieldSetter
-
   include PolymorphicSelectable
 
   belongs_to :owner, class_name: "User"
