@@ -1,8 +1,10 @@
 <div id="<%= dom_id user %>" class="w-full sm:w-auto my-5 space-y-5">
-  <% [:first_name, :last_name, :email_address].each do |field| %>
-    <div class="py-2">
-      <span class="font-bold"><%= field.to_s.titleize %>:&nbsp;</span>
-      <span><%= @user.send(field) %></span>
-    </div>
-  <% end %>
+  <div class='bg-white dark:bg-gray-800 text-gray-800 dark:text-white border border-gray-300 dark:border-gray-900 shadow rounded-md p-4'>
+    <% [:first_name, :last_name, :email_address].each do |field| %>
+      <div class="py-2">
+        <span class="font-bold"><%= field.to_s.titleize %>:&nbsp;</span>
+        <span><%= @user.send(field) %></span>
+      </div>
+    <% end %>
+  </div>
 </div>
