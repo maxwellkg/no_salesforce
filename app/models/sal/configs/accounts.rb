@@ -48,10 +48,6 @@ class SAL::Configs::Accounts < SAL::Config
     Account
   end
 
-  def countable
-    "accounts"
-  end
-
   def include_for_advanced_search
     [
       :owner,

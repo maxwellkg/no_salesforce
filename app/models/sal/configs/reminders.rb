@@ -18,7 +18,7 @@ class SAL::Configs::Reminders < SAL::Config
     },
     {
       label: "Assigned To",
-      field: :owner_id,
+      field: :assigned_to_id,
       typeahead: true,
       path: :typeaheads_users_path,
       options: {

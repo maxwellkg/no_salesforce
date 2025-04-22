@@ -67,4 +67,8 @@ class SAL::Config
     true
   end
 
+  def countable
+    klass.to_s.demodulize.downcase.pluralize
+  end
+
 end

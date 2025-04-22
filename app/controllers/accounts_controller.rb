@@ -1,5 +1,4 @@
 class AccountsController < ApplicationController
-  #include SAL::Analyzable
   include SAL::AdvancedSearchable
 
   before_action :set_account, only: %i[ show edit update destroy ]
