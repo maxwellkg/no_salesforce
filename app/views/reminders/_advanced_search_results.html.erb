@@ -24,7 +24,7 @@
             <%= link_to_user(reminder.assigned_to, data: { turbo: false }) %>
           </td>
           <td class="px-6 py-4">
-            <%= reminder.type&.name %>
+            <%= reminder.type&.display_name %>
           </td>
           <td class="px-6 py-4">
             <%= reminder.occurring_at %>

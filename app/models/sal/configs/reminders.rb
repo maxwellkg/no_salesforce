@@ -34,7 +34,7 @@ class SAL::Configs::Reminders < SAL::Config
       options: {
         collection: Proc.new { ReminderType.order(:name) },
         value_method: :id,
-        text_method: :name,
+        text_method: :display_name,
         allow_multiple: true
       }
     },    
