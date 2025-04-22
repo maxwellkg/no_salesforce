@@ -39,9 +39,28 @@ module SAL::AdvancedSearchable
         [searchable_params, filterable_params].flatten
       end
 
+      def user_input_params
+        params.permit(allowable_params)
+      end      
+
+      def builder_params(should_paginate: true)
+        bps = user_input_params
+
+        if should_paginate && fetching?
+          bps.merge!(limit: @num_results_per_page)
+
+          if @page_number > 1
+            offset = @num_results_per_page * (@page_number - 1)
+            bps.merge!(offset: offset)
+          end
+        end
+
+        bps
+      end
+
       def sal_config
         sal_config_klass.instance
-      end
+      end            
 
       def set_builder
         @builder = SAL::Builder.new(sal_config, builder_params)
@@ -75,21 +94,6 @@ module SAL::AdvancedSearchable
 
       def set_num_results_per_page
         @num_results_per_page = NUM_RESULTS_PER_PAGE
-      end
-
-      def user_input_params
-        params.permit(allowable_params)
-      end
-
-      def builder_params(should_paginate: true)
-        bps = user_input_params
-
-        if should_paginate && fetching?
-          bps.merge!(limit: @num_results_per_page)
-          bps.merge!(offset: @num_results_per_page * (@page_number - 1)) if @page_number > 1
-        end
-
-        bps
       end
 
       def set_page_number

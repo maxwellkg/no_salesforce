@@ -31,9 +31,8 @@ class SAL::Configs::Accounts < SAL::Config
       label: "Assigned To",
       field: :owner_id,
       klass: User,
-      typeahead: true,
-      path: :typeaheads_users_path,
       options: {
+        collection: Proc.new { User.all },
         value_method: :id,
         text_method: :full_name,
         allow_multiple: true

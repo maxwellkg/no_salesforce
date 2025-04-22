@@ -20,7 +20,7 @@
       <% @builder.results.each do |account| %>
         <tr class="bg-white hover:bg-gray-50 dark:bg-gray-500 dark:hover:bg-gray-400 text-gray-800 dark:text-white border-b border-gray-300 dark:border-gray-600">
           <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap">
-            <%= link_to account.name, account_path(account), data: { turbo: false } %>
+            <%= link_to account.name, account, data: { turbo: false } %>
           </th>
           <td class="px-6 py-4">
             <%= link_to_user(account.owner, data: { turbo: false }) %>

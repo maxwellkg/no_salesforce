@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  include BasicSearch
+  include SAL::BasicSearch
 
   include SAL::FieldSetter
 

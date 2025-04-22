@@ -1,4 +1,4 @@
-module BasicSearch
+module SAL::BasicSearch
   extend ActiveSupport::Concern
 
   class_methods do

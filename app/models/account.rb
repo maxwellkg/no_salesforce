@@ -1,5 +1,5 @@
 class Account < ApplicationRecord
-  include BasicSearch
+  include SAL::BasicSearch
   basic_search :name
 
   include PolymorphicSelectable

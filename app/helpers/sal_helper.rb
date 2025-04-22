@@ -43,7 +43,7 @@ module SALHelper
     link_to(
       "Create New #{resource_name}",
       url_for(action: :new),
-      class: "text-white text-lg bg-tangelo-300 hover:bg-tangelo-500 focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-lg text-md w-2/3 px-5 py-2.5 text-center"
+      class: "text-white text-lg bg-emerald-900 hover:bg-emerald-700 focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-lg text-md w-2/3 px-5 py-2.5 text-center"
     )
   end
 

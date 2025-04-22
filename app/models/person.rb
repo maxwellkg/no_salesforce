@@ -1,7 +1,7 @@
 class Person < ApplicationRecord
   include PolymorphicSelectable
 
-  include BasicSearch
+  include SAL::BasicSearch
   basic_search :full_name, :first_name, :last_name
 
   belongs_to :account, inverse_of: :people
