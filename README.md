@@ -1,24 +1,27 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To get the application up and running:
 
-Things you may want to cover:
+* Make sure you have Postgres installed (the app uses some functionality that is only written for use with pg at the moment)
 
-* Ruby version
+* Make any necessary adjustments to `database.yml`
 
-* System dependencies
+* Run `rails db:create` and `rails db:migrate` to set up the database
 
-* Configuration
+* Run `rails db:seed` to seed the database with some important initial data
 
-* Database creation
+* If you also want to populate the application with sample data for Accounts, Deals, People, and Reminders, then run `rails runner script/data_loading/load_sample_data.rb`
 
-* Database initialization
+* Open up a console and create a new user for yourself. Best to also make yourself an admin user
 
-* How to run the test suite
+```ruby
+	u = User.create!(
+    first_name: <your_first_name>,
+    last_name: <your_last_name>,
+    email_address: <your_email>,
+    password: <your_password>,
+    admin: true
+	)
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Once you've done the above, you should be good to start exploring the app!
