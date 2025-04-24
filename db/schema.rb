@@ -241,19 +241,21 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_16_234458) do
     t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_state_region_types_on_name", unique: true
   end
 
   create_table "state_regions", force: :cascade do |t|
     t.string "country_short_code", null: false
     t.bigint "country_id", null: false
     t.string "name"
-    t.bigint "state_region_type_id"
+    t.bigint "type_id"
     t.string "alpha_code", null: false
     t.string "numeric_code", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["country_id"], name: "index_state_regions_on_country_id"
-    t.index ["state_region_type_id"], name: "index_state_regions_on_state_region_type_id"
+    t.index ["numeric_code"], name: "index_state_regions_on_numeric_code", unique: true
+    t.index ["type_id"], name: "index_state_regions_on_type_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -307,7 +309,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_16_234458) do
   add_foreign_key "reminders", "users", column: "last_updated_by_id"
   add_foreign_key "sessions", "users"
   add_foreign_key "state_regions", "countries"
-  add_foreign_key "state_regions", "state_region_types"
+  add_foreign_key "state_regions", "state_region_types", column: "type_id"
   add_foreign_key "users", "users", column: "created_by_id"
   add_foreign_key "users", "users", column: "last_updated_by_id"
 end

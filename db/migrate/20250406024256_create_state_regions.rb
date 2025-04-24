@@ -4,9 +4,9 @@ class CreateStateRegions < ActiveRecord::Migration[8.0]
       t.string :country_short_code, null: false
       t.references :country, null: false, foreign_key: true
       t.string :name
-      t.references :state_region_type, foreign_key: true
+      t.references :type, foreign_key: { to_table: :state_region_types }
       t.string :alpha_code, null: false
-      t.string :numeric_code, null: false
+      t.string :numeric_code, null: false, index: { unique: true }
 
       t.timestamps
     end

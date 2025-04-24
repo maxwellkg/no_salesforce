@@ -1,0 +1,5078 @@
+country_short_code,name,region_type,alpha_code,numeric_code
+AF,Badakhshān,province,BDS,12267
+AF,Baghlān,province,BGL,12268
+AF,Balkh,province,BAL,12273
+AF,Bādghīs,province,BDG,12272
+AF,Bāmyān,province,BAM,12269
+AF,Dāykundī,province,DAY,20221
+AF,Farāh,province,FRA,12274
+AF,Fāryāb,province,FYB,12270
+AF,Ghaznī,province,GHA,12271
+AF,Ghōr,province,GHO,12275
+AF,Helmand,province,HEL,12277
+AF,Herāt,province,HER,12262
+AF,Jowzjān,province,JOW,12283
+AF,Kandahār,province,KAN,12263
+AF,Khōst,province,KHO,12276
+AF,Kunar,province,KNR,12284
+AF,Kunduz,province,KDZ,12256
+AF,Kābul,province,KAB,12278
+AF,Kāpīsā,province,KAP,12261
+AF,Laghmān,province,LAG,12279
+AF,Lōgar,province,LOW,12260
+AF,Nangarhār,province,NAN,12280
+AF,Nīmrōz,province,NIM,12285
+AF,Nūristān,province,NUR,12281
+AF,Paktia,province,PIA,12282
+AF,Paktika,province,PKA,12259
+AF,Panjshayr,province,PAN,20222
+AF,Parwān,province,PAR,12257
+AF,Samangan,province,SAM,12264
+AF,Sar-e Pul,province,SAR,12258
+AF,Takhar,province,TAK,12265
+AF,Uruzgān,province,URU,12255
+AF,Uruzgān,province,ORU,48898
+AF,Wardak,province,WAR,12266
+AF,Zābul,province,ZAB,12254
+AL,Berat,district,BR,12316
+AL,Berat,county,01,48288
+AL,Bulqizë,district,BU,12309
+AL,Delvinë,district,DL,12310
+AL,Devoll,district,DV,12317
+AL,Dibër,district,DI,12311
+AL,Dibër,county,09,48289
+AL,Durrës,county,02,48290
+AL,Durrës,district,DR,12312
+AL,Elbasan,district,EL,12315
+AL,Elbasan,county,03,48291
+AL,Fier,county,04,48292
+AL,Fier,district,FR,12313
+AL,Gjirokastër,district,GJ,12314
+AL,Gjirokastër,county,05,48293
+AL,Gramsh,district,GR,12318
+AL,Has,district,HA,12300
+AL,Kavajë,district,KA,12301
+AL,Kolonjë,district,ER,12290
+AL,Korçë,district,KO,12302
+AL,Korçë,county,06,48294
+AL,Krujë,district,KR,12303
+AL,Kukës,district,KU,12304
+AL,Kukës,county,07,48295
+AL,Kurbin,district,KB,12305
+AL,Kuçovë,district,KC,12319
+AL,Lezhë,district,LE,12320
+AL,Lezhë,county,08,48296
+AL,Librazhd,district,LB,12306
+AL,Lushnjë,district,LU,12307
+AL,Mallakastër,district,MK,12321
+AL,Malësi e Madhe,district,MM,12308
+AL,Mat,district,MT,12291
+AL,Mirditë,district,MR,12289
+AL,Peqin,district,PQ,12292
+AL,Pogradec,district,PG,12288
+AL,Pukë,district,PU,12294
+AL,Përmet,district,PR,12293
+AL,Sarandë,district,SR,12295
+AL,Shkodër,district,SH,12287
+AL,Shkodër,county,10,48297
+AL,Skrapar,district,SK,12296
+AL,Tepelenë,district,TE,12297
+AL,Tiranë,district,TR,12286
+AL,Tiranë,county,11,48298
+AL,Tropojë,district,TP,12298
+AL,Vlorë,county,12,48299
+AL,Vlorë,district,VL,12299
+DZ,Adrar,province,01,12363
+DZ,Alger,province,16,12344
+DZ,Annaba,province,23,12332
+DZ,Aïn Defla,province,44,12351
+DZ,Aïn Témouchent,province,46,12333
+DZ,Batna,province,05,12334
+DZ,Biskra,province,07,12354
+DZ,Blida,province,09,12336
+DZ,Bordj Bou Arréridj,province,34,12342
+DZ,Bouira,province,10,12341
+DZ,Boumerdès,province,35,12337
+DZ,Béchar,province,08,12352
+DZ,Béjaïa,province,06,12335
+DZ,Chlef,province,02,12367
+DZ,Constantine,province,25,12348
+DZ,Djelfa,province,17,12345
+DZ,El Bayadh,province,32,12353
+DZ,El Oued,province,39,12323
+DZ,El Tarf,province,36,12357
+DZ,Ghardaïa,province,47,12343
+DZ,Guelma,province,24,12366
+DZ,Illizi,province,33,12340
+DZ,Jijel,province,18,12330
+DZ,Khenchela,province,40,12339
+DZ,Laghouat,province,03,12350
+DZ,Mascara,province,29,12365
+DZ,Mila,province,43,12329
+DZ,Mostaganem,province,27,12347
+DZ,Msila,province,28,12364
+DZ,Médéa,province,26,12346
+DZ,Naama,province,45,12328
+DZ,Oran,province,31,12362
+DZ,Ouargla,province,30,12322
+DZ,Oum el Bouaghi,province,04,12361
+DZ,Relizane,province,48,12338
+DZ,Saïda,province,20,12327
+DZ,Sidi Bel Abbès,province,22,12326
+DZ,Skikda,province,21,12349
+DZ,Souk Ahras,province,41,12356
+DZ,Sétif,province,19,12355
+DZ,Tamanghasset,province,11,12368
+DZ,Tiaret,province,14,12360
+DZ,Tindouf,province,37,12359
+DZ,Tipaza,province,42,12369
+DZ,Tissemsilt,province,38,12325
+DZ,Tizi Ouzou,province,15,12324
+DZ,Tlemcen,province,13,12370
+DZ,Tébessa,province,12,12358
+AD,Andorra la Vella,parish,07,12382
+AD,Canillo,parish,02,12381
+AD,Encamp,parish,03,12383
+AD,Escaldes-Engordany,parish,08,12380
+AD,La Massana,parish,04,12384
+AD,Ordino,parish,05,12379
+AD,Sant Julià de Lòria,parish,06,12378
+AO,Bengo,province,BGO,12390
+AO,Benguela,province,BGU,12391
+AO,Bié,province,BIE,12395
+AO,Cabinda,province,CAB,12392
+AO,Cuando-Cubango,province,CCU,12394
+AO,Cuanza Norte,province,CNO,12388
+AO,Cuanza Sul,province,CUS,12397
+AO,Cunene,province,CNN,12389
+AO,Huambo,province,HUA,12393
+AO,Huíla,province,HUI,12396
+AO,Luanda,province,LUA,12387
+AO,Lunda Norte,province,LNO,12398
+AO,Lunda Sul,province,LSU,12386
+AO,Malange,province,MAL,12399
+AO,Moxico,province,MOX,12401
+AO,Namibe,province,NAM,12402
+AO,Uíge,province,UIG,12400
+AO,Zaire,province,ZAI,12385
+AG,Barbuda,dependency,10,12426
+AG,Redonda,dependency,11,12425
+AG,Redonda,dependency,X2~,48127
+AG,Saint George,parish,03,12427
+AG,Saint John’s,parish,04,12431
+AG,Saint Mary,parish,05,12428
+AG,Saint Paul,parish,06,12429
+AG,Saint Peter,parish,07,12432
+AG,Saint Philip,parish,08,12430
+AR,Buenos Aires,province,B,12439
+AR,Catamarca,province,K,12438
+AR,Chaco,province,H,12440
+AR,Chubut,province,U,12454
+AR,Ciudad Autónoma de Buenos Aires,federal_district,C,12437
+AR,Corrientes,province,W,12442
+AR,Córdoba,province,X,12441
+AR,Entre Ríos,province,E,12443
+AR,Formosa,province,P,12455
+AR,Jujuy,province,Y,12444
+AR,La Pampa,province,L,12445
+AR,La Rioja,province,F,12436
+AR,Mendoza,province,M,12446
+AR,Misiones,province,N,12456
+AR,Neuquén,province,Q,12447
+AR,Río Negro,province,R,12448
+AR,Salta,province,A,12435
+AR,San Juan,province,J,12449
+AR,San Luis,province,D,12450
+AR,Santa Cruz,province,Z,12434
+AR,Santa Fe,province,S,12451
+AR,Santiago del Estero,province,G,12433
+AR,Tierra del Fuego,province,V,12452
+AR,Tucumán,province,T,12453
+AM,Aragac?otn,province,AG,12466
+AM,Ararat,province,AR,12461
+AM,Armavir,province,AV,12467
+AM,Erevan,city,ER,12464
+AM,Gegark'unik',province,GR,12460
+AM,Kotayk',province,KT,12462
+AM,Lo?y,province,LO,12465
+AM,Syunik',province,SU,12463
+AM,Tavuš,province,TV,12457
+AM,Vayoc Jor,province,VD,12458
+AM,Širak,province,SH,12459
+AU,Australian Capital Territory,territory,ACT,12471
+AU,New South Wales,state,NSW,12477
+AU,Northern Territory,territory,NT,12475
+AU,Queensland,state,QLD,12476
+AU,South Australia,state,SA,12472
+AU,Tasmania,state,TAS,12474
+AU,Victoria,state,VIC,12473
+AU,Western Australia,state,WA,12470
+AT,Burgenland,state,1,12480
+AT,Kärnten,state,2,12481
+AT,Niederösterreich,state,3,12485
+AT,Oberösterreich,state,4,12482
+AT,Salzburg,state,5,12479
+AT,Steiermark,state,6,12483
+AT,Tirol,state,7,12486
+AT,Vorarlberg,state,8,12484
+AT,Wien,state,9,12478
+AZ,Abseron,district,ABS,12521
+AZ,Agcabädi,district,AGC,12522
+AZ,Agdam,district,AGM,12550
+AZ,Agdas,district,AGS,12523
+AZ,Agstafa,district,AGA,12493
+AZ,Agsu,district,AGU,12524
+AZ,Astara,district,AST,12525
+AZ,Babäk,district,BAB,12494
+AZ,Baki,municipality,BA,12526
+AZ,Balakän,district,BAL,12527
+AZ,Beyläqan,district,BEY,12528
+AZ,Biläsuvar,district,BIL,12529
+AZ,Bärdä,district,BAR,12495
+AZ,Culfa,district,CUL,12531
+AZ,Cäbrayil,district,CAB,12496
+AZ,Cälilabab,district,CAL,12530
+AZ,Daskäsän,district,DAS,12497
+AZ,Däväçi,district,DAV,12532
+AZ,Füzuli,district,FUZ,12533
+AZ,Goranboy,district,GOR,12512
+AZ,Gädäbäy,district,GAD,12534
+AZ,Göygöl,district,GYG,48902
+AZ,Göyçay,district,GOY,12513
+AZ,Gəncə,municipality,GA,12499
+AZ,Haciqabul,district,HAC,12500
+AZ,Imisli,district,IMI,12514
+AZ,Ismayilli,district,ISM,12501
+AZ,Kälbäcär,district,KAL,12515
+AZ,Kürdämir,district,KUR,12516
+AZ,Kǝngǝrli,district,KAN,48903
+AZ,Laçin,district,LAC,12551
+AZ,Lerik,district,LER,12518
+AZ,Länkäran,district,LAN,12517
+AZ,Lənkəran,municipality,LA,20104
+AZ,Masalli,district,MAS,12552
+AZ,Mingəçevir,municipality,MI,12519
+AZ,Naftalan,municipality,NA,12520
+AZ,Naxçivan,autonomous_republic,NX,12553
+AZ,Naxçıvan,municipality,NV,48899
+AZ,Neftçala,district,NEF,12535
+AZ,Oguz,district,OGU,12554
+AZ,Ordubad,district,ORD,12536
+AZ,Qax,district,QAX,12537
+AZ,Qazax,district,QAZ,12555
+AZ,Qobustan,district,QOB,12539
+AZ,Quba,district,QBA,12556
+AZ,Qubadli,district,QBI,12540
+AZ,Qusar,district,QUS,12541
+AZ,Qäbälä,district,QAB,12538
+AZ,Saatli,district,SAT,12557
+AZ,Sabirabad,district,SAB,12542
+AZ,Sahbuz,district,SAH,12502
+AZ,Salyan,district,SAL,12558
+AZ,Samaxi,district,SMI,12503
+AZ,Samux,district,SMX,12492
+AZ,Siyäzän,district,SIY,12507
+AZ,Sumqayıt,municipality,SM,12491
+AZ,Susa,district,SUS,12508
+AZ,Susa City,municipality,SS,20106
+AZ,Sädäräk,district,SAD,12504
+AZ,Säki,district,SAK,12505
+AZ,Sämkir,district,SKR,12559
+AZ,Särur,district,SAR,12506
+AZ,Tovuz,district,TOV,12560
+AZ,Tärtär,district,TAR,12509
+AZ,Ucar,district,UCA,12510
+AZ,Xankəndi,municipality,XA,12490
+AZ,Xanlar,district,XAN,12544
+AZ,Xaçmaz,district,XAC,12543
+AZ,Xizi,district,XIZ,12545
+AZ,Xocali,district,XCI,12489
+AZ,Xocavänd,district,XVD,12546
+AZ,Yardimli,district,YAR,12488
+AZ,Yevlax,district,YEV,12547
+AZ,Yevlax City,municipality,YE,20107
+AZ,Zaqatala,district,ZAQ,12548
+AZ,Zängilan,district,ZAN,12487
+AZ,Zärdab,district,ZAR,12549
+AZ,Äli Bayramli,municipality,AB,12498
+AZ,Şabran,district,SBN,48901
+AZ,Şirvan,municipality,SR,48900
+AZ,Şəki,municipality,SA,20105
+BS,Acklins  Islands,district,AK,12567
+BS,Acklins and Crooked Islands,district,AC,48139
+BS,Berry Islands,district,BY,48140
+BS,Bimini and Cat Cay,district,BI,12574
+BS,Black Point,district,BP,48141
+BS,Cat Island,district,CI,12575
+BS,Central Abaco,district,CO,48142
+BS,Central Andros,district,CS,48143
+BS,Central Eleuthera,district,CE,48144
+BS,City of Freeport,district,FP,12566
+BS,Crooked Island and Long Cay,district,CK,48146
+BS,East Grand Bahama,district,EG,48147
+BS,Exuma,district,EX,12578
+BS,Governor's Harbour,district,GH,12577
+BS,Grand Cay,district,GC,12572
+BS,Green Turtle Cay,district,GT,12571
+BS,Harbour Island,district,HI,12579
+BS,High Rock,district,HR,20112
+BS,Hope Town,district,HT,48148
+BS,Inagua,district,IN,12565
+BS,Kemps Bay,district,KB,20113
+BS,Long Island,district,LI,12580
+BS,Mangrove Cay,district,MC,48149
+BS,Marsh Harbour,district,MH,20114
+BS,Mayaguana,district,MG,12564
+BS,Moore’s Island,district,MI,48150
+BS,New Providence,district,NP,12563
+BS,Nicholls Town and Berry Islands,district,NB,12573
+BS,North Abaco,district,NO,48151
+BS,North Andros,district,NS,48152
+BS,North Eleuthera,district,NE,48153
+BS,Ragged Island,district,RI,12568
+BS,Rock Sound,district,RS,20115
+BS,Rum Cay,district,RC,48154
+BS,San Salvador,district,SS,48155
+BS,San Salvador and Rum Cay,district,SR,12569
+BS,Sandy Point,district,SP,20116
+BS,South Abaco,district,SO,48156
+BS,South Andros,district,SA,48157
+BS,South Eleuthera,district,SE,48158
+BS,Spanish Wells,district,SW,48159
+BS,West Grand Bahama,district,WG,48160
+BH,Al Janubiyah,governorate,14,12592
+BH,Al Manamah (Al ‘Asimah),governorate,13,12589
+BH,Al Muharraq,governorate,15,12583
+BH,Al Wustá,governorate,16,12581
+BH,Ash Shamaliyah,governorate,17,12582
+BD,Bagerhat,district,05,12600
+BD,Bandarban,district,01,12601
+BD,Barguna,district,02,12602
+BD,Barisal,division,A,48675
+BD,Barisal,district,06,12612
+BD,Barisal,division,1,48257
+BD,Bhola,district,07,12613
+BD,Bogra,district,03,12614
+BD,Brahmanbaria,district,04,12630
+BD,Chandpur,district,09,12615
+BD,Chittagong,division,2,48258
+BD,Chittagong,division,B,48676
+BD,Chittagong,district,10,12631
+BD,Chuadanga,district,12,12632
+BD,Comilla,district,08,12606
+BD,Cox's Bazar,district,11,12641
+BD,Dhaka,district,13,12616
+BD,Dhaka,division,C,48677
+BD,Dhaka,division,3,48259
+BD,Dinajpur,district,14,12633
+BD,Faridpur,district,15,12617
+BD,Feni,district,16,12618
+BD,Gaibandha,district,19,12634
+BD,Gazipur,district,18,12635
+BD,Gopalganj,district,17,12619
+BD,Habiganj,district,20,12636
+BD,Jaipurhat,district,24,12620
+BD,Jamalpur,district,21,12637
+BD,Jessore,district,22,12603
+BD,Jhalakati,district,25,12638
+BD,Jhenaidah,district,23,12604
+BD,Khagrachari,district,29,12639
+BD,Khulna,division,4,48260
+BD,Khulna,division,D,48678
+BD,Khulna,district,27,12640
+BD,Kishoreganj,district,26,12605
+BD,Kurigram,district,28,12642
+BD,Kushtia,district,30,12607
+BD,Lakshmipur,district,31,12643
+BD,Lalmonirhat,district,32,12608
+BD,Madaripur,district,36,12644
+BD,Magura,district,37,12609
+BD,Manikganj,district,33,12610
+BD,Meherpur,district,39,12611
+BD,Moulvibazar,district,38,12622
+BD,Munshiganj,district,35,12623
+BD,Mymensingh,district,34,12621
+BD,Naogaon,district,48,12626
+BD,Narail,district,43,12624
+BD,Narayanganj,district,40,12599
+BD,Narsingdi,district,42,12625
+BD,Natore,district,44,12653
+BD,Nawabganj,district,45,12598
+BD,Netrakona,district,41,12627
+BD,Nilphamari,district,46,12654
+BD,Noakhali,district,47,12628
+BD,Pabna,district,49,12629
+BD,Panchagarh,district,52,12597
+BD,Patuakhali,district,51,12645
+BD,Pirojpur,district,50,12655
+BD,Rajbari,district,53,12646
+BD,Rajshahi,district,54,12596
+BD,Rajshahi,division,5,48261
+BD,Rajshahi,division,E,48679
+BD,Rangamati   Parbattya Chattagram,district,56,12647
+BD,Rangpur,district,55,12648
+BD,Rangpur,division,F,48681
+BD,Satkhira,district,58,12656
+BD,Shariatpur,district,62,12649
+BD,Sherpur,district,57,12595
+BD,Sirajganj,district,59,12594
+BD,Sunamganj,district,61,12651
+BD,Sylhet,division,6,48262
+BD,Sylhet,district,60,12650
+BD,Sylhet,division,G,48680
+BD,Tangail,district,63,12593
+BD,Thakurgaon,district,64,12652
+BB,Christ Church,parish,01,12661
+BB,Saint Andrew,parish,02,12663
+BB,Saint George,parish,03,12662
+BB,Saint James,parish,04,12660
+BB,Saint John,parish,05,12664
+BB,Saint Joseph,parish,06,12659
+BB,Saint Lucy,parish,07,12665
+BB,Saint Michael,parish,08,12658
+BB,Saint Peter,parish,09,12666
+BB,Saint Philip,parish,10,12667
+BB,Saint Thomas,parish,11,12657
+BY,Brestskaya voblasts,region,BR,12669
+BY,Homyel'skaya voblasts,region,HO,12670
+BY,Horad Minsk,city,HM,12674
+BY,Horad Minsk,municipality,X1~,48130
+BY,Hrodzenskaya voblasts,region,HR,12672
+BY,Mahilyowskaya voblasts,region,MA,12671
+BY,Minskaya voblasts,region,MI,12673
+BY,Vitsyebskaya voblasts,region,VI,12668
+BE,Antwerpen,province,VAN,12683
+BE,Brabant Wallon,province,WBR,12679
+BE,Brussels,capital_region,BRU,12682
+BE,Flemish Region,region,VLG,48264
+BE,Hainaut,province,WHT,12678
+BE,Limburg,province,VLI,12680
+BE,Liège,province,WLG,12684
+BE,Luxembourg,province,WLX,12676
+BE,Namur,province,WNA,12685
+BE,Oost-Vlaanderen,province,VOV,12677
+BE,Vlaams Brabant,province,VBR,12675
+BE,Wallonia,region,WAL,48265
+BE,West-Vlaanderen,province,VWV,12681
+BZ,Belize,district,BZ,12687
+BZ,Cayo,district,CY,12691
+BZ,Corozal,district,CZL,12688
+BZ,Orange Walk,district,OW,12689
+BZ,Stann Creek,district,SC,12686
+BZ,Toledo,district,TOL,12690
+BJ,Alibori,department,AL,12696
+BJ,Atakora,department,AK,12702
+BJ,Atlantique,department,AQ,12697
+BJ,Borgou,department,BO,12698
+BJ,Collines,department,CO,12704
+BJ,Donga,department,DO,12705
+BJ,Kouffo,department,KO,12699
+BJ,Littoral,department,LI,12694
+BJ,Mono,department,MO,12700
+BJ,Ouémé,department,OU,12701
+BJ,Plateau,department,PL,12693
+BJ,Zou,department,ZO,12692
+BM,Devonshire,parish,DEV,12708
+BM,Hamilton,parish,HAM,12707
+BM,Hamilton municipality,municipality,HA,12709
+BM,Paget,parish,PAG,12710
+BM,Pembroke,parish,PEM,12711
+BM,Saint George,parish,SGE,12712
+BM,Saint George municipality,municipality,SG,12716
+BM,Sandys,parish,SAN,12713
+BM,Smiths,parish,SMI,12706
+BM,Southampton,parish,SOU,12714
+BM,Warwick,parish,WAR,12715
+BT,Bumthang,district,33,12724
+BT,Chhukha,district,12,12735
+BT,Dagana,district,22,12723
+BT,Gasa,district,GA,12733
+BT,Ha,district,13,12736
+BT,Lhuentse,district,44,12727
+BT,Monggar,district,42,12722
+BT,Paro,district,11,12729
+BT,Pemagatshel,district,43,12728
+BT,Punakha,district,23,12719
+BT,Samdrup Jongkha,district,45,12730
+BT,Samtse,district,14,12718
+BT,Sarpang,district,31,12726
+BT,Thimphu,district,15,12731
+BT,Trashi Yangtse,district,TY,12734
+BT,Trashigang,district,41,12721
+BT,Trongsa,district,32,12717
+BT,Tsirang,district,21,12725
+BT,Wangdue Phodrang,district,24,12732
+BT,Zhemgang,district,34,12720
+BO,Chuquisaca,department,H,12739
+BO,Cochabamba,department,C,12741
+BO,El Beni,department,B,12740
+BO,La Paz,department,L,12742
+BO,Oruro,department,O,12738
+BO,Pando,department,N,12743
+BO,Potosí,department,P,12737
+BO,Santa Cruz,department,S,12744
+BO,Tarija,department,T,12745
+BQ,Bonaire,municipality,BO,48682
+BQ,Saba,municipality,SA,48683
+BQ,Sint Eustatius,municipality,SE,48684
+BA,Bosansko-podrinjski kanton,canton,05,48161
+BA,Brčko distrikt,district,BRC,42644
+BA,Federacija Bosna i Hercegovina,entity,BIH,12746
+BA,Hercegova?ko-neretvanski kanton,canton,07,48162
+BA,Kanton br. 10 (Livanjski kanton),canton,10,48163
+BA,Kanton Sarajevo,canton,09,48164
+BA,Posavski kanton,canton,02,48165
+BA,Republika Srpska,entity,SRP,12747
+BA,Srednjobosanski kanton,canton,06,48166
+BA,Tuzlanski kanton,canton,03,48167
+BA,Unsko-sanski kanton,canton,01,48168
+BA,Zapadnohercegova?ki kanton,canton,08,48169
+BA,Zeni?ko-dobojski kanton,canton,04,48170
+BW,Central,district,CE,19401
+BW,Ghanzi,district,GH,12759
+BW,Kgalagadi,district,KG,19402
+BW,Kgatleng,district,KL,12770
+BW,Kweneng,district,KW,12762
+BW,North-East,district,NE,12749
+BW,North-West,district,NW,19403
+BW,South-East,district,SE,12751
+BW,Southern,district,SO,19404
+BR,Acre,state,AC,12793
+BR,Alagoas,state,AL,12784
+BR,Amapá,state,AP,12775
+BR,Amazonas,state,AM,12794
+BR,Bahia,state,BA,12776
+BR,Ceará,state,CE,12795
+BR,Distrito Federal,federal_district,DF,12777
+BR,Espírito Santo,state,ES,12778
+BR,Goiás,state,GO,12796
+BR,Maranhão,state,MA,12779
+BR,Mato Grosso,state,MT,12780
+BR,Mato Grosso do Sul,state,MS,12774
+BR,Minas Gerais,state,MG,12781
+BR,Paraná,state,PR,12783
+BR,Paraíba,state,PB,12782
+BR,Pará,state,PA,12797
+BR,Pernambuco,state,PE,12773
+BR,Piauí,state,PI,12785
+BR,Rio de Janeiro,state,RJ,12786
+BR,Rio Grande do Norte,state,RN,12798
+BR,Rio Grande do Sul,state,RS,12787
+BR,Rondônia,state,RO,12772
+BR,Roraima,state,RR,12788
+BR,Santa Catarina,state,SC,12789
+BR,Sergipe,state,SE,12790
+BR,São Paulo,state,SP,12771
+BR,Tocantins,state,TO,12791
+BN,Belait,district,BE,12805
+BN,Brunei-Muara,district,BM,12807
+BN,Temburong,district,TE,12806
+BN,Tutong,district,TU,12804
+BG,Blagoevgrad,region,01,12829
+BG,Burgas,region,02,12813
+BG,Dobrich,region,08,12830
+BG,Gabrovo,region,07,12823
+BG,Haskovo,region,26,12824
+BG,Kardzhali,region,09,12825
+BG,Kjustendil,region,10,12831
+BG,Lovech,region,11,12826
+BG,Montana,region,12,12811
+BG,Pazardzhik,region,13,12827
+BG,Pernik,region,14,12832
+BG,Pleven,region,15,12828
+BG,Plovdiv,region,16,12814
+BG,Razgrad,region,17,12810
+BG,Ruse,region,18,12815
+BG,Silistra,region,19,12833
+BG,Sliven,region,20,12816
+BG,Smolyan,region,21,12809
+BG,Sofia,region,23,12834
+BG,Sofia-Grad,region,22,12817
+BG,Stara Zagora,region,24,12818
+BG,Targovishte,region,25,12835
+BG,Varna,region,03,12820
+BG,Veliko Tarnovo,region,04,12808
+BG,Vidin,region,05,12821
+BG,Vratsa,region,06,12822
+BG,Yambol,region,28,12812
+BG,Šumen,region,27,12819
+BF,Balé,province,BAL,12846
+BF,Bam,province,BAM,12855
+BF,Banwa,province,BAN,12847
+BF,Bazèga,province,BAZ,12856
+BF,Boucle du Mouhoun,region,01,48171
+BF,Bougouriba,province,BGR,12857
+BF,Boulgou,province,BLG,12848
+BF,Boulkiemdé,province,BLK,12858
+BF,Cascades,region,02,48172
+BF,Centre,region,03,48173
+BF,Centre-Est,region,04,48174
+BF,Centre-Nord,region,05,48175
+BF,Centre-Ouest,region,06,48176
+BF,Centre-Sud,region,07,48177
+BF,Comoé,province,COM,12849
+BF,Est,region,08,48178
+BF,Ganzourgou,province,GAN,12859
+BF,Gnagna,province,GNA,12860
+BF,Gourma,province,GOU,12850
+BF,Hauts-Bassins,region,09,48179
+BF,Houet,province,HOU,12861
+BF,Ioba,province,IOB,12851
+BF,Kadiogo,province,KAD,12862
+BF,Komondjari,province,KMD,12863
+BF,Kompienga,province,KMP,12864
+BF,Kossi,province,KOS,12853
+BF,Koulpélogo,province,KOP,12865
+BF,Kouritenga,province,KOT,12854
+BF,Kourwéogo,province,KOW,12866
+BF,Kénédougou,province,KEN,12852
+BF,Loroum,province,LOR,12837
+BF,Léraba,province,LER,12867
+BF,Mouhoun,province,MOU,12868
+BF,Nahouri,province,NAO,12838
+BF,Namentenga,province,NAM,12869
+BF,Nayala,province,NAY,12870
+BF,Nord,region,10,48180
+BF,Noumbiel,province,NOU,12839
+BF,Oubritenga,province,OUB,12871
+BF,Oudalan,province,OUD,12840
+BF,Passoré,province,PAS,12872
+BF,Plateau-Central,region,11,48181
+BF,Poni,province,PON,12873
+BF,Sahel,region,12,48182
+BF,Sanguié,province,SNG,12841
+BF,Sanmatenga,province,SMT,12874
+BF,Sissili,province,SIS,12843
+BF,Soum,province,SOM,12844
+BF,Sourou,province,SOR,12845
+BF,Sud-Ouest,region,13,48183
+BF,Séno,province,SEN,12842
+BF,Tapoa,province,TAP,12879
+BF,Tui,province,TUI,12880
+BF,Yagha,province,YAG,12878
+BF,Yatenga,province,YAT,12877
+BF,Ziro,province,ZIR,12876
+BF,Zondoma,province,ZON,12881
+BF,Zoundwéogo,province,ZOU,12882
+BI,Bubanza,province,BB,12893
+BI,Bujumbura,province,BJ,12884
+BI,Bujumbura Mairie,province,BM,48128
+BI,Bujumbura Rural,province,BL,48129
+BI,Bururi,province,BR,12895
+BI,Cankuzo,province,CA,12885
+BI,Cibitoke,province,CI,12896
+BI,Gitega,province,GI,12886
+BI,Karuzi,province,KR,12887
+BI,Kayanza,province,KY,12894
+BI,Kirundo,province,KI,12888
+BI,Makamba,province,MA,12889
+BI,Muramvya,province,MU,12897
+BI,Muyinga,province,MY,12890
+BI,Mwaro,province,MW,12898
+BI,Ngozi,province,NG,12891
+BI,Rutana,province,RT,12892
+BI,Ruyigi,province,RY,12883
+KH,Baat Dambang [Batdâmbâng],province,2,12918
+KH,Banteay Mean Chey [Bântéay Méanchey],province,1,12911
+KH,Kampong Chaam [Kâmpóng Cham],province,3,12912
+KH,Kampong Chhnang [Kâmpóng Chhnang],province,4,12919
+KH,Kampong Spueu [Kâmpóng Spœ],province,5,12920
+KH,Kampong Thum [Kâmpóng Thum],province,6,12902
+KH,Kampot [Kâmpôt],province,7,12903
+KH,Kandaal [Kândal],province,8,12904
+KH,Kaoh Kong [Kaôh Kong],province,9,12905
+KH,Kracheh [Krâchéh],province,10,12906
+KH,Krong Kaeb [Krong Kêb],autonomous_municipality,23,12907
+KH,Krong Pailin [Krong Pailin],autonomous_municipality,24,12908
+KH,Krong Preah Sihanouk [Krong Preah Sihanouk],autonomous_municipality,18,12909
+KH,Mondol Kiri [Môndól Kiri],province,11,12910
+KH,Otdar Mean Chey [Otdâr Méanchey],province,22,12901
+KH,Phnom Penh [Phnum Pénh],autonomous_municipality,12,12921
+KH,Pousaat [Pouthisat],province,15,12900
+KH,Preah Vihear [Preah Vihéar],province,13,12913
+KH,Prey Veaeng [Prey Vêng],province,14,12914
+KH,Rotanak Kiri [Rôtânôkiri],province,16,12922
+KH,Siem Reab [Siemréab],province,17,12915
+KH,Stueng Traeng [Stœ?ng Trêng],province,19,12925
+KH,Svaay Rieng [Svay Rieng],province,20,12916
+KH,Taakaev [Takêv],province,21,12924
+CM,Adamaoua,region,AD,12932
+CM,Centre,region,CE,12928
+CM,East,region,ES,12933
+CM,Far North,region,EN,12934
+CM,Littoral,region,LT,12929
+CM,North,region,NO,12931
+CM,North-West,region,NW,12927
+CM,South,region,SU,12935
+CM,South-West,region,SW,12926
+CM,West,region,OU,12930
+CA,Alberta,province,AB,12940
+CA,British Columbia,province,BC,12938
+CA,Manitoba,province,MB,12941
+CA,New Brunswick,province,NB,12937
+CA,Newfoundland and Labrador,province,NL,12942
+CA,Northwest Territories,territory,NT,12939
+CA,Nova Scotia,province,NS,12943
+CA,Nunavut,territory,NU,12944
+CA,Ontario,province,ON,12948
+CA,Prince Edward Island,province,PE,12945
+CA,Quebec,province,QC,12946
+CA,Saskatchewan,province,SK,12936
+CA,Yukon Territory,territory,YT,12947
+CV,Boa Vista,municipality,BV,12953
+CV,Brava,municipality,BR,12957
+CV,Calheta de São Miguel,,CS,19405
+CV,Ilhas de Barlavento,geographical_region,B,48184
+CV,Ilhas de Sotavento,geographical_region,S,48185
+CV,Maio,municipality,MA,12954
+CV,Mosteiros,municipality,MO,19406
+CV,Paul,municipality,PA,19407
+CV,Porto Novo,municipality,PN,19408
+CV,Praia,municipality,PR,19409
+CV,Ribeira Brava,municipality,RB,48244
+CV,Ribeira Grande,municipality,RG,12955
+CV,Ribeira Grande de Santiago,municipality,RS,48245
+CV,Sal,municipality,SL,12956
+CV,Santa Catarina,municipality,CA,19411
+CV,Santa Catarina do Fogo,municipality,CF,48246
+CV,Santa Cruz,municipality,CR,19412
+CV,São Domingos,municipality,SD,19413
+CV,São Filipe,municipality,SF,19414
+CV,São Lourenço dos Órgãos,municipality,SO,48904
+CV,São Miguel,municipality,SM,48247
+CV,São Nicolau,,SN,12949
+CV,São Salvador do Mundo,municipality,SS,48248
+CV,São Vicente,municipality,SV,12950
+CV,Tarrafal,municipality,TA,19415
+CV,Tarrafal de São Nicolau,municipality,TS,48249
+KY,Bodden Town,district,01~,48080
+KY,Cayman Brac,district,02~,12962
+KY,East End,district,03~,20891
+KY,George Town,district,04~,48081
+KY,Little Cayman,district,05~,12958
+KY,North Side,district,06~,48082
+KY,West Bay,district,07~,48083
+CF,Bamingui-Bangoran,prefecture,BB,12972
+CF,Bangui,commune,BGF,12969
+CF,Basse-Kotto,prefecture,BK,12973
+CF,Gribingui,economic_prefecture,KB,12965
+CF,Haut-Mbomou,prefecture,HM,12974
+CF,Haute-Kotto,prefecture,HK,12968
+CF,Haute-Sangha / Mambéré-Kadéï,prefecture,HS,12966
+CF,Kémo-Gribingui,prefecture,KG,12967
+CF,Lobaye,prefecture,LB,12975
+CF,Mbomou,prefecture,MB,12976
+CF,Nana-Mambéré,prefecture,NM,12977
+CF,Ombella-Mpoko,prefecture,MP,12964
+CF,Ouaka,prefecture,UK,12979
+CF,Ouham,prefecture,AC,12978
+CF,Ouham-Pendé,prefecture,OP,12970
+CF,Sangha,economic_prefecture,SE,12963
+CF,Vakaga,prefecture,VK,12971
+TD,Al Baṭḩah,region,BA,12981
+TD,Al Buḩayrah,region,LC,12985
+TD,Baḩr al Ghazāl,region,BG,48189
+TD,Borkou-Ennedi-Tibesti,region,BET,12982
+TD,Būrkū,region,BO,48190
+TD,Innīdī,region,EN,48191
+TD,Kānim,region,KA,12984
+TD,Lūqūn al Gharbī,region,LO,12986
+TD,Lūqūn ash Sharqī,region,LR,12987
+TD,Madīnat Injamīnā,region,ND,19420
+TD,Māndūl,region,MA,19417
+TD,Māyū Kībbī al Gharbī,region,MO,19419
+TD,Māyū Kībbī ash Sharqī,region,ME,19418
+TD,Qīrā,region,GR,12983
+TD,Salāmāt,region,SA,12992
+TD,Shārī al Awsaṭ,region,MC,12991
+TD,Shārī Bāqirmī,region,CB,12990
+TD,Sīlā,region,SI,48192
+TD,Tibastī,region,TI,48193
+TD,Tānjilī,region,TA,12980
+TD,Waddāy,region,OD,12988
+TD,Wādī Fīrā,region,WF,19421
+TD,Ḥajjar Lamīs,region,HL,19416
+CL,Aisén del General Carlos Ibáñez del Campo,region,AI,13004
+CL,Antofagasta,region,AN,12998
+CL,Araucanía,region,AR,12997
+CL,Arica y Parinacota,region,AP,21383
+CL,Atacama,region,AT,12999
+CL,Bío-Bío,region,BI,13005
+CL,Coquimbo,region,CO,12996
+CL,Libertador General Bernardo O'Higgins,region,LI,13000
+CL,Los Lagos,region,LL,13006
+CL,Los Ríos,region,LR,21384
+CL,Magallanes,region,MA,13001
+CL,Maule,region,ML,12995
+CL,Región Metropolitana de Santiago,region,RM,13002
+CL,Tarapacá,region,TA,12994
+CL,Valparaíso,region,VS,13003
+CN,Anhui,province,34,13012
+CN,Aomen (zh) ***,special_administrative_region,92,13034
+CN,Beijing,municipality,11,13013
+CN,Chongqing,municipality,50,13014
+CN,Fujian,province,35,13035
+CN,Gansu,province,62,13015
+CN,Guangdong,province,44,13016
+CN,Guangxi,autonomous_region,45,13036
+CN,Guizhou,province,52,13017
+CN,Hainan,province,46,13018
+CN,Hebei,province,13,13019
+CN,Heilongjiang,province,23,13028
+CN,Henan,province,41,13029
+CN,Hubei,province,42,13020
+CN,Hunan,province,43,13030
+CN,Jiangsu,province,32,13031
+CN,Jiangxi,province,36,13021
+CN,Jilin,province,22,13022
+CN,Liaoning,province,21,13023
+CN,Nei Mongol (mn),autonomous_region,15,13024
+CN,Ningxia,autonomous_region,64,13025
+CN,Qinghai,province,63,13026
+CN,Shaanxi,province,61,13027
+CN,Shandong,province,37,13011
+CN,Shanghai,municipality,31,13037
+CN,Shanxi,province,14,13010
+CN,Sichuan,province,51,13038
+CN,Taiwan *,province,71,18995
+CN,Tianjin,municipality,12,13009
+CN,Xianggang (zh) **,special_administrative_region,91,13039
+CN,Xinjiang,autonomous_region,65,13008
+CN,Xizang,autonomous_region,54,13032
+CN,Yunnan,province,53,13033
+CN,Zhejiang,province,33,13007
+CO,Amazonas,department,AMA,13045
+CO,Antioquia,department,ANT,13055
+CO,Arauca,department,ARA,13046
+CO,Atlántico,department,ATL,13047
+CO,Bolívar,department,BOL,13048
+CO,Boyacá,department,BOY,13057
+CO,Caldas,department,CAL,13049
+CO,Caquetá,department,CAQ,13050
+CO,Casanare,department,CAS,13058
+CO,Cauca,department,CAU,13051
+CO,Cesar,department,CES,13059
+CO,Chocó,department,CHO,13052
+CO,Cundinamarca,department,CUN,13060
+CO,Córdoba,department,COR,13053
+CO,Distrito Capital de Bogotá,capital_district,DC,13056
+CO,Guainía,department,GUA,13054
+CO,Guaviare,department,GUV,13061
+CO,Huila,department,HUI,13063
+CO,La Guajira,department,LAG,13064
+CO,Magdalena,department,MAG,13062
+CO,Meta,department,MET,13065
+CO,Nariño,department,NAR,13044
+CO,Norte de Santander,department,NSA,13066
+CO,Putumayo,department,PUT,13067
+CO,Quindío,department,QUI,13042
+CO,Risaralda,department,RIS,13068
+CO,Providencia y Santa Catalina San Andrés,department,SAP,13043
+CO,Santander,department,SAN,13069
+CO,Sucre,department,SUC,13041
+CO,Tolima,department,TOL,13070
+CO,Valle del Cauca,department,VAC,13071
+CO,Vaupés,department,VAU,13040
+CO,Vichada,department,VID,13072
+KM,Andjazîdja,island,G,13074
+KM,Andjouân (Anjwān),island,A,13073
+KM,Moûhîlî (Mūhīlī),island,M,13075
+CG,Bouenza,department,11,13078
+CG,Brazzaville,commune,BZV,13080
+CG,Cuvette,department,8,13077
+CG,Cuvette-Ouest,department,15,13076
+CG,Kouilou,department,5,13081
+CG,Likouala,department,7,13079
+CG,Lékoumou,department,2,13082
+CG,Niari,department,9,13083
+CG,Plateaux,department,14,13086
+CG,Pool,department,12,13084
+CG,Sangha,department,13,13085
+CD,Bandundu,province,BN,13094
+CD,Bas-Congo,province,BC,13088
+CD,Kasai-Occidental,province,KW,13092
+CD,Kasai-Oriental,province,KE,13090
+CD,Katanga,province,KA,13097
+CD,Kinshasa,city,KN,13091
+CD,Maniema,province,MA,13095
+CD,Nord-Kivu,province,NK,13087
+CD,Orientale,province,OR,13089
+CD,Sud-Kivu,province,SK,13096
+CD,Équateur,province,EQ,13093
+CR,Alajuela,province,A,13119
+CR,Cartago,province,C,13115
+CR,Guanacaste,province,G,13116
+CR,Heredia,province,H,13118
+CR,Limón,province,L,13114
+CR,Puntarenas,province,P,13113
+CR,San José,province,SJ,13117
+HR,Bjelovarsko-bilogorska županija,county,07,13135
+HR,Brodsko-posavska županija,county,12,13130
+HR,Dubrovacko-neretvanska županija,county,19,13122
+HR,Grad Zagreb,city,21,13123
+HR,Istarska županija,county,18,13121
+HR,Karlovacka županija,county,04,13124
+HR,Koprivnicko-križevacka županija,county,06,13136
+HR,Krapinsko-zagorska županija,county,02,13125
+HR,Licko-senjska županija,county,09,13126
+HR,Medimurska županija,county,20,13140
+HR,Osjecko-baranjska županija,county,14,13127
+HR,Požeško-slavonska županija,county,11,13139
+HR,Primorsko-goranska županija,county,08,13128
+HR,Sisacko-moslavacka županija,county,03,13138
+HR,Splitsko-dalmatinska županija,county,17,13137
+HR,Varaždinska županija,county,05,13131
+HR,Viroviticko-podravska županija,county,10,13132
+HR,Vukovarsko-srijemska županija,county,16,13120
+HR,Zadarska županija,county,13,13133
+HR,Zagrebacka županija,county,01,13134
+HR,Šibensko-kninska županija,county,15,13129
+CU,Camagüey,province,09,13152
+CU,Ciego de Ávila,province,08,13153
+CU,Cienfuegos,province,06,13154
+CU,Ciudad de La Habana,province,03,13142
+CU,Granma,province,12,13155
+CU,Guantánamo,province,14,13157
+CU,Holguín,province,11,13156
+CU,Isla de la Juventud,special_municipality,99,13143
+CU,La Habana,province,02,13159
+CU,Las Tunas,province,10,13144
+CU,Matanzas,province,04,13145
+CU,Pinar del Río,province,01,13160
+CU,Sancti Spíritus,province,07,13146
+CU,Santiago de Cuba,province,13,13158
+CU,Villa Clara,province,05,13147
+CY,Ammochostos,district,04,20225
+CY,Keryneia,district,06,19428
+CY,Larnaka,district,03,19429
+CY,Lefkosia,district,01,19430
+CY,Lemesos,district,02,19431
+CY,Pafos,district,05,19433
+CZ,Benešov,district,201 ,13247
+CZ,Beroun,district,202 ,13201
+CZ,Blansko,district,621 ,13231
+CZ,Brno-město,district,622 ,13192
+CZ,Brno-venkov,district,623 ,13233
+CZ,Bruntál,district,801 ,13180
+CZ,Břeclav,district,624 ,13232
+CZ,Cheb,district,411 ,13175
+CZ,Chomutov,district,422 ,13173
+CZ,Chrudim,district,531 ,13240
+CZ,Domažlice,district,321 ,13242
+CZ,Děčín,district,421 ,13164
+CZ,Frýdek Místek,district,802 ,13213
+CZ,Havlíčkův Brod,district,611 ,13204
+CZ,Hodonín,district,625 ,13174
+CZ,Hradec Králové,district,521 ,13237
+CZ,Jablonec nad Nisou,district,512 ,13179
+CZ,Jeseník,district,711 ,13216
+CZ,Jihlava,district,612 ,13205
+CZ,Jihoceský kraj,region,JC,13219
+CZ,Jihomoravský kraj,region,JM,13220
+CZ,Jindřichův Hradec,district,313 ,13228
+CZ,Jičín,district,522 ,13177
+CZ,Karlovarský kraj,region,KA,13183
+CZ,Karlovy Vary,district,412 ,13236
+CZ,Karviná,district,803 ,13181
+CZ,Kladno,district,203 ,13200
+CZ,Klatovy,district,322 ,13243
+CZ,Kolín,district,204 ,13202
+CZ,Kromĕříž,district,721 ,13207
+CZ,Královéhradecký kraj,region,KR,13221
+CZ,Kutná Hora,district,205 ,13165
+CZ,Liberec,district,513 ,13211
+CZ,Liberecký kraj,region,LI,13184
+CZ,Litoměřice,district,423 ,13248
+CZ,Louny,district,424 ,13252
+CZ,Mladá Boleslav,district,207 ,13167
+CZ,Moravskoslezský kraj,region,MO,13222
+CZ,Most,district,425 ,13251
+CZ,Mělník,district,206 ,13166
+CZ,Nový Jičín,district,804 ,13214
+CZ,Nymburk,district,208 ,13168
+CZ,Náchod,district,523 ,13238
+CZ,Olomouc,district,712 ,13193
+CZ,Olomoucký kraj,region,OL,13185
+CZ,Opava,district,805 ,13182
+CZ,Ostrava město,district,806 ,13215
+CZ,Pardubice,district,532 ,13195
+CZ,Pardubický kraj,region,PA,13223
+CZ,Pelhřimov,district,613 ,13253
+CZ,Plzenský kraj,region,PL,13186
+CZ,Plzeň jih,district,324 ,13197
+CZ,Plzeň město,district,323 ,13244
+CZ,Plzeň sever,district,325 ,13198
+CZ,Prachatice,district,315 ,13190
+CZ,Praha 1,district,101,48300
+CZ,Praha 10,district,10A,48309
+CZ,Praha 11,district,10B,48310
+CZ,Praha 12,district,10C,48311
+CZ,Praha 13,district,10D,48312
+CZ,Praha 14,district,10E,48313
+CZ,Praha 15,district,10F,48314
+CZ,Praha 2,district,102,48301
+CZ,Praha 3,district,103,48302
+CZ,Praha 4,district,104,48303
+CZ,Praha 5,district,105,48304
+CZ,Praha 6,district,106,48305
+CZ,Praha 7,district,107,48306
+CZ,Praha 8,district,108,48307
+CZ,Praha 9,district,109,48308
+CZ,Praha východ,district,209 ,13170
+CZ,Praha západ,district,20A ,13171
+CZ,hlavní mesto Praha,region,PR,13224
+CZ,Prostĕjov,district,713 ,13194
+CZ,Písek,district,314 ,13229
+CZ,Přerov,district,714 ,13217
+CZ,Příbram,district,20B ,13169
+CZ,Rakovník,district,20C ,13172
+CZ,Rokycany,district,326 ,13245
+CZ,Rychnov nad Kněžnou,district,524 ,13239
+CZ,Semily,district,514 ,13212
+CZ,Sokolov,district,413 ,13176
+CZ,Strakonice,district,316 ,13230
+CZ,Stredoceský kraj,region,ST,13187
+CZ,Svitavy,district,533 ,13241
+CZ,Tachov,district,327 ,13246
+CZ,Teplice,district,426 ,13203
+CZ,Trutnov,district,525 ,13178
+CZ,Tábor,district,317 ,13191
+CZ,Třebíč,district,614 ,13206
+CZ,Uherské Hradištĕ,district,722 ,13208
+CZ,Vsetín,district,723 ,13163
+CZ,Vysocina,region,VY,13188
+CZ,Vyškov,district,626 ,13234
+CZ,Zlín,district,724 ,13209
+CZ,Zlínský kraj,region,ZL,13226
+CZ,Znojmo,district,627 ,13235
+CZ,Ústecký kraj,region,US,13225
+CZ,Ústí nad Labem,district,427 ,13250
+CZ,Ústí nad Orlicí,district,534 ,13196
+CZ,Česká Lípa,district,511 ,13210
+CZ,České Budějovice,district,311 ,13227
+CZ,Český Krumlov,district,312 ,13189
+CZ,Šumperk,district,715 ,13218
+CZ,Žd’ár nad Sázavou,district,615 ,13249
+CI,18 Montagnes (Région des),region,06,18974
+CI,Agnébi (Région de l'),region,16,18975
+CI,Bafing (Région du),region,17,18976
+CI,Bas-Sassandra (Région du),region,09,18977
+CI,Denguélé (Région du),region,10,18978
+CI,Fromager (Région du),region,18,18979
+CI,Haut-Sassandra (Région du),region,02,18980
+CI,Lacs (Région des),region,07,18981
+CI,Lagunes (Région des),region,01,18982
+CI,Marahoué (Région de la),region,12,18983
+CI,Moyen-Cavally (Région du),region,19,18984
+CI,Moyen-Comoé (Région du),region,05,18985
+CI,Nzi-Comoé (Région),region,11,18986
+CI,Savanes (Région des),region,03,18987
+CI,Sud-Bandama (Région du),region,15,18988
+CI,Sud-Comoé (Région du),region,13,18989
+CI,Vallée du Bandama (Région de la),region,04,18990
+CI,Worodougou (Région du),region,14,18991
+CI,Zanzan (Région du),region,08,18992
+DK,Bornholm,county,040,13256
+DK,Capital,region,84,19434
+DK,Central Jutland,region,82,19435
+DK,Frederiksberg City,city,147,13275
+DK,Frederiksborg,county,020,13257
+DK,Fyn,county,042,13265
+DK,København,county,015,13266
+DK,København City,city,101,13258
+DK,Nordjylland,county,080,13267
+DK,North Jutland,region,81,19436
+DK,Ribe,county,055,13268
+DK,Ringkøbing,county,065,13259
+DK,Roskilde,county,025,13269
+DK,South Denmark,region,83,19438
+DK,Storstrøm,county,035,13261
+DK,Sønderjylland,county,050,13260
+DK,Vejle,county,060,13262
+DK,Vestsjælland,county,030,13263
+DK,Viborg,county,076,13264
+DK,Zeeland,region,85,19437
+DK,Århus,county,070,13274
+DJ,Ali Sabieh,region,AS,13283
+DJ,Arta,region,AR,19439
+DJ,Dikhil,region,DI,13282
+DJ,Djibouti,city,DJ,13280
+DJ,Obock,region,OB,13281
+DJ,Tadjourah,region,TA,13284
+DM,Saint Andrew,parish,02,13286
+DM,Saint David,parish,03,13289
+DM,Saint George,parish,04,13293
+DM,Saint John,parish,05,13292
+DM,Saint Joseph,parish,06,13291
+DM,Saint Luke,parish,07,13294
+DM,Saint Mark,parish,08,13290
+DM,Saint Patrick,parish,09,13285
+DM,Saint Paul,parish,10,13287
+DM,Saint Peter,parish,11,13288
+DO,Azua,province,02,13506
+DO,Bahoruco,province,03,13489
+DO,Barahona,province,04,13477
+DO,Dajabón,province,05,13490
+DO,Distrito Nacional (Santo Domingo),province,01,13520
+DO,Duarte,province,06,13491
+DO,El Seybo [El Seibo],province,08,13492
+DO,Espaillat,province,09,13493
+DO,Hato Mayor,province,30,13510
+DO,Independencia,province,10,13494
+DO,La Altagracia,province,11,13511
+DO,La Estrelleta [Elías Piña],province,07,13509
+DO,La Romana,province,12,13487
+DO,La Vega,province,13,13512
+DO,María Trinidad Sánchez,province,14,13496
+DO,Monseñor Nouel,province,28,13513
+DO,Monte Cristi,province,15,13497
+DO,Monte Plata,province,29,13514
+DO,Pedernales,province,16,13498
+DO,Peravia,province,17,13499
+DO,Puerto Plata,province,18,13515
+DO,Salcedo,province,19,13500
+DO,Samaná,province,20,13516
+DO,San Cristóbal,province,21,13517
+DO,San Jose de Ocoa,province,31,13502
+DO,San Juan,province,22,13518
+DO,San Pedro de Macorís,province,23,13503
+DO,Santiago,province,25,13519
+DO,Santiago Rodríguez,province,26,13504
+DO,Santo Domingo,,32,13508
+DO,Sánchez Ramírez,province,24,13501
+DO,Valverde,province,27,13505
+EC,Azuay,province,A,13570
+EC,Bolívar,province,B,13571
+EC,Carchi,province,C,13572
+EC,Cañar,province,F,13578
+EC,Chimborazo,province,H,13579
+EC,Cotopaxi,province,X,13573
+EC,El Oro,province,O,13574
+EC,Esmeraldas,province,E,13580
+EC,Galápagos,province,W,13575
+EC,Guayas,province,G,13576
+EC,Imbabura,province,I,13581
+EC,Loja,province,L,13577
+EC,Los Ríos,province,R,13582
+EC,Manabí,province,M,13583
+EC,Morona-Santiago,province,S,13584
+EC,Napo,province,N,13569
+EC,Orellana,province,D,13585
+EC,Pastaza,province,Y,13568
+EC,Pichincha,province,P,13586
+EC,Santa Elena,province,X1~,48131
+EC,Santa Elena,province,SE,21342
+EC,Santo Domingo de los Tsachilas,province,SD,21343
+EC,Santo Domingo de los Tsachilas,province,X2~,48132
+EC,Sucumbíos,province,U,13567
+EC,Tungurahua,province,T,13587
+EC,Zamora-Chinchipe,province,Z,13566
+EG,Ad Daqahliyah,governorate,DK,13607
+EG,Al Bahr al Ahmar,governorate,BA,13605
+EG,Al Buhayrah,governorate,BH,13606
+EG,Al Fayyum,governorate,FYM,13608
+EG,Al Gharbiyah,governorate,GH,13609
+EG,Al Iskandariyah,governorate,ALX,13595
+EG,Al Ismā`īlīyah,governorate,IS,13610
+EG,Al Jizah,governorate,GZ,13596
+EG,Al Minufiyah,governorate,MNF,13612
+EG,Al Minya,governorate,MN,13591
+EG,Al Qahirah,governorate,C,13598
+EG,Al Qalyubiyah,governorate,KB,13613
+EG,Al Wadi al Jadid,governorate,WAD,13588
+EG,al-Uqsur,governorate,LX,13589
+EG,As Suways,governorate,SUZ,13601
+EG,As Sādis min Uktūbar,governorate,SU,48194
+EG,Ash Sharqiyah,governorate,SHR,13600
+EG,Aswan,governorate,ASN,13602
+EG,Asyut,governorate,AST,13604
+EG,Bani Suwayf,governorate,BNS,13603
+EG,Būr Sa`īd,governorate,PTS,13593
+EG,Dumyat,governorate,DT,13594
+EG,Ḩulwān,governorate,HU,48195
+EG,Janub Sina',governorate,JS,13611
+EG,Kafr ash Shaykh,governorate,KFS,13592
+EG,Matrūh,governorate,MT,13597
+EG,Qina,governorate,KN,13599
+EG,Shamal Sina',governorate,SIN,13590
+EG,Suhaj,governorate,SHG,13614
+SV,Ahuachapán,department,AH,13619
+SV,Cabañas,department,CA,13620
+SV,Chalatenango,department,CH,13618
+SV,Cuscatlán,department,CU,13621
+SV,La Libertad,department,LI,13627
+SV,La Paz,department,PA,13622
+SV,La Unión,department,UN,13623
+SV,Morazán,department,MO,13617
+SV,San Miguel,department,SM,13624
+SV,San Salvador,department,SS,13628
+SV,San Vicente,department,SV,13616
+SV,Santa Ana,department,SA,13625
+SV,Sonsonate,department,SO,13626
+SV,Usulután,department,US,13615
+GQ,Annobón,province,AN,13635
+GQ,Bioko Norte,province,BN,13632
+GQ,Bioko Sur,province,BS,13634
+GQ,Centro Sur,province,CS,13633
+GQ,Kie-Ntem,province,KN,13630
+GQ,Litoral,province,LI,13631
+GQ,Región Continental,region,C,19440
+GQ,Región Insular,region,I,19441
+GQ,Wele-Nzás,province,WN,13629
+ER,Anseba,region,AN,13638
+ER,Debub,region,DU,13641
+ER,Debubawi K’eyyĭḥ Baḥri,region,DK,13639
+ER,Gash-Barka,region,GB,13637
+ER,Ma’ĭkel,region,MA,13640
+ER,Semienawi K’eyyĭḥ Baḥri,region,SK,13636
+EE,Harjumaa,county,37,13653
+EE,Hiiumaa,county,39,13654
+EE,Ida-Virumaa,county,44,13646
+EE,Järvamaa,county,51,13652
+EE,Jõgevamaa,county,49,13647
+EE,Lääne-Virumaa,county,59,13655
+EE,Läänemaa,county,57,13648
+EE,Pärnumaa,county,67,13649
+EE,Põlvamaa,county,65,13650
+EE,Raplamaa,county,70,13643
+EE,Saaremaa,county,74,13645
+EE,Tartumaa,county,78,13656
+EE,Valgamaa,county,82,13651
+EE,Viljandimaa,county,84,13644
+EE,Võrumaa,county,86,13642
+ET,Adis Abeba,administration,AA,13661
+ET,Afar,state,AF,13662
+ET,Amara,state,AM,13658
+ET,Binshangul Gumuz,state,BE,13663
+ET,Dire Dawa,administration,DD,13667
+ET,Gambela Hizboch,state,GA,13666
+ET,Hareri Hizb,state,HA,13665
+ET,Oromiya,state,OR,13668
+ET,Sumale,state,SO,13664
+ET,Tigray,state,TI,13659
+ET,YeDebub Biheroch Bihereseboch na Hizboch,state,SN,13657
+FJ,Central,division,C,13683
+FJ,Eastern,division,E,13682
+FJ,Northern,division,N,13684
+FJ,Rotuma,dependency,R,18998
+FJ,Western,division,W,13681
+FI,Ahvenanmaan lääni,,AL,13703
+FI,Ahvenanmaan maakunta,region,01,48686
+FI,Etelä-Karjala,region,02,48687
+FI,Etelä-Pohjanmaa,region,03,48688
+FI,Etelä-Savo,region,04,48689
+FI,Etelä-Suomen lääni,,ES,20230
+FI,Itä-Suomen lääni,,IS,13706
+FI,Kainuu,region,05,48690
+FI,Kanta-Häme,region,06,48691
+FI,Keski-Pohjanmaa,region,07,48692
+FI,Keski-Suomi,region,08,48693
+FI,Kymenlaakso,region,09,48694
+FI,Lapin lääni,,LL,13690
+FI,Lappi,region,10,48695
+FI,Länsi-Suomen lääni,,LS,20233
+FI,Oulun lääni,,OL,20234
+FI,Pirkanmaa,region,11,48696
+FI,Pohjanmaa,region,12,48697
+FI,Pohjois-Karjala,region,13,48698
+FI,Pohjois-Pohjanmaa,region,14,48699
+FI,Pohjois-Savo,region,15,48700
+FI,Päijät-Häme,region,16,48701
+FI,Satakunta,region,17,48702
+FI,Uusimaa,region,18,48703
+FI,Varsinais-Suomi,region,19,48704
+FR,Ain,metropolitan_department,01,13736
+FR,Aisne,metropolitan_department,02,13737
+FR,Allier,metropolitan_department,03,13717
+FR,Alpes-de-Haute-Provence,metropolitan_department,04,13738
+FR,Alpes-Maritimes,metropolitan_department,06,13718
+FR,Alsace,metropolitan_regions,A ,48315
+FR,Aquitaine,metropolitan_regions,B ,48316
+FR,Ardennes,metropolitan_department,08,13719
+FR,Ardèche,metropolitan_department,07,13739
+FR,Ariège,metropolitan_department,09,13740
+FR,Aube,metropolitan_department,10,13741
+FR,Aude,metropolitan_department,11,13720
+FR,Auvergne,metropolitan_regions,C ,48317
+FR,Aveyron,metropolitan_department,12,13742
+FR,Bas-Rhin,metropolitan_department,67,13721
+FR,Basse-Normandie,metropolitan_regions,P ,48318
+FR,Bouches-du-Rhône,metropolitan_department,13,13743
+FR,Bourgogne,metropolitan_regions,D ,48319
+FR,Bretagne,metropolitan_regions,E ,48320
+FR,Calvados,metropolitan_department,14,13722
+FR,Cantal,metropolitan_department,15,13744
+FR,Centre,metropolitan_regions,F ,48321
+FR,Champagne-Ardenne,metropolitan_regions,G ,48322
+FR,Charente,metropolitan_department,16,13723
+FR,Charente-Maritime,metropolitan_department,17,13745
+FR,Cher,metropolitan_department,18,13746
+FR,Clipperton,dependency,CP,21344
+FR,Corrèze,metropolitan_department,19,13791
+FR,Corse,metropolitan_regions,H ,48323
+FR,Corse-du-Sud,metropolitan_department,2A,13747
+FR,Creuse,metropolitan_department,23,13794
+FR,Côte-d'Or,metropolitan_department,21,13792
+FR,Côtes-d'Armor,metropolitan_department,22,13793
+FR,Deux-Sèvres,metropolitan_department,79,13795
+FR,Dordogne,metropolitan_department,24,13796
+FR,Doubs,metropolitan_department,25,13797
+FR,Drôme,metropolitan_department,26,13816
+FR,Essonne,metropolitan_department,91,13817
+FR,Eure,metropolitan_department,27,13818
+FR,Eure-et-Loir,metropolitan_department,28,13819
+FR,Finistère,metropolitan_department,29,13820
+FR,Franche-Comté,metropolitan_regions,I ,48324
+FR,Gard,metropolitan_department,30,13821
+FR,Gers,metropolitan_department,32,13822
+FR,Gironde,metropolitan_department,33,13823
+FR,Guadeloupe (see also separate entry under GP),overseas_regions,GP ,48337
+FR,Guyane (française) (see also separate entry under GF),overseas_regions,GF ,48338
+FR,Haut-Rhin,metropolitan_department,68,13753
+FR,Haute-Corse,metropolitan_department,2B,13748
+FR,Haute-Garonne,metropolitan_department,31,13824
+FR,Haute-Loire,metropolitan_department,43,13749
+FR,Haute-Marne,metropolitan_department,52,13807
+FR,Haute-Normandie,metropolitan_regions,Q ,48325
+FR,Haute-Savoie,metropolitan_department,74,13751
+FR,Haute-Saône,metropolitan_department,70,13808
+FR,Haute-Vienne,metropolitan_department,87,13809
+FR,Hautes-Alpes,metropolitan_department,05,13750
+FR,Hautes-Pyrénées,metropolitan_department,65,13752
+FR,Hauts-de-Seine,metropolitan_department,92,13810
+FR,Hérault,metropolitan_department,34,13754
+FR,Ille-et-Vilaine,metropolitan_department,35,13811
+FR,Indre,metropolitan_department,36,13755
+FR,Indre-et-Loire,metropolitan_department,37,13756
+FR,Isère,metropolitan_department,38,13812
+FR,Jura,metropolitan_department,39,13757
+FR,La Réunion (see also separate entry under RE),overseas_regions,RE ,48340
+FR,Landes,metropolitan_department,40,13813
+FR,Languedoc-Roussillon,metropolitan_regions,K ,48327
+FR,Limousin,metropolitan_regions,L ,48328
+FR,Loir-et-Cher,metropolitan_department,41,13760
+FR,Loire,metropolitan_department,42,13758
+FR,Loire-Atlantique,metropolitan_department,44,13814
+FR,Loiret,metropolitan_department,45,13759
+FR,Lorraine,metropolitan_regions,M ,48329
+FR,Lot,metropolitan_department,46,13815
+FR,Lot-et-Garonne,metropolitan_department,47,13761
+FR,Lozère,metropolitan_department,48,13798
+FR,Maine-et-Loire,metropolitan_department,49,13762
+FR,Manche,metropolitan_department,50,13799
+FR,Marne,metropolitan_department,51,13763
+FR,Martinique (see also separate entry under MQ),overseas_regions,MQ ,48339
+FR,Mayenne,metropolitan_department,53,13764
+FR,Mayotte (see also separate entry under YT),territorial_collectivity,YT,18999
+FR,Meurthe-et-Moselle,metropolitan_department,54,13800
+FR,Meuse,metropolitan_department,55,13765
+FR,Midi-Pyrénées,metropolitan_regions,N ,48330
+FR,Morbihan,metropolitan_department,56,13801
+FR,Moselle,metropolitan_department,57,13766
+FR,Nièvre,metropolitan_department,58,13802
+FR,Nord,metropolitan_department,59,13767
+FR,Nord-Pas-de-Calais,metropolitan_regions,O ,48331
+FR,Nouvelle-Calédonie (see also separate entry under NC),overseas_territory,NC,19000
+FR,Oise,metropolitan_department,60,13768
+FR,Orne,metropolitan_department,61,13803
+FR,Paris,metropolitan_department,75,13769
+FR,Pas-de-Calais,metropolitan_department,62,13804
+FR,Pays-de-la-Loire,metropolitan_regions,R ,48332
+FR,Picardie,metropolitan_regions,S ,48333
+FR,Poitou-Charentes,metropolitan_regions,T ,48334
+FR,Polynésie française (see also separate entry under PF),overseas_territory,PF,19001
+FR,Provence-Alpes-Côte-d'Azur,metropolitan_regions,U ,48335
+FR,Puy-de-Dôme,metropolitan_department,63,13770
+FR,Pyrénées-Atlantiques,metropolitan_department,64,13805
+FR,Pyrénées-Orientales,metropolitan_department,66,13771
+FR,Rhône,metropolitan_department,69,13772
+FR,Rhône-Alpes,metropolitan_regions,V ,48336
+FR,Saint-Barthélemy (see also separate entry under BL),overseas_territorial_collectivity,BL,21345
+FR,Saint-Martin (see also separate entry under MF),overseas_territorial_collectivity,MF,21346
+FR,Saint-Pierre-et-Miquelon (see also separate entry under PM),territorial_collectivity,PM,19002
+FR,Sarthe,metropolitan_department,72,13773
+FR,Savoie,metropolitan_department,73,13714
+FR,Saône-et-Loire,metropolitan_department,71,13806
+FR,Seine-et-Marne,metropolitan_department,77,13774
+FR,Seine-Maritime,metropolitan_department,76,13710
+FR,Seine-Saint-Denis,metropolitan_department,93,13775
+FR,Somme,metropolitan_department,80,13711
+FR,Tarn,metropolitan_department,81,13776
+FR,Tarn-et-Garonne,metropolitan_department,82,13712
+FR,Terres Australes Françaises (see also separate entry under TF),overseas_territory,TF,19003
+FR,Territoire de Belfort,metropolitan_department,90,13777
+FR,Val-d'Oise,metropolitan_department,95,13709
+FR,Val-de-Marne,metropolitan_department,94,13778
+FR,Var,metropolitan_department,83,13779
+FR,Vaucluse,metropolitan_department,84,13713
+FR,Vendée,metropolitan_department,85,13780
+FR,Vienne,metropolitan_department,86,13781
+FR,Vosges,metropolitan_department,88,13708
+FR,Wallis et Futuna (see also separate entry under WF),overseas_territory,WF,19004
+FR,Yonne,metropolitan_department,89,13782
+FR,Yvelines,metropolitan_department,78,13707
+FR,Île-de-France,metropolitan_regions,J ,48326
+TF,Crozet Islands,district,X2~,13836
+TF,Ile Saint-Paul et Ile Amsterdam,district,X1~,13834
+TF,Iles Eparses,district,X4~,21356
+TF,Kerguelen,district,X3~,13837
+GA,Estuaire,province,1,13839
+GA,Haut-Ogooué,province,2,13845
+GA,Moyen-Ogooué,province,3,13841
+GA,Ngounié,province,4,13844
+GA,Nyanga,province,5,13846
+GA,Ogooué-Ivindo,province,6,13842
+GA,Ogooué-Lolo,province,7,13843
+GA,Ogooué-Maritime,province,8,13840
+GA,Woleu-Ntem,province,9,13838
+GM,Banjul,city,B,13880
+GM,Lower River,division,L,13887
+GM,MacCarthy Island,division,M,13877
+GM,North Bank,division,N,13885
+GM,Upper River,division,U,13881
+GM,Western,division,W,13882
+GE,Abkhazia,autonomous_republic,AB,13902
+GE,Ajaria,autonomous_republic,AJ,13896
+GE,Guria,region,GU,13897
+GE,Imereti,region,IM,13901
+GE,Kakheti,region,KA,13898
+GE,Kvemo Kartli,region,KK,13900
+GE,Mtskheta-Mtianeti,region,MM,13905
+GE,Racha-Lechkhumi [and] Kvemo Svaneti,region,RL,13899
+GE,Samegrelo-Zemo Svaneti,region,SZ,13906
+GE,Samtskhe-Javakheti,region,SJ,13903
+GE,Shida Kartli,region,SK,13904
+GE,Tbilisi,city,TB,13895
+DE,Baden-Württemberg,state,BW,14337
+DE,Bayern,state,BY,14044
+DE,Berlin,state,BE,14338
+DE,Brandenburg,state,BB,14045
+DE,Bremen,state,HB,14339
+DE,Hamburg,state,HH,14046
+DE,Hessen,state,HE,14340
+DE,Mecklenburg-Vorpommern,state,MV,14047
+DE,Niedersachsen,state,NI,14341
+DE,Nordrhein-Westfalen,state,NW,14048
+DE,Rheinland-Pfalz,state,RP,14342
+DE,Saarland,state,SL,14049
+DE,Sachsen,state,SN,14343
+DE,Sachsen-Anhalt,state,ST,14050
+DE,Schleswig-Holstein,state,SH,14344
+DE,Thüringen,state,TH,14051
+GH,Ashanti,region,AH,14403
+GH,Brong-Ahafo,region,BA,14400
+GH,Central,region,CP,14404
+GH,Eastern,region,EP,14405
+GH,Greater Accra,region,AA,14399
+GH,Northern,region,NP,14402
+GH,Upper East,region,UE,14406
+GH,Upper West,region,UW,14397
+GH,Volta,region,TV,14401
+GH,Western,region,WP,14398
+GR,Achaïa,department,13,14414
+GR,Agio Oros,self_governed_part,69,14417
+GR,Aitolia kai Akarnania,department,01,14423
+GR,Anatoliki Makedonia kai Thraki,administrative_regions,A,48444
+GR,Argolida,department,11,14415
+GR,Arkadia,department,12,14424
+GR,Arta,department,31,14425
+GR,Attiki,administrative_regions,I,48445
+GR,Attiki,department,A1,14416
+GR,Chalkidiki,department,64,14421
+GR,Chania,department,94,14432
+GR,Chios,department,85,14422
+GR,Dodekanisos,department,81,14426
+GR,Drama,department,52,14427
+GR,Dytiki Ellada,administrative_regions,G,48446
+GR,Dytiki Makedonia,administrative_regions,C,48447
+GR,Evros,department,71,14428
+GR,Evrytania,department,05,14418
+GR,Evvoia,department,04,14419
+GR,Florina,department,63,14429
+GR,Fokida,department,07,14430
+GR,Fthiotida,department,06,14420
+GR,Grevena,department,51,14431
+GR,Ileia,department,14,14433
+GR,Imathia,department,53,14450
+GR,Ioannina,department,33,14451
+GR,Ionia Nisia,administrative_regions,F,48448
+GR,Ipeiros,administrative_regions,D,48449
+GR,Irakleio,department,91,14434
+GR,Karditsa,department,41,14435
+GR,Kastoria,department,56,14452
+GR,Kavala,department,55,14436
+GR,Kefallonia,department,23,14453
+GR,Kentriki Makedonia,administrative_regions,B,48450
+GR,Kerkyra,department,22,14454
+GR,Kilkis,department,57,14455
+GR,Korinthia,department,15,14438
+GR,Kozani,department,58,14456
+GR,Kriti,administrative_regions,M,48451
+GR,Kyklades,department,82,14437
+GR,Lakonia,department,16,14439
+GR,Larisa,department,42,14457
+GR,Lasithi,department,92,14440
+GR,Lefkada,department,24,14441
+GR,Lesvos,department,83,14413
+GR,Magnisia,department,43,14458
+GR,Messinia,department,17,14442
+GR,Notio Aigaio,administrative_regions,L,48452
+GR,Pella,department,59,14443
+GR,Peloponnisos,administrative_regions,J,48453
+GR,Pieria,department,61,14412
+GR,Preveza,department,34,14444
+GR,Rethymno,department,93,14459
+GR,Rodopi,department,73,14445
+GR,Samos,department,84,14411
+GR,Serres,department,62,14446
+GR,Sterea Ellada,administrative_regions,H,48454
+GR,Thesprotia,department,32,14410
+GR,Thessalia,administrative_regions,E,48455
+GR,Thessaloniki,department,54,14447
+GR,Trikala,department,44,14409
+GR,Voiotia,department,03,14448
+GR,Voreio Aigaio,administrative_regions,K,48456
+GR,Xanthi,department,72,14408
+GR,Zakynthos,department,21,14449
+GL,Kommune Kujalleq (kl),municipality,KU,48225
+GL,Kommuneqarfik Sermersooq (kl),municipality,SM,48226
+GL,Qaasuitsup Kommunia (kl),municipality,QA,48227
+GL,Qeqqata Kommunia (kl),municipality,QE,48228
+GD,Saint Andrew,parish,01,14484
+GD,Saint David,parish,02,14486
+GD,Saint George,parish,03,14485
+GD,Saint John,parish,04,14483
+GD,Saint Mark,parish,05,14480
+GD,Saint Patrick,parish,06,14482
+GD,Southern Grenadine Islands,dependency,10,14481
+GT,Alta Verapaz,department,AV,14531
+GT,Baja Verapaz,department,BV,14526
+GT,Chimaltenango,department,CM,14532
+GT,Chiquimula,department,CQ,14527
+GT,El Progreso,department,PR,14533
+GT,Escuintla,department,ES,14528
+GT,Guatemala,department,GU,14529
+GT,Huehuetenango,department,HU,14534
+GT,Izabal,department,IZ,14535
+GT,Jalapa,department,JA,14536
+GT,Jutiapa,department,JU,14537
+GT,Petén,department,PE,14538
+GT,Quetzaltenango,department,QZ,14525
+GT,Quiché,department,QC,14539
+GT,Retalhuleu,department,RE,14524
+GT,Sacatepéquez,department,SA,14540
+GT,San Marcos,department,SM,14523
+GT,Santa Rosa,department,SR,14541
+GT,Sololá,department,SO,14522
+GT,Suchitepéquez,department,SU,14542
+GT,Totonicapán,department,TO,14521
+GT,Zacapa,department,ZA,14530
+GN,Beyla,perfecture,BE,14565
+GN,Boffa,perfecture,BF,14566
+GN,Boké,governorates,B,48437
+GN,Boké,perfecture,BK,14567
+GN,Conakry,special_zone.,C,14568
+GN,Coyah,perfecture,CO,14569
+GN,Dabola,perfecture,DB,14575
+GN,Dalaba,perfecture,DL,14570
+GN,Dinguiraye,perfecture,DI,14576
+GN,Dubréka,perfecture,DU,14573
+GN,Faranah,perfecture,FA,14577
+GN,faranah,governorates,F,48438
+GN,Forécariah,perfecture,FO,14571
+GN,Fria,perfecture,FR,14578
+GN,Gaoual,perfecture,GA,14572
+GN,Guékédou,perfecture,GU,14579
+GN,Kankan,governorates,K,48439
+GN,Kankan,perfecture,KA,14580
+GN,Kindia,perfecture,KD,14581
+GN,Kindia,governorates,D,48440
+GN,Kissidougou,perfecture,KS,14592
+GN,Koubia,perfecture,KB,14582
+GN,Koundara,perfecture,KN,14583
+GN,Kouroussa,perfecture,KO,14560
+GN,Kérouané,perfecture,KE,14561
+GN,Labé,governorates,L,48441
+GN,Labé,perfecture,LA,14584
+GN,Lola,perfecture,LO,14585
+GN,Lélouma,perfecture,LE,14593
+GN,Macenta,perfecture,MC,14586
+GN,Mali,perfecture,ML,14559
+GN,Mamou,perfecture,MM,14587
+GN,Mamou,governorates,M,48442
+GN,Mandiana,perfecture,MD,14558
+GN,Nzérékoré,governorates,N,48443
+GN,Nzérékoré,perfecture,NZ,14588
+GN,Pita,perfecture,PI,14557
+GN,Siguiri,perfecture,SI,14589
+GN,Tougué,perfecture,TO,14556
+GN,Télimélé,perfecture,TE,14590
+GN,Yomou,perfecture,YO,14591
+GW,Bafatá,region,BA,14595
+GW,Biombo,region,BM,14598
+GW,Bissau,autonomous_sector,BS,14597
+GW,Bolama,region,BL,14601
+GW,Cacheu,region,CA,14599
+GW,Gabú,region,GA,14602
+GW,Leste,province,L,48457
+GW,Norte,province,N,48458
+GW,Oio,region,OI,14596
+GW,Quinara,region,QU,14594
+GW,Sul,province,S,48459
+GW,Tombali,region,TO,14600
+GY,Barima-Waini,region,BA,14605
+GY,Cuyuni-Mazaruni,region,CU,14612
+GY,Demerara-Mahaica,region,DE,14606
+GY,East Berbice-Corentyne,region,EB,14611
+GY,Essequibo Islands-West Demerara,region,ES,14607
+GY,Mahaica-Berbice,region,MA,14608
+GY,Pomeroon-Supenaam,region,PM,14604
+GY,Potaro-Siparuni,region,PT,14609
+GY,Upper Demerara-Berbice,region,UD,14603
+GY,Upper Takutu-Upper Essequibo,region,UT,14610
+HT,Artibonite,department,AR,14621
+HT,Centre,department,CE,14617
+HT,Grande-Anse,department,GA,14620
+HT,Nippes,department,NI,48705
+HT,Nord,department,ND,14616
+HT,Nord-Est,department,NE,14618
+HT,Nord-Ouest,department,NO,14614
+HT,Ouest,department,OU,14615
+HT,Sud,department,SD,14613
+HT,Sud-Est,department,SE,14619
+HN,Atlántida,department,AT,14635
+HN,Choluteca,department,CH,14624
+HN,Colón,department,CL,14625
+HN,Comayagua,department,CM,14636
+HN,Copán,department,CP,14626
+HN,Cortés,department,CR,14637
+HN,El Paraíso,department,EP,14638
+HN,Francisco Morazán,department,FM,14628
+HN,Gracias a Dios,department,GD,14629
+HN,Intibucá,department,IN,14623
+HN,Islas de la Bahía,department,IB,14630
+HN,La Paz,department,LP,14639
+HN,Lempira,department,LE,14631
+HN,Ocotepeque,department,OC,14640
+HN,Olancho,department,OL,14632
+HN,Santa Bárbara,department,SB,14633
+HN,Valle,department,VA,14622
+HN,Yoro,department,YO,14634
+HU,Baranya,county,BA,14646
+HU,Borsod-Abaúj-Zemplén,county,BZ,14660
+HU,Budapest,capital_city,BU,14649
+HU,Bács-Kiskun,county,BK,14647
+HU,Békés,county,BE,14648
+HU,Békéscsaba,city_of_county_right,BC,19442
+HU,Csongrád,county,CS,14650
+HU,Debrecen,city_of_county_right,DE,19443
+HU,Dunaújváros,city_of_county_right,DU,19444
+HU,Eger,city_of_county_right,EG,19445
+HU,Erd,county,ER,21352
+HU,Erd,county,X1~,48133
+HU,Fejér,county,FE,14645
+HU,Gyor,city_of_county_right,GY,19446
+HU,Gyor-Moson-Sopron,county,GS,14651
+HU,Hajdú-Bihar,county,HB,14661
+HU,Heves,county,HE,14652
+HU,Hódmezovásárhely,city_of_county_right,HV,19447
+HU,Jász-Nagykun-Szolnok,county,JN,14653
+HU,Kaposvár,city_of_county_right,KV,19448
+HU,Kecskemét,city_of_county_right,KM,19449
+HU,Komárom-Esztergom,county,KE,14644
+HU,Miskolc,city_of_county_right,MI,19450
+HU,Nagykanizsa,city_of_county_right,NK,19451
+HU,Nyíregyháza,city_of_county_right,NY,19452
+HU,Nógrád,county,NO,14654
+HU,Pest,county,PE,14643
+HU,Pécs,city_of_county_right,PS,19453
+HU,Salgótarján,city_of_county_right,ST,19454
+HU,Somogy,county,SO,14655
+HU,Sopron,city_of_county_right,SN,19455
+HU,Szabolcs-Szatmár-Bereg,county,SZ,14656
+HU,Szeged,city_of_county_right,SD,19456
+HU,Szekszárd,city_of_county_right,SS,19458
+HU,Szolnok,city_of_county_right,SK,19459
+HU,Szombathely,city_of_county_right,SH,19460
+HU,Székesfehérvár,city_of_county_right,SF,19457
+HU,Tatabánya,city_of_county_right,TB,19461
+HU,Tolna,county,TO,14642
+HU,Vas,county,VA,14657
+HU,Veszprém,county,VE,14658
+HU,Veszprém City,city_of_county_right,VM,19462
+HU,Zala,county,ZA,14641
+HU,Zalaegerszeg,city_of_county_right,ZE,19463
+IS,Austurland,region,7,14670
+IS,Höfuðborgarsvæði utan Reykjavíkur,region,1,14666
+IS,Norðurland eystra,region,6,14669
+IS,Norðurland vestra,region,5,14664
+IS,Reykjavík,city,0,19009
+IS,Suðurland,region,8,14668
+IS,Suðurnes,region,2,14667
+IS,Vestfirðir,region,4,14663
+IS,Vesturland,region,3,14662
+IN,Andaman and Nicobar Islands,union_territory,AN,14673
+IN,Andhra Pradesh,state,AP,14695
+IN,Arunachal Pradesh,state,AR,14674
+IN,Assam,state,AS,14675
+IN,Bihar,state,BR,14676
+IN,Chandigarh,union_territory,CH,14697
+IN,Chhattisgarh,state,CT,14677
+IN,Dadra and Nagar Haveli,union_territory,DN,14678
+IN,Daman and Diu,union_territory,DD,14698
+IN,Delhi,union_territory,DL,14679
+IN,Goa,state,GA,14699
+IN,Gujarat,state,GJ,14680
+IN,Haryana,state,HR,14681
+IN,Himachal Pradesh,state,HP,14672
+IN,Jammu and Kashmir,state,JK,14682
+IN,Jharkhand,state,JH,14700
+IN,Karnataka,state,KA,14683
+IN,Kerala,state,KL,14684
+IN,Lakshadweep,union_territory,LD,14704
+IN,Madhya Pradesh,state,MP,14685
+IN,Maharashtra,state,MH,14686
+IN,Manipur,state,MN,14703
+IN,Meghalaya,state,ML,14687
+IN,Mizoram,state,MZ,14702
+IN,Nagaland,state,NL,14688
+IN,Orissa,state,OR,14689
+IN,Pondicherry,union_territory,PY,14705
+IN,Punjab,state,PB,14690
+IN,Rajasthan,state,RJ,14691
+IN,Sikkim,state,SK,14701
+IN,Tamil Nadu,state,TN,14692
+IN,Tripura,state,TR,14693
+IN,Uttar Pradesh,state,UP,14694
+IN,Uttaranchal,state,UL,14671
+IN,West Bengal,state,WB,14696
+ID,Aceh,autonomous_province,AC,14720
+ID,Bali,province,BA,14719
+ID,Bangka Belitung,province,BB,14721
+ID,Banten,province,BT,14723
+ID,Bengkulu,province,BE,14722
+ID,Gorontalo,province,GO,14711
+ID,Jakarta Raya,special_district,JK,14724
+ID,Jambi,province,JA,14712
+ID,Jawa,geographic_units,JW,48462
+ID,Jawa Barat,province,JB,14725
+ID,Jawa Tengah,province,JT,14713
+ID,Jawa Timur,province,JI,14726
+ID,Kalimantan,geographic_units,KA,48463
+ID,Kalimantan Barat,province,KB,14714
+ID,Kalimantan Selatan,province,KS,14715
+ID,Kalimantan Tengah,province,KT,14727
+ID,Kalimantan Timur,province,KI,14728
+ID,Kepulauan Riau,province,KR,14733
+ID,Lampung,province,LA,14729
+ID,Maluku,geographic_units,ML,48905
+ID,Maluku,province,MA,14730
+ID,Maluku Utara,province,MU,14710
+ID,Nusa Tenggara,geographic_units,NU,48465
+ID,Nusa Tenggara Barat,province,NB,14731
+ID,Nusa Tenggara Timur,province,NT,14709
+ID,Papua,province,PA,14732
+ID,Papua,geographic_units,IJ,48466
+ID,Papua Barat,,X1~,48084
+ID,Papua Barat,province,PB,19010
+ID,Riau,province,RI,14708
+ID,Sulawesi,geographic_units,SL,48467
+ID,Sulawesi Barat,province,SR,19011
+ID,Sulawesi Selatan,province,SN,14707
+ID,Sulawesi Tengah,province,ST,14734
+ID,Sulawesi Tenggara,province,SG,14736
+ID,Sulawesi Utara,province,SA,14716
+ID,Sumatera,geographic_units,SM,48468
+ID,Sumatera Barat,province,SB,14735
+ID,Sumatera Selatan,province,SS,14717
+ID,Sumatera Utara,province,SU,14706
+ID,Yogyakarta,special_region,YO,14718
+IR,Ardabil,province,03,14748
+IR,Az¯arbayjan-e Gharbi,province,02,14756
+IR,Az¯arbayjan-e Sharqi,province,01,14749
+IR,Bushehr,province,06,14757
+IR,Chahar Mah¸all va Bakhtiari,province,08,14750
+IR,Esfahan,province,04,14758
+IR,Fars,province,14,14751
+IR,Gilan,province,19,14759
+IR,Golestan,province,27,14760
+IR,Hamadan,province,24,14752
+IR,Hormozgan,province,23,14761
+IR,Ilam,province,05,14753
+IR,Kerman,province,15,14762
+IR,Kermanshah,province,17,14739
+IR,Khorasan,,09,14740
+IR,Khorasan-e Janubi,province,29,19012
+IR,Khorasan-e Razavi,province,30,19013
+IR,Khorasan-e Shemali,province,31,19014
+IR,Khuzestan,province,10,14741
+IR,Kohkiluyeh va Buyer Ahmad,province,18,14742
+IR,Kordestan,province,16,14743
+IR,Lorestan,province,20,14744
+IR,Markazi,province,22,14745
+IR,Mazandaran,province,21,14746
+IR,Qazvin,province,28,14747
+IR,Qom,province,26,14738
+IR,Semnan,province,12,14754
+IR,Sistan va Baluchestan,province,13,14764
+IR,Tehran,province,07,14755
+IR,Yazd,province,25,14763
+IR,Zanjan,province,11,14737
+IQ,Al Anbar,province,AN,14771
+IQ,Al Basrah,province,BA,14773
+IQ,Al Muthanná,province,MU,14777
+IQ,Al Qadisiyah,province,QA,14766
+IQ,An Najaf,province,NA,14768
+IQ,Arbil,province,AR,14769
+IQ,As Sulaymaniyah,province,SU,14779
+IQ,At Ta'mim,province,TS,14765
+IQ,Babil,province,BB,14772
+IQ,Baghdad,province,BG,14770
+IQ,Dahuk,province,DA,14774
+IQ,Dhi Qar,province,DQ,14781
+IQ,Diyalá,province,DI,14775
+IQ,Karbala',province,KA,14776
+IQ,Maysan,province,MA,14782
+IQ,Ninawá,province,NI,14778
+IQ,Salah ad Din,province,SD,14767
+IQ,Wasit,province,WA,14780
+IE,Carlow,county,CW,14798
+IE,Cavan,county,CN,14795
+IE,Clare,county,CE,14799
+IE,Connaught,province,C,48469
+IE,Cork,county,CO,48897
+IE,Cork,county,C,14800
+IE,Donegal,county,DL,14796
+IE,Dublin,county,D,14801
+IE,Galway,county,G,14797
+IE,Kerry,county,KY,14802
+IE,Kildare,county,KE,14788
+IE,Kilkenny,county,KK,14803
+IE,Laois,county,LS,14807
+IE,Leinster,province,L,48470
+IE,Leitrim,county,LM,14804
+IE,Limerick,county,LK,14805
+IE,Longford,county,LD,14787
+IE,Louth,county,LH,14806
+IE,Mayo,county,MO,14808
+IE,Meath,county,MH,14789
+IE,Monaghan,county,MN,14786
+IE,Munster,province,M,48471
+IE,Offaly,county,OY,14790
+IE,Roscommon,county,RN,14809
+IE,Sligo,county,SO,14791
+IE,Tipperary,county,TA,14792
+IE,Ulster,province,U,48472
+IE,Waterford,county,WD,14784
+IE,Westmeath,county,WH,14793
+IE,Wexford,county,WX,14783
+IE,Wicklow,county,WW,14794
+IL,HaDarom,district,D,14847
+IL,Haifa,district,HA,14878
+IL,HaMerkaz,district,M,14877
+IL,HaZafon,district,Z,14848
+IL,Tel-Aviv,district,TA,14850
+IL,Yerushalayim,district,JM,14879
+IT,Abruzzo,region,65,14895
+IT,Agrigento,province,AG,19465
+IT,Alessandria,province,AL,19466
+IT,Ancona,province,AN,19467
+IT,Aosta,province,AO,19468
+IT,Arezzo,province,AR,19469
+IT,Ascoli Piceno,province,AP,19470
+IT,Asti,province,AT,19471
+IT,Avellino,province,AV,19472
+IT,Bari,province,BA,19473
+IT,Barletta-Andria-Trani,province,BT,48088
+IT,Basilicata,region,77,14897
+IT,Belluno,province,BL,19474
+IT,Benevento,province,BN,19475
+IT,Bergamo,province,BG,19476
+IT,Biella,province,BI,19477
+IT,Bologna,province,BO,19478
+IT,Bolzano,province,BZ,19479
+IT,Brescia,province,BS,19480
+IT,Brindisi,province,BR,19481
+IT,Cagliari,province,CA,19482
+IT,Calabria,region,78,14896
+IT,Caltanissetta,province,CL,19483
+IT,Campania,region,72,14898
+IT,Campobasso,province,CB,19484
+IT,Carbonia-Iglesias,province,CI,19485
+IT,Caserta,province,CE,19486
+IT,Catania,province,CT,19487
+IT,Catanzaro,province,CZ,19488
+IT,Chieti,province,CH,19489
+IT,Como,province,CO,19490
+IT,Cosenza,province,CS,19491
+IT,Cremona,province,CR,19492
+IT,Crotone,province,KR,19493
+IT,Cuneo,province,CN,19494
+IT,Emilia-Romagna,region,45,14886
+IT,Enna,province,EN,19495
+IT,Fermo,province,FM,48086
+IT,Ferrara,province,FE,19496
+IT,Firenze,province,FI,19497
+IT,Foggia,province,FG,19498
+IT,Forli-Cesena,province,FC,19499
+IT,Forlì,,FO,48085
+IT,Friuli-Venezia Giulia,region,36,14885
+IT,Frosinone,province,FR,19500
+IT,Genova,province,GE,19501
+IT,Gorizia,province,GO,19502
+IT,Grosseto,province,GR,19503
+IT,Imperia,province,IM,19504
+IT,Isernia,province,IS,19505
+IT,L'Aquila,province,AQ,19507
+IT,La Spezia,province,SP,19506
+IT,Latina,province,LT,19508
+IT,Lazio,region,62,14887
+IT,Lecce,province,LE,19509
+IT,Lecco,province,LC,19510
+IT,Liguria,region,42,14899
+IT,Livorno,province,LI,19511
+IT,Lodi,province,LO,19512
+IT,Lombardia,region,25,14888
+IT,Lucca,province,LU,19513
+IT,Macerata,province,MC,19514
+IT,Mantova,province,MN,19515
+IT,Marche,region,57,14889
+IT,Massa-Carrara,province,MS,19516
+IT,Matera,province,MT,19517
+IT,Medio Campidano,province,VS,19518
+IT,Medio Campidano,province,MA,48224
+IT,Messina,province,ME,19519
+IT,Milano,province,MI,19520
+IT,Modena,province,MO,19521
+IT,Molise,region,67,14884
+IT,Monza e Brianza,province,MB,48087
+IT,Napoli,province,NA,19522
+IT,Novara,province,NO,19523
+IT,Nuoro,province,NU,19524
+IT,Ogliastra,province,OG,19525
+IT,Olbia-Tempio,province,OT,19526
+IT,Olbia-Tempio,province,OL,48223
+IT,Oristano,province,OR,19527
+IT,Padova,province,PD,19528
+IT,Palermo,province,PA,19529
+IT,Parma,province,PR,19530
+IT,Pavia,province,PV,19531
+IT,Perugia,province,PG,19532
+IT,Pesaro e Urbino,province,PS,48222
+IT,Pesaro e Urbino,province,PU,19533
+IT,Pescara,province,PE,19534
+IT,Piacenza,province,PC,19535
+IT,Piemonte,region,21,14900
+IT,Pisa,province,PI,19536
+IT,Pistoia,province,PT,19537
+IT,Pordenone,province,PN,19538
+IT,Potenza,province,PZ,19539
+IT,Prato,province,PO,19540
+IT,Puglia,region,75,14890
+IT,Ragusa,province,RG,19541
+IT,Ravenna,province,RA,19542
+IT,Reggio Calabria,province,RC,19543
+IT,Reggio Emilia,province,RE,19544
+IT,Rieti,province,RI,19545
+IT,Rimini,province,RN,19546
+IT,Roma,province,RM,19547
+IT,Rovigo,province,RO,19548
+IT,Salerno,province,SA,19549
+IT,Sardegna,region,88,14883
+IT,Sassari,province,SS,19550
+IT,Savona,province,SV,19551
+IT,Sicilia,region,82,14891
+IT,Siena,province,SI,19552
+IT,Siracusa,province,SR,19553
+IT,Sondrio,province,SO,19554
+IT,Taranto,province,TA,19555
+IT,Teramo,province,TE,19556
+IT,Terni,province,TR,19557
+IT,Torino,province,TO,19558
+IT,Toscana,region,52,14901
+IT,Trapani,province,TP,19559
+IT,Trentino-Alto Adige,region,32,14892
+IT,Trento,province,TN,19560
+IT,Treviso,province,TV,19561
+IT,Trieste,province,TS,19562
+IT,Udine,province,UD,19563
+IT,Umbria,region,55,14893
+IT,Valle d'Aosta,region,23,14882
+IT,Varese,province,VA,19564
+IT,Veneto,region,34,14894
+IT,Venezia,province,VE,19565
+IT,Verbano-Cusio-Ossola,province,VB,19566
+IT,Vercelli,province,VC,19567
+IT,Verona,province,VR,19568
+IT,Vibo Valentia,province,VV,19569
+IT,Vicenza,province,VI,19570
+IT,Viterbo,province,VT,19571
+JM,Clarendon,parish,13,14905
+JM,Hanover,parish,09,14915
+JM,Kingston,parish,01,14906
+JM,Manchester,parish,12,14914
+JM,Portland,parish,04,14907
+JM,Saint Andrew,parish,02,14908
+JM,Saint Ann,parish,06,14904
+JM,Saint Catherine,parish,14,14909
+JM,Saint Elizabeth,parish,11,14903
+JM,Saint James,parish,08,14910
+JM,Saint Mary,parish,05,14911
+JM,Saint Thomas,parish,03,14902
+JM,Trelawny,parish,07,14912
+JM,Westmoreland,parish,10,14913
+JP,Aiti [Aichi],perfecture,23,14931
+JP,Akita,perfecture,05,14954
+JP,Aomori,perfecture,02,14932
+JP,Ehime,perfecture,38,14955
+JP,Gihu [Gifu],perfecture,21,14936
+JP,Gunma,perfecture,10,14937
+JP,Hirosima [Hiroshima],perfecture,34,14938
+JP,Hokkaidô [Hokkaido],territory,01,14957
+JP,Hukui [Fukui],perfecture,18,14934
+JP,Hukuoka [Fukuoka],perfecture,40,14935
+JP,Hukusima [Fukushima],perfecture,07,14956
+JP,Hyôgo [Hyogo],perfecture,28,14939
+JP,Ibaraki,perfecture,08,14958
+JP,Isikawa [Ishikawa],perfecture,17,14940
+JP,Iwate,perfecture,03,14941
+JP,Kagawa,perfecture,37,14942
+JP,Kagosima [Kagoshima],perfecture,46,14959
+JP,Kanagawa,perfecture,14,14943
+JP,Kumamoto,perfecture,43,14960
+JP,Kyôto [Kyoto],urban_perfecture,26,14945
+JP,Kôti [Kochi],perfecture,39,14944
+JP,Mie,perfecture,24,14946
+JP,Miyagi,perfecture,04,14921
+JP,Miyazaki,perfecture,45,14947
+JP,Nagano,perfecture,20,14948
+JP,Nagasaki,perfecture,42,14961
+JP,Nara,perfecture,29,14949
+JP,Niigata,perfecture,15,14950
+JP,Okayama,perfecture,33,14951
+JP,Okinawa,perfecture,47,14952
+JP,Saga,perfecture,41,14953
+JP,Saitama,perfecture,11,14922
+JP,Siga [Shiga],perfecture,25,14919
+JP,Simane [Shimane],perfecture,32,14923
+JP,Sizuoka [Shizuoka],perfecture,22,14924
+JP,Tiba [Chiba],perfecture,12,14933
+JP,Tokusima [Tokushima],perfecture,36,14925
+JP,Totigi [Tochigi],perfecture,09,14918
+JP,Tottori,perfecture,31,14917
+JP,Toyama,perfecture,16,14927
+JP,Tôkyô [Tokyo],metropolis,13,14926
+JP,Wakayama,perfecture,30,14928
+JP,Yamagata,perfecture,06,14916
+JP,Yamaguti [Yamaguchi],perfecture,35,14929
+JP,Yamanasi [Yamanashi],perfecture,19,14930
+JP,Ôita [Oita],perfecture,44,14920
+JP,Ôsaka [Osaka],urban_perfecture,27,14962
+JO,Al Balqa',province,BA,14979
+JO,Al Karak,province,KA,14984
+JO,Al Mafraq,province,MA,14981
+JO,Al ‘Aqabah,province,AQ,14985
+JO,At Tafilah,province,AT,14975
+JO,Az Zarqā',province,AZ,14976
+JO,Irbid,province,IR,14986
+JO,Jarash,province,JA,14980
+JO,Ma`an,province,MN,14977
+JO,Mādabā,province,MD,14983
+JO,‘Ajlūn,province,AJ,14982
+JO,‘Ammān (Al ‘A̅ şimah),province,AM,14978
+KZ,Almaty,city,ALA,14993
+KZ,Almaty oblysy,region,ALM,20264
+KZ,Aqmola oblysy,region,AKM,14991
+KZ,Aqtöbe oblysy,region,AKT,14992
+KZ,Astana,city,AST,20265
+KZ,Atyrau oblysy,region,ATY,14994
+KZ,Batys Qazaqstan oblysy,region,ZAP,14988
+KZ,Bayqongyr,city,BAY,21376
+KZ,Mangghystau oblysy,region,MAN,14995
+KZ,Ongtüstik Qazaqstan oblysy,region,YUZ,14999
+KZ,Pavlodar oblysy,region,PAV,14998
+KZ,Qaraghandy oblysy,region,KAR,14997
+KZ,Qostanay oblysy,region,KUS,15000
+KZ,Qyzylorda oblysy,region,KZY,14990
+KZ,Shyghys Qazaqstan oblysy,region,VOS,14996
+KZ,Soltüstik Qazaqstan oblysy,region,SEV,14989
+KZ,Zhambyl oblysy,region,ZHA,14987
+KE,Central,province,200,15009
+KE,Coast,province,300,15005
+KE,Eastern,province,400,15006
+KE,Nairobi,province,110,15010
+KE,North-Eastern,province,500,15004
+KE,Nyanza,province,600,15001
+KE,Rift Valley,province,700,15007
+KE,Western,province,900,15003
+KI,Gilbert Islands,island_group,G,19016
+KI,Line Islands,island_group,L,15018
+KI,Phoenix Islands,island_group,P,15033
+KP,Chagang-do,province,04,21370
+KP,Chagang-do,province,CHA,48098
+KP,Hamgyong-bukdo,province,09,21369
+KP,Hamgyong-namdo,province,08,21368
+KP,Hamgyongbuk-do,province,HAB,48096
+KP,Hamgyongnam-do,province,HAN,48095
+KP,Hwanghae-bukto,province,06,21367
+KP,Hwanghae-namdo,province,05,21366
+KP,Hwanghaebuk-do,province,HWB,48092
+KP,Hwanghaenam-do,province,HWN,48091
+KP,Kaesong-si,special_city,KAE,21373
+KP,Kangwon-do,province,KAN,48097
+KP,Kangwon-do,province,07,15053
+KP,Najin Sonbong-si,special_city,NAJ,21374
+KP,Nampo-si,special_city,NAM,21375
+KP,Nason,special_city,13,21371
+KP,Pyongan-bukdo,province,03,21363
+KP,Pyongan-namdo,province,02,21364
+KP,Pyonganbuk-do,province,PYB,48093
+KP,Pyongannam-do,province,PYN,48094
+KP,Pyongyang,capital_city,01,21372
+KP,Pyongyang-si,special_city,PYO,48099
+KP,Rason,,X1~,48089
+KP,Yanggang-do,province,10,21365
+KP,Yanggang-do,province,YAN,48090
+KR,Busan Gwang'yeogsi [Pusan-Kwangyokshi],metropolitan_city,26,20247
+KR,Chungcheongbugdo [Ch'ungch'ongbuk-do],province,43,20255
+KR,Chungcheongnamdo [Ch'ungch'ongnam-do],province,44,20256
+KR,Daegu Gwang'yeogsi [Taegu-Kwangyokshi],metropolitan_city,27,20248
+KR,Daejeon Gwang'yeogsi [Taejon-Kwangyokshi],metropolitan_city,30,20251
+KR,Gang'weondo [Kang-won-do],province,42,15042
+KR,Gwangju Gwang'yeogsi [Kwangju-Kwangyokshi],metropolitan_city,29,20250
+KR,Gyeonggido [Kyonggi-do],province,41,20253
+KR,Gyeongsangbugdo [Kyongsangbuk-do],province,47,20259
+KR,Gyeongsangnamdo [Kyongsangnam-do],province,48,20260
+KR,Incheon Gwang'yeogsi [Inch'n-Kwangyokshi],metropolitan_city,28,20249
+KR,Jejudo [Cheju-do],province,49,20261
+KR,Jeonrabugdo[Chollabuk-do],province,45,20257
+KR,Jeonranamdo [Chollanam-do],province,46,20258
+KR,Seoul Teugbyeolsi [Seoul-T'ukpyolshi],capital_metropolitan_city,11,20246
+KR,Ulsan Gwang'yeogsi [Ulsan-Kwangyokshi],metropolitan_city,31,20252
+KW,Al Ahmadi,governorate,AH,15064
+KW,Al Farwaniyah,governorate,FA,15068
+KW,Al Jahrah,governorate,JA,15063
+KW,Al Kuwayt (Al ‘Āşimah),governorate,KU,15066
+KW,Hawalli,governorate,HA,15067
+KW,Mubarak al-Kabir,governorate,MU,15065
+KG,Batken,region,B,15070
+KG,Bishkek,city,GB,15072
+KG,Chü,region,C,15078
+KG,Jalal-Abad,region,J,15077
+KG,Naryn,region,N,15071
+KG,Osh,region,O,15069
+KG,Talas,region,T,15075
+KG,Ysyk-Köl,region,Y,15074
+LA,Attapu [Attopeu],province,AT,15080
+LA,Bokèo,province,BK,15081
+LA,Bolikhamxai [Borikhane],province,BL,15089
+LA,Champasak [Champassak],province,CH,15082
+LA,Houaphan,province,HO,15093
+LA,Khammouan,province,KH,15094
+LA,Louang Namtha,province,LM,15083
+LA,Louangphabang [Louang Prabang],province,LP,15092
+LA,Oudômxai [Oudomsai],province,OU,15084
+LA,Phôngsali [Phong Saly],province,PH,15085
+LA,Salavan [Saravane],province,SL,15091
+LA,Savannakhét,province,SV,15086
+LA,Vientiane,province,VI,15095
+LA,Vientiane Prefecture,prefecture,VT,15087
+LA,Xaignabouli [Sayaboury],province,XA,15088
+LA,Xaisômboun,special_zone,XN,15096
+LA,Xiangkhoang [Xieng Khouang],province,XI,15079
+LA,Xékong [Sékong],province,XE,15090
+LV,Aglonas novads (Aglona),district,001,48896
+LV,Aizkraukles Aprinkis,district,AI,15106
+LV,Aizkraukles novads (Aizkraukle),district,002,48728
+LV,Aizputes novads (Aizpute),district,003,48729
+LV,Aknīstes novads (Aknīste),district,004,48730
+LV,Alojas novads (Aloja),district,005,48731
+LV,Alsungas novads (Alsunga),district,006,48732
+LV,Aluksnes Aprinkis,district,AL,15107
+LV,Alūksnes novads (Alūksne),district,007,48733
+LV,Amatas novads (Amata),district,008,48734
+LV,Apes novads (Ape),district,009,48735
+LV,Auces novads (Auce),district,010,48736
+LV,Babītes novads (Babīte),district,012,48738
+LV,Baldones novads (Baldone),district,013,48739
+LV,Baltinavas novads (Baltinava),district,014,48740
+LV,Balvu Aprinkis,district,BL,15108
+LV,Balvu novads (Balvi),district,015,48741
+LV,Bauskas Aprinkis,district,BU,15109
+LV,Bauskas novads (Bauska),district,016,48742
+LV,Beverīnas novads (Beverīna),district,017,48743
+LV,Brocēnu novads (Brocēni),district,018,48744
+LV,Burtnieku novads (Burtnieki),district,019,48745
+LV,Carnikavas novads (Carnikava),district,020,48746
+LV,Cesu Aprinkis,district,CE,15110
+LV,Cesvaines novads (Cesvaine),district,021,48747
+LV,Ciblas novads (Cibla),district,023,48749
+LV,Cēsu novads (Cēsis),district,022,48748
+LV,Dagdas novads (Dagda),district,024,48750
+LV,Daugavpils,city,DGV,15111
+LV,Daugavpils Aprinkis,district,DA,15112
+LV,Daugavpils novads (Daugavpils),district,025,48751
+LV,Dobeles Aprinkis,district,DO,15113
+LV,Dobeles novads (Dobele),district,026,48752
+LV,Dundagas novads (Dundaga),district,027,48753
+LV,Durbes novads (Durbe),district,028,48754
+LV,Engures novads (Engure),district,029,48755
+LV,Garkalnes novads (Garkalne),district,031,48757
+LV,Grobiņas novads (Grobiņa),district,032,48758
+LV,Gulbenes Aprinkis,district,GU,15124
+LV,Gulbenes novads (Gulbene),district,033,48759
+LV,Iecavas novads (Iecava),district,034,48760
+LV,Ikšķiles novads (Ikšķile),district,035,48761
+LV,Ilūkstes novads (Ilūkste),district,036,48762
+LV,Inčukalna novads (Inčukalns),district,037,48763
+LV,Jaunjelgavas novads (Jaunjelgava),district,038,48764
+LV,Jaunpiebalgas novads (Jaunpiebalga),district,039,48765
+LV,Jaunpils novads (Jaunpils),district,040,48766
+LV,Jekabpils Aprinkis,district,JK,15114
+LV,Jelgava,city,JEL,15125
+LV,Jelgavas Aprinkis,district,JL,15126
+LV,Jelgavas novads (Jelgava),district,041,48767
+LV,Jurmala,city,JUR,15127
+LV,Jēkabpils,city,JKB,48838
+LV,Jēkabpils novads (Jēkabpils),district,042,48768
+LV,Kandavas novads (Kandava),district,043,48769
+LV,Kocēnu novads,district,045,48771
+LV,Kokneses novads (Koknese),district,046,48772
+LV,Kraslavas Aprinkis,district,KR,15115
+LV,Krimuldas novads (Krimulda),district,048,48774
+LV,Krustpils novads (Krustpils),district,049,48775
+LV,Krāslavas novads (Krāslava),district,047,48773
+LV,Kuldigas Aprinkis,district,KU,15116
+LV,Kuldīgas novads (Kuldīga),district,050,48776
+LV,Kārsavas novads (Kārsava),district,044,48770
+LV,Lielvārdes novads (Lielvārde),district,053,48779
+LV,Liepaja,city,LPX,15128
+LV,Liepajas Aprinkis,district,LE,15117
+LV,Limbažu Aprinkis,district,LM,15118
+LV,Limbažu novads (Limbaži),district,054,48781
+LV,Lubānas novads (Lubāna),district,057,48784
+LV,Ludzas Aprinkis,district,LU,15123
+LV,Ludzas novads (Ludza),district,058,48785
+LV,Līgatnes novads (Līgatne),district,055,48782
+LV,Līvānu novads (Līvāni),district,056,48783
+LV,Madonas Aprinkis,district,MA,15119
+LV,Madonas novads (Madona),district,059,48786
+LV,Mazsalacas novads (Mazsalaca),district,060,48787
+LV,Mālpils novads (Mālpils),district,061,48788
+LV,Mārupes novads (Mārupe),district,062,48789
+LV,Mērsraga novads,district,063,48790
+LV,Naukšēnu novads (Naukšēni),district,064,48791
+LV,Neretas novads (Nereta),district,065,48792
+LV,Nīcas novads (Nīca),district,066,48793
+LV,Ogres Aprinkis,district,OG,15098
+LV,Ogres novads (Ogre),district,067,48794
+LV,Olaines novads (Olaine),district,068,48795
+LV,Ozolnieku novads (Ozolnieki),district,069,48796
+LV,Preilu Aprinkis,district,PR,15122
+LV,Preiļu novads (Preiļi),district,073,48800
+LV,Priekules novads (Priekule),district,074,48801
+LV,Priekuļu novads (Priekuļi),district,075,48802
+LV,Pārgaujas novads (Pārgauja),district,070,48797
+LV,Pāvilostas novads (Pāvilosta),district,071,48798
+LV,Pļaviņu novads (Pļaviņas),district,072,48799
+LV,Raunas novads (Rauna),district,076,48803
+LV,Rezekne,city,REZ,15099
+LV,Rezeknes Aprinkis,district,RE,15100
+LV,Riebiņu novads (Riebiņi),district,078,48805
+LV,Riga,city,RIX,15121
+LV,Rigas Aprinkis,district,RI,15101
+LV,Rojas novads (Roja),district,079,48806
+LV,Ropažu novads (Ropaži),district,080,48807
+LV,Rucavas novads (Rucava),district,081,48808
+LV,Rugāju novads (Rugāji),district,082,48809
+LV,Rundāles novads (Rundāle),district,083,48810
+LV,Rēzeknes novads (Rēzekne),district,077,48804
+LV,Rūjienas novads (Rūjiena),district,084,48811
+LV,Salacgrīvas novads (Salacgrīva),district,086,48813
+LV,Salas novads (Sala),district,085,48812
+LV,Salaspils novads (Salaspils),district,087,48814
+LV,Saldus Aprinkis,district,SA,15102
+LV,Saldus novads (Saldus),district,088,48815
+LV,Saulkrastu novads (Saulkrasti),district,089,48816
+LV,Siguldas novads (Sigulda),district,091,48818
+LV,Skrundas novads (Skrunda),district,093,48820
+LV,Skrīveru novads (Skrīveri),district,092,48819
+LV,Smiltenes novads (Smiltene),district,094,48821
+LV,Stopiņu novads (Stopiņi),district,095,48822
+LV,Strenču novads (Strenči),district,096,48823
+LV,Sējas novads (Sēja),district,090,48817
+LV,Talsu Aprinkis,district,TA,15129
+LV,Talsu novads (Talsi),district,097,48824
+LV,Tukuma Aprinkis,district,TU,15103
+LV,Tukuma novads (Tukums),district,099,48826
+LV,Tērvetes novads (Tērvete),district,098,48825
+LV,Vaiņodes novads (Vaiņode),district,100,48827
+LV,Valkas Aprinkis,district,VK,15104
+LV,Valkas novads (Valka),district,101,48828
+LV,Valmiera,city,VMR,48839
+LV,Valmieras Aprinkis,district,VM,15130
+LV,Varakļānu novads (Varakļāni),district,102,48829
+LV,Vecpiebalgas novads (Vecpiebalga),district,104,48831
+LV,Vecumnieku novads (Vecumnieki),district,105,48832
+LV,Ventspils,city,VEN,15105
+LV,Ventspils Aprinkis,district,VE,15097
+LV,Ventspils novads (Ventspils),district,106,48833
+LV,Viesītes novads (Viesīte),district,107,48834
+LV,Viļakas novads (Viļaka),district,108,48835
+LV,Viļānu novads (Viļāni),district,109,48836
+LV,Vārkavas novads (Vārkava),district,103,48830
+LV,Zilupes novads (Zilupe),district,110,48837
+LV,Ādažu novads (Ādaži),district,011,48737
+LV,Ērgļu novads (Ērgļi),district,030,48756
+LV,Ķeguma novads (Ķegums),district,051,48777
+LV,Ķekavas novads (Ķekava),district,052,48778
+LB,Aakkar,province,AK,48255
+LB,Baalbek-Hermel,province,BH,48256
+LB,Beirut,province,BA,15134
+LB,El Béqaa,province,BI,15135
+LB,Jabal Loubnâne,province,JL,15133
+LB,Loubnâne ech Chemâli,province,AS,15131
+LB,Loubnâne ej Jnoûbi,province,JA,15136
+LB,Nabatîyé,province,NA,15132
+LS,Berea,district,D,15138
+LS,Butha-Buthe,district,B,15139
+LS,Leribe,district,C,15145
+LS,Mafeteng,district,E,15140
+LS,Maseru,district,A,15146
+LS,Mohale's Hoek,district,F,15141
+LS,Mokhotlong,district,J,15142
+LS,Qacha's Nek,district,H,15137
+LS,Quthing,district,G,15143
+LS,Thaba-Tseka,district,K,15144
+LR,Bomi,county,BM,15152
+LR,Bong,county,BG,15148
+LR,Gbarpolu,county,X1~,19021
+LR,Grand Bassa,county,GB,15153
+LR,Grand Cape Mount,county,CM,15156
+LR,Grand Gedeh,county,GG,15151
+LR,Grand Kru,county,GK,19023
+LR,Lofa,county,LO,15154
+LR,Margibi,county,MG,15158
+LR,Maryland,county,MY,15150
+LR,Montserrado,county,MO,15157
+LR,Nimba,county,NI,15155
+LR,River Gee,county,X2~,19022
+LR,Rivercess,county,RI,15149
+LR,Sinoe,county,SI,15147
+LY,Ajdabiya,,AJ,15169
+LY,Al ?izam al Akh?ar,,HZ,15180
+LY,Al Butnan,popularate,BU,15171
+LY,Al Jabal al Akh?ar,popularate,JA,15174
+LY,Al Jabal al Gharbī,popularate,JG,48229
+LY,Al Jifarah,popularate,JI,15181
+LY,Al Jufrah,popularate,JU,15175
+LY,Al Kufrah,popularate,KF,15176
+LY,Al Marj,popularate,MJ,15182
+LY,Al Marqab,popularate,MB,15160
+LY,Al Qatrun,,QT,20297
+LY,Al Qubbah,,QB,15163
+LY,Al Wāḩāt,popularate,WA,15167
+LY,An Nuqat al Khams,popularate,NQ,15185
+LY,Ash Shati',district,SH,15189
+LY,Az Zawiyah,popularate,ZA,15168
+LY,Banghazi,popularate,BA,15177
+LY,Bani Walid,,BW,15170
+LY,Darnah,popularate,DR,15178
+LY,Ghadamis,,GD,15172
+LY,Gharyan,,GR,15179
+LY,Ghat,popularate,GT,15173
+LY,Jaghbub,,JB,20286
+LY,Misratah,popularate,MI,15161
+LY,Mizdah,,MZ,15187
+LY,Murzuq,popularate,MQ,15186
+LY,Nalut,popularate,NL,15162
+LY,Sabha,popularate,SB,15184
+LY,Sabratah Surman,,SS,15164
+LY,Surt,popularate,SR,15183
+LY,Tajura' wa an Nawahi Arba,,TN,20303
+LY,Tarabulus,popularate,TB,15165
+LY,Tarhunah-Masallatah,,TM,15188
+LY,Wadi al ?ayat,popularate,WD,15166
+LY,Wādī ash Shāţiʾ,popularate,WS,48230
+LY,Yafran-Jadu,,YJ,15159
+LI,Balzers,commune,01,15193
+LI,Eschen,commune,02,15194
+LI,Gamprin,commune,03,15192
+LI,Mauren,commune,04,15195
+LI,Planken,commune,05,15196
+LI,Ruggell,commune,06,15191
+LI,Schaan,commune,07,15197
+LI,Schellenberg,commune,08,15200
+LI,Triesen,commune,09,15198
+LI,Triesenberg,commune,10,15199
+LI,Vaduz,commune,11,15190
+LT,Alytaus Apskritis,county,AL,15209
+LT,Kauno Apskritis,county,KU,15205
+LT,Klaipedos Apskritis,county,KL,15208
+LT,Marijampoles Apskritis,county,MR,15206
+LT,Panevežio Apskritis,county,PN,15202
+LT,Taurages Apskritis,county,TA,15210
+LT,Telšiu Apskritis,county,TE,15207
+LT,Utenos Apskritis,county,UT,15203
+LT,Vilniaus Apskritis,county,VL,15201
+LT,Šiauliu Apskritis,county,SA,15204
+LU,Diekirch,district,D,15216
+LU,Grevenmacher,district,G,15215
+LU,Luxembourg (fr),district,L,15220
+MO,Ilhas,,I,48266
+MO,Macau,,M,48267
+MK,Aerodrom,municipality,01,48906
+MK,Aerodrom *,municipality,AD,20121
+MK,Aracinovo,municipality,AR,20122
+MK,Aračinovo,municipality,02,48907
+MK,Berovo,municipality,BR,15224
+MK,Berovo,municipality,03,48908
+MK,Bitola,municipality,04,48909
+MK,Bitola,municipality,TL,15225
+MK,Bogdanci,municipality,05,48910
+MK,Bogdanci,municipality,BG,20123
+MK,Bogovinje,municipality,06,48911
+MK,Bogovinje,municipality,VJ,20124
+MK,Bosilovo,municipality,BS,20125
+MK,Bosilovo,municipality,07,48912
+MK,Brvenica,municipality,BN,20126
+MK,Brvenica,municipality,08,48913
+MK,Butel,municipality,09,48914
+MK,Butel *,municipality,BU,20127
+MK,Cair *,municipality,CI,20128
+MK,Caška,municipality,CA,20129
+MK,Centar,municipality,77,48915
+MK,Centar *,municipality,CE,20130
+MK,Centar Župa,municipality,CZ,20131
+MK,Centar Župa,municipality,78,48916
+MK,Cešinovo-Obleševo,municipality,CH,20132
+MK,Cucer Sandevo,municipality,CS,20133
+MK,Debar,municipality,DB,15227
+MK,Debar,municipality,21,48921
+MK,Debarca,municipality,22,48922
+MK,Debarca,municipality,DA,20138
+MK,Delcevo,municipality,DL,15228
+MK,Delčevo,municipality,23,48923
+MK,Demir Hisar,municipality,25,48924
+MK,Demir Hisar,municipality,DM,15229
+MK,Demir Kapija,municipality,DK,20134
+MK,Demir Kapija,municipality,24,48925
+MK,Dojran,municipality,SD,20135
+MK,Dojran,municipality,26,48926
+MK,Dolneni,municipality,27,48927
+MK,Dolneni,municipality,DE,20136
+MK,Drugovo,municipality,DR,20137
+MK,Drugovo,municipality,28,48928
+MK,Gazi Baba,municipality,17,48929
+MK,Gazi Baba *,municipality,GB,20310
+MK,Gevgelija,municipality,18,48930
+MK,Gevgelija,municipality,GV,15230
+MK,Gjorce Petrov *,municipality,GP,20311
+MK,Gjorče Petrov,municipality,29,48931
+MK,Gostivar,municipality,19,48932
+MK,Gostivar,municipality,GT,15233
+MK,Gradsko,municipality,GR,20312
+MK,Gradsko,municipality,20,48933
+MK,Ilinden,municipality,IL,20313
+MK,Ilinden,municipality,34,48934
+MK,Jegunovce,municipality,JG,20314
+MK,Jegunovce,municipality,35,48935
+MK,Karbinci,municipality,37,48936
+MK,Karbinci,municipality,KB,20315
+MK,Karpoš,municipality,38,48937
+MK,Karpoš *,municipality,KX,20316
+MK,Kavadarci,municipality,36,48938
+MK,Kavadarci,municipality,AV,15231
+MK,Kicevo,municipality,KH,15234
+MK,Kisela Voda,municipality,39,48940
+MK,Kisela Voda *,municipality,VD,20139
+MK,Kičevo,municipality,40,48939
+MK,Kocani,municipality,OC,15232
+MK,Konce,municipality,KN,20140
+MK,Konče,municipality,41,48942
+MK,Kočani,municipality,42,48941
+MK,Kratovo,municipality,43,48943
+MK,Kratovo,municipality,KY,15235
+MK,Kriva Palanka,municipality,KZ,15249
+MK,Kriva Palanka,municipality,44,48944
+MK,Krivogaštani,municipality,45,48945
+MK,Krivogaštani,municipality,KG,20141
+MK,Kruševo,municipality,46,48946
+MK,Kruševo,municipality,KS,15236
+MK,Kumanovo,municipality,47,48947
+MK,Kumanovo,municipality,UM,15250
+MK,Lipkovo,municipality,LI,20142
+MK,Lipkovo,municipality,48,48948
+MK,Lozovo,municipality,LO,20143
+MK,Lozovo,municipality,49,48949
+MK,Makedonska Kamenica,municipality,51,48950
+MK,Makedonska Kamenica,municipality,MK,20144
+MK,Makedonski Brod,municipality,52,48951
+MK,Makedonski Brod,municipality,MD,20145
+MK,Mavrovo i Rostuša,municipality,50,48952
+MK,Mavrovo-i-Rostuša,municipality,MR,20146
+MK,Mogila,municipality,MG,20147
+MK,Mogila,municipality,53,48953
+MK,Negotino,municipality,54,48954
+MK,Negotino,municipality,NG,15237
+MK,Novaci,municipality,NV,20148
+MK,Novaci,municipality,55,48955
+MK,Novo Selo,municipality,NS,20149
+MK,Novo Selo,municipality,56,48956
+MK,Ohrid,municipality,58,48957
+MK,Ohrid,municipality,OD,15238
+MK,Oslomej,municipality,OS,20150
+MK,Oslomej,municipality,57,48958
+MK,Pehcevo,municipality,PH,20151
+MK,Pehčevo,municipality,60,48959
+MK,Petrovec,municipality,59,48960
+MK,Petrovec,municipality,PE,20152
+MK,Plasnica,municipality,61,48961
+MK,Plasnica,municipality,PN,20153
+MK,Prilep,municipality,PP,15248
+MK,Prilep,municipality,62,48962
+MK,Probištip,municipality,PT,15239
+MK,Probištip,municipality,63,48963
+MK,Radoviš,municipality,RV,15247
+MK,Radoviš,municipality,64,48964
+MK,Rankovce,municipality,RN,20154
+MK,Rankovce,municipality,65,48965
+MK,Resen,municipality,66,48966
+MK,Resen,municipality,RE,15240
+MK,Rosoman,municipality,67,48967
+MK,Rosoman,municipality,RM,20155
+MK,Saraj,municipality,68,48968
+MK,Saraj *,municipality,AJ,20156
+MK,Skopje,,X1~,15246
+MK,Sopište,municipality,70,48969
+MK,Sopište,municipality,SS,20157
+MK,Staro Nagoricane,municipality,NA,20158
+MK,Staro Nagoričane,municipality,71,48970
+MK,Struga,municipality,UG,15242
+MK,Struga,municipality,72,48971
+MK,Strumica,municipality,73,48972
+MK,Strumica,municipality,RU,15251
+MK,Studenicani,municipality,SU,20159
+MK,Studeničani,municipality,74,48973
+MK,Sveti Nikole,municipality,SL,15243
+MK,Sveti Nikole,municipality,69,48974
+MK,Tearce,municipality,75,48977
+MK,Tearce,municipality,TR,20160
+MK,Tetovo,municipality,ET,15252
+MK,Tetovo,municipality,76,48978
+MK,Valandovo,municipality,10,48979
+MK,Valandovo,municipality,VA,15244
+MK,Vasilevo,municipality,11,48980
+MK,Vasilevo,municipality,VL,20161
+MK,Veles,municipality,VE,15223
+MK,Veles,municipality,13,48981
+MK,Vevcani,municipality,VV,20162
+MK,Vevčani,municipality,12,48982
+MK,Vinica,municipality,14,48983
+MK,Vinica,municipality,NI,15245
+MK,Vraneštica,municipality,15,48984
+MK,Vraneštica,municipality,VC,20163
+MK,Vrapcište,municipality,VH,20164
+MK,Vrapčište,municipality,16,48985
+MK,Zajas,municipality,31,48986
+MK,Zajas,municipality,ZA,20165
+MK,Zelenikovo,municipality,32,48987
+MK,Zelenikovo,municipality,ZK,20166
+MK,Zrnovci,municipality,33,48988
+MK,Zrnovci,municipality,ZR,20167
+MK,Čair,municipality,79,48917
+MK,Čaška,municipality,80,48918
+MK,Češinovo-Obleševo,municipality,81,48919
+MK,Čučer Sandevo,municipality,82,48920
+MK,Štip,municipality,83,48975
+MK,Štip,municipality,ST,15241
+MK,Šuto Orizari,municipality,84,48976
+MK,Šuto Orizari *,municipality,SO,20169
+MK,Želino,municipality,30,48989
+MK,Želino,municipality,ZE,20170
+MG,Antananarivo,province,T,15255
+MG,Antsiranana,province,D,15254
+MG,Fianarantsoa,province,F,15258
+MG,Mahajanga,province,M,15257
+MG,Toamasina,province,A,15253
+MG,Toliara,province,U,15256
+MW,Balaka,district,BA,15279
+MW,Blantyre,district,BL,15261
+MW,Central Region,region,C,48232
+MW,Chikwawa,district,CK,15280
+MW,Chiradzulu,district,CR,15262
+MW,Chitipa,district,CT,15281
+MW,Dedza,district,DE,15263
+MW,Dowa,district,DO,15264
+MW,Karonga,district,KR,15285
+MW,Kasungu,district,KS,15265
+MW,Likoma,district,LK,19024
+MW,Lilongwe,district,LI,15286
+MW,Machinga,district,MH,15267
+MW,Mangochi,district,MG,15268
+MW,Mchinji,district,MC,15284
+MW,Mulanje,district,MU,15269
+MW,Mwanza,district,MW,15270
+MW,Mzimba,district,MZ,15283
+MW,Neno,district,NE,48231
+MW,Nkhata Bay,district,NB,15282
+MW,Nkhotakota,district,NK,15272
+MW,Northern Region,region,N,48233
+MW,Nsanje,district,NS,15273
+MW,Ntcheu,district,NU,15287
+MW,Ntchisi,district,NI,15274
+MW,Phalombe,district,PH,15275
+MW,Rumphi,district,RU,15288
+MW,Salima,district,SA,15276
+MW,Southern Region,region,S,48234
+MW,Thyolo,district,TH,15277
+MW,Zomba,district,ZO,15278
+MY,Johor,state,01,15290
+MY,Kedah,state,02,15299
+MY,Kelantan,state,03,15291
+MY,Melaka,state,04,15293
+MY,Negeri Sembilan,state,05,15301
+MY,Pahang,state,06,15294
+MY,Perak,state,08,15295
+MY,Perlis,state,09,15302
+MY,Pulau Pinang,state,07,15296
+MY,Sabah,state,12,15297
+MY,Sarawak,state,13,15303
+MY,Selangor,state,10,15298
+MY,Terengganu,state,11,15289
+MY,Wilayah Persekutuan Kuala Lumpur,federal_territory,14,15300
+MY,Wilayah Persekutuan Labuan,federal_territory,15,15292
+MY,Wilayah Persekutuan Putrajaya,federal_territory,16,19025
+MV,Alif,administrative_atoll,02,15307
+MV,Alif Dhaal,,X1~,48268
+MV,Alif Dhaal,,00,15308
+MV,Baa,administrative_atoll,20,15309
+MV,Central,province,CE,48272
+MV,Dhaalu,administrative_atoll,17,15310
+MV,Faafu,administrative_atoll,14,15311
+MV,Gaaf Alif,administrative_atoll,27,15312
+MV,Gaafu Dhaalu,administrative_atoll,28,15313
+MV,Gnaviyani,administrative_atoll,29,15306
+MV,Haa Alif,administrative_atoll,07,15314
+MV,Haa Dhaalu,administrative_atoll,23,15315
+MV,Kaafu,administrative_atoll,26,15305
+MV,Laamu,administrative_atoll,05,15316
+MV,Lhaviyani,administrative_atoll,03,15321
+MV,Male,capital,MLE,15317
+MV,Meemu,administrative_atoll,12,15324
+MV,Noonu,administrative_atoll,25,15323
+MV,North,province,NO,48275
+MV,North Central,province,NC,48274
+MV,Raa,administrative_atoll,13,15318
+MV,Seenu,administrative_atoll,01,15319
+MV,Shaviyani,administrative_atoll,24,15322
+MV,South,province,SU,48269
+MV,South Central,province,SC,48273
+MV,Thaa,administrative_atoll,08,15304
+MV,Upper North,province,UN,48271
+MV,Upper South,province,US,48270
+MV,Vaavu,administrative_atoll,04,15320
+ML,Bamako,district,BKO,15327
+ML,Gao,region,7,15329
+ML,Kayes,region,1,15330
+ML,Kidal,region,8,15328
+ML,Koulikoro,region,2,15331
+ML,Mopti,region,5,15326
+ML,Sikasso,region,3,15333
+ML,Ségou,region,4,15332
+ML,Tombouctou,region,6,15325
+MH,Ailinglaplap,municipality,ALL,15362
+MH,Ailuk,municipality,ALK,15347
+MH,Arno,municipality,ARN,15348
+MH,Aur,municipality,AUR,15363
+MH,Ebon,municipality,EBO,15351
+MH,Enewetak,municipality,ENI,15365
+MH,Jabat,municipality,JAB,48101
+MH,Jaluit,municipality,JAL,15353
+MH,Kili,municipality,KIL,15367
+MH,Kwajalein,municipality,KWA,15355
+MH,Lae,municipality,LAE,15368
+MH,Lib,municipality,LIB,15356
+MH,Likiep,municipality,LIK,15357
+MH,Majuro,municipality,MAJ,15345
+MH,Maloelap,municipality,MAL,15358
+MH,Mejit,municipality,MEJ,15369
+MH,Mili,municipality,MIL,15359
+MH,Namdrik,municipality,NMK,15360
+MH,Namu,municipality,NMU,15344
+MH,Ralik chain,chain_of_islands,L,48510
+MH,Ratak chain,chain_of_islands,T,48674
+MH,Rongelap,municipality,RON,15361
+MH,Ujae,municipality,UJA,15371
+MH,Ujelang,municipality,UJL,15342
+MH,Utirik,municipality,UTI,15372
+MH,Wotho,municipality,WTH,15341
+MH,Wotje,municipality,WTJ,15340
+MR,Adrar,region,07,15379
+MR,Assaba,region,03,15378
+MR,Brakna,region,05,15384
+MR,Dakhlet Nouâdhibou,region,08,15380
+MR,Gorgol,region,04,15387
+MR,Guidimaka,region,10,15388
+MR,Hodh ech Chargui,region,01,15386
+MR,Hodh el Gharbi,region,02,15381
+MR,Inchiri,region,12,15382
+MR,Nouakchott,district,NKC,15389
+MR,Tagant,region,09,15385
+MR,Tiris Zemmour,region,11,15383
+MR,Trarza,region,06,15377
+MU,Agalega Islands,dependency,AG,19026
+MU,Beau Bassin-Rose Hill,city,BR,19027
+MU,Black River,district,BL,15392
+MU,Cargados Carajos Shoals [Saint Brandon Islands],dependency,CC,19028
+MU,Curepipe,city,CU,19029
+MU,Flacq,district,FL,15395
+MU,Grand Port,district,GP,15393
+MU,Moka,district,MO,15394
+MU,Pamplemousses,district,PA,15396
+MU,Plaines Wilhems,district,PW,15391
+MU,Port Louis City,district,PL,15397
+MU,Port Louis District,city,PU,19030
+MU,Quatre Bornes,city,QB,19033
+MU,Rivière du Rempart,district,RR,15399
+MU,Rodrigues Island,dependency,RO,15398
+MU,Savanne,district,SA,15390
+MU,Vacoas-Phoenix,city,VP,19032
+MX,Aguascalientes,state,AGU,15423
+MX,Baja California,state,BCN,15412
+MX,Baja California Sur,state,BCS,15413
+MX,Campeche,state,CAM,15424
+MX,Chiapas,state,CHP,15414
+MX,Chihuahua,state,CHH,15425
+MX,Coahuila,state,COA,15415
+MX,Colima,state,COL,15416
+MX,Distrito Federal,federal_district,DIF,15426
+MX,Durango,state,DUR,15417
+MX,Guanajuato,state,GUA,15418
+MX,Guerrero,state,GRO,15427
+MX,Hidalgo,state,HID,15419
+MX,Jalisco,state,JAL,15420
+MX,Michoacán,state,MIC,15421
+MX,Morelos,state,MOR,15422
+MX,México,state,MEX,15428
+MX,Nayarit,state,NAY,15429
+MX,Nuevo León,state,NLE,15403
+MX,Oaxaca,state,OAX,15430
+MX,Puebla,state,PUE,15404
+MX,Querétaro,state,QUE,15405
+MX,Quintana Roo,state,ROO,15432
+MX,San Luis Potosí,state,SLP,15406
+MX,Sinaloa,state,SIN,15407
+MX,Sonora,state,SON,15433
+MX,Tabasco,state,TAB,15408
+MX,Tamaulipas,state,TAM,15431
+MX,Tlaxcala,state,TLA,15409
+MX,Veracruz,state,VER,15410
+MX,Yucatán,state,YUC,15402
+MX,Zacatecas,state,ZAC,15411
+FM,Chuuk,state,TRK,15437
+FM,Kosrae,state,KSA,15436
+FM,Pohnpei,state,PNI,15434
+FM,Yap,state,YAP,15438
+MD,Anenii Noi,district,AN,15471
+MD,Basarabeasca,district,BS,15454
+MD,Briceni,district,BR,15472
+MD,Bălţi,city,BA,15453
+MD,Cahul,district,CA,15455
+MD,Cantemir,district,CT,15458
+MD,Chisinau,city,CU,15459
+MD,Chisinau City,city,CH,20309
+MD,Cimişlia,district,CM,15460
+MD,Criuleni,district,CR,15475
+MD,Călăraşi,district,CL,15473
+MD,Căuşeni,district,CS,15474
+MD,Donduşeni,district,DO,15461
+MD,Drochia,district,DR,15476
+MD,Dubăsari,district,DU,15444
+MD,Edinet,district,ED,15477
+MD,Floreşti,district,FL,15443
+MD,Făleşti,district,FA,15445
+MD,Unitatea teritoriala autonoma (UTAG) Gagauzia,autonomous_territorial_unit,GA,15446
+MD,Glodeni,district,GL,15478
+MD,Hînceşti,district,HI,15448
+MD,Ialoveni,district,IA,15442
+MD,Leova,district,LE,15449
+MD,Lăpuşina,district,LA,20171
+MD,Nisporeni,district,NI,15450
+MD,Ocniţa,district,OC,15479
+MD,Orhei,district,OR,15451
+MD,Rezina,district,RE,15441
+MD,Rîşcani,district,RI,15463
+MD,Soroca,district,SO,15466
+MD,Străşeni,district,ST,15467
+MD,unitatea teritoriala din Stînga Nistrului,territorial_unit,SN,20172
+MD,Sîngerei,district,SI,15464
+MD,Taraclia,district,TA,15481
+MD,Teleneşti,district,TE,15468
+MD,Tighina,city,BD,15469
+MD,Tighina,district,TI,48215
+MD,Ungheni,district,UN,15470
+MD,Şoldăneşti,district,SD,15465
+MD,Ştefan Vodă,district,SV,15440
+MC,Fontvieille,quarter,FO,48841
+MC,Jardin Exotique,quarter,JE,48842
+MC,La Colle,quarter,CL,48843
+MC,La Condamine,quarter,CO,48840
+MC,La Gare,quarter,GA,48844
+MC,La Source,quarter,SO,48845
+MC,Larvotto,quarter,LA,48846
+MC,Malbousquet,quarter,MA,48847
+MC,Monaco-Ville,quarter,MO,48848
+MC,Moneghetti,quarter,MG,48849
+MC,Monte-Carlo,quarter,MC,48850
+MC,Moulins,quarter,MU,48851
+MC,Port-Hercule,quarter,PH,48852
+MC,Saint-Roman,quarter,SR,48853
+MC,Sainte-Dévote,quarter,SD,48854
+MC,Spélugues,quarter,SP,48855
+MC,Vallon de la Rousse,quarter,VR,48856
+MN,Arhangay,province,073,15504
+MN,Bayan-Ölgiy,province,071,15490
+MN,Bayanhongor,province,069,15491
+MN,Bulgan,province,067,15492
+MN,Darhan uul,municipality,037,15493
+MN,Dornod,province,061,15505
+MN,Dornogovi,province,063,15494
+MN,Dundgovi,province,059,15489
+MN,Dzavhan,province,057,15503
+MN,Govi-Altay,province,065,15495
+MN,Govi-Sümber,municipality,064,15506
+MN,Hentiy,province,039,15496
+MN,Hovd,province,043,15497
+MN,Hövsgöl,province,041,15488
+MN,Orhon,municipality,035,15507
+MN,Selenge,province,049,15487
+MN,Sühbaatar,province,051,15500
+MN,Töv,province,047,15501
+MN,Ulaanbaatar,municipality,1,15486
+MN,Uvs,province,046,15502
+MN,Ömnögovi,province,053,15498
+MN,Övörhangay,province,055,15499
+ME,Andrijevica,commune,01,42617
+ME,Bar,commune,02,42616
+ME,Berane,commune,03,42615
+ME,Bijelo Polje,commune,04,42614
+ME,Budva,commune,05,42613
+ME,Cetinje,commune,06,42598
+ME,Danilovgrad,commune,07,42612
+ME,Herceg-Novi,commune,08,42599
+ME,Kolašin,commune,09,42610
+ME,Kotor,commune,10,42609
+ME,Mojkovac,commune,11,42608
+ME,Nikšic´,commune,12,42607
+ME,Plav,commune,13,42606
+ME,Pljevlja,commune,14,42604
+ME,Plužine,commune,15,42605
+ME,Podgorica,commune,16,42603
+ME,Rožaje,commune,17,42602
+ME,Tivat,commune,19,42601
+ME,Ulcinj,commune,20,42600
+ME,Šavnik,commune,18,42597
+ME,Žabljak,commune,21,42611
+MA,Agadir-Ida-Outanane,prefecture,AGD,15554
+MA,Al Haouz,province,HAO,15543
+MA,Al Hoceïma,province,HOC,15516
+MA,Aousserd,prefecture,AOU,48475
+MA,Assa-Zag,province,ASZ,15541
+MA,Azilal,province,AZI,15583
+MA,Aït Baha,province,BAH,15518
+MA,Aït Melloul,,MEL,15555
+MA,Ben Slimane,province,BES,15572
+MA,Beni Mellal,province,BEM,15558
+MA,Berkane,province,BER,15526
+MA,Boujdour (EH),province,BOD,20173
+MA,Boulemane,province,BOM,15576
+MA,Casablanca [Dar el Beïda]*,prefecture,CAS,15579
+MA,Chaouia-Ouardigh,region,09,15529
+MA,Chefchaouen,province,CHE,15559
+MA,Chichaoua,province,CHI,15522
+MA,Chtouka-Ait Baha,,CHT,48100
+MA,Connaught Salé,prefecture,SAL,48482
+MA,Doukkala-Abda,region,10,15565
+MA,El Hajeb,province,HAJ,15524
+MA,El Jadida,province,JDI,15575
+MA,Errachidia,province,ERR,15547
+MA,Es Smara (EH),province,ESM,20174
+MA,Essaouira,province,ESI,15523
+MA,Fahs-Beni Makada,prefecture,FAH,48476
+MA,Fes-Boulemane,region,05,15566
+MA,Figuig,province,FIG,15549
+MA,Fès-Dar-Dbibegh,prefecture,FES,15536
+MA,Gharb-Chrarda-Beni Hssen,region,02,15530
+MA,Grand Casablanca,region,08,15564
+MA,Guelmim,province,GUE,15520
+MA,Guelmim-Es Smar,region,14,15567
+MA,Ifrane,province,IFR,15525
+MA,Inezgane-Ait Melloul,prefecture,INE,48477
+MA,Jrada,province,JRA,15550
+MA,Kelaat es Sraghna,province,KES,15544
+MA,Khemisset,province,KHE,15552
+MA,Khenifra,province,KHN,15548
+MA,Khouribga,province,KHO,15573
+MA,Kénitra,province,KEN,15578
+MA,L'Oriental,rerion,04,15569
+MA,Laayoune-Boujdour-Sakia El Hamra,region,15,21378
+MA,Laayoune-Boujdour-Sakia El Hamra,,X1~,48276
+MA,Larache,province,LAR,15560
+MA,Laâyoune*,province,LAA,20175
+MA,Marrakech*,,MAR,15545
+MA,Marrakech-Medina,prefecture,MMD,48478
+MA,Marrakech-Menara,prefecture,MMN,48479
+MA,Marrakech-Tensift-Al Haouz,region,11,15531
+MA,Mediouna,province,MED,15539
+MA,Meknes-Tafilalet,region,06,15568
+MA,Meknès,prefecture,MEK,15546
+MA,Mohammadia,prefecture,MOH,48480
+MA,Moulay Yacoub,,MOU,15537
+MA,Nador,province,NAD,15527
+MA,Nouaceur,province,NOU,15580
+MA,Ouarzazate,province,OUA,15582
+MA,Oued ed Dahab (EH),province,OUD,20176
+MA,Oued ed Dahab-Lagouira,region,16,48474
+MA,Oujda*,prefecture,OUJ,15551
+MA,Rabat,prefecture,RAB,48481
+MA,Rabat-Salé*,,RBA,15532
+MA,Rabat-Salé-Zemmour-Zaer,region,07,48277
+MA,Safi,province,SAF,15535
+MA,Sefrou,,SEF,15577
+MA,Settat,province,SET,15574
+MA,Sidi Kacem,province,SIK,15538
+MA,Sidi Youssef Ben Ali,prefecture,SYB,48483
+MA,Skhirate-Témara,prefecture,SKH,48484
+MA,Souss-Massa-Draa,region,13,15570
+MA,Tadla-Azilal,region,12,15533
+MA,Tan-Tan,province,TNT,15542
+MA,Tanger,,TNG,15584
+MA,Tanger-Assilah,prefecture,TNG,48485
+MA,Tanger-Tetouan,region,01,15571
+MA,Taounate,province,TAO,15562
+MA,Taourirt,province,TAI,15528
+MA,Taroudant,province,TAR,15556
+MA,Tata,province,TAT,15521
+MA,Taza,province,TAZ,15563
+MA,Taza-Al Hoceima-Taounate,region,03,15534
+MA,Tiznit,province,TIZ,15517
+MA,Tétouan*,,TET,15561
+MA,Zagora,province,ZAG,15557
+MZ,Cabo Delgado,province,P,15599
+MZ,Gaza,province,G,15602
+MZ,Inhambane,province,I,15589
+MZ,Manica,province,B,15590
+MZ,Maputo,province,L,15591
+MZ,Maputo City,city,MPM,15603
+MZ,Nampula,province,N,15604
+MZ,Niassa,province,A,15592
+MZ,Sofala,province,S,15605
+MZ,Tete,province,T,15593
+MZ,Zambézia,province,Q,15606
+MM,Ayeyarwady,division,07,15608
+MM,Bago,division,02,15609
+MM,Chin,state,14,15617
+MM,Kachin,state,11,15610
+MM,Kayah,state,12,15618
+MM,Kayin,state,13,15611
+MM,Magway,division,03,15612
+MM,Mandalay,division,04,15620
+MM,Mon,state,15,15613
+MM,Rakhine,state,16,15619
+MM,Sagaing,division,01,15614
+MM,Shan,state,17,15615
+MM,Tanintharyi,division,05,15607
+MM,Yangon,division,06,15616
+NA,Caprivi,region,CA,15625
+NA,Erongo,region,ER,15626
+NA,Hardap,region,HA,15623
+NA,Karas,region,KA,15627
+NA,Khomas,region,KH,15624
+NA,Kunene,region,KU,15629
+NA,Ohangwena,region,OW,15630
+NA,Okavango,region,OK,15628
+NA,Omaheke,region,OH,15622
+NA,Omusati,region,OS,15631
+NA,Oshana,region,ON,15632
+NA,Oshikoto,region,OT,15621
+NA,Otjozondjupa,region,OD,15633
+NR,Aiwo,district,01,15642
+NR,Anabar,district,02,15637
+NR,Anetan,district,03,15643
+NR,Anibare,district,04,15641
+NR,Baiti,district,05,15647
+NR,Boe,district,06,15644
+NR,Buada,district,07,15640
+NR,Denigomodu,district,08,15648
+NR,Ewa,district,09,15645
+NR,Ijuw,district,10,15639
+NR,Meneng,district,11,15646
+NR,Nibok,district,12,15636
+NR,Uaboe,district,13,15638
+NR,Yaren,district,14,15635
+NP,Bagmati,zone,BA,20177
+NP,Bheri,zone,BH,20178
+NP,Dhawalagiri,zone,DH,20179
+NP,Gandaki,zone,GA,20180
+NP,Janakpur,zone,JA,20181
+NP,Karnali,zone,KA,20182
+NP,Kosi [Koshi],zone,KO,20183
+NP,Lumbini,zone,LU,20184
+NP,Madhya Pashchimanchal,development_regions,2,48537
+NP,Madhyamanchal,development_regions,1,48536
+NP,Mahakali,zone,MA,20185
+NP,Mechi,zone,ME,20186
+NP,Narayani,zone,NA,20187
+NP,Pashchimanchal,development_regions,3,48538
+NP,Purwanchal,development_regions,4,48539
+NP,Rapti,zone,RA,20188
+NP,Sagarmatha,zone,SA,20189
+NP,Seti,zone,SE,20190
+NP,Sudur Pashchimanchal,development_regions,5,48540
+NL,Aruba (see also separate entry under AW),country,AW,48857
+NL,Bonaire (see also separate entry under BQ),special_municipality,BQ1,48860
+NL,Curaçao (see also separate entry under CW),country,CW,48858
+NL,Drenthe,province,DR,15727
+NL,Flevoland,province,FL,15731
+NL,Friesland,province,FR,15730
+NL,Gelderland,province,GE,15726
+NL,Groningen,province,GR,15732
+NL,Limburg,province,LI,15735
+NL,Noord-Brabant,province,NB,15729
+NL,Noord-Holland,province,NH,15736
+NL,Overijssel,province,OV,15733
+NL,Saba (see also separate entry under BQ),special_municipality,BQ2,48861
+NL,Sint Eustatius (see also separate entry under BQ),special_municipality,BQ3,48862
+NL,Sint Maarten (see also separate entry under SX),country,SX,48859
+NL,Utrecht,province,UT,15725
+NL,Zeeland,province,ZE,15728
+NL,Zuid-Holland,province,ZH,15734
+NZ,Auckland,regional_council,AUK,15748
+NZ,Bay of Plenty,regional_council,BOP,15753
+NZ,Canterbury,regional_council,CAN,15754
+NZ,Chatham  Islands Territory,special_island_authority,X1~,48138
+NZ,Chatham  Islands Territory,special_island_authority,CIT,19036
+NZ,Gisborne District,unitary_authority,GIS,15749
+NZ,Hawkes's Bay,regional_council,HKB,15755
+NZ,Manawatu-Wanganui,regional_council,MWT,15750
+NZ,Marlborough District,unitary_authority,MBH,15756
+NZ,Nelson City,unitary_authority,NSN,15757
+NZ,North Island,island,N,48235
+NZ,Northland,regional_council,NTL,15747
+NZ,Otago,regional_council,OTA,15758
+NZ,South Island,island,S,48236
+NZ,Southland,regional_council,STL,15759
+NZ,Taranaki,regional_council,TKI,15751
+NZ,Tasman District,unitary_authority,TAS,15760
+NZ,Waikato,regional_council,WKO,15746
+NZ,Wellington,regional_council,WGN,15761
+NZ,West Coast,regional_council,WTC,15762
+NI,Atlántico Norte*,autonomous_region,AN,15779
+NI,Atlántico Sur*,autonomous_region,AS,15771
+NI,Boaco,department,BO,15772
+NI,Carazo,department,CA,15766
+NI,Chinandega,department,CI,15770
+NI,Chontales,department,CO,15765
+NI,Estelí,department,ES,15773
+NI,Granada,department,GR,15777
+NI,Jinotega,department,JI,15769
+NI,León,department,LE,15774
+NI,Madriz,department,MD,15778
+NI,Managua,department,MN,15768
+NI,Masaya,department,MS,15764
+NI,Matagalpa,department,MT,15775
+NI,Nueva Segovia,department,NS,15767
+NI,Rivas,department,RI,15776
+NI,Río San Juan,department,SJ,15763
+NE,Agadez,region,1,15782
+NE,Diffa,region,2,15783
+NE,Dosso,region,3,15784
+NE,Maradi,region,4,15785
+NE,Niamey,capital_district,8,15786
+NE,Tahoua,region,5,15787
+NE,Tillabéri,region,6,15788
+NE,Zinder,region,7,15789
+NG,Abia,state,AB,21217
+NG,Abuja Federal Capital Territory,capital_territory,FC,15801
+NG,Adamawa,state,AD,15802
+NG,Akwa Ibom,state,AK,15803
+NG,Anambra,state,AN,15804
+NG,Bauchi,state,BA,15805
+NG,Bayelsa,state,BY,15826
+NG,Benue,state,BE,15817
+NG,Borno,state,BO,15806
+NG,Cross River,state,CR,15818
+NG,Delta,state,DE,15799
+NG,Ebonyi,state,EB,15819
+NG,Edo,state,ED,15820
+NG,Ekiti,state,EK,15807
+NG,Enugu,state,EN,15821
+NG,Gombe,state,GO,15822
+NG,Imo,state,IM,15798
+NG,Jigawa,state,JI,15823
+NG,Kaduna,state,KD,15824
+NG,Kano,state,KN,15828
+NG,Katsina,state,KT,15825
+NG,Kebbi,state,KE,15808
+NG,Kogi,state,KO,15797
+NG,Kwara,state,KW,15809
+NG,Lagos,state,LA,15810
+NG,Nassarawa,state,NA,15794
+NG,Niger,state,NI,15811
+NG,Ogun,state,OG,15812
+NG,Ondo,state,ON,15795
+NG,Osun,state,OS,15813
+NG,Oyo,state,OY,15814
+NG,Plateau,state,PL,15796
+NG,Rivers,state,RI,15815
+NG,Sokoto,state,SO,15816
+NG,Taraba,state,TA,15793
+NG,Yobe,state,YO,15827
+NG,Zamfara,state,ZA,15792
+NO,Akershus,county,02,15866
+NO,Aust-Agder,county,09,15853
+NO,Buskerud,county,06,15854
+NO,Finnmark,county,20,15852
+NO,Hedmark,county,04,15855
+NO,Hordaland,county,12,15867
+NO,Jan Mayen (Arctic Region) (See also country code SJ),,22,19038
+NO,Møre og Romsdal,county,15,15856
+NO,Nord-Trøndelag,county,17,15851
+NO,Nordland,county,18,15857
+NO,Oppland,county,05,15858
+NO,Oslo,county,03,15859
+NO,Rogaland,county,11,15860
+NO,Sogn og Fjordane,county,14,15861
+NO,Svalbard (Arctic Region) (See also country code SJ),,21,19039
+NO,Sør-Trøndelag,county,16,15849
+NO,Telemark,county,08,15862
+NO,Troms,county,19,15863
+NO,Vest-Agder,county,10,15848
+NO,Vestfold,county,07,15864
+NO,Østfold,county,01,15850
+OM,Ad Dakhiliyah,region,DA,15871
+OM,Al Batinah,region,BA,15873
+OM,Al Buraymi,governorate,X1~,48137
+OM,Al Buraymi,governorate,BU,21361
+OM,Al Wustá,region,WU,15872
+OM,Ash Sharqiyah,region,SH,15870
+OM,Az̧ Z̧āhirah,region,ZA,15868
+OM,Dhofar,governorate,JA,15869
+OM,Masqat,governorate,MA,15875
+OM,Musandam,governorate,MU,15874
+OM,Z̧ufār,governorate,ZU,48237
+PK,Azad Kashmir,pakistan_administered_area,JK,15882
+PK,Baluchistan (en),province,BA,15881
+PK,Federally Administered Tribal Areas,territory,TA,15878
+PK,Gilgit-Baltistan,administered_areas,GB,48707
+PK,Islamabad,federal_capital_territory,IS,15883
+PK,Khyber Pakhtunkhwa,province,KP,48709
+PK,North-West Frontier,province,NW,15879
+PK,Northern Areas,pakistan_administered_area,NA,15877
+PK,Punjab,province,PB,15876
+PK,Sindh,province,SD,15880
+PW,Aimeliik,state,002,15887
+PW,Airai,state,004,15898
+PW,Angaur,state,010,15889
+PW,Hatobohei,state,050,15886
+PW,Kayangel,state,100,15890
+PW,Koror,state,150,15891
+PW,Melekeok,state,212,15888
+PW,Ngaraard,state,214,15892
+PW,Ngarchelong,state,218,15899
+PW,Ngardmau,state,222,15893
+PW,Ngatpang,state,224,15894
+PW,Ngchesar,state,226,15895
+PW,Ngeremlengui,state,227,15885
+PW,Ngiwal,state,228,15896
+PW,Peleliu,state,350,15897
+PW,Sonsorol,state,370,15884
+PS,Bethlehem Bayt Laḩm,governorates,BTH,48863
+PS,Deir El Balah Dayr al Balaḩ,governorates,DEB,48864
+PS,Gaza Ghazzah,governorates,GZA,48865
+PS,Hebron Al Khalīl,governorates,HBN,48866
+PS,Jenin Janīn,governorates,JEN,48867
+PS,Jericho – Al Aghwar Arīḩā wa al Aghwār,governorates,JRH,48868
+PS,Jerusalem Al Quds,governorates,JEM,48869
+PS,Khan Yunis Khān Yūnis,governorates,KYS,48870
+PS,Nablus Nāblus,governorates,NBS,48871
+PS,North Gaza Shamāl Ghazzah,governorates,NGZ,48872
+PS,Qalqilya Qalqīlyah,governorates,QQA,48873
+PS,Rafah Rafaḩ,governorates,RFH,48874
+PS,Ramallah Rām Allāh wa al Bīrah,governorates,RBH,48875
+PS,Salfit Salfīt,governorates,SLT,48876
+PS,Tubas Ţūbās,governorates,TBS,48877
+PS,Tulkarm Ţūlkarm,governorates,TKM,48878
+PA,Bocas del Toro,province,1,15928
+PA,Chiriquí,province,4,15920
+PA,Coclé,province,2,15929
+PA,Colón,province,3,15921
+PA,Comarca de San Blas,comarca,0,15925
+PA,Darién,province,5,15922
+PA,Emberá,indigenous_region,EM,15926
+PA,Herrera,province,6,15923
+PA,Los Santos,province,7,15917
+PA,Ngöbe-Buglé,indigenous_region,NB,15919
+PA,Panamá,province,8,15916
+PA,Kuna Yala,indigenous_region,KY,48238
+PA,Veraguas,province,9,15927
+PG,Bougainville,autonomous_region,NSB,48706
+PG,Central,province,CPM,15935
+PG,Chimbu,province,CPK,15931
+PG,East New Britain,province,EBR,15946
+PG,East Sepik,province,ESW,15937
+PG,Eastern Highlands,province,EHG,15936
+PG,Enga,province,EPW,15934
+PG,Gulf,province,GPK,15947
+PG,Madang,province,MPM,15939
+PG,Manus,province,MRL,15933
+PG,Milne Bay,province,MBA,15940
+PG,Morobe,province,MPL,15941
+PG,National Capital District (Port Moresby),district,NCD,15948
+PG,New Ireland,province,NIK,15932
+PG,North Solomons,province,NSA,15942
+PG,Northern,province,NPP,15949
+PG,Sandaun [West Sepik],province,SAN,15943
+PG,Southern Highlands,province,SHM,15944
+PG,West New Britain,province,WBK,15945
+PG,Western,province,WPD,15938
+PG,Western Highlands,province,WHM,15950
+PY,Alto Paraguay,department,16,15963
+PY,Alto Paraná,department,10,15964
+PY,Amambay,department,13,15965
+PY,Asunción,capital,ASU,15954
+PY,Boquerón,department,19,15953
+PY,Caaguazú,department,5,15955
+PY,Caazapá,department,6,15966
+PY,Canindeyú,department,14,15956
+PY,Central,department,11,15952
+PY,Concepción,department,1,15957
+PY,Cordillera,department,3,15958
+PY,Guairá,department,4,15967
+PY,Itapúa,department,7,15959
+PY,Misiones,department,8,15968
+PY,Paraguarí,department,9,15951
+PY,Presidente Hayes,department,15,15961
+PY,San Pedro,department,2,15962
+PY,Ñeembucú,department,12,15960
+PE,Amazonas,department,AMA,15982
+PE,Ancash,department,ANC,15981
+PE,Apurímac,department,APU,15983
+PE,Arequipa,department,ARE,15972
+PE,Ayacucho,department,AYA,15984
+PE,Cajamarca,department,CAJ,15985
+PE,Cusco [Cuzco],department,CUS,15989
+PE,El Callao,constitutional_province,CAL,15992
+PE,Huancavelica,department,HUV,15986
+PE,Huánuco,department,HUC,15987
+PE,Ica,department,ICA,15971
+PE,Junín,department,JUN,15988
+PE,La Libertad,department,LAL,15990
+PE,Lambayeque,department,LAM,15973
+PE,Lima,department,LIM,15969
+PE,Loreto,department,LOR,15974
+PE,Madre de Dios,department,MDD,15970
+PE,Moquegua,department,MOQ,15975
+PE,Municipalidad Metropolitana de Lima,municipality,LMA,42646
+PE,Municipalidad Metropolitana de Lima,municipality,X1~,48136
+PE,Pasco,department,PAS,15991
+PE,Piura,department,PIU,15976
+PE,Puno,department,PUN,15977
+PE,San Martín,department,SAM,15994
+PE,Tacna,department,TAC,15978
+PE,Tumbes,department,TUM,15979
+PE,Ucayali,department,UCA,15993
+PH,Abra,province,ABR,17214
+PH,Agusan del Norte,province,AGN,16310
+PH,Agusan del Sur,province,AGS,17293
+PH,Aklan,province,AKL,16347
+PH,Albay,province,ALB,16303
+PH,Antique,province,ANT,16348
+PH,Apayao,province,APA,17215
+PH,Aurora,province,AUR,17115
+PH,Autonomous Region in Muslim Mindanao (ARMM),region,14,17207
+PH,Basilan,province,BAS,17237
+PH,Bataan,province,BAN,16312
+PH,Batanes,province,BTN,16307
+PH,Batangas,province,BTG,17233
+PH,Benguet,province,BEN,16315
+PH,Bicol (Region V),region,05,17201
+PH,Biliran,province,BIL,17217
+PH,Bohol,province,BOH,17303
+PH,Bukidnon,province,BUK,16333
+PH,Bulacan,province,BUL,17295
+PH,Cagayan,province,CAG,17291
+PH,Cagayan Valley (Region II),region,02,16298
+PH,CALABARZON (Region IV-A),region,40,48239
+PH,Camarines Norte,province,CAN,16304
+PH,Camarines Sur,province,CAS,17289
+PH,Camiguin,province,CAM,16334
+PH,Capiz,province,CAP,17239
+PH,Caraga (Region XIII),region,13,16299
+PH,Catanduanes,province,CAT,16305
+PH,Cavite,province,CAV,16340
+PH,Cebu,province,CEB,17304
+PH,Central Luzon (Region III),region,03,17202
+PH,Central Visayas (Region VII),region,07,17203
+PH,Compostela Valley,province,COM,17230
+PH,Cordillera Administrative Region (CAR),region,15,17204
+PH,Cotabato,province,NCO,17298
+PH,Davao (Region XI),region,11,48240
+PH,Davao del Norte,province,DAV,16336
+PH,Davao del Sur,province,DAS,17231
+PH,Davao Oriental,province,DAO,16337
+PH,Dinagat Islands,province,DIN,16521
+PH,Dinagat Islands,,X1~,48135
+PH,Eastern Samar,province,EAS,16318
+PH,Eastern Visayas (Region VIII),region,08,17205
+PH,Guimaras,province,GUI,16349
+PH,Ifugao,province,IFU,16316
+PH,Ilocos (Region I),region,01,17206
+PH,Ilocos Norte,province,ILN,16321
+PH,Ilocos Sur,province,ILS,17220
+PH,Iloilo,province,ILI,17240
+PH,Isabela,province,ISA,16308
+PH,Kalinga,province,KAL,17216
+PH,La Union,province,LUN,16322
+PH,Laguna,province,LAG,16341
+PH,Lanao del Norte,province,LAN,17300
+PH,Lanao del Sur,province,LAS,16301
+PH,Leyte,province,LEY,16765
+PH,Maguindanao,province,MAG,17287
+PH,Marinduque,province,MAD,17234
+PH,Masbate,province,MAS,17290
+PH,MIMAROPA (Region IV-B),region,41,48241
+PH,Mindoro Occidental,province,MDC,16342
+PH,Mindoro Oriental,province,MDR,17235
+PH,Misamis Occidental,province,MSC,17229
+PH,Misamis Oriental,province,MSR,16335
+PH,Mountain Province,province,MOU,16317
+PH,National Capital Region,region,00,17208
+PH,Negros Occidental,province,NEC,16350
+PH,Negros Oriental,province,NER,17305
+PH,Northern Mindanao (Region X),region,10,17209
+PH,Northern Samar,province,NSA,17218
+PH,Nueva Ecija,province,NUE,16313
+PH,Nueva Vizcaya,province,NUV,17292
+PH,Palawan,province,PLW,16343
+PH,Pampanga,province,PAM,16314
+PH,Pangasinan,province,PAN,16323
+PH,Quezon,province,QUE,17595
+PH,Quirino,province,QUI,16144
+PH,Rizal,province,RIZ,17583
+PH,Romblon,province,ROM,17082
+PH,Sarangani,province,SAR,17232
+PH,Shariff Kabunsuan,,X2~,21362
+PH,Siquijor,province,SIG,17306
+PH,Soccsksargen (Region XII),region,12,48242
+PH,Sorsogon,province,SOR,16306
+PH,South Cotabato,province,SCO,16338
+PH,Southern Leyte,province,SLE,17219
+PH,Sultan Kudarat,province,SUK,17302
+PH,Sulu,province,SLU,16302
+PH,Surigao del Norte,province,SUN,16311
+PH,Surigao del Sur,province,SUR,17294
+PH,Tarlac,province,TAR,17296
+PH,Tawi-Tawi,province,TAW,17288
+PH,Western Samar,province,WSA,16320
+PH,Western Visayas (Region VI),region,06,17213
+PH,Zambales,province,ZMB,17297
+PH,Zamboanga del Norte,province,ZAN,16346
+PH,Zamboanga del Sur,province,ZAS,17238
+PH,Zamboanga Peninsula (Region IX),region,09,48243
+PH,Zamboanga Sibuguey [Zamboanga Sibugay],province,ZSI,17672
+PH,"",,MNL,48079
+PL,Dolnoslaskie,voivodship,DS,17731
+PL,Kujawsko-pomorskie,voivodship,KP,17732
+PL,Lubelskie,voivodship,LU,17733
+PL,Lubuskie,voivodship,LB,17740
+PL,Lódzkie,voivodship,LD,17734
+PL,Malopolskie,voivodship,MA,17744
+PL,Mazowieckie,voivodship,MZ,17735
+PL,Opolskie,voivodship,OP,17743
+PL,Podkarpackie,voivodship,PK,17736
+PL,Podlaskie,voivodship,PD,17742
+PL,Pomorskie,voivodship,PM,17737
+PL,Slaskie,voivodship,SL,17745
+PL,Swietokrzyskie,voivodship,SK,17738
+PL,Warminsko-mazurskie,voivodship,WN,17741
+PL,Wielkopolskie,voivodship,WP,17739
+PL,Zachodniopomorskie,voivodship,ZP,17730
+PT,Aveiro,district,01,19045
+PT,Beja,district,02,19046
+PT,Braga,district,03,19047
+PT,Bragança,district,04,19048
+PT,Castelo Branco,district,05,19049
+PT,Coimbra,district,06,19050
+PT,Faro,district,08,19052
+PT,Guarda,district,09,19053
+PT,Leiria,district,10,19054
+PT,Lisboa,district,11,19055
+PT,Portalegre,district,12,19056
+PT,Porto,district,13,19057
+PT,Região Autónoma da Madeira,autonomous_region,30,17751
+PT,Região Autónoma dos Açores,autonomous_region,20,17748
+PT,Santarém,district,14,19058
+PT,Setúbal,district,15,19059
+PT,Viana do Castelo,district,16,19060
+PT,Vila Real,district,17,19061
+PT,Viseu,district,18,19062
+PT,Évora,district,07,19051
+QA,Ad Dawhah,municipality,DA,17769
+QA,Al Ghuwayriyah,municipality,GH,17770
+QA,Al Jumayliyah,municipality,JU,17764
+QA,Al Khawr wa adh Dhakhīrah,municipality,KH,17765
+QA,Al Wakrah,municipality,WA,17763
+QA,Ar Rayyan,municipality,RA,17771
+QA,Az̧ Z̧a‘āyin,municipality,ZA,48710
+QA,Jariyan al Batnah,municipality,JB,17768
+QA,Madinat ash Shamal,municipality,MS,17766
+QA,Umm Sa'id,municipality,X1~,17767
+QA,Umm Salal,municipality,US,17762
+RO,Alba,county,AB,17794
+RO,Arad,county,AR,17795
+RO,Arges,county,AG,17796
+RO,Bacau,county,BC,17797
+RO,Bihor,county,BH,17798
+RO,Bistrita-Nasaud,county,BN,17799
+RO,Botosani,county,BT,17800
+RO,Braila,county,BR,17801
+RO,Brasov,county,BV,17783
+RO,Bucuresti,city,B,17802
+RO,Buzau,county,BZ,17784
+RO,Calarasi,county,CL,17803
+RO,Caras-Severin,county,CS,17785
+RO,Cluj,county,CJ,17804
+RO,Constanta,county,CT,17786
+RO,Covasna,county,CV,17805
+RO,Dolj,county,DJ,17788
+RO,Dâmbovita,county,DB,17787
+RO,Galati,county,GL,17806
+RO,Giurgiu,county,GR,17789
+RO,Gorj,county,GJ,17790
+RO,Harghita,county,HR,17807
+RO,Hunedoara,county,HD,17791
+RO,Ialomita,county,IL,17782
+RO,Iasi,county,IS,17792
+RO,Ilfov,county,IF,17817
+RO,Maramures,county,MM,17793
+RO,Mehedinti,county,MH,17808
+RO,Mures,county,MS,17821
+RO,Neamt,county,NT,17809
+RO,Olt,county,OT,17820
+RO,Prahova,county,PH,17810
+RO,Salaj,county,SJ,17811
+RO,Satu Mare,county,SM,17819
+RO,Sibiu,county,SB,17812
+RO,Suceava,county,SV,17813
+RO,Teleorman,county,TR,17822
+RO,Timis,county,TM,17814
+RO,Tulcea,county,TL,17815
+RO,Vaslui,county,VS,17816
+RO,Vrancea,county,VN,17781
+RO,Vâlcea,county,VL,17818
+RU,Respublika Adygeya,republic,AD,17879
+RU,Aginskiy Buryatskiy avtonomnyy okrug,autonomous_district,AGB,17880
+RU,Respublika Altay,republic,AL,17857
+RU,Altayskiy kray,administrative_territory,ALT,17881
+RU,Amurskaya oblast',administrative_region,AMU,17882
+RU,Arkhangel'skaya oblast',administrative_region,ARK,17853
+RU,Astrakhanskaya oblast',administrative_region,AST,17883
+RU,Respublika Bashkortostan,republic,BA,17884
+RU,Belgorodskaya oblast',administrative_region,BEL,17854
+RU,Bryanskaya oblast',administrative_region,BRY,17885
+RU,Respublika Buryatiya,republic,BU,17886
+RU,Chechenskaya Respublika,republic,CE,17855
+RU,Chelyabinskaya oblast',administrative_region,CHE,17887
+RU,Chitinskaya oblast',administrative_region,CHI,17888
+RU,Chukotskiy avtonomnyy okrug,autonomous_district,CHU,17889
+RU,Chuvashskaya Respublika,republic,CU,17856
+RU,Respublika Dagestan,republic,DA,17890
+RU,Evenkiyskiy avtonomnyy okrug,autonomous_district,EVE,17891
+RU,Ingushskaya Respublika [Respublika Ingushetiya],republic,IN,17894
+RU,Irkutskaya oblast',administrative_region,IRK,17895
+RU,Ivanovskaya oblast',administrative_region,IVA,17859
+RU,Kabardino-Balkarskaya Respublika,republic,KB,17899
+RU,Kaliningradskaya oblast',administrative_region,KGD,17900
+RU,Respublika Kalmykiya,republic,KL,17901
+RU,Kaluzhskaya oblast',administrative_region,KLU,17902
+RU,Kamchatskaya oblast',administrative_territory,KAM,17903
+RU,Karachayevo-Cherkesskaya Respublika,republic,KC,17904
+RU,Respublika Kareliya,republic,KR,17905
+RU,Kemerovskaya oblast',administrative_region,KEM,17843
+RU,Khabarovskiy kray,administrative_territory,KHA,17892
+RU,Respublika Khakasiya,republic,KK,17893
+RU,Khanty-Mansiyskiy avtonomnyy okrug [Yugra],autonomous_district,KHM,17858
+RU,Kirovskaya oblast',administrative_region,KIR,17844
+RU,Respublika Komi,republic,KO,17845
+RU,Komi-Permyak,,X1~,17846
+RU,Koryakskiy avtonomnyy okrug,autonomous_district,KOR,17860
+RU,Kostromskaya oblast',administrative_region,KOS,17847
+RU,Krasnodarskiy kray,administrative_territory,KDA,17861
+RU,Krasnoyarskiy kray,administrative_territory,KYA,17848
+RU,Kurganskaya oblast',administrative_region,KGN,17849
+RU,Kurskaya oblast',administrative_region,KRS,17862
+RU,Leningradskaya oblast',administrative_region,LEN,17850
+RU,Lipetskaya oblast',administrative_region,LIP,17863
+RU,Magadanskaya oblast',administrative_region,MAG,17851
+RU,Respublika Mariy El,republic,ME,17834
+RU,Respublika Mordoviya,republic,MO,17864
+RU,Moskovskaya oblast',administrative_region,MOS,17836
+RU,Moskva,autonomous_city,MOW,17835
+RU,Murmanskaya oblast',administrative_region,MUR,17865
+RU,Nenetskiy avtonomnyy okrug,autonomous_district,NEN,17837
+RU,Nizhegorodskaya oblast',administrative_region,NIZ,17838
+RU,Novgorodskaya oblast',administrative_region,NGR,17866
+RU,Novosibirskaya oblast',administrative_region,NVS,17839
+RU,Omskaya oblast',administrative_region,OMS,17867
+RU,Orenburgskaya oblast',administrative_region,ORE,17840
+RU,Orlovskaya oblast',administrative_region,ORL,17841
+RU,Penzenskaya oblast',administrative_region,PNZ,17868
+RU,Perm,administrative_territory,PER,17842
+RU,Primorskiy kray,administrative_territory,PRI,17825
+RU,Pskovskaya oblast',administrative_region,PSK,17869
+RU,Rostovskaya oblast',administrative_region,ROS,17870
+RU,Ryazanskaya oblast',administrative_region,RYA,17826
+RU,Respublika [Yakutiya] Sakha,republic,SA,17827
+RU,Sakhalinskaya oblast',administrative_region,SAK,17828
+RU,Samarskaya oblast',administrative_region,SAM,17871
+RU,Sankt-Peterburg,autonomous_city,SPE,17829
+RU,Saratovskaya oblast',administrative_region,SAR,17872
+RU,Respublika [Alaniya] [Respublika Severnaya Osetiya-Alaniya] Severnaya Osetiya,republic,SE,17852
+RU,Smolenskaya oblast',administrative_region,SMO,17830
+RU,Stavropol'skiy kray,administrative_territory,STA,17831
+RU,Sverdlovskaya oblast',administrative_region,SVE,17832
+RU,Tambovskaya oblast',administrative_region,TAM,17833
+RU,Respublika Tatarstan,republic,TA,17824
+RU,Taymyrskiy (Dolgano-Nenetskiy) avtonomnyy okrug,autonomous_district,TAY,17873
+RU,Tomskaya oblast',administrative_region,TOM,17906
+RU,Tul'skaya oblast',administrative_region,TUL,17875
+RU,Tverskaya oblast',administrative_region,TVE,17910
+RU,Tyumenskaya oblast',administrative_region,TYU,17874
+RU,Respublika [Tuva] Tyva,republic,TY,17909
+RU,Udmurtskaya Respublika,republic,UD,17876
+RU,Ul'yanovskaya oblast',administrative_region,ULY,17908
+RU,Ust'-Ordynskiy Buryatskiy avtonomnyy okrug,autonomous_district,UOB,17911
+RU,Vladimirskaya oblast',administrative_region,VLA,17877
+RU,Volgogradskaya oblast',administrative_region,VGG,17907
+RU,Vologodskaya oblast',administrative_region,VLG,17823
+RU,Voronezhskaya oblast',administrative_region,VOR,17878
+RU,Yamalo-Nenetskiy avtonomnyy okrug,autonomous_district,YAN,17896
+RU,Yaroslavskaya oblast',administrative_region,YAR,17897
+RU,Yevreyskaya avtonomnaya oblast',autonomous_region,YEV,17898
+RU,Zabajkal'skij kraj,administrative_territory,ZAB,48221
+RW,Est,province,02,19063
+RW,Nord,province,03,19064
+RW,Ouest,province,04,19065
+RW,Sud,province,05,17912
+RW,Ville de Kigali,province,01,17923
+SH,Ascension,dependency,AC,17926
+SH,Ascension,geographical_entities,AC,48879
+SH,Saint Helena,geographical_entities,HL,48880
+SH,Saint Helena,administrative_area,SH,17930
+SH,Tristan da Cunha,geographical_entities,TA,48881
+SH,Tristan da Cunha,dependency,TA,17925
+KN,Christ Church Nichola Town,parish,01,17933
+KN,Nevis,state,N,48461
+KN,Saint Anne Sandy Point,parish,02,17940
+KN,Saint George Basseterre,parish,03,17934
+KN,Saint George Gingerland,parish,04,17941
+KN,Saint James Windward,parish,05,17935
+KN,Saint John Capisterre,parish,06,17932
+KN,Saint John Figtree,parish,07,17936
+KN,Saint Kitts,state,K,48460
+KN,Saint Mary Cayon,parish,08,17942
+KN,Saint Paul Capisterre,parish,09,17937
+KN,Saint Paul Charlestown,parish,10,17944
+KN,Saint Peter Basseterre,parish,11,17938
+KN,Saint Thomas Lowland,parish,12,17943
+KN,Saint Thomas Middle Island,parish,13,17939
+KN,Trinity Palmetto Point,parish,15,17931
+VC,Charlotte,parish,01,17963
+VC,Grenadines,parish,06,17958
+VC,Saint Andrew,parish,02,17962
+VC,Saint David,parish,03,17959
+VC,Saint George,parish,04,17957
+VC,Saint Patrick,parish,05,17960
+WS,A'ana,district,AA,20647
+WS,Aiga-i-le-Tai,district,AL,20648
+WS,Atua,district,AT,20649
+WS,Fa'asaleleaga,district,FA,20650
+WS,Gaga'emauga,district,GE,20651
+WS,Gagaifomauga,district,GI,20652
+WS,Palauli,district,PA,20653
+WS,Satupa'itea,district,SA,20654
+WS,Tuamasaga,district,TU,20655
+WS,Va'a-o-Fonoti,district,VF,20656
+WS,Vaisigano,district,VS,20657
+SM,Acquaviva,municipality,01,17972
+SM,Borgo Maggiore,municipality,06,17971
+SM,Chiesanuova,municipality,02,17973
+SM,Domagnano,municipality,03,17970
+SM,Faetano,municipality,04,17974
+SM,Fiorentino,municipality,05,17969
+SM,Montegiardino,municipality,08,17975
+SM,San Marino,municipality,07,17976
+SM,Serravalle,municipality,09,17968
+ST,Príncipe,municipality,P,20324
+ST,São Tomé,municipality,S,20325
+SA,?a'il,region,06,17981
+SA,?Asir,region,14,17984
+SA,Al Bāḩah,region,11,17980
+SA,Al Jawf,region,12,17982
+SA,Al Madinah,region,03,17979
+SA,Al Qasim,region,05,17988
+SA,Al Ḩudūd ash Shamālīyah,region,08,17985
+SA,Ar Riyāḑ,region,01,17978
+SA,Ash Sharqiyah,region,04,17989
+SA,Jizan,region,09,17986
+SA,Makkah,region,02,17987
+SA,Najran,region,10,17983
+SA,Tabuk,region,07,17977
+SN,Dakar,region,DK,17998
+SN,Diourbel,region,DB,17991
+SN,Fatick,region,FK,17997
+SN,Kaffrine,region,KA,48218
+SN,Kaolack,region,KL,17999
+SN,Kolda,region,KD,17993
+SN,Kédougou,region,KE,48219
+SN,Louga,region,LG,17996
+SN,Matam,region,MT,17994
+SN,Saint-Louis,region,SL,17992
+SN,Sédhiou,region,SE,48220
+SN,Tambacounda,region,TC,18000
+SN,Thiès,region,TH,17995
+SN,Ziguinchor,region,ZG,17990
+RS,Belgrade,city,00,47890
+RS,Borski okrug,district,14,19066
+RS,Braničevski okrug,district,11,19067
+RS,Jablanički okrug,district,23,19068
+RS,Južnobanatski okrug,district,06,19069
+RS,Južnobanatski okrug,district,04,19070
+RS,Kolubarski okrug,district,09,19071
+RS,Kosovski okrug,district,25,18004
+RS,Kosovsko-Mitrovački okrug,district,28,19074
+RS,Kosovsko-Pomoravski okrug,district,29,19073
+RS,Mačvanski okrug,district,08,19075
+RS,Moravički okrug,district,17,19076
+RS,Nišavski okrug,district,20,19077
+RS,Pećki okrug,district,26,19079
+RS,Pirotski okrug,district,22,19080
+RS,Podunavski okrug,district,10,19081
+RS,Pomoravski okrug,district,13,19082
+RS,Prizrenski okrug,district,27,19083
+RS,Pčinjski okrug,district,24,19078
+RS,Rasinski okrug,district,19,19084
+RS,Raška okrug,district,18,19085
+RS,Severnobanatski okrug,district,03,19087
+RS,Severnobački okrug,district,01,19086
+RS,Srednjebanatski okrug,district,02,19088
+RS,Sremski okrug,district,07,19089
+RS,Toplièki okrug,district,21,19091
+RS,Zajeèarski okrug,district,15,19092
+RS,Zapadnobaèki okrug,district,05,19093
+RS,Zlatiborski okrug,district,16,19094
+RS,Šumadijski okrug,district,12,19090
+SC,Anse aux Pins,district,01,18014
+SC,Anse Boileau,district,02,18017
+SC,Anse Royale,district,05,18015
+SC,Anse Étoile,district,03,18018
+SC,Au Cap,district,04,18019
+SC,Baie Lazare,district,06,18006
+SC,Baie Sainte Anne,district,07,18020
+SC,Beau Vallon,district,08,18021
+SC,Bel Air,district,09,18025
+SC,Bel Ombre,district,10,18022
+SC,Cascade,district,11,18029
+SC,English River,district,16,18023
+SC,Glacis,district,12,18024
+SC,Grand Anse Mahe,district,13,18028
+SC,Grand Anse Praslin,district,14,18007
+SC,La Digue,district,15,18027
+SC,Les Mamelles,district,24,48216
+SC,Mont Buxton,district,17,18009
+SC,Mont Fleuri,district,18,18030
+SC,Plaisance,district,19,18026
+SC,Pointe La Rue,district,20,18011
+SC,Port Glaud,district,21,18012
+SC,Roche Caiman,district,25,48217
+SC,Saint Louis,district,22,18013
+SC,Takamaka,district,23,18005
+SL,Eastern,province,E,18044
+SL,Northern,province,N,18033
+SL,Southern,province,S,18045
+SL,Western Area (Freetown),area,W,18034
+SG,Central Singapore,district,01,48250
+SG,North East,district,02,48251
+SG,North West,district,03,48252
+SG,Singapore - No State,,X1~,48078
+SG,South East,district,04,48253
+SG,South West,district,05,48254
+SK,Banskobystrický kraj,region,BC,18060
+SK,Bratislavský kraj,region,BL,18053
+SK,Košický kraj,region,KI,18059
+SK,Nitriansky kraj,region,NI,18054
+SK,Prešovský kraj,region,PV,18055
+SK,Trenciansky kraj,region,TC,18052
+SK,Trnavský kraj,region,TA,18056
+SK,Žilinský kraj,region,ZI,18057
+SI,Ajdovšcina,,001,20197
+SI,Apače,commune,195,48197
+SI,Beltinci,,002,20198
+SI,Benedikt,,148,20199
+SI,Bistrica ob Sotli,,149,20200
+SI,Bled,,003,20201
+SI,Bloke,,150,20202
+SI,Bohinj,,004,20203
+SI,Borovnica,,005,20204
+SI,Bovec,,006,20205
+SI,Braslovce,,151,20206
+SI,Brda,,007,20207
+SI,Brezovica,,008,20208
+SI,Brežice,,009,19899
+SI,Cankova,,152,19900
+SI,Celje,,011,19901
+SI,Cerklje na Gorenjskem,,012,19902
+SI,Cerknica,,013,19903
+SI,Cerkno,,014,19904
+SI,Cerkvenjak,,153,19905
+SI,Cirkulane,commune,197,48198
+SI,Crenšovci,,015,19906
+SI,Crna na Koroškem,,016,19907
+SI,Crnomelj,,017,19908
+SI,Destrnik,,018,19909
+SI,Divaca,,019,19910
+SI,Dobje,,154,19911
+SI,Dobrepolje,,020,19912
+SI,Dobrna,,155,19913
+SI,Dobrova-Polhov Gradec,,021,19914
+SI,Dobrovnik/Dobronak,,156,19915
+SI,Dol pri Ljubljani,,022,19916
+SI,Dolenjske Toplice,,157,19917
+SI,Domžale,,023,19918
+SI,Dornava,,024,19919
+SI,Dravograd,,025,19920
+SI,Duplek,,026,19921
+SI,Gorenja vas-Poljane,,027,19922
+SI,Gorišnica,,028,19923
+SI,Gorje,commune,207,48212
+SI,Gornja Radgona,,029,19924
+SI,Gornji Grad,,030,19925
+SI,Gornji Petrovci,,031,19926
+SI,Grad,,158,19927
+SI,Grosuplje,,032,19928
+SI,Hajdina,,159,19929
+SI,Hoce-Slivnica,,160,19930
+SI,Hodoš/Hodos,,161,19931
+SI,Horjul,,162,19932
+SI,Hrastnik,,034,19933
+SI,Hrpelje-Kozina,,035,19934
+SI,Idrija,,036,19935
+SI,Ig,,037,19936
+SI,Ilirska Bistrica,,038,19937
+SI,Ivancna Gorica,,039,19938
+SI,Izola/Isola,,040,19939
+SI,Jesenice,,041,19940
+SI,Jezersko,,163,19941
+SI,Juršinci,,042,19942
+SI,Kamnik,,043,19943
+SI,Kanal,,044,19944
+SI,Kidricevo,,045,19945
+SI,Kobarid,,046,19946
+SI,Kobilje,,047,19947
+SI,Kocevje,,048,19948
+SI,Komen,,049,19949
+SI,Komenda,,164,19950
+SI,Koper/Capodistria,,050,19951
+SI,Kosanjevica na Krki,commune,196,48199
+SI,Kostel,,165,19952
+SI,Kozje,,051,19953
+SI,Kranj,,052,19954
+SI,Kranjska Gora,,053,19955
+SI,Križevci,,166,19956
+SI,Krško,,054,19957
+SI,Kungota,,055,19958
+SI,Kuzma,,056,19959
+SI,Laško,,057,19960
+SI,Lenart,,058,19961
+SI,Lendava/Lendva,,059,19962
+SI,Litija,,060,19963
+SI,Ljubljana,,061,19964
+SI,Ljubno,,062,19965
+SI,Ljutomer,,063,19966
+SI,Log-Dragomer,commune,208,48213
+SI,Logatec,,064,19967
+SI,Lovrenc na Pohorju,,167,19970
+SI,Loška dolina,,065,19968
+SI,Loški Potok,,066,19969
+SI,Luce,,067,19971
+SI,Lukovica,,068,19972
+SI,Majšperk,,069,19973
+SI,Makole,commune,198,48200
+SI,Maribor,,070,19974
+SI,Markovci,,168,19975
+SI,Medvode,,071,19976
+SI,Mengeš,,072,19977
+SI,Metlika,,073,19978
+SI,Mežica,,074,19979
+SI,Miklavž na Dravskem polju,,169,19980
+SI,Miren-Kostanjevica,,075,19981
+SI,Mirna Pec,,170,19982
+SI,Mislinja,,076,19983
+SI,Mokronog-Trebelno,commune,199,48201
+SI,Moravce,,077,19984
+SI,Moravske Toplice,,078,19985
+SI,Mozirje,,079,19986
+SI,Murska Sobota,,080,19987
+SI,Muta,,081,19988
+SI,Naklo,,082,19989
+SI,Nazarje,,083,19990
+SI,Nova Gorica,,084,19991
+SI,Novo mesto,,085,19992
+SI,Odranci,,086,19993
+SI,Oplotnica,,171,19994
+SI,Ormož,,087,19995
+SI,Osilnica,,088,19996
+SI,Pesnica,,089,19997
+SI,Piran/Pirano,,090,19998
+SI,Pivka,,091,19999
+SI,Podcetrtek,,092,20000
+SI,Podlehnik,,172,20001
+SI,Podvelka,,093,20002
+SI,Poljčane,commune,200,48202
+SI,Polzela,,173,20003
+SI,Postojna,,094,20004
+SI,Prebold,,174,20005
+SI,Preddvor,,095,20006
+SI,Prevalje,,175,20007
+SI,Ptuj,,096,20008
+SI,Puconci,,097,20009
+SI,Race-Fram,,098,20010
+SI,Radece,,099,20011
+SI,Radenci,,100,20012
+SI,Radlje ob Dravi,,101,20013
+SI,Radovljica,,102,20014
+SI,Ravne na Koroškem,,103,20015
+SI,Razkrižje,,176,20016
+SI,Renče-Vogrsko,commune,201,48203
+SI,Rečica ob Savinji,commune,209,48204
+SI,Ribnica,,104,20017
+SI,Ribnica na Pohorju,,177,20018
+SI,Rogatec,,107,20021
+SI,Rogaška Slatina,,106,20019
+SI,Rogašovci,,105,20020
+SI,Ruše,,108,20022
+SI,Selnica ob Dravi,,178,20023
+SI,Semic,,109,20024
+SI,Sevnica,,110,20025
+SI,Sežana,,111,20026
+SI,Slovenj Gradec,,112,20027
+SI,Slovenska Bistrica,,113,20028
+SI,Slovenske Konjice,,114,20029
+SI,Sodražica,,179,20030
+SI,Solcava,,180,20031
+SI,Središče ob Dravi,commune,202,48206
+SI,Starše,,115,20032
+SI,Straža,commune,203,48207
+SI,Sveta Ana,,181,20033
+SI,Sveta Trojica v Slovenskih Goricah,commune,204,48208
+SI,Sveti Andraž v Slovenskih goricah,,182,20034
+SI,Sveti Jurij,,116,20035
+SI,Sveti Jurij v Slovenskih Goricah,commune,210,48205
+SI,Sveti Tomaž,commune,205,48209
+SI,Tabor,,184,20050
+SI,Tišina,,010,20051
+SI,Tolmin,,128,20052
+SI,Trbovlje,,129,20053
+SI,Trebnje,,130,20054
+SI,Trnovska vas,,185,20055
+SI,Trzin,,186,20057
+SI,Tržic,,131,20056
+SI,Turnišce,,132,20058
+SI,Velenje,,133,20059
+SI,Velika Polana,,187,20060
+SI,Velike Lašce,,134,20061
+SI,Veržej,,188,20062
+SI,Videm,,135,20063
+SI,Vipava,,136,20064
+SI,Vitanje,,137,20065
+SI,Vodice,,138,20066
+SI,Vojnik,,139,20067
+SI,Vransko,,189,20068
+SI,Vrhnika,,140,20069
+SI,Vuzenica,,141,20070
+SI,Zagorje ob Savi,,142,20071
+SI,Zavrc,,143,20072
+SI,Zrece,,144,20073
+SI,Šalovci,,033,20036
+SI,Šempeter-Vrtojba,,183,20037
+SI,Šencur,,117,20038
+SI,Šentilj,,118,20039
+SI,Šentjernej,,119,20040
+SI,Šentjur pri Celju,,120,20041
+SI,Šentrupert,commune,211,48210
+SI,Škocjan,,121,20042
+SI,Škofja Loka,,122,20043
+SI,Škofljica,,123,20044
+SI,Šmarje pri Jelšah,,124,20045
+SI,Šmarješke Toplice,commune,206,48211
+SI,Šmartno ob Paki,,125,20046
+SI,Šmartno pri Litiji,,194,20047
+SI,Šmartno pri Litiji,commune,194,48196
+SI,Šoštanj,,126,20048
+SI,Štore,,127,20049
+SI,Žalec,,190,20074
+SI,Železniki,,146,20075
+SI,Žetale,,191,20076
+SI,Žiri,,147,20077
+SI,Žirovnica,,192,20078
+SI,Žužemberk,,193,20079
+SB,Capital Territory (Honiara),capital_territory,CT,18079
+SB,Central,province,CE,18074
+SB,Choiseul,province,CH,18075
+SB,Guadalcanal,province,GU,18076
+SB,Isabel,province,IS,18081
+SB,Makira,province,MK,18080
+SB,Malaita,province,ML,18082
+SB,Rennell and Bellona,province,RB,18078
+SB,Temotu,province,TE,18073
+SB,Western,province,WE,18077
+SO,Awdal,region,AW,18093
+SO,Bakool,region,BK,18094
+SO,Banaadir,region,BN,18098
+SO,Bari,region,BR,18095
+SO,Bay,region,BY,18097
+SO,Galguduud,region,GA,18084
+SO,Gedo,region,GE,18085
+SO,Hiiraan,region,HI,18099
+SO,Jubbada Dhexe,region,JD,18086
+SO,Jubbada Hoose,region,JH,18087
+SO,Mudug,region,MU,18096
+SO,Nugaal,region,NU,18088
+SO,Sanaag,region,SA,18090
+SO,Shabeellaha Dhexe,region,SD,18100
+SO,Shabeellaha Hoose,region,SH,18089
+SO,Sool,region,SO,18083
+SO,Togdheer,region,TO,18091
+SO,Woqooyi Galbeed,region,WO,18092
+ZA,Eastern Cape,province,EC,18103
+ZA,Free State,province,FS,18104
+ZA,Gauteng,province,GT,18109
+ZA,Kwazulu-Natal,province,NL,18105
+ZA,Limpopo,province,LP,18106
+ZA,Mpumalanga,province,MP,18102
+ZA,North-West,province,NW,18101
+ZA,Northern Cape,province,NC,18107
+ZA,Western Cape,province,WC,18108
+SS,Central Equatoria,states,EC,48882
+SS,Eastern Equatoria,states,EE,48883
+SS,Jonglei,states,JG,48884
+SS,Lakes,states,LK,48885
+SS,Northern Bahr el-Ghazal,states,BN,48886
+SS,Unity,states,UY,48887
+SS,Upper Nile,states,NU,48888
+SS,Warrap,states,WR,48889
+SS,Western Bahr el-Ghazal,states,BW,48890
+SS,Western Equatoria,states,EW,48891
+ES,A Coruña,province,C,18135
+ES,Albacete,province,AB,18137
+ES,Alicante,province,A,18136
+ES,Almería,province,AL,18138
+ES,Andalucía,,AN,19572
+ES,Asturias,province,O,18122
+ES,Principado de Asturias,autonomous_community,AS,47901
+ES,Badajoz,province,BA,18140
+ES,Baleares,province,PM,18123
+ES,Barcelona,province,B,18141
+ES,Burgos,province,BU,18124
+ES,Canarias,,CN,19574
+ES,Cantabria,autonomous_community,CB,47898
+ES,Cantabria,province,S,18125
+ES,Castellón,province,CS,18144
+ES,Castilla y León,autonomous_community,CL,19575
+ES,Castilla-La Mancha,autonomous_community,CM,19576
+ES,Catalunya,autonomous_community,CT,19577
+ES,Ceuta,autonomous_city,CE,42631
+ES,Ciudad Real,province,CR,18126
+ES,Cuenca,province,CU,18154
+ES,Cáceres,province,CC,18142
+ES,Cádiz,province,CA,18143
+ES,Córdoba,province,CO,18127
+ES,Extremadura,autonomous_community,EX,19578
+ES,Galicia,autonomous_community,GA,19579
+ES,Girona,province,GI,18128
+ES,Granada,province,GR,18129
+ES,Guadalajara,province,GU,18155
+ES,Guipúzcoa,province,SS,18130
+ES,Huelva,province,H,18156
+ES,Huesca,province,HU,18131
+ES,Illes Balears,autonomous_community,IB,48287
+ES,Jaén,province,J,18132
+ES,La Rioja,province,LO,18157
+ES,Las Palmas,province,GC,18133
+ES,León,province,LE,18158
+ES,Lleida,province,L,18134
+ES,Lugo,province,LU,18145
+ES,Madrid,province,M,18159
+ES,Comunidad de Madrid,autonomous_community,MD,42628
+ES,Melilla,autonomous_city,ML,42627
+ES,Murcia,province,MU,18160
+ES,Región de Murcia,autonomous_community,MC,47866
+ES,Málaga,province,MA,18146
+ES,Navarra,province,NA,18148
+ES,Comunidad Foral de Navarra,autonomous_community,NC,42626
+ES,Ourense,province,OR,18116
+ES,Palencia,province,P,18149
+ES,País Vasco,autonomous_community,PV,19580
+ES,Pontevedra,province,PO,18150
+ES,Salamanca,province,SA,18161
+ES,Santa Cruz de Tenerife,province,TF,18151
+ES,Segovia,province,SG,18115
+ES,Sevilla,province,SE,18152
+ES,Soria,province,SO,18117
+ES,Tarragona,province,T,18112
+ES,Teruel,province,TE,18118
+ES,Toledo,province,TO,18119
+ES,Valencia,province,V,18111
+ES,Comunidad Valenciana,autonomous_community,VC,42625
+ES,Valladolid,province,VA,18120
+ES,Vizcaya,province,BI,18113
+ES,Zamora,province,ZA,18114
+ES,Zaragoza,province,Z,18110
+ES,Álava,province,VI,18121
+ES,Ávila,province,AV,18139
+ES,"",,AR,19573
+ES,"",autonomous_community,RI,42629
+LK,Ampāra,district,52,18178
+LK,Anurādhapura,district,71,18175
+LK,Badulla,district,81,18179
+LK,Basnāhira paḷāta,province,1,48278
+LK,Dakuṇu paḷāta,province,3,48279
+LK,Gampaha,district,12,18176
+LK,Gālla,district,31,18180
+LK,Hambantŏṭa,district,33,18181
+LK,Kalutara,district,13,18177
+LK,Kegalla,district,92,18182
+LK,Kilinŏchchi,district,42,18168
+LK,Kuruṇægala,district,61,18186
+LK,Kŏḷamba,district,11,18183
+LK,Madakalapuva,district,51,18184
+LK,Madhyama paḷāta,province,2,48280
+LK,Mahanuvara,district,21,18167
+LK,Mannārama,district,43,18185
+LK,Mattiya mākāṇam,province,5,48281
+LK,Mulativ,district,45,18163
+LK,Mātale,district,22,18169
+LK,Mātara,district,32,18164
+LK,Mŏṇarāgala,district,82,18170
+LK,Nuvara Ĕliya,district,23,18171
+LK,Puttalama,district,62,18172
+LK,Pŏḷŏnnaruva,district,72,18165
+LK,Ratnapura,district,91,18166
+LK,Sabaragamuva paḷāta,province,9,48282
+LK,Trikuṇāmalaya,district,53,18173
+LK,Uturu paḷāta,province,4,48284
+LK,Uturumæ̆da paḷāta,province,7,48283
+LK,Vavuniyāva,district,44,18162
+LK,Vayamba paḷāta,province,6,48286
+LK,Yāpanaya,district,41,18174
+LK,Ūva paḷāta,province,8,48285
+SD,A?ali an Nil,state,23,18194
+SD,Al Ba?r al A?mar,state,26,48711
+SD,Al Bah¸r al Ah¸mar,state,RS,18206
+SD,Al Bu?ayrat,state,18,18207
+SD,Al Jazirah,state,07,48712
+SD,Al Jazirah,state,GZ,18193
+SD,Al Khartum,state,KH,18197
+SD,Al Khartum,state,03,48713
+SD,Al Qa?arif,state,06,48714
+SD,Al Qaḑārif,state,GD,18189
+SD,Al Wa?dah,state,22,18187
+SD,An Nil,state,04,48715
+SD,An Nil,state,NR,18200
+SD,An Nil al Azraq,state,NB,18201
+SD,An Nil al Azraq,state,24,48717
+SD,An Nīl al Abyaḑ,state,NW,18192
+SD,An Nīl al Abyaḑ,state,08,48716
+SD,Ash Shamaliyah,state,01,48718
+SD,Ash Shamaliyah,state,NO,18190
+SD,Bahr al Jabal,state,17,18195
+SD,Gharb al Istiwa'iyah,state,16,18208
+SD,Gharb Ba?r al Ghazal,state,14,18196
+SD,Gharb Darfur,state,DW,18209
+SD,Gharb Darfur,state,12,48719
+SD,Gharb Kurdufan,,10,18210
+SD,Janub Darfur,state,11,48720
+SD,Janub Darfur,state,DS,18211
+SD,Janub Kurdufan,state,KS,18198
+SD,Janub Kurdufan,state,13,48721
+SD,Junqali,state,20,18199
+SD,Kassala,state,KA,18212
+SD,Kassala,state,05,48722
+SD,Shamal Ba?r al Ghazal,state,15,18188
+SD,Shamal Darfur,state,DN,18202
+SD,Shamal Darfur,state,02,48723
+SD,Shamal Kurdufan,state,09,48724
+SD,Shamal Kurdufan,state,KN,18203
+SD,Sharq al Istiwa'iyah,state,19,18191
+SD,Sharq Dārfūr,,DE,48726
+SD,Sinnar,state,25,48725
+SD,Sinnar,state,SI,18204
+SD,Warab,state,21,18205
+SD,Zalingei,,DC,48727
+SR,Brokopondo,district,BR,18220
+SR,Commewijne,district,CM,18214
+SR,Coronie,district,CR,18215
+SR,Marowijne,district,MA,18221
+SR,Nickerie,district,NI,18216
+SR,Para,district,PR,18222
+SR,Paramaribo,district,PM,18217
+SR,Saramacca,district,SA,18218
+SR,Sipaliwini,district,SI,18213
+SR,Wanica,district,WA,18219
+SZ,Hhohho,district,HH,18226
+SZ,Lubombo,district,LU,18228
+SZ,Manzini,district,MA,18225
+SZ,Shiselweni,district,SH,18227
+SE,Blekinge län [SE-10],county,K,18240
+SE,Dalarnas län [SE-20],county,W,18248
+SE,Gotlands län [SE-09],county,I,18249
+SE,Gävleborgs län [SE-21],county,X,18241
+SE,Hallands län [SE-13],county,N,18242
+SE,Jämtlands län [SE-23],county,Z,18243
+SE,Jönköpings län [SE-06],county,F,18250
+SE,Kalmar län [SE-08],county,H,18244
+SE,Kronobergs län [SE-07],county,G,18245
+SE,Norrbottens län [SE-25],county,BD,18251
+SE,Skåne län [SE-12],county,M,18247
+SE,Stockholms län [SE-01],county,AB,18252
+SE,Södermanlands län [SE-04],county,D,18231
+SE,Uppsala län [SE-03],county,C,18232
+SE,Värmlands län [SE-17],county,S,18233
+SE,Västerbottens län [SE-24],county,AC,18254
+SE,Västernorrlands län [SE-22],county,Y,18234
+SE,Västmanlands län [SE-19],county,U,18253
+SE,Västra Götalands län [SE-14],county,O,18235
+SE,Örebro län [SE-18],county,T,18246
+SE,Östergötlands län [SE-05],county,E,18230
+CH,Aargau (de),canton,AG,18257
+CH,Appenzell Ausserrhoden (de),canton,AR,18274
+CH,Appenzell Innerrhoden (de),canton,AI,18258
+CH,Basel-Landschaft (de),canton,BL,18275
+CH,Basel-Stadt (de),canton,BS,18259
+CH,Bern (de),canton,BE,18276
+CH,Fribourg (fr),canton,FR,18260
+CH,Genève (fr),canton,GE,18277
+CH,Glarus (de),canton,GL,18261
+CH,Graubünden (de),canton,GR,18265
+CH,Jura (fr),canton,JU,18262
+CH,Luzern (de),canton,LU,18266
+CH,Neuchâtel (fr),canton,NE,18263
+CH,Nidwalden (de),canton,NW,18267
+CH,Obwalden (de),canton,OW,18264
+CH,Sankt Gallen (de),canton,SG,18268
+CH,Schaffhausen (de),canton,SH,18279
+CH,Schwyz (de),canton,SZ,18269
+CH,Solothurn (de),canton,SO,18270
+CH,Thurgau (de),canton,TG,18280
+CH,Ticino (it),canton,TI,18271
+CH,Uri (de),canton,UR,18278
+CH,Valais (fr),canton,VS,18272
+CH,Vaud (fr),canton,VD,18255
+CH,Zug (de),canton,ZG,18273
+CH,Zürich (de),canton,ZH,18256
+SY,?alab,province,HL,18285
+SY,?amah,province,HM,18293
+SY,?ims,province,HI,18284
+SY,Al ?asakah,province,HA,18288
+SY,Al Ladhiqiyah,province,LA,18289
+SY,Al Qunaytirah,province,QU,18290
+SY,Ar Raqqah,province,RA,18282
+SY,As Suwayda',province,SU,18291
+SY,Dar?a,province,DR,18286
+SY,Dayr az Zawr,province,DY,18292
+SY,Dimashq,province,DI,18283
+SY,Idlib,province,ID,18294
+SY,Rif Dimashq,province,RD,18287
+SY,Tartus,province,TA,18281
+TW,Changhua,district,CHA,18312
+TW,Chiayi,district,CYQ,18313
+TW,Chiayi Municipality,municipality,CYI,18308
+TW,Hsinchu,district,HSQ,18310
+TW,Hsinchu Municipality,municipality,HSZ,18309
+TW,Hualien,district,HUA,18314
+TW,Ilan,district,ILA,18311
+TW,Kaohsiung,district,KHQ,18315
+TW,Kaohsiung Special Municipality,special_municipality,KHH,18320
+TW,Keelung Municipality,municipality,KEE,18316
+TW,Miaoli,district,MIA,18317
+TW,Nantou,district,NAN,18323
+TW,Penghu,district,PEN,18324
+TW,Pingtung,district,PIF,18318
+TW,Taichung,district,TXQ,18307
+TW,Taichung Municipality,municipality,TXG,18325
+TW,Tainan,district,TNQ,18306
+TW,Tainan Municipality,municipality,TNN,18319
+TW,Taipei,district,TPQ,18305
+TW,Taipei Special Municipality,special_municipality,TPE,18326
+TW,Taitung,district,TTT,18304
+TW,Taoyuan,district,TAO,18303
+TW,Yunlin,district,YUN,18302
+TJ,Gorno-Badakhshan,autonomous_region,GB,18331
+TJ,Khatlon,region,KT,18327
+TJ,Sughd,region,SU,18330
+TJ,"",city,X1~,18329
+TZ,Arusha,region,01,18349
+TZ,Dar es Salaam,region,02,18350
+TZ,Dodoma,region,03,18351
+TZ,Iringa,region,04,18352
+TZ,Kagera,region,05,18338
+TZ,Kaskazini Pemba,region,06,18333
+TZ,Kaskazini Unguja,region,07,19095
+TZ,Kigoma,region,08,18339
+TZ,Kilimanjaro,region,09,18340
+TZ,Kusini Pemba,region,10,19096
+TZ,Kusini Unguja,region,11,19097
+TZ,Lindi,region,12,18353
+TZ,Manyara,region,26,18341
+TZ,Mara,region,13,18342
+TZ,Mbeya,region,14,18337
+TZ,Mjini Magharibi,region,15,19098
+TZ,Morogoro,region,16,18343
+TZ,Mtwara,region,17,18354
+TZ,Mwanza,region,18,18344
+TZ,Pwani,region,19,18345
+TZ,Rukwa,region,20,18336
+TZ,Ruvuma,region,21,18346
+TZ,Shinyanga,region,22,18347
+TZ,Singida,region,23,18335
+TZ,Tabora,region,24,18348
+TZ,Tanga,region,25,18334
+TH,Amnat Charoen,province,37,18402
+TH,Ang Thong,province,15,18403
+TH,Buri Ram,province,31,18421
+TH,Chachoengsao,province,24,18404
+TH,Chai Nat,province,18,18422
+TH,Chaiyaphum,province,36,18393
+TH,Chanthaburi,province,22,18394
+TH,Chiang Mai,province,50,18423
+TH,Chiang Rai,province,57,18395
+TH,Chon Buri,province,20,18424
+TH,Chumphon,province,86,18396
+TH,Kalasin,province,46,18425
+TH,Kamphaeng Phet,province,62,18397
+TH,Kanchanaburi,province,71,18398
+TH,Khon Kaen,province,40,18426
+TH,Krabi,province,81,18399
+TH,Krung Thep Maha Nakhon [Bangkok],metropolitan_administration,10,18427
+TH,Lampang,province,52,18400
+TH,Lamphun,province,51,18401
+TH,Loei,province,42,18366
+TH,Lop Buri,province,16,18405
+TH,Mae Hong Son,province,58,18406
+TH,Maha Sarakham,province,44,18367
+TH,Mukdahan,province,49,18407
+TH,Nakhon Nayok,province,26,18368
+TH,Nakhon Pathom,province,73,18408
+TH,Nakhon Phanom,province,48,18409
+TH,Nakhon Ratchasima,province,30,18369
+TH,Nakhon Sawan,province,60,18410
+TH,Nakhon Si Thammarat,province,80,18370
+TH,Nan,province,55,18411
+TH,Narathiwat,province,96,18412
+TH,Nong Bua Lam Phu,province,39,18371
+TH,Nong Khai,province,43,18384
+TH,Nonthaburi,province,12,18372
+TH,Pathum Thani,province,13,18385
+TH,Pattani,province,94,18386
+TH,Phangnga,province,82,18373
+TH,Phatthalung,province,93,18387
+TH,Phatthaya,special_administrative_city,S,20407
+TH,Phayao,province,56,18374
+TH,Phetchabun,province,67,18388
+TH,Phetchaburi,province,76,18389
+TH,Phichit,province,66,18357
+TH,Phitsanulok,province,65,18390
+TH,Phra Nakhon Si Ayutthaya,province,14,18358
+TH,Phrae,province,54,18391
+TH,Phuket,province,83,18392
+TH,Prachin Buri,province,25,18359
+TH,Prachuap Khiri Khan,province,77,18413
+TH,Ranong,province,85,18414
+TH,Ratchaburi,province,70,18360
+TH,Rayong,province,21,18415
+TH,Roi Et,province,45,18361
+TH,Sa Kaeo,province,27,18416
+TH,Sakon Nakhon,province,47,18417
+TH,Samut Prakan,province,11,18362
+TH,Samut Sakhon,province,74,18418
+TH,Samut Songkhram,province,75,18363
+TH,Saraburi,province,19,18419
+TH,Satun,province,91,18420
+TH,Si Sa Ket,province,33,18375
+TH,Sing Buri,province,17,18364
+TH,Songkhla,province,90,18376
+TH,Sukhothai,province,64,18365
+TH,Suphan Buri,province,72,18377
+TH,Surat Thani,province,84,18356
+TH,Surin,province,32,18378
+TH,Tak,province,63,18379
+TH,Trang,province,92,18428
+TH,Trat,province,23,18380
+TH,Ubon Ratchathani,province,34,18381
+TH,Udon Thani,province,41,18430
+TH,Uthai Thani,province,61,18382
+TH,Uttaradit,province,53,18429
+TH,Yala,province,95,18383
+TH,Yasothon,province,35,18355
+TL,Aileu,district,AL,13554
+TL,Ainaro,district,AN,13553
+TL,Baucau,district,BA,13562
+TL,Bobonaro,district,BO,13556
+TL,Cova Lima,district,CO,13557
+TL,Díli,district,DI,13564
+TL,Ermera,district,ER,13558
+TL,Lautem,district,LA,13563
+TL,Liquiça,district,LI,13559
+TL,Manatuto,district,MT,13560
+TL,Manufahi,district,MF,13552
+TL,Oecussi,district,OE,13555
+TL,Viqueque,district,VI,13561
+TG,Centre,region,C,18433
+TG,Kara,region,K,18432
+TG,Maritime (Région),region,M,18435
+TG,Plateaux,region,P,18434
+TG,Savannes,region,S,18431
+TO,'Eua,island_group,01,18442
+TO,Ha'apai,island_group,02,18440
+TO,Niuas,island_group,03,18443
+TO,Tongatapu,island_group,04,18441
+TO,Vava'u,island_group,05,18439
+TT,Arima,municipality,ARI,18446
+TT,Chaguanas,municipality,CHA,18456
+TT,Couva-Tabaquite-Talparo,region,CTT,18447
+TT,Diego Martin,region,DMN,18448
+TT,Eastern Tobago,region,ETO,20483
+TT,Penal-Debe,region,PED,18449
+TT,Point Fortin,municipality,PTF,18457
+TT,Port of Spain,municipality,POS,18450
+TT,Princes Town,region,PRT,18445
+TT,Rio Claro-Mayaro,region,RCM,18455
+TT,San Fernando,municipality,SFO,18451
+TT,San Juan-Laventille,region,SJL,18452
+TT,Sangre Grande,region,SGE,18458
+TT,Siparia,region,SIP,18453
+TT,Tunapuna-Piarco,region,TUP,18454
+TT,Western Tobago,region,WTO,20488
+TN,Ariana,governorate,12,18463
+TN,Ben Arous,governorate,13,18464
+TN,Bizerte,governorate,23,18470
+TN,Béja,governorate,31,18469
+TN,Gabès,governorate,81,18474
+TN,Gafsa,governorate,71,18475
+TN,Jendouba,governorate,32,18465
+TN,Kairouan,governorate,41,18477
+TN,Kasserine,governorate,42,18476
+TN,Kebili,governorate,73,18478
+TN,La Manouba,governorate,14,18467
+TN,Le Kef,governorate,33,18471
+TN,Mahdia,governorate,53,18472
+TN,Medenine,governorate,82,18466
+TN,Monastir,governorate,52,18473
+TN,Nabeul,governorate,21,18468
+TN,Sfax,governorate,61,18462
+TN,Sidi Bouzid,governorate,43,18479
+TN,Siliana,governorate,34,18461
+TN,Sousse,governorate,51,18480
+TN,Tataouine,governorate,83,18460
+TN,Tozeur,governorate,72,18481
+TN,Tunis,governorate,11,18482
+TN,Zaghouan,governorate,22,18459
+TR,Adana,province,01,18551
+TR,Adiyaman,province,02,18523
+TR,Afyonkarahisar,province,03,18524
+TR,Agri,province,04,18552
+TR,Aksaray,province,68,18514
+TR,Amasya,province,05,18515
+TR,Ankara,province,06,18553
+TR,Antalya,province,07,18516
+TR,Ardahan,province,75,18517
+TR,Artvin,province,08,18554
+TR,Aydin,province,09,18518
+TR,Balikesir,province,10,18519
+TR,Bartin,province,74,18555
+TR,Batman,province,72,18520
+TR,Bayburt,province,69,18521
+TR,Bilecik,province,11,18556
+TR,Bingöl,province,12,18522
+TR,Bitlis,province,13,18525
+TR,Bolu,province,14,18526
+TR,Burdur,province,15,18557
+TR,Bursa,province,16,18527
+TR,Denizli,province,20,18530
+TR,Diyarbakir,province,21,18495
+TR,Düzce,province,81,18531
+TR,Edirne,province,22,18532
+TR,Elazig,province,23,18541
+TR,Erzincan,province,24,18505
+TR,Erzurum,province,25,18506
+TR,Eskisehir,province,26,18542
+TR,Gaziantep,province,27,18507
+TR,Giresun,province,28,18543
+TR,Gümüshane,province,29,18508
+TR,Hakkâri,province,30,18509
+TR,Hatay,province,31,18510
+TR,Igdir,province,76,18511
+TR,Isparta,province,32,18545
+TR,Istanbul,province,34,18512
+TR,Izmir,province,35,18513
+TR,Kahramanmaras,province,46,18546
+TR,Karabük,province,78,18533
+TR,Karaman,province,70,18534
+TR,Kars,province,36,18547
+TR,Kastamonu,province,37,18535
+TR,Kayseri,province,38,18536
+TR,Kilis,province,79,18548
+TR,Kirikkale,province,71,18537
+TR,Kirklareli,province,39,18486
+TR,Kirsehir,province,40,18538
+TR,Kocaeli,province,41,18539
+TR,Konya,province,42,18540
+TR,Kütahya,province,43,18559
+TR,Malatya,province,44,18496
+TR,Manisa,province,45,18497
+TR,Mardin,province,47,18485
+TR,Mersin,province,33,18544
+TR,Mugla,province,48,18498
+TR,Mus,province,49,18499
+TR,Nevsehir,province,50,18560
+TR,Nigde,province,51,18500
+TR,Ordu,province,52,18501
+TR,Osmaniye,province,80,18484
+TR,Rize,province,53,18502
+TR,Sakarya,province,54,18503
+TR,Samsun,province,55,18561
+TR,Sanliurfa,province,63,18504
+TR,Siirt,province,56,18487
+TR,Sinop,province,57,18564
+TR,Sirnak,province,73,18488
+TR,Sivas,province,58,18563
+TR,Tekirdag,province,59,18489
+TR,Tokat,province,60,18490
+TR,Trabzon,province,61,18491
+TR,Tunceli,province,62,18562
+TR,Usak,province,64,18492
+TR,Van,province,65,18493
+TR,Yalova,province,77,18565
+TR,Yozgat,province,66,18494
+TR,Zonguldak,province,67,18483
+TR,Çanakkale,province,17,18558
+TR,Çankiri,province,18,18528
+TR,Çorum,province,19,18529
+TM,Ahal,region,A,18569
+TM,Balkan,region,B,18568
+TM,Dasoguz,region,D,18571
+TM,Lebap,region,L,18572
+TM,Mary,region,M,18566
+TM,"",city,S,18567
+TM,"",city,X~,48134
+TV,Funafuti,island_council,FUN,18586
+TV,Nanumanga,island_council,NMG,18580
+TV,Nanumea,island_council,NMA,18581
+TV,Niutao,island_council,NIT,18582
+TV,Nui,island_council,NIU,18583
+TV,Nukufetau,island_council,NKF,18579
+TV,Nukulaelae,island_council,NKL,18584
+TV,Vaitupu,island_council,VAI,18585
+UG,Abim,district,317,48102
+UG,Adjumani,district,301,20547
+UG,Amolatar,district,314,48103
+UG,Amuria,district,216,48104
+UG,Amuru,district,319,48105
+UG,Apac,district,302,20548
+UG,Arua,district,303,20549
+UG,Budaka,district,217,48106
+UG,Bududa,district,223,48122
+UG,Bugiri,district,201,20532
+UG,Bukedea,district,224,48121
+UG,Bukwa,district,218,48107
+UG,Buliisa,district,419,48124
+UG,Bundibugyo,district,401,20560
+UG,Bushenyi,district,402,20561
+UG,Busia,district,202,20533
+UG,Butaleja,district,219,48108
+UG,Central,geographic_regions,C,48541
+UG,Dokolo,district,318,48109
+UG,Eastern,geographic_regions,E,48542
+UG,Gulu,district,304,20550
+UG,Hoima,district,403,20562
+UG,Ibanda,district,416,48110
+UG,Iganga,district,203,20534
+UG,Isingiro,district,417,48111
+UG,Jinja,district,204,20535
+UG,Kaabong,district,315,48112
+UG,Kabale,district,404,20563
+UG,Kabarole,district,405,20564
+UG,Kaberamaido,district,213,20544
+UG,Kalangala,district,101,20519
+UG,Kaliro,district,220,48113
+UG,Kampala,district,102,20520
+UG,Kamuli,district,205,20536
+UG,Kamwenge,district,413,20572
+UG,Kanungu,district,414,20573
+UG,Kapchorwa,district,206,20537
+UG,Kasese,district,406,20565
+UG,Katakwi,district,207,20538
+UG,Kayunga,district,112,20530
+UG,Kibaale,district,407,20566
+UG,Kiboga,district,103,20521
+UG,Kiruhura,district,418,48114
+UG,Kisoro,district,408,20567
+UG,Kitgum,district,305,20551
+UG,Koboko,district,316,48115
+UG,Kotido,district,306,20552
+UG,Kumi,district,208,20539
+UG,Kyenjojo,district,415,20574
+UG,Lira,district,307,20553
+UG,Luwero,district,104,20522
+UG,Lyantonde,district,116,48123
+UG,Manafwa,district,221,48116
+UG,Maracha,district,320,48117
+UG,Masaka,district,105,20523
+UG,Masindi,district,409,20568
+UG,Mayuge,district,214,20545
+UG,Mbale,district,209,20540
+UG,Mbarara,district,410,20569
+UG,Mityana,district,114,48125
+UG,Moroto,district,308,20554
+UG,Moyo,district,309,20555
+UG,Mpigi,district,106,20524
+UG,Mubende,district,107,20525
+UG,Mukono,district,108,20526
+UG,Nakapiripirit,district,311,20557
+UG,Nakaseke,district,115,48118
+UG,Nakasongola,district,109,20527
+UG,Namutumba,district,222,48119
+UG,Nebbi,district,310,20556
+UG,Northern,geographic_regions,N,48543
+UG,Ntungamo,district,411,20570
+UG,Oyam,district,321,48126
+UG,Pader,district,312,20558
+UG,Pallisa,district,210,20541
+UG,Rakai,district,110,20528
+UG,Rukungiri,district,412,20571
+UG,Sembabule,district,111,20529
+UG,Sironko,district,215,20546
+UG,Soroti,district,211,20542
+UG,Tororo,district,212,20543
+UG,Wakiso,district,113,20531
+UG,Western,geographic_regions,W,48544
+UG,Yumbe,district,313,20559
+UA,Cherkas'ka Oblast',region,71,18594
+UA,Chernihivs'ka Oblast',region,74,18595
+UA,Chernivets'ka Oblast',region,77,18596
+UA,Dnipropetrovs'ka Oblast',region,12,18603
+UA,Donets'ka Oblast',region,14,18597
+UA,Ivano-Frankivs'ka Oblast',region,26,18598
+UA,Kharkivs'ka Oblast',region,63,18599
+UA,Khersons'ka Oblast',region,65,18600
+UA,Khmel'nyts'ka Oblast',region,68,18604
+UA,Kirovohrads'ka Oblast',region,35,18601
+UA,Kyïv,region,30,18607
+UA,Kyïvs'ka Oblast',region,32,18608
+UA,L'vivs'ka Oblast',region,46,18609
+UA,Luhans'ka Oblast',region,09,18605
+UA,Mykolaïvs'ka Oblast',region,48,18610
+UA,Odes'ka Oblast',region,51,18606
+UA,Poltavs'ka Oblast',region,53,18611
+UA,Respublika Krym,autonomous_republic,43,18602
+UA,Rivnens'ka Oblast',region,56,18612
+UA,Sevastopol',region,40,18613
+UA,Sums'ka Oblast',region,59,18614
+UA,Ternopil's'ka Oblast',region,61,18615
+UA,Vinnyts'ka Oblast',region,05,18593
+UA,Volyns'ka Oblast',region,07,18617
+UA,Zakarpats'ka Oblast',region,21,18618
+UA,Zaporiz'ka Oblast',region,23,18616
+UA,Zhytomyrs'ka Oblast',region,18,18592
+AE,Abu Z¸aby [Abu Dhabi],emirate,AZ,18622
+AE,Ajman,emirate,AJ,20215
+AE,Al Fujayrah,emirate,FU,20218
+AE,Ash Shariqah [Sharjah],emirate,SH,20219
+AE,Dubayy [Dubai],emirate,DU,20217
+AE,Ra’s al Khaymah,emirate,RK,18620
+AE,Umm al Qaywayn,emirate,UQ,20220
+GB,Aberdeen City,council_area_scotland,ABE,47989
+GB,Aberdeenshire,council_area_scotland,ABD,47988
+GB,Angus,council_area_scotland,ANS,47987
+GB,Antrim,district_council_area_northern_ireland,ANT,48015
+GB,Ards,district_council_area_northern_ireland,ARD,48014
+GB,Argyll and Bute,council_area_scotland,AGB,47986
+GB,Armagh,district_council_area_northern_ireland,ARM,48013
+GB,Ballymena,district_council_area_northern_ireland,BLA,48012
+GB,Ballymoney,district_council_area_northern_ireland,BLY,48011
+GB,Banbridge,district_council_area_northern_ireland,BNB,48010
+GB,Barking and Dagenham,borough,BDG,19166
+GB,Barnet,borough,BNE,19167
+GB,Barnsley,metropolitan_district,BNS,19168
+GB,Bath and North East Somerset,unitary_authority,BAS,47935
+GB,Bedfordshire,unitary_authority,BDF,47934
+GB,Belfast,district_council_area_northern_ireland,BFS,48009
+GB,Bexley,borough,BEX,19172
+GB,Birmingham,metropolitan_district,BIR,19173
+GB,Blackburn with Darwen,unitary_authority,BBD,47933
+GB,Blackpool,unitary_authority,BPL,47932
+GB,Blaenau Gwent,unitary_authority_wales,BGW,47956
+GB,Bolton,metropolitan_district,BOL,19177
+GB,Bournemouth,unitary_authority,BMH,47931
+GB,Bracknell Forest,unitary_authority,BRC,47930
+GB,Bradford,metropolitan_district,BRD,19180
+GB,Brent,borough,BEN,19181
+GB,Bridgend [Pen-y-bont ar Ogwr GB-POG],unitary_authority_wales,BGE,47955
+GB,Brighton and Hove,unitary_authority,BNH,47929
+GB,City of Bristol,unitary_authority,BST,47928
+GB,Bromley,borough,BRY,19185
+GB,Buckinghamshire,two_tier_county,BKM,47927
+GB,Bury,metropolitan_district,BUR,19187
+GB,Caerphilly [Caerffili GB-CAF],unitary_authority_wales,CAY,47954
+GB,Calderdale,metropolitan_district,CLD,19189
+GB,Cambridgeshire,two_tier_county,CAM,47926
+GB,Camden,borough,CMD,19191
+GB,Cardiff [Caerdydd GB-CRD],unitary_authority_wales,CRF,47953
+GB,Carmarthenshire [Sir Gaerfyrddin GB-GFY],unitary_authority_wales,CMN,47952
+GB,Carrickfergus,district_council_area_northern_ireland,CKF,48008
+GB,Castlereagh,district_council_area_northern_ireland,CSR,48007
+GB,Ceredigion [Sir Ceredigion],unitary_authority_wales,CGN,47951
+GB,Cheshire,,CHS,47925
+GB,Clackmannanshire,council_area_scotland,CLK,47985
+GB,Coleraine,district_council_area_northern_ireland,CLR,48006
+GB,Conwy,unitary_authority_wales,CWY,47950
+GB,Cookstown,district_council_area_northern_ireland,CKT,48005
+GB,Cornwall,unitary_authority,CON,47924
+GB,Coventry,metropolitan_district,COV,19203
+GB,Craigavon,district_council_area_northern_ireland,CGV,48004
+GB,Croydon,borough,CRY,19205
+GB,Cumbria,two_tier_county,CMA,47923
+GB,Darlington,unitary_authority,DAL,47922
+GB,Denbighshire [Sir Ddinbych GB-DDB],unitary_authority_wales,DEN,47949
+GB,Derby,unitary_authority,DER,47921
+GB,Derbyshire,two_tier_county,DBY,47920
+GB,Derry,district_council_area_northern_ireland,DRY,47997
+GB,Devon,two_tier_county,DEV,47919
+GB,Doncaster,metropolitan_district,DNC,19213
+GB,Dorset,two_tier_county,DOR,47918
+GB,Down,district_council_area_northern_ireland,DOW,48003
+GB,Dudley,metropolitan_district,DUD,19216
+GB,Dumfries and Galloway,council_area_scotland,DGY,47984
+GB,Dundee City,council_area_scotland,DND,47983
+GB,Dungannon and South Tyrone,district_council_area_northern_ireland,DGN,48002
+GB,Durham,unitary_authority,DUR,47917
+GB,Ealing,borough,EAL,19221
+GB,East Ayrshire,council_area_scotland,EAY,47982
+GB,East Dunbartonshire,council_area_scotland,EDU,47981
+GB,East Lothian,council_area_scotland,ELN,47980
+GB,East Renfrewshire,council_area_scotland,ERW,47979
+GB,East Riding of Yorkshire,unitary_authority,ERY,47916
+GB,East Sussex,two_tier_county,ESX,47915
+GB,City of Edinburgh,council_area_scotland,EDH,47978
+GB,Eilean Siar,council_area_scotland,ELS,47977
+GB,Enfield,borough,ENF,19230
+GB,Essex,two_tier_county,ESS,47914
+GB,Falkirk,council_area_scotland,FAL,47976
+GB,Fermanagh,district_council_area_northern_ireland,FER,48001
+GB,Fife,council_area_scotland,FIF,47975
+GB,Flintshire [Sir y Fflint GB-FFL],unitary_authority_wales,FLN,47948
+GB,Gateshead,metropolitan_district,GAT,19236
+GB,Glasgow City,council_area_scotland,GLG,47974
+GB,Gloucestershire,two_tier_county,GLS,47913
+GB,Greenwich,borough,GRE,19239
+GB,Gwynedd,unitary_authority_wales,GWN,47947
+GB,Hackney,borough,HCK,19241
+GB,Halton,unitary_authority,HAL,47911
+GB,Hammersmith and Fulham,borough,HMF,19243
+GB,Hampshire,two_tier_county,HAM,47910
+GB,Haringey,borough,HRY,19245
+GB,Harrow,borough,HRW,19246
+GB,Hartlepool,unitary_authority,HPL,47909
+GB,Havering,borough,HAV,19248
+GB,County of Herefordshire,unitary_authority,HEF,47908
+GB,Hertfordshire,two_tier_county,HRT,47907
+GB,Highland,council_area_scotland,HLD,47973
+GB,Hillingdon,borough,HIL,19252
+GB,Hounslow,borough,HNS,19253
+GB,Inverclyde,council_area_scotland,IVC,47972
+GB,Isle of Anglesey [Sir Ynys Môn GB-YNM],unitary_authority_wales,AGY,47957
+GB,Isle of Wight,unitary_authority,IOW,47906
+GB,Isles of Scilly,,IOS,19257
+GB,Islington,borough,ISL,19258
+GB,Kensington and Chelsea,borough,KEC,19259
+GB,Kent,two_tier_county,KEN,47905
+GB,City of Kingston upon Hull,unitary_authority,KHL,47904
+GB,Kingston upon Thames,borough,KTT,19262
+GB,Kirklees,metropolitan_district,KIR,19263
+GB,Knowsley,metropolitan_district,KWL,19264
+GB,Lambeth,borough,LBH,19265
+GB,Lancashire,two_tier_county,LAN,48070
+GB,Larne,district_council_area_northern_ireland,LRN,48000
+GB,Leeds,metropolitan_district,LDS,19268
+GB,Leicester,unitary_authority,LCE,48069
+GB,Leicestershire,two_tier_county,LEC,48068
+GB,Lewisham,borough,LEW,19271
+GB,Limavady,district_council_area_northern_ireland,LMV,47999
+GB,Lincolnshire,two_tier_county,LIN,48067
+GB,Lisburn,district_council_area_northern_ireland,LSB,47998
+GB,Liverpool,metropolitan_district,LIV,19275
+GB,City of London,city_corporation,LND,47912
+GB,Luton,unitary_authority,LUT,48065
+GB,Magherafelt,district_council_area_northern_ireland,MFT,47996
+GB,Manchester,metropolitan_district,MAN,48066
+GB,Medway,unitary_authority,MDW,48064
+GB,Merthyr Tydfil [Merthyr Tudful GB-MTU],unitary_authority_wales,MTY,47946
+GB,Merton,borough,MRT,19282
+GB,Middlesbrough,unitary_authority,MDB,48062
+GB,Midlothian,council_area_scotland,MLN,47971
+GB,Milton Keynes,unitary_authority,MIK,48061
+GB,Monmouthshire [Sir Fynwy GB-FYN],unitary_authority_wales,MON,47945
+GB,Moray,council_area_scotland,MRY,47970
+GB,Moyle,district_council_area_northern_ireland,MYL,47995
+GB,Neath Port Talbot [Castell-nedd Port Talbot GB-CTL],unitary_authority_wales,NTL,47944
+GB,Newcastle upon Tyne,metropolitan_district,NET,19290
+GB,Newham,borough,NWM,19291
+GB,Newport [Casnewydd GB-CNW],unitary_authority_wales,NWP,47943
+GB,Newry and Mourne,district_council_area_northern_ireland,NYM,47994
+GB,Newtownabbey,district_council_area_northern_ireland,NTA,47993
+GB,Norfolk,two_tier_county,NFK,48060
+GB,North Ayrshire,council_area_scotland,NAY,47969
+GB,North Down,district_council_area_northern_ireland,NDN,47992
+GB,North East Lincolnshire,unitary_authority,NEL,48059
+GB,North Lanarkshire,council_area_scotland,NLK,47968
+GB,North Lincolnshire,unitary_authority,NLN,48058
+GB,North Somerset,unitary_authority,NSM,48057
+GB,North Tyneside,metropolitan_district,NTY,19302
+GB,North Yorkshire,two_tier_county,NYK,48056
+GB,Northamptonshire,two_tier_county,NTH,48055
+GB,Northumberland,unitary_authority,NBL,48054
+GB,Nottingham,unitary_authority,NGM,48053
+GB,Nottinghamshire,two_tier_county,NTT,48052
+GB,Oldham,metropolitan_district,OLD,19308
+GB,Omagh,district_council_area_northern_ireland,OMH,47991
+GB,Orkney Islands,council_area_scotland,ORK,47967
+GB,Oxfordshire,two_tier_county,OXF,48051
+GB,Pembrokeshire [Sir Benfro GB-BNF],unitary_authority_wales,PEM,47942
+GB,Perth and Kinross,council_area_scotland,PKN,47966
+GB,Peterborough,unitary_authority,PTE,48050
+GB,Plymouth,unitary_authority,PLY,48049
+GB,Poole,unitary_authority,POL,48048
+GB,Portsmouth,unitary_authority,POR,48047
+GB,Powys,unitary_authority_wales,POW,47941
+GB,Reading,unitary_authority,RDG,48046
+GB,Redbridge,borough,RDB,19320
+GB,Redcar and Cleveland,unitary_authority,RCC,48045
+GB,Renfrewshire,council_area_scotland,RFW,47965
+GB,Cynon Rhondda,unitary_authority_wales,RCT,47940
+GB,Richmond upon Thames,borough,RIC,19324
+GB,Rochdale,metropolitan_district,RCH,19325
+GB,Rotherham,metropolitan_district,ROT,19326
+GB,Rutland,unitary_authority,RUT,48044
+GB,Salford,metropolitan_district,SLF,19328
+GB,Sandwell,metropolitan_district,SAW,19329
+GB,The Scottish Borders,council_area_scotland,SCB,47964
+GB,Sefton,metropolitan_district,SFT,19331
+GB,Sheffield,metropolitan_district,SHF,19332
+GB,Shetland Islands,council_area_scotland,ZET,47963
+GB,Shropshire,unitary_authority,SHR,48043
+GB,Slough,unitary_authority,SLG,48042
+GB,Solihull,metropolitan_district,SOL,19336
+GB,Somerset,two_tier_county,SOM,48041
+GB,South Ayrshire,council_area_scotland,SAY,47962
+GB,South Gloucestershire,unitary_authority,SGC,48040
+GB,South Lanarkshire,council_area_scotland,SLK,47961
+GB,South Tyneside,metropolitan_district,STY,19341
+GB,Southampton,unitary_authority,STH,48038
+GB,Southend-on-Sea,unitary_authority,SOS,48037
+GB,Southwark,borough,SWK,19344
+GB,St. Helens,metropolitan_district,SHN,19345
+GB,Staffordshire,two_tier_county,STS,48036
+GB,Stirling,council_area_scotland,STG,47960
+GB,Stockport,metropolitan_district,SKP,19348
+GB,Stockton-on-Tees,unitary_authority,STT,48035
+GB,Stoke-on-Trent,unitary_authority,STE,48034
+GB,Strabane,district_council_area_northern_ireland,STB,47990
+GB,Suffolk,two_tier_county,SFK,48033
+GB,Sunderland,metropolitan_district,SND,19353
+GB,Surrey,two_tier_county,SRY,48032
+GB,Sutton,borough,STN,19355
+GB,Swansea [Abertawe GB-ATA],unitary_authority_wales,SWA,47939
+GB,Swindon,unitary_authority,SWD,48031
+GB,Tameside,metropolitan_district,TAM,19358
+GB,Telford and Wrekin,unitary_authority,TFW,48030
+GB,Thurrock,unitary_authority,THR,48029
+GB,Torbay,unitary_authority,TOB,48028
+GB,Torfaen [Tor-faen],unitary_authority_wales,TOF,47938
+GB,Tower Hamlets,borough,TWH,19363
+GB,Trafford,metropolitan_district,TRF,19364
+GB,The [Bro Morgannwg GB-BMG] Vale of Glamorgan,unitary_authority_wales,VGL,47937
+GB,Wakefield,metropolitan_district,WKF,19366
+GB,Walsall,metropolitan_district,WLL,19367
+GB,Waltham Forest,borough,WFT,19368
+GB,Wandsworth,borough,WND,19369
+GB,Warrington,unitary_authority,WRT,48026
+GB,Warwickshire,two_tier_county,WAR,48025
+GB,West Berkshire,unitary_authority,WBK,48024
+GB,West Dunbartonshire,council_area_scotland,WDU,47959
+GB,West Lothian,council_area_scotland,WLN,47958
+GB,West Sussex,two_tier_county,WSX,48022
+GB,Westminster,borough,WSM,19376
+GB,Wigan,metropolitan_district,WGN,19377
+GB,Wiltshire,unitary_authority,WIL,48020
+GB,Windsor and Maidenhead,unitary_authority,WNM,48019
+GB,Wirral,metropolitan_district,WRL,19380
+GB,Wokingham,unitary_authority,WOK,48018
+GB,Wolverhampton,metropolitan_district,WLV,19382
+GB,Worcestershire,two_tier_county,WOR,48017
+GB,Wrexham [Wrecsam GB-WRC],unitary_authority_wales,WRX,47936
+GB,York,unitary_authority,YOR,48016
+US,Alabama,state,AL,18655
+US,Alaska,state,AK,18683
+US,American Samoa (see also separate entry under AS),outlying_area,AS,19386
+US,Arizona,state,AZ,18656
+US,Arkansas,state,AR,18684
+US,California,state,CA,18657
+US,Colorado,state,CO,18685
+US,Connecticut,state,CT,18658
+US,Delaware,state,DE,18686
+US,District of Columbia,district,DC,18659
+US,Florida,state,FL,18687
+US,Georgia,state,GA,18660
+US,Guam (see also separate entry under GU),outlying_area,GU,19388
+US,Hawaii,state,HI,18688
+US,Idaho,state,ID,18661
+US,Illinois,state,IL,18674
+US,Indiana,state,IN,18662
+US,Iowa,state,IA,18663
+US,Kansas,state,KS,18675
+US,Kentucky,state,KY,18664
+US,Louisiana,state,LA,18676
+US,Maine,state,ME,18665
+US,Maryland,state,MD,18677
+US,Massachusetts,state,MA,18666
+US,Michigan,state,MI,18678
+US,Minnesota,state,MN,18646
+US,Mississippi,state,MS,18679
+US,Missouri,state,MO,18647
+US,Montana,state,MT,18648
+US,Nebraska,state,NE,18680
+US,Nevada,state,NV,18649
+US,New Hampshire,state,NH,18681
+US,New Jersey,state,NJ,18650
+US,New Mexico,state,NM,18682
+US,New York,state,NY,18651
+US,North Carolina,state,NC,18645
+US,North Dakota,state,ND,18652
+US,Northern Mariana Islands (see also separate entry under MP),outlying_area,MP,19390
+US,Ohio,state,OH,18689
+US,Oklahoma,state,OK,18653
+US,Oregon,state,OR,18654
+US,Pennsylvania,state,PA,18644
+US,Puerto Rico (see also separate entry under PR),outlying_area,PR,19591
+US,Rhode Island,state,RI,18667
+US,South Carolina,state,SC,18690
+US,South Dakota,state,SD,18668
+US,Tennessee,state,TN,18643
+US,Texas,state,TX,18669
+US,United States Minor Outlying Islands (see also separate entry under UM),outlying_area,UM,19597
+US,Utah,state,UT,18642
+US,Vermont,state,VT,18670
+US,U.S. (see also separate entry under VI) Virgin Islands,outlying_area,VI,19593
+US,Virginia,state,VA,18641
+US,Washington,state,WA,18671
+US,West Virginia,state,WV,18640
+US,Wisconsin,state,WI,18672
+US,Wyoming,state,WY,18673
+UM,Baker Island,territory,81,18637
+UM,Howland Island,territory,84,18636
+UM,Jarvis Island,territory,86,18638
+UM,Johnston Atoll,territory,67,18635
+UM,Kingman Reef,territory,89,18639
+UM,Midway Islands,territory,71,18634
+UM,Navassa Island,territory,76,18633
+UM,Palmyra Atoll,territory,95,18632
+UM,Wake Island,territory,79,18631
+UY,Artigas,department,AR,18696
+UY,Durazno,department,DU,18699
+UY,Flores,department,FS,18695
+UY,Florida,department,FD,18700
+UY,Lavalleja,department,LA,18709
+UY,Maldonado,department,MA,18701
+UY,Montevideo,department,MO,18702
+UY,Paysandú,department,PA,18694
+UY,Rivera,department,RV,18693
+UY,Rocha,department,RO,18704
+UY,Río Negro,department,RN,18703
+UY,Salto,department,SA,18705
+UY,San José,department,SJ,18692
+UY,Soriano,department,SO,18706
+UY,Tacuarembó,department,TA,18691
+UY,Treinta y Tres,department,TT,18707
+UY,"",department,X1~,18697
+UY,"",department,X2~,18708
+UY,"",department,X3~,18698
+UZ,Andijon,region,AN,18715
+UZ,Buxoro,region,BU,18717
+UZ,Farg‘ona,region,FA,18714
+UZ,Jizzax,region,JI,18723
+UZ,Namangan,region,NG,18719
+UZ,Navoiy,region,NW,18712
+UZ,Qashqadaryo,region,QA,18718
+UZ,Qoraqalpog‘iston Respublikasi,republic,QR,18713
+UZ,Samarqand,region,SA,18720
+UZ,Sirdaryo,region,SI,18711
+UZ,Surxondaryo,region,SU,18710
+UZ,Toshkent,region,TO,18721
+UZ,Toshkent City,city,TK,20580
+UZ,Xorazm,region,XO,18724
+VU,Malampa,province,MAP,18726
+VU,Pénama,province,PAM,18728
+VU,Sanma,province,SAM,18730
+VU,Shéfa,province,SEE,18727
+VU,Taféa,province,TAE,18725
+VU,Torba,province,TOB,18729
+VE,Amazonas,state,Z,18735
+VE,Anzoátegui,state,B,18745
+VE,Apure,state,C,18746
+VE,Aragua,state,D,18736
+VE,Barinas,state,E,18747
+VE,Bolívar,state,F,18737
+VE,Carabobo,state,G,18748
+VE,Cojedes,state,H,18749
+VE,Delta Amacuro,state,Y,18738
+VE,Dependencias Federales,federal_dependency,W,18750
+VE,Distrito Federal,federal_district,A,18739
+VE,Falcón,state,I,18751
+VE,Guárico,state,J,18740
+VE,Lara,state,K,18741
+VE,Miranda,state,M,18743
+VE,Monagas,state,N,18744
+VE,Mérida,state,L,18742
+VE,Nueva Esparta,state,O,18734
+VE,Portuguesa,state,P,18752
+VE,Sucre,state,R,18733
+VE,Trujillo,state,T,20682
+VE,Táchira,state,S,20681
+VE,Vargas,state,X,20683
+VE,Yaracuy,state,U,20680
+VE,Zulia,state,V,20684
+VN,An Giang,province,44,18753
+VN,Ba Ria-Vung Tau,province,43,18756
+VN,Bac Can,province,53,18755
+VN,Bac Giang,province,54,18754
+VN,Bac Lieu,province,55,18732
+VN,Bac Ninh,province,56,20625
+VN,Ben Tre,province,50,20622
+VN,Binh Dinh,province,31,20607
+VN,Binh Duong,province,57,20626
+VN,Binh Phuoc,province,58,20627
+VN,Binh Thuan,province,40,20615
+VN,Ca Mau,province,59,20628
+VN,Can Tho,municipality,CT,48708
+VN,Can Tho,province,48,20620
+VN,Cao Bang,province,04,20587
+VN,Da Nang,municipality,DN,48892
+VN,thanh pho Da Nang,province,60,20629
+VN,Dac Lac,province,33,20609
+VN,Dak Nong,province,72,20640
+VN,Dien Bien,province,71,20639
+VN,Dong Nai,province,39,20614
+VN,Dong Thap,province,45,20617
+VN,Gia Lai,province,30,20606
+VN,Ha Giang,province,03,20586
+VN,Ha Nam,province,63,20632
+VN,Ha Noi,municipality,HN,48893
+VN,thu do Ha Noi,province,64,20633
+VN,Ha Tay,province,15,20594
+VN,Ha Tinh,province,23,20599
+VN,Hai Duong,province,61,20630
+VN,Hai Phong,municipality,HP,48894
+VN,thanh pho Hai Phong,province,62,20631
+VN,Hau Giang,province,73,20641
+VN,Ho Chi Minh [Sai Gon],municipality,SG,48895
+VN,thanh pho [Sai Gon] Ho Chi Minh,province,65,20634
+VN,Hoa Binh,province,14,20593
+VN,Hung Yen,province,66,20635
+VN,Khanh Hoa,province,34,20610
+VN,Kien Giang,province,47,20619
+VN,Kon Tum,province,28,20604
+VN,Lai Chau,province,01,20584
+VN,Lam Dong,province,35,20611
+VN,Lang Son,province,09,20591
+VN,Lao Cai,province,02,20585
+VN,Long An,province,41,20616
+VN,Nam Dinh,province,67,20636
+VN,Nghe An,province,22,20598
+VN,Ninh Binh,province,18,20595
+VN,Ninh Thuan,province,36,20612
+VN,Phu Tho,province,68,20637
+VN,Phu Yen,province,32,20608
+VN,Quang Binh,province,24,20600
+VN,Quang Nam,province,27,20603
+VN,Quang Ngai,province,29,20605
+VN,Quang Ninh,province,13,20592
+VN,Quang Tri,province,25,20601
+VN,Soc Trang,province,52,20624
+VN,Son La,province,05,20588
+VN,Tay Ninh,province,37,20613
+VN,Thai Binh,province,20,20596
+VN,Thai Nguyen,province,69,18763
+VN,Thanh Hoa,province,21,20597
+VN,Thua Thien-Hue,province,26,20602
+VN,Tien Giang,province,46,20618
+VN,Tra Vinh,province,51,20623
+VN,Tuyen Quang,province,07,20590
+VN,Vinh Long,province,49,20621
+VN,Vinh Phuc,province,70,20638
+VN,Yen Bai,province,06,20589
+EH,Boujdour,province,BOD,18775
+EH,Es Semara,province,ESM,18777
+EH,Laayoune,province,LAA,18773
+EH,Oued el Dahab,province,OUD,18774
+YE,'Amran,governorate,AM,20660
+YE,Abyan,governorate,AB,18787
+YE,Ad Dāli‘,governorate,DA,20662
+YE,Al ?udaydah,governorate,HU,18790
+YE,Al Bay?a',governorate,BA,18784
+YE,Al Jawf,governorate,JA,18792
+YE,Al Mahrah,governorate,MR,18793
+YE,Al Mahwit,governorate,MW,18781
+YE,Dhamar,governorate,DH,18789
+YE,Hadramawt,governorate,HD,18785
+YE,Hajjah,governorate,HJ,18786
+YE,Ibb,governorate,IB,18791
+YE,La?ij,governorate,LA,18782
+YE,Ma'rib,governorate,MA,18794
+YE,Raymah,governorate,RA,42618
+YE,Sa`dah,governorate,SD,18795
+YE,Sanʿā,governorate,SN,18779
+YE,Shabwah,governorate,SH,18780
+YE,Taʿizz,governorate,TA,18778
+YE,Şan‘ā,municipality,SA,48214
+YE,ʿAdan,governorate,AD,18783
+ZM,Central,province,02,20690
+ZM,Copperbelt,province,08,18800
+ZM,Eastern,province,03,21381
+ZM,Luapula,province,04,18803
+ZM,Lusaka,province,09,18801
+ZM,North-Western,province,06,18804
+ZM,Northern,province,05,18798
+ZM,Southern,province,07,18802
+ZM,Western,province,01,18796
+ZW,Bulawayo,city,BU,21380
+ZW,Harare,city,HA,21379
+ZW,Manicaland,province,MA,21280
+ZW,Mashonaland Central,province,MC,21282
+ZW,Mashonaland East,province,ME,21283
+ZW,Mashonaland West,province,MW,21284
+ZW,Masvingo,province,MV,21287
+ZW,Matabeleland North,province,MN,21285
+ZW,Matabeleland South,province,MS,21286
+ZW,Midlands,province,MI,21281
