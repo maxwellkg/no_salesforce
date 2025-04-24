@@ -15,13 +15,13 @@ To get the application up and running:
 * Open up a console and create a new user for yourself. Best to also make yourself an admin user
 
 ```ruby
-	u = User.create!(
-    first_name: <your_first_name>,
-    last_name: <your_last_name>,
-    email_address: <your_email>,
-    password: <your_password>,
-    admin: true
-	)
+u = User.create!(
+  first_name: <your_first_name>,
+  last_name: <your_last_name>,
+  email_address: <your_email>,
+  password: <your_password>,
+  admin: true
+)
 ```
 
 Once you've done the above, you should be good to start exploring the app!
