@@ -1,8 +1,0 @@
-<div data-controller='date-window-select'>
-  <%= select_tag_for_time_period(dim_name, disabled: disabled) %>
-  <div class='hidden my-4' data-date-window-select-target='customOptions'>
-    <%= date_tag_for_filter(dim_name, 'start', disabled: disabled).join.html_safe %>
-    <span> and </span>
-    <%= date_tag_for_filter(dim_name, 'end', disabled: disabled).join.html_safe %>
-  </div>
-</div>

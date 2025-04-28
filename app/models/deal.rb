@@ -1,7 +1,8 @@
 class Deal < ApplicationRecord
   include PolymorphicSelectable
-
   include SAL::BasicSearch
+  include Deals::Stages
+  
   basic_search :name
 
   belongs_to :account, inverse_of: :deals
