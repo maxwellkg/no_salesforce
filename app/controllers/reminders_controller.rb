@@ -1,7 +1,7 @@
 class RemindersController < ApplicationController
   include SAL::AdvancedSearchable
 
-  before_action :set_activity, only: %i[ show edit update destroy ]
+  before_action :set_reminder, only: %i[ show edit destroy ]
 
   # index defined by SAL::AdvancedSearchable
 
@@ -36,8 +36,10 @@ class RemindersController < ApplicationController
 
   # PATCH/PUT /reminders/1 or /reminders/1.json
   def update
+    @reminder = updated_reminder
+
     respond_to do |format|
-      if @reminder.update(reminder_params)
+      if @reminder.save
         format.html { redirect_to @reminder, notice: "Activity was successfully updated." }
         format.json { render :show, status: :ok, location: @reminder }
       else
@@ -59,7 +61,7 @@ class RemindersController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_activity
+    def set_reminder
       @reminder = Reminder.find(params.expect(:id))
     end
 
@@ -69,13 +71,29 @@ class RemindersController < ApplicationController
     end
 
     def new_reminder
-      return Reminder.new unless params[:reminder]
+      reminder = Reminder.new
 
-      new_reminder_params = reminder_params.dup
+      return reminder unless params[:reminder]
 
-      sgid = new_reminder_params.delete(:logged_to_sgid)
+      assign_reminder_attributes(reminder)
 
-      reminder = Reminder.new(new_reminder_params)
+      reminder
+    end
+
+    def updated_reminder
+      reminder = Reminder.find(params.expect(:id))
+
+      assign_reminder_attributes(reminder)
+
+      reminder
+    end
+
+    def assign_reminder_attributes(reminder)
+      attributes = reminder_params.dup
+
+      sgid = attributes.delete(:logged_to_sgid)
+
+      reminder.assign_attributes(attributes)
 
       if sgid.present?
         reminder.logged_to = GlobalID::Locator.locate_signed sgid, for: :polymorphic_select

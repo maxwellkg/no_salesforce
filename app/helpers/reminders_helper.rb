@@ -1,6 +1,8 @@
 module RemindersHelper
 
   def reminder_notes_preview(reminder)
+    return unless reminder.notes.present?
+
     truncated = Truncato.truncate reminder.notes.to_s, max_length: 100, count_tags: false
     truncated.html_safe
   end

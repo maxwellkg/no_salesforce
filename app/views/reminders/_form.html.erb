@@ -17,9 +17,14 @@
   </div>
 
   <div class="relative z-0 w-full mb-5 md:mb-10 group">  
-  <%= form.select :type_id, options_from_collection_for_select(ReminderType.all, :id, :name), { required: true }, class: "block py-2.5 px-0 w-full text-lg text-gray-800 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" %>
+  <%= form.select :type_id, options_from_collection_for_select(ReminderType.all, :id, :display_name, @reminder.type_id), { required: true }, class: "block py-2.5 px-0 w-full text-lg text-gray-800 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" %>
   <%= form.label :type_id, "Type", class: "peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6" %> 
 </div> 
+
+  <div class="flex items-center mb-4">  
+    <%= form.check_box :complete, class: "w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" %>
+    <%= form.label :complete, class: "ms-2 text-sm font-medium text-gray-900 dark:text-gray-300" %> 
+</div>
 
   <div class="relative z-0 w-full mb-5 md:mb-10 group"> 
     <%= form.select :logged_to_sgid, [[@reminder.logged_to.name, params.dig(:reminder, :logged_to_sgid)]], {}, class: "block py-2.5 px-0 w-full text-lg text-gray-800 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" %>
@@ -38,7 +43,7 @@
 
   <div class="relative z-0 w-full mb-5 md:mb-10 group">
     <div class="py-6">
-      <%= form.rich_text_area :notes, class: "block py-2.5 px-0 w-full text-4xl font-handwriting text-gray-800 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" %>
+      <%= form.rich_text_area :notes, class: "block py-2.5 px-0 w-full text-lg font-handwriting text-gray-800 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" %>
     </div>
     <%= form.label :notes, class: "peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6" %>    
   </div>

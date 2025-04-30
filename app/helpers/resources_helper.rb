@@ -9,7 +9,7 @@ module ResourcesHelper
   end
 
   def past_due_reminders_collection(resource)
-    resource.reminders.past_due.ordered
+    resource.reminders.past_due.ordered.with_rich_text_notes
   end
 
   def resource_has_upcoming_reminders?(resource)
@@ -17,7 +17,7 @@ module ResourcesHelper
   end
 
   def upcoming_reminders_collection(resource)
-    resource.reminders.open.ordered
+    resource.reminders.open.ordered.with_rich_text_notes
   end  
 
   def resource_has_completed_reminders?(resource)
@@ -25,7 +25,7 @@ module ResourcesHelper
   end
 
   def completed_reminders_collection(resource)
-    resource.reminders.complete.ordered
+    resource.reminders.complete.ordered.with_rich_text_notes
   end
 
   def render_reminders_partial(collection)
