@@ -20,6 +20,7 @@ class SAL::Configs::Deals < SAL::Config
       label: "Assigned To",
       field: :owner_id,
       typeahead: true,
+      klass: User,
       path: :typeaheads_users_path,
       options: {
         value_method: :id,
