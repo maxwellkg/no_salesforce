@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   root "users#home"
 
   namespace :typeaheads do
+    resources :reminder_subjects, only: :index
     resources :accounts, only: :index
     resources :users, only: :index
   end

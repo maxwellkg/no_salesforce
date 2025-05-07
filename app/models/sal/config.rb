@@ -43,10 +43,32 @@ class SAL::Config
     filterables.detect { |f| f[:field] == field_name.to_sym }
   end
 
-  def date_filter?(field_name)
-    col = klass.columns.detect { |col| col.name == field_name.to_s }
+  def filterable_is_reflection?(field_name)
+    settings_for_filterable(field_name)[:reflection].present?
+  end
 
-    [:date, :datetime].include?(col.type)
+  def reflection_for_filterable(field_name)
+    settings_for_filterable(field_name)[:reflection]
+  end
+
+  def column_for_field_name(field_name)
+    if filterable_is_reflection?(field_name)
+      ref = reflection_for_filterable(field_name)
+
+      model = klass.reflections[ref.to_s].klass
+      col_name = field_name.to_s.split('.').last
+    else
+      model = klass
+      col_name = field_name.to_s
+    end
+
+
+
+    model.columns.detect { |c| c.name == col_name }
+  end
+
+  def date_filter?(field_name)
+    column_for_field_name(field_name).type.in? [:date, :datetime]
   end
 
   def filter_allows_multiple?(field_name)

@@ -71,7 +71,7 @@ module SAL::AdvancedSearchable
           :true
         elsif params[:eager] == "1"
           :eager
-        elsif user_input_params.present? && request.referrer.nil?
+        elsif user_input_params.present?
           :eager
         else
           :false

@@ -24,7 +24,7 @@ module SAL::FormsHelper
   end
 
   def id_for_filter(name)
-    name.to_s.dasherize
+    name.to_s.dasherize.gsub('.', '-')
   end
 
   def label_tag_for_search_or_filter(name, label)
@@ -61,7 +61,15 @@ module SAL::FormsHelper
   end
 
   def column_for_field_name(field_name)
-    @builder.klass.columns.detect { |c| c.name == field_name.to_s }
+    @builder.config.column_for_field_name(field_name)
+  end
+
+  def boolean_filter?(field_name)
+    col = column_for_field_name(field_name)
+
+    return false unless col.present?
+
+    col.type == :boolean
   end
 
   def date_filter?(field_name)

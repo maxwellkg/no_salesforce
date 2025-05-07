@@ -1,7 +1,7 @@
 class RemindersController < ApplicationController
   include SAL::AdvancedSearchable
 
-  before_action :set_reminder, only: %i[ show edit destroy ]
+  before_action :set_reminder, only: %i[ show edit update destroy ]
 
   # index defined by SAL::AdvancedSearchable
 
@@ -12,7 +12,7 @@ class RemindersController < ApplicationController
 
   # GET /reminders/new
   def new
-    @reminder = new_reminder
+    @reminder = Reminder.new(reminder_params)
   end
 
   # GET /reminders/1/edit
@@ -21,7 +21,7 @@ class RemindersController < ApplicationController
 
   # POST /reminders or /reminders.json
   def create
-    @reminder = new_reminder
+    @reminder = Reminder.new(reminder_params)
 
     respond_to do |format|
       if @reminder.save
@@ -36,10 +36,8 @@ class RemindersController < ApplicationController
 
   # PATCH/PUT /reminders/1 or /reminders/1.json
   def update
-    @reminder = updated_reminder
-
     respond_to do |format|
-      if @reminder.save
+      if @reminder.update(reminder_params)
         format.html { redirect_to @reminder, notice: "Activity was successfully updated." }
         format.json { render :show, status: :ok, location: @reminder }
       else
@@ -67,39 +65,7 @@ class RemindersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def reminder_params
-      params.require(:reminder).permit(:reminder, :account_id, { person_ids: [] }, :occurring_at, :type_id, :title, :notes, :complete, :logged_to_sgid, :assigned_to_id)
-    end
-
-    def new_reminder
-      reminder = Reminder.new
-
-      return reminder unless params[:reminder]
-
-      assign_reminder_attributes(reminder)
-
-      reminder
-    end
-
-    def updated_reminder
-      reminder = Reminder.find(params.expect(:id))
-
-      assign_reminder_attributes(reminder)
-
-      reminder
-    end
-
-    def assign_reminder_attributes(reminder)
-      attributes = reminder_params.dup
-
-      sgid = attributes.delete(:logged_to_sgid)
-
-      reminder.assign_attributes(attributes)
-
-      if sgid.present?
-        reminder.logged_to = GlobalID::Locator.locate_signed sgid, for: :polymorphic_select
-      end
-
-      reminder
+      params.require(:reminder).permit([{ reminder_subject_ids: [] }, :occurring_at, :type_id, :title, :notes, :complete, :assigned_to_id])
     end
 
     def sal_config_klass

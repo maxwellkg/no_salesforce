@@ -8,6 +8,10 @@ module ResourcesHelper
     resource.reminders.past_due.any?
   end
 
+  def num_past_due_reminders(resource)
+    resource.reminders.past_due.count
+  end
+
   def past_due_reminders_collection(resource)
     resource.reminders.past_due.ordered.with_rich_text_notes
   end
@@ -16,12 +20,20 @@ module ResourcesHelper
     resource.reminders.upcoming.any?
   end
 
+  def num_upcoming_reminders(resource)
+    resource.reminders.upcoming.count
+  end
+
   def upcoming_reminders_collection(resource)
-    resource.reminders.open.ordered.with_rich_text_notes
+    resource.reminders.open.order(occurring_at: :asc).with_rich_text_notes
   end  
 
   def resource_has_completed_reminders?(resource)
     resource.reminders.complete.any?
+  end
+
+  def num_completed_reminders(resource)
+    resource.reminders.complete.count
   end
 
   def completed_reminders_collection(resource)

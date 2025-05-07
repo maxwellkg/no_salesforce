@@ -20,8 +20,11 @@ def generate_valid_phone_number(country)
   pn
 end
 
-def create_reminder(logged_to, earliest_occurring_at: nil, latest_occurring_at: nil, people: [], mark_complete: false)
-  earliest_at = earliest_occurring_at || logged_to.created_at
+def create_reminder(related_to, earliest_occurring_at: nil, latest_occurring_at: nil, mark_complete: false, assigned_to:)
+  related_to = Array.wrap(related_to)
+
+  earliest_at = earliest_occurring_at || related_to.map(&:created_at).max
+
   latest_at = latest_occurring_at || (Date.today + 6.months)
 
   occurring_at = Faker::Date.between(from: earliest_at, to: latest_at)
@@ -45,20 +48,16 @@ def create_reminder(logged_to, earliest_occurring_at: nil, latest_occurring_at: 
   created_at = Faker::Time.between(from: occurring_at - 30.days, to: occurring_at.prev_day)
 
   r = Reminder.new(
-    logged_to: logged_to,
+    reminder_subjects: related_to.map(&:reminder_subject),
     occurring_at: occurring_at,
     type: ReminderType.random,
     title: title,
     notes: notes,
     complete: complete,
-    assigned_to: logged_to.owner,
+    assigned_to: assigned_to,
     created_at: created_at,
-    created_by: logged_to.owner
+    created_by: assigned_to
   )
-
-  Array.wrap(people).each do |person|
-    r.people << person
-  end
 
   r.save!
 end
@@ -102,6 +101,8 @@ def generate_deal_with_reminders(stage)
 
   deal.close_date = Faker::Date.between(from: earliest_close_date, to: latest_close_date)
 
+  deal.save!
+
   # create a few reminders on the deal
   # make sure the reminder is set to occur while the deal was open
   # and if the deal is closed, always mark it as complete
@@ -110,16 +111,18 @@ def generate_deal_with_reminders(stage)
   rand(3..6).times do
     people = account.people.random(rand(1..4))
 
-    create_reminder(
-      deal,
+    related_to = [deal, people].flatten
+
+    reminder = create_reminder(
+      related_to,
       earliest_occurring_at: deal_created_at,
       latest_occurring_at: deal.close_date,
-      people: people,
-      mark_complete: deal.closed?
+      mark_complete: deal.closed?,
+      assigned_to: deal.owner
     )
-  end
 
-  deal.save!
+    reminder.save
+  end
 end
 
 
@@ -128,12 +131,13 @@ ActiveRecord::Base.transaction do
 
   puts "Removing existing data..."
 
-  PeopleReminder.delete_all
+  ReminderLink.delete_all
   Reminder.delete_all
+  ReminderSubject.delete_all
   Deal.delete_all
   Person.delete_all
   Account.delete_all
-  User.where(admin: false).delete_all
+  User.where(admin: false).destroy_all
 
   puts "Completed!"
 
@@ -325,16 +329,16 @@ ActiveRecord::Base.transaction do
   puts "Creating reminders..."
 
   # create fake reminders on accounts
-  Account.all.each do |acct|
+  Account.all.includes(:reminder_subject).each do |acct|
     rand(2..5).times do
-      create_reminder(acct)
+      create_reminder(acct, assigned_to: acct.owner)
     end
   end
 
   # create fake reminders on people
-  Person.all.each do |person|
+  Person.all.includes(:reminder_subject).each do |person|
     rand(2..5).times do
-      create_reminder(person)
+      create_reminder(person, assigned_to: person.owner)
     end
   end
 

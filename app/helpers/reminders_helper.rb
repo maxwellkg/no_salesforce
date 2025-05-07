@@ -11,9 +11,21 @@ module RemindersHelper
     @reminder.assigned_to&.id || Current.user.id
   end
 
-  def people_options_for_reminder
-    acct = @reminder.logged_to_an_account? ? @reminder.logged_to : @reminder.logged_to.account
-    acct.people
+  def related_to_options_for_reminder
+    options_from_collection_for_select(
+      @reminder.reminder_subjects,
+      :id,
+      :name,
+      @reminder.reminder_subject_ids
+    )
+  end
+
+  def new_reminder_path_for_subject_ids(*subject_ids)
+    new_reminder_path(reminder: { reminder_subject_ids: subject_ids })
+  end
+
+  def new_reminder_path_for_resource(resource)
+    new_reminder_path_for_subject_ids(resource.reminder_subject.id)
   end
 
 end

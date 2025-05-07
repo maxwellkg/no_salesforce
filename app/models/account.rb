@@ -2,7 +2,7 @@ class Account < ApplicationRecord
   include SAL::BasicSearch
   basic_search :name
 
-  include PolymorphicSelectable
+  include Remindable
 
   belongs_to :owner, class_name: "User"
   belongs_to :parent, class_name: "Account", optional: true
@@ -17,8 +17,6 @@ class Account < ApplicationRecord
   belongs_to :account_source, class_name: "AccountLeadSource", optional: true, inverse_of: :accounts
 
   has_many :people, inverse_of: :account
-
-  has_many :reminders
 
   has_many :deals, inverse_of: :account
 

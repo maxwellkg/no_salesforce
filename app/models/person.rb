@@ -1,5 +1,5 @@
 class Person < ApplicationRecord
-  include PolymorphicSelectable
+  include Remindable
 
   include SAL::BasicSearch
   basic_search :full_name, :first_name, :last_name
@@ -9,7 +9,6 @@ class Person < ApplicationRecord
   belongs_to :lead_source, class_name: "AccountLeadSource", optional: true
   belongs_to :address, optional: true
   belongs_to :owner, class_name: "User"
-  has_and_belongs_to_many :reminders
   
   # include created_by and last_updated_by associations and related callbacks
   include UserTracked

@@ -6,10 +6,12 @@ class SAL::Configs::Reminders < SAL::Config
 
   FILTERABLES = [
     {
-      label: "Account",
-      field: :account_id,
+      label: "Related To",
+      field: :"reminder_subjects.id" ,
+      reflection: :reminder_subjects,
       typeahead: true,
-      path: :typeaheads_accounts_path,
+      path: :typeaheads_reminder_subjects_path,
+      klass: ReminderSubject,
       options: {
         value_method: :id,
         text_method: :name,
@@ -19,9 +21,9 @@ class SAL::Configs::Reminders < SAL::Config
     {
       label: "Assigned To",
       field: :assigned_to_id,
-      typeahead: true,
-      path: :typeaheads_users_path,
+      klass: User,
       options: {
+        collection: Proc.new { User.all },
         value_method: :id,
         text_method: :full_name,
         allow_multiple: true
@@ -53,7 +55,7 @@ class SAL::Configs::Reminders < SAL::Config
   end
 
   def include_for_advanced_search
-    [:assigned_to, :account, :type]
+    [:assigned_to, :type, { reminder_subjects: :source }]
   end
 
   def show_new_resource_button?

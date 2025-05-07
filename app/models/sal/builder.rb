@@ -48,10 +48,23 @@ class SAL::Builder
 
       @_query = klass.all
 
+      apply_joins
       apply_search_chain
       apply_filters
 
       @_query
+    end
+
+    def reflections_to_join
+      filterable_params.keys.map do |k|
+        config.reflection_for_filterable(k)
+      end.compact
+    end
+
+    def apply_joins
+      if reflections_to_join.any?
+        @_query = @_query.left_joins(reflections_to_join)
+      end
     end
 
     def searchable_params
@@ -93,7 +106,13 @@ class SAL::Builder
 
     def filter_conditions
       filterable_params.each_with_object({}) do |(k, v), hsh|
-        hsh[k] = alter_value_for_query(k, v)
+        if config.filterable_is_reflection?(k)
+          ref, col = k.to_s.split(".")
+
+          hsh[ref] = { col => alter_value_for_query(k, v) }
+        else
+          hsh[k] = alter_value_for_query(k, v)
+        end
       end
     end    
 

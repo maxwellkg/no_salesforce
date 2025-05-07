@@ -10,21 +10,13 @@
 			<span class="font-bold">Type: </span>
     	<span><%= @reminder.type.display_name %></span>
     </div>
-    <div class="mt-4">
-			<span class="font-bold">Logged To: </span>
-    	<span><%= link_to @reminder.logged_to.name, @reminder.logged_to %></span>
-    </div>
-    <div class="mt-4">
-			<span class="font-bold">Account: </span>
-    	<span><%= link_to @reminder.account.name, @reminder.account %></span>
-    </div>
    
-    <% if @reminder.people.any? %>
+    <% if @reminder.reminder_subjects.any? %>
     	<div class="mt-4">
-    		<span class="font-bold">People:</span>
-		    <% @reminder.people.each do |person| %>
+    		<span class="font-bold">Related To:</span>
+		    <% @reminder.reminder_subjects.includes(:source).each do |subject| %>
           <div>
-		    	 <span><%= link_to person.full_name, person %></span>
+		    	 <span><%= link_to subject.name, subject.source %></span>
           </div>
 		    <% end %>
 	   </div>

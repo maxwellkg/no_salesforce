@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_04_16_234458) do
+ActiveRecord::Schema[8.0].define(version: 2025_05_06_204001) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -183,21 +183,31 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_16_234458) do
     t.index ["phone_number_id"], name: "index_people_on_phone_number_id"
   end
 
-  create_table "people_reminders", force: :cascade do |t|
-    t.bigint "reminder_id", null: false
-    t.bigint "person_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["person_id"], name: "index_people_reminders_on_person_id"
-    t.index ["reminder_id"], name: "index_people_reminders_on_reminder_id"
-  end
-
   create_table "phone_numbers", force: :cascade do |t|
     t.bigint "country_id"
     t.string "number", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["country_id"], name: "index_phone_numbers_on_country_id"
+  end
+
+  create_table "reminder_links", force: :cascade do |t|
+    t.bigint "reminder_id", null: false
+    t.bigint "reminder_subject_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["reminder_id", "reminder_subject_id"], name: "index_reminder_links_on_reminder_id_and_reminder_subject_id", unique: true
+    t.index ["reminder_id"], name: "index_reminder_links_on_reminder_id"
+    t.index ["reminder_subject_id"], name: "index_reminder_links_on_reminder_subject_id"
+  end
+
+  create_table "reminder_subjects", force: :cascade do |t|
+    t.text "name", null: false
+    t.string "source_type", null: false
+    t.bigint "source_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["source_type", "source_id"], name: "index_reminder_subjects_on_source"
   end
 
   create_table "reminder_types", force: :cascade do |t|
@@ -208,23 +218,18 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_16_234458) do
   end
 
   create_table "reminders", force: :cascade do |t|
-    t.bigint "account_id", null: false
     t.datetime "occurring_at", null: false
     t.bigint "type_id", null: false
     t.text "title", null: false
     t.boolean "complete", default: false, null: false
-    t.string "logged_to_type", null: false
-    t.bigint "logged_to_id", null: false
     t.bigint "created_by_id"
     t.bigint "last_updated_by_id"
     t.bigint "assigned_to_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["account_id"], name: "index_reminders_on_account_id"
     t.index ["assigned_to_id"], name: "index_reminders_on_assigned_to_id"
     t.index ["created_by_id"], name: "index_reminders_on_created_by_id"
     t.index ["last_updated_by_id"], name: "index_reminders_on_last_updated_by_id"
-    t.index ["logged_to_type", "logged_to_id"], name: "index_reminders_on_logged_to"
     t.index ["type_id"], name: "index_reminders_on_type_id"
   end
 
@@ -299,10 +304,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_16_234458) do
   add_foreign_key "people", "users", column: "created_by_id"
   add_foreign_key "people", "users", column: "last_updated_by_id"
   add_foreign_key "people", "users", column: "owner_id"
-  add_foreign_key "people_reminders", "people"
-  add_foreign_key "people_reminders", "reminders"
   add_foreign_key "phone_numbers", "countries"
-  add_foreign_key "reminders", "accounts"
   add_foreign_key "reminders", "reminder_types", column: "type_id"
   add_foreign_key "reminders", "users", column: "assigned_to_id"
   add_foreign_key "reminders", "users", column: "created_by_id"

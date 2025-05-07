@@ -24,8 +24,11 @@
       <div class="py-4 border-b border-b-4 border-gray-300">
         <h5 class="text-xl">Upcoming ⏰:</h5>
         <div>
-          <%= render_reminders_partial(upcoming_reminders_collection(resource)) %>
+          <%= render_reminders_partial(upcoming_reminders_collection(resource).take(5)) %>
         </div>
+        <div class="mt-2">
+          <%= link_to "See All #{num_upcoming_reminders(resource)} Upcoming Reminders", reminders_path("reminder_subjects.id": [resource.reminder_subject.id]) %>
+        </div>        
       </div>
     <% end %>
 
@@ -33,9 +36,12 @@
       <div class="py-4">
         <h5 class="text-xl">Completed ✅:</h5>
         <div>
-          <%= render_reminders_partial(completed_reminders_collection(resource)) %>
+          <%= render_reminders_partial(completed_reminders_collection(resource).take(5)) %>
         </div>
       </div>
+        <div class="mt-2">
+          <%= link_to "See All #{num_completed_reminders(resource)} Completed Reminders", reminders_path("reminder_subjects.id": [resource.reminder_subject.id]) %>
+        </div>      
     <% end %>
 
   <% end %>
