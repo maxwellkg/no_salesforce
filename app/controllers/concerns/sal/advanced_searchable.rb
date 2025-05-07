@@ -35,8 +35,12 @@ module SAL::AdvancedSearchable
         end
       end
 
+      def scopable_params
+        sal_config.scopable_groups.map { |g| { g => [] } }
+      end
+
       def allowable_params
-        [searchable_params, filterable_params].flatten
+        [searchable_params, filterable_params, scopable_params].flatten
       end
 
       def user_input_params

@@ -2,7 +2,7 @@ class SAL::Builder
 
   attr_reader :config, :params
 
-  delegate :klass, :title, :searchables, :searchable_method?, :filterables, :filterable_field?, :klass_for_filter, to: :config
+  delegate :klass, :title, :searchables, :searchable_method?, :filterables, :filterable_field?, :scopables, :scopable_group?, :klass_for_filter, to: :config
 
   def initialize(config, params)
     @config = config
@@ -46,8 +46,9 @@ class SAL::Builder
     def query_without_limit
       return @_query if @query.present?
 
-      @_query = klass.all
+      @_query = klass
 
+      apply_scopables
       apply_joins
       apply_search_chain
       apply_filters
@@ -118,6 +119,24 @@ class SAL::Builder
 
     def apply_filters
       @_query = @_query.where(filter_conditions)
+    end
+
+    def scopable_params
+      params.select { |k, _| scopable_group?(k) }
+    end
+
+    def scopes_to_apply
+      scopable_params.values.flatten.compact.uniq
+    end
+
+    def apply_scopables
+      scopes_to_apply.each_with_index do |scope, idx|
+        if idx.zero?
+          @_query = @_query.public_send(scope)
+        else
+          @_query = @_query.or(klass.public_send(scope))
+        end
+      end
     end
 
     def limit_to_apply

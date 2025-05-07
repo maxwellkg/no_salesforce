@@ -3,6 +3,7 @@ class SAL::Config
 
   SEARCHABLES = []
   FILTERABLES = []
+  SCOPABLES = []
 
   # the default title is the pluralized name of the class,
   # but this can/should be overwritten
@@ -17,6 +18,10 @@ class SAL::Config
 
   def filterables
     self.class::FILTERABLES
+  end
+
+  def scopables
+    self.class::SCOPABLES
   end
 
   def searchable_methods
@@ -37,6 +42,18 @@ class SAL::Config
 
   def filterable_field?(field_name)
     filterable_fields.include?(field_name.to_sym)
+  end
+
+  def settings_for_scopable(scope_group_name)
+    scopables.detect { |s| s[:name] == scope_group_name.to_sym }
+  end
+
+  def scopable_groups
+    scopables.map { |f| f[:name] }
+  end
+
+  def scopable_group?(group_name)
+    scopable_groups.include?(group_name.to_sym)
   end
 
   def settings_for_filterable(field_name)

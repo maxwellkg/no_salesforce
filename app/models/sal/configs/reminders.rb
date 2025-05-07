@@ -46,6 +46,17 @@ class SAL::Configs::Reminders < SAL::Config
     }
   ]
 
+  SCOPABLES = [
+    {
+      name: :status,
+      label: "Status",
+      options: {
+        scopes: { "Past Due" => :past_due, "Upcoming" => :upcoming, "Complete" => :complete },
+        allow_multiple: true
+      }
+    }
+  ]
+
   def klass
     Reminder
   end

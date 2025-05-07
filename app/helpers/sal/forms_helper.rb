@@ -255,4 +255,24 @@ module SAL::FormsHelper
     end
   end
 
+  def label_and_input_tags_for_scopable(scopable_hsh)
+    group_name = scopable_hsh[:name]
+
+    allow_multiple = scopable_hsh.dig(:options, :allow_multiple) || false
+
+    content_tag :div, class: "py-4" do
+      [
+        label_tag_for_search_or_filter(group_name, scopable_hsh[:label]),
+        select_tag(
+          group_name,
+          options_for_select(scopable_hsh.dig(:options, :scopes), existing_value_for_field(group_name)),
+          include_blank: true,
+          multiple: allow_multiple,
+          class: "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5",
+          id: id_for_filter(group_name)
+        )
+      ].join.html_safe
+    end.html_safe
+  end
+
 end

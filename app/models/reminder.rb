@@ -33,6 +33,20 @@ class Reminder < ApplicationRecord
   include SAL::BasicSearch
   basic_search :title
 
+  def status
+    if complete?
+      :complete
+    elsif occurring_at < DateTime.now
+      :past_due
+    else
+      :upcoming
+    end
+  end
+
+  def display_status
+    status.to_s.titleize
+  end
+
   def incomplete?
     !complete?
   end

@@ -15,6 +15,10 @@
           <%= label_and_input_tags_for_search(field) %>
         <% end %>
 
+        <% @builder.scopables.each do |group| %>
+          <%= label_and_input_tags_for_scopable(group) %>
+        <% end %>
+
         <% @builder.filterables.each do |field| %>
           <%= label_and_input_tags_for_filter(field) %>
         <% end %>
