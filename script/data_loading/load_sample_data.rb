@@ -113,15 +113,13 @@ def generate_deal_with_reminders(stage)
 
     related_to = [deal, people].flatten
 
-    reminder = create_reminder(
+    create_reminder(
       related_to,
       earliest_occurring_at: deal_created_at,
       latest_occurring_at: deal.close_date,
       mark_complete: deal.closed?,
       assigned_to: deal.owner
     )
-
-    reminder.save
   end
 end
 
