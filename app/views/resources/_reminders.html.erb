@@ -17,6 +17,9 @@
         <div>
           <%= render_reminders_partial(past_due_reminders_collection(resource)) %>
         </div>
+        <div class="mt-2">
+          <%= link_to_see_all_reminders(resource, :past_due) %>
+        </div>        
       </div>
     <% end %>
 
@@ -27,12 +30,12 @@
           <%= render_reminders_partial(upcoming_reminders_collection(resource).take(5)) %>
         </div>
         <div class="mt-2">
-          <%= link_to "See All #{num_upcoming_reminders(resource)} Upcoming Reminders", reminders_path("reminder_subjects.id": [resource.reminder_subject.id]) %>
+          <%= link_to_see_all_reminders(resource, :upcoming) %>
         </div>        
       </div>
     <% end %>
 
-    <% if resource_has_completed_reminders?(resource) %>
+    <% if resource_has_complete_reminders?(resource) %>
       <div class="py-4">
         <h5 class="text-xl">Completed ✅:</h5>
         <div>
@@ -40,7 +43,7 @@
         </div>
       </div>
         <div class="mt-2">
-          <%= link_to "See All #{num_completed_reminders(resource)} Completed Reminders", reminders_path("reminder_subjects.id": [resource.reminder_subject.id]) %>
+          <%= link_to_see_all_reminders(resource, :complete) %>
         </div>      
     <% end %>
 

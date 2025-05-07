@@ -70,7 +70,7 @@ class SAL::Configs::Reminders < SAL::Config
   end
 
   def show_new_resource_button?
-    false
+    true
   end
 
 end

@@ -12,7 +12,11 @@ class RemindersController < ApplicationController
 
   # GET /reminders/new
   def new
-    @reminder = Reminder.new(reminder_params)
+    @reminder = if params[:reminder]
+                  Reminder.new(reminder_params)
+                else
+                  Reminder.new
+                end
   end
 
   # GET /reminders/1/edit

@@ -28,11 +28,11 @@ module ResourcesHelper
     resource.reminders.open.order(occurring_at: :asc).with_rich_text_notes
   end  
 
-  def resource_has_completed_reminders?(resource)
+  def resource_has_complete_reminders?(resource)
     resource.reminders.complete.any?
   end
 
-  def num_completed_reminders(resource)
+  def num_complete_reminders(resource)
     resource.reminders.complete.count
   end
 
@@ -78,5 +78,12 @@ module ResourcesHelper
     owner = resource.owner || Current.user
     owner.id
   end  
+
+  def link_to_see_all_reminders(resource, reminder_status)
+    count_method = "num_#{reminder_status}_reminders"
+    num_reminders = send(count_method, resource)
+
+    link_to "See All #{num_reminders} #{reminder_status.to_s.titleize} Reminders", reminders_path("reminder_subjects.id": [resource.reminder_subject.id], status: [reminder_status])
+  end
 
 end
